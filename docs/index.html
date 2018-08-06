@@ -18,7 +18,15 @@
             name: 'Notes',
             repo: 'neilsustc/notes',
             loadSidebar: true,
-            subMaxLevel: 2
+            subMaxLevel: 2,
+            formatUpdated: '{YYYY}/{MM}/{DD}',
+            plugins: [
+                function(hook) {
+                    hook.beforeEach(function(html) {
+                        return html + '\n\n<hr>\n\nLast modified: {docsify-updated}';
+                    });
+                }
+            ]
         }
     </script>
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>

@@ -2,6 +2,10 @@ img {
     border: 1px solid lightgrey;
 }
 
+figure {
+    text-align: center;
+}
+
 figcaption {
     text-align: center;
     color: gray;

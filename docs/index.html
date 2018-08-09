@@ -3,12 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Notes</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/katex.min.css" integrity="sha384-9tPv11A+glH/on/wEu99NVwDPwkMQESOocs/ZGXPoIiLE8MU/qkqUcZ3zzL+6DuH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/katex.min.js" integrity="sha384-U8Vrjwb8fuHMt6ewaCy8uqeUXv4oitYACKdB0VziCerzt011iQ/0TqlSlv8MReCm" crossorigin="anonymous"></script>
+    <!-- Theme -->
     <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
-    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="static/custom.css">
 </head>
 
 <body>
@@ -21,15 +25,39 @@
             subMaxLevel: 2,
             formatUpdated: '{YYYY}/{MM}/{DD}',
             plugins: [
-                function(hook) {
-                    hook.beforeEach(function(html) {
+                function (hook) {
+                    hook.beforeEach(function (html) {
+                        html = html.replace(/accent\*\*(.*?)\*\*/g, (_, g1) => '<strong class="accent">' + g1 + '</strong>');
                         return html + '\n\n<hr>\n\nLast modified: {docsify-updated}';
                     });
+
+                    // KaTeX
+                    hook.afterEach(content => {
+                        const doc = new DOMParser().parseFromString(content, 'text/html');
+
+                        Array.from(doc.querySelectorAll('p'))
+                            .forEach(x => x.innerHTML = x.innerHTML.replace(/\$\$?([\s\S]*?)\$\$?/g, (all, code) => {
+                                const startsWith = all.startsWith('$$');
+                                const endsWith = all.endsWith('$$');
+
+                                if ((startsWith && endsWith) || (!startsWith && !endsWith)) {
+                                    return katex.renderToString(code, { displayMode: startsWith });
+                                } else {
+                                    console.warn('Error: mismatching dollar signs ($) in math expression, ignoring math expression')
+                                    return all;
+                                }
+                            }));
+
+                        return doc.body.innerHTML;
+                    })
                 }
-            ]
+            ],
+            markdown: {
+                breaks: true
+            }
         }
     </script>
-    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="static/docsify.min.js"></script>
 </body>
 
 </html>

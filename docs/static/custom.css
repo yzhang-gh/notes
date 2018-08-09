@@ -15,3 +15,15 @@ figcaption {
 p~ul {
     margin-top: -.2em;
 }
+
+.markdown-section strong {
+    font-weight: bold;
+}
+
+strong.accent {
+    color: #269961;
+}
+
+abbr {
+    cursor: help;
+}

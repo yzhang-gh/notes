@@ -1,5 +1,9 @@
 /* Override */
 
+body {
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Microsoft Yahei', Arial, sans-serif, 'Segoe UI Emoji';
+}
+
 .sidebar ul li {
     font-size: 14px;
 }
@@ -20,7 +24,7 @@ figcaption {
     margin-top: .6em;
 }
 
-p~ul {
+p+ul {
     margin-top: -.2em;
 }
 

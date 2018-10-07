@@ -6,6 +6,7 @@
 - island, isle（s 不发音）
 - suite（同 sweet）
 - receipt（p 不发音）
+- Richard（ar 发 /ə/ 的音）
 
 ## 容易误用的单词/短语
 
@@ -25,9 +26,10 @@
 
 - **hello**
 
-太正式，特别是语气上如果是 hello? 有种认为别人无视你而感到不满
+太正式，另外语气上如果是 hello? 有种认为别人无视你而感到不满
 打招呼不如 hi 或 hey 常用，需要引起别人注意时也可以用 hi, excuse me
 正式程度 hello > hi > hey
+（实际上在英国也听到过朋友？间用 hello 很热情地打招呼；所谓太正式可能是美国人角度吧）
 
 - **I want**
 

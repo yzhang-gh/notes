@@ -1,7 +1,9 @@
 - Math
 - Classic Machine Learning
-  - 计算学习理论 (Learning Theory)
-  - 规则学习 (Rule Learning)
+    - 计算学习理论 (Learning Theory)
+    - 规则学习 (Rule Learning)
 - Deep Learning
+- English
+    - [Learned in UK](english/learned-in-uk.md)
 - Others
-  - [遗传学 (Genetics Basics)](others/genetics.md)
+    - [遗传学 (Genetics Basics)](others/genetics.md)

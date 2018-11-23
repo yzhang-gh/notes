@@ -35,7 +35,7 @@
                     hook.afterEach(content => {
                         const doc = new DOMParser().parseFromString(content, 'text/html');
 
-                        Array.from(doc.querySelectorAll('p'))
+                        Array.from(doc.querySelectorAll('p, li'))
                             .forEach(x => x.innerHTML = x.innerHTML.replace(/\$\$?([\s\S]*?)\$\$?/g, (all, code) => {
                                 const startsWith = all.startsWith('$$');
                                 const endsWith = all.endsWith('$$');

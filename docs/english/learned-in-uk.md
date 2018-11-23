@@ -49,8 +49,11 @@ accent**express**
 
 ---
 
-往（银行/会员等）卡里存钱 save money
-但充值貌似 top up 更常用
+往（银行/会员等）卡里**存钱**是 save money
+但表示**充值**用 top-up
+充了钱，储蓄或余额叫 savings
+
+![add-money](imgs/oyster-card.png)
 
 ---
 
@@ -61,10 +64,10 @@ accent**I'm good**
 ― Do you want some chips with your sandwich?
 ― No, I'm good. Thanks.
 （我听到过 I'm alright）
+（另：<https://forum.wordreference.com/threads/no-thanks-im-good.1539125/#post-7757200>）
 
 ― Do you have any questions?
 ― No, I'm good.
-（和 You are good (to go) 有类似的感觉）
 
 也可用作委婉拒绝。
 
@@ -72,3 +75,27 @@ accent**I'm good**
 ― I'm good.
 
 <https://www.zhihu.com/question/32071242/answer/57430203>
+
+---
+
+accent**You're good (to go) / You're all set**（还需验证验证）
+
+你的事情都办好了
+
+![good-to-go](imgs/good-to-go.png)
+
+问法可以是 Am I all set?
+
+---
+
+accent**till**
+
+- `prep.`/`conj.` 直到（utill 的非正式形式）
+- `n.` **收银台，（现金出纳机的）放钱的抽屉**（A cash register or drawer for money in a shop, bank, or restaurant）
+- `v.` 耕作，犁地
+
+---
+
+accent**attraction**
+
+- `n.` 吸引；吸引力；**A place which draws visitors by providing something of interest or pleasure**

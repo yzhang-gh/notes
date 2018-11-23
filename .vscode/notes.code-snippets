@@ -1,0 +1,6 @@
+{
+	"accent bold": {
+		"prefix": "accent",
+		"body": "accent**$1**$0"
+	}
+}

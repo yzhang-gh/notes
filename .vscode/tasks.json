@@ -6,7 +6,11 @@
         {
             "label": "serve",
             "type": "shell",
-            "command": "docsify serve docs"
+            "command": "docsify serve docs",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }

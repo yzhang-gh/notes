@@ -99,3 +99,11 @@ accent**till**
 accent**attraction**
 
 - `n.` 吸引；吸引力；**A place which draws visitors by providing something of interest or pleasure**
+
+---
+
+accent**quote**
+
+- `v.`/`n.` 引用；**报价**
+
+travel insurance quotes

@@ -8,6 +8,16 @@ body {
     font-size: 14px;
 }
 
+.markdown-section a {
+    font-weight: normal;
+}
+
+.markdown-section h1 a,
+.markdown-section h2 a,
+.markdown-section h3 a {
+    font-weight: 600;
+}
+
 /* --- */
 
 img {

@@ -107,3 +107,15 @@ accent**quote**
 - `v.`/`n.` 引用；**报价**
 
 travel insurance quotes
+
+---
+
+accent**北约音标字母**
+
+打电话需要报字母的时候会用到（比如给银行打电话需要报名字，邮编等）
+
+比如 B - Bravo
+注意 [Z 的读音](/english/be-vs-ae#z)（听到过 Z - Zet）
+
+[说 26 个英文字母时用单词怎么表达？ - 栗子的回答 - 知乎](https://www.zhihu.com/question/19737171/answer/200385911)
+[北约音标字母 - 维基百科](https://zh.wikipedia.org/zh-cn/北约音标字母)

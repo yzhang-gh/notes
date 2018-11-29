@@ -26,4 +26,12 @@ accent**tomato**
 
 ---
 
+<strong id="z" class="accent">Z</strong>
+
+> In most English-speaking countries, including the **United Kingdom**, Canada, India, Ireland, New Zealand, Zambia and Australia, the letter's name is **zed /zɛd/**, ... but in **American English** its name is **zee /ziː/**
+> 
+> \- [Z - Wikipedia](https://en.wikipedia.org/wiki/Z)
+
+---
+
 TODO 专门搜一下应该已经有很好的总结

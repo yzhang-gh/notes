@@ -49,3 +49,7 @@ strong.accent {
 abbr {
     cursor: help;
 }
+
+details summary {
+    cursor: pointer;
+}

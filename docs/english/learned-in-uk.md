@@ -53,7 +53,12 @@ accent**express**
 但表示**充值**用 top-up
 充了钱，储蓄或余额叫 savings
 
+<details>
+<summary>眼见为实</summary>
+
 ![add-money](imgs/oyster-card.png)
+
+</details>
 
 ---
 
@@ -78,11 +83,18 @@ accent**I'm good**
 
 ---
 
-accent**You're good (to go) / You're all set**（还需验证验证）
+accent**You're good (to go) / You're all set**
 
 你的事情都办好了
 
+<details>
+<summary>眼见为实</summary>
+
 ![good-to-go](imgs/good-to-go.png)
+
+![all-set](imgs/all-set.png)
+
+</details>
 
 问法可以是 Am I all set?
 

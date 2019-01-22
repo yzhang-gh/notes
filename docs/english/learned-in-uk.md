@@ -131,3 +131,10 @@ accent**北约音标字母**
 
 [说 26 个英文字母时用单词怎么表达？ - 栗子的回答 - 知乎](https://www.zhihu.com/question/19737171/answer/200385911)
 [北约音标字母 - 维基百科](https://zh.wikipedia.org/zh-cn/北约音标字母)
+
+---
+
+accent**serve**
+
+- `v.` 服务；提供；**发球**
+- `n.` **发球**

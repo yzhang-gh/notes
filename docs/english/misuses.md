@@ -2,7 +2,8 @@
 
 ## 容易念错的单词
 
-- iron
+- iron（r 不发音）
+  ironic（r 发音）
 - island, isle（s 不发音）
 - suite（同 sweet）
 - receipt（p 不发音）
@@ -50,7 +51,7 @@
 https://www.bilibili.com/video/av25637075
 https://www.bilibili.com/video/av27550050
 
-## 来源 {docsify-ignore}
+## 部分来源 {docsify-ignore}
 
 - bilibili @KatAndSid
 - bilibili @阿滴英文

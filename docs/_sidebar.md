@@ -7,3 +7,4 @@
     - [Learned in UK](english/learned-in-uk.md)
 - Others
     - [遗传学 (Genetics Basics)](others/genetics.md)
+    - [LaTeX](others/latex.md)

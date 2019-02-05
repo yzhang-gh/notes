@@ -18,6 +18,10 @@ body {
     font-weight: 600;
 }
 
+.markdown-section h2 code {
+    font-size: 1.5rem;
+}
+
 /* --- */
 
 img {

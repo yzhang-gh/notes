@@ -27,7 +27,7 @@ colors = prop_cycle.by_key()["color"]
 
 ---
 
-## 与 LaTeX 配合
+## 用于 LaTeX 插图
 
 ```python
 plt.savefig("filename.pdf", bbox_inches="tight")

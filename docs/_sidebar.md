@@ -1,10 +1,12 @@
 - Math
 - Classic Machine Learning
-    - 计算学习理论 (Learning Theory)
-    - 规则学习 (Rule Learning)
+  - 计算学习理论 (Learning Theory)
+  - 规则学习 (Rule Learning)
 - Deep Learning
+- Python
+  - [Matplotlib](python/matplotlib.md)
 - English
-    - [Learned in UK](english/learned-in-uk.md)
+  - [Learned in UK](english/learned-in-uk.md)
 - Others
-    - [遗传学 (Genetics Basics)](others/genetics.md)
-    - [LaTeX](others/latex.md)
+  - [遗传学 (Genetics Basics)](others/genetics.md)
+  - [LaTeX](others/latex.md)

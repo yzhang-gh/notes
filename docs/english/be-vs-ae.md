@@ -13,6 +13,7 @@
 | --------------------- | ----------- | ----------- |
 | tomato                | /təˈmɑːtəʊ/ | /təˈmeɪdoʊ/ |
 | <span id="z">Z</span> | zed /zɛd/   | zee /ziː/   |
+| rock                  | /rɒk/       | /rɑːk/      |
 
 > In most English-speaking countries, including the **United Kingdom**, Canada, India, Ireland, New Zealand, Zambia and Australia, the letter's name is **zed /zɛd/**, ... but in **American English** its name is **zee /ziː/**
 > 

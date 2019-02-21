@@ -18,9 +18,16 @@ function js {
 }
 ```
 
-然后把这个加到用户 profile 就可以了（在 PS 里输入 `$profile` 查看路径）
+然后把这个加到用户 profile 就可以了（在 PS 里输入 `$profile` 查看路径，一般是 `%userprofile%\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`）
+
+为了允许 `.ps1` 文件执行，需要以管理员权限打开 PS 然后执行
+
+```powershell
+Set-ExecutionPolicy RemoteSigned
+```
 
 <https://superuser.com/a/516704/950027>
+<https://stackoverflow.com/a/4038991>
 
 ---
 

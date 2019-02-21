@@ -6,7 +6,7 @@ A lightweight, cross-platform, portable, and easy-to-maintain LaTeX distribution
 
 <https://github.com/yihui/tinytex>
 
-修改一下安装脚本，把 `pkgs-custom.txt` 和 `pkgs-yihui.txt` 都安装一下
+执行完 `.bat` 安装脚本后，再用下述 `tlmgr install pkg1 pkg2 ...` 命令把 `pkgs-yihui.txt` 和自己需要的其它包安装一下（善用 VSCode 多光标和 `Join Lines` 命令）
 
 ### Other Packages
 

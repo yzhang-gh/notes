@@ -7,6 +7,8 @@
   - [Matplotlib](python/matplotlib.md)
 - English
   - [Learned in UK](english/learned-in-uk.md)
+- Windows
+  - [自定义右键菜单 Custom Context Menu](windows/context-menu.md)
 - Others
   - [遗传学 (Genetics Basics)](others/genetics.md)
   - [LaTeX](others/latex.md)

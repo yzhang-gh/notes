@@ -7,6 +7,7 @@
   - [Matplotlib](python/matplotlib.md)
 - English
   - [Learned in UK](english/learned-in-uk.md)
+  - [*Friends* S01](english/friends-s01.md)
 - Windows
   - [自定义右键菜单 Custom Context Menu](windows/context-menu.md)
 - Others

@@ -12,8 +12,9 @@ A lightweight, cross-platform, portable, and easy-to-maintain LaTeX distribution
 
 ```
 chktex
-dvipng  # required by Matplotlib while using LaTeX backend
+dvipng       # required by Matplotlib while using LaTeX backend
 latexindent
+texcount
 ```
 
 ## `tlmgr` Common Commands
@@ -112,7 +113,7 @@ Local : use `\noindent` in the front of that paragraph
 
 % Setup the hyperref package for enabling links, bookmarks, and PDF properties.
 \usepackage[hyphens]{url} % Embedding URL's in document.
-\usepackage{hyperref}
+\usepackage[backref=page]{hyperref}
 \hypersetup{
     colorlinks = true,
     citecolor  = blue

@@ -16,7 +16,7 @@ accent**bond** - 联结（羁绊😏）；债券；（化学）键
 accent**hanger** - 衣架
 accent**beacon** - 灯塔；（昔日）烽火
 accent**upbeat** - 欢快的，full of hope, happiness, and good feelings
-accent**parachute**  /ˈpær.ə.**ʃuː**t/ - 降落伞
+accent**parachute** /ˈpær.ə.**ʃuː**t/ - 降落伞
 accent**couch** - 沙发，a sofa
 
 ---

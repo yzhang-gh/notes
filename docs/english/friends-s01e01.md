@@ -2,6 +2,7 @@
 
 > 句子加粗表示 非最常被想到的用法
 > 很多单词或短语还有其它用法，这里就不全部列举了
+> 用 (UPPERCASE) 最简洁地概括该单词/短语的含义（见 [Cambridge Dictionary](https://dictionary.cambridge.org/) 词条的格式）
 
 ## Words
 
@@ -23,7 +24,7 @@ accent**couch** - 沙发，a sofa
 
 accent**figure**
 
-- `v.` (MAINLY US) to expect or think that something will happen
+- `v.` MAINLY US. to expect or think that something will happen
   [+(that)] *We figured (**that**) you'd want to rest after your trip.*
 
 ---

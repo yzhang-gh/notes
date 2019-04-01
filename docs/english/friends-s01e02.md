@@ -40,8 +40,16 @@ accent**terrific**
 
 accent**way**
 
-- `n.` INFORMAL. If someone gets or has their way, what they want happens
+- `n.` INFORMAL. (WANT) If someone gets or has their way, what they want happens
   *If she doesn't get/have her (own) way, she sulks like a four-year-old.*
+
+---
+
+accent**well**
+
+- `v.` (of liquid) to appear on the surface of something or come slowly out from somewhere
+  *Dirty water welled **(up) out of** the damaged pipe.*
+  *As she read the letter tears welled **up** in her eyes.*
 
 ## Phrases
 
@@ -70,6 +78,7 @@ accent**put sth in(to) perspective**
 - to compare something to other things so that it can be accurately and fairly judged（不是很理解）
   *Total investments for this year reached $53 million, and, to put this into perspective, investments this year were double those made in 2013.*
   *You can put your worries into perspective when you realise how many people in the world are so much worse off than you.* ([Wiktionary](https://en.wiktionary.org/wiki/put_something_into_perspective))
+  ***Let's try to put these numbers into perspective*** ([Kurzgesagt - What If We Detonated All Nuclear Bombs at Once?](https://youtu.be/JyECrGp-Sw8?t=41))
 
 ---
 
@@ -107,7 +116,7 @@ accent**roll with the punches**
 
 ---
 
-accent**work out**
+accent**work out**（不接宾语）
 
 - to happen or develop in a particular way
   *Let's hope this new job works out well for him.*
@@ -115,6 +124,13 @@ accent**work out**
 - to be the result of a calculation
   *These figures work out differently each time I add them.*
   *The safe load for a truck of this size works out **at** nearly 20 tons.*
+
+---
+
+accent**work out *sth***
+
+- (DISCOVER) to discover an answer, develop an idea, or calculate an amount
+  *You can use a calculator to work out the solution.*
 
 ## Others
 

@@ -12,9 +12,16 @@ A lightweight, cross-platform, portable, and easy-to-maintain LaTeX distribution
 
 ```
 chktex
-dvipng       # required by Matplotlib while using LaTeX backend
 latexindent
 texcount
+
+# BibLaTeX
+biblatex
+biber
+logreq
+
+# Required by Matplotlib while using LaTeX backend
+dvipng
 ```
 
 ## `tlmgr` Common Commands

@@ -97,6 +97,9 @@ Local : use `\noindent` in the front of that paragraph
 
 ## Personal Template
 
+<details>
+<summary>TeX Code</summary>
+
 ```latex
 \documentclass{article}
 
@@ -150,6 +153,8 @@ Your text
 \end{document}
 ```
 
+</details>
+
 ---
 
 ## Change Math Color
@@ -162,3 +167,11 @@ Your text
 % \everydisplay{\color{math}}
 \let\displaystyle\textstyle% % Compatible with `align' environment
 ```
+
+---
+
+## Useful Links
+
+[List of mathematical symbols by subject](https://en.wikipedia.org/wiki/List_of_mathematical_symbols_by_subject) - Wikipedia
+
+[LaTeX `twoside` document binding offset](https://tex.stackexchange.com/questions/27776/how-to-force-latex-to-put-even-pages-on-the-right-hand-side-in-documentclass-art/27786#27786)

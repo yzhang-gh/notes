@@ -1,8 +1,8 @@
 # *Friends* S01 E01
 
-> 句子加粗表示 非最常被想到的用法
+> 句子加粗表示 常见词、短语的 非常见用法
 > 很多单词或短语还有其它用法，这里就不全部列举了
-> 用 (UPPERCASE) 最简洁地概括该单词/短语的含义（见 [Cambridge Dictionary](https://dictionary.cambridge.org/) 词条的格式）
+> 用 (UPPERCASE) 简洁地概括该单词/短语的含义（见 [Cambridge Dictionary](https://dictionary.cambridge.org/) 词条的格式）
 
 ## Words
 
@@ -85,9 +85,10 @@ accent**go out**
 
 ---
 
-accent**go through *sth***
+<span id="go-through-1"><strong class="accent">go through <em>sth</em></strong></span>
 
-- to experience a difficult or unpleasant situation
+- (EXPERIENCE) to experience a difficult or unpleasant situation
+- see [S01E03](/english/friends-s01e03#go-through-2)
 - ...
 
 ---

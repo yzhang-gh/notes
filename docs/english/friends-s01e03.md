@@ -1,7 +1,5 @@
 # *Friends* S01 E03
 
-🚧 15:04
-
 ## Words
 
 - accent**leather** - 皮革
@@ -11,6 +9,8 @@
 - accent**whimper** - 呜咽
 - accent**yardstick** - 准绳；（好坏或成败的）衡量标准；码尺
 - accent**innate** - 与生俱来的；固有的
+- accent**chew** - 咀嚼
+- accent**row** - `v.` **划（船）**
 
 ---
 
@@ -49,6 +49,21 @@ accent**bash**
 - `v.`
   - INFORMAL. to hit hard
   - [T] to criticize someone severely
+
+---
+
+accent**dump**
+
+- (PUT DOWN) to put down or drop something in a careless way
+  *He came in with four shopping bags and dumped them on the table.*
+
+---
+
+accent**put**
+
+- `v.` (EXPRESS) **to express something in words**
+  *She wanted to tell him that she didn't want to see him any more, but she didn't know **how to** put **it**.*
+  *Has everyone had a chance to put their point of view?*
 
 ## Phrases
 
@@ -91,3 +106,24 @@ accent**a thing or two**
 
 - some matters, facts, or information 一些事情；些许知识，一星半点
   *Why don't you ask Andrew about it? He **knows** a thing or two **about** (= has some knowledge of) computers.*
+
+---
+
+accent**have had it with *someone/something***
+
+- to not be willing to continue to deal with someone or something
+  *I’ve had it with this job – I’m quitting.*
+
+---
+
+accent**(every) now and then**
+
+ALSO (every) now and again
+
+- sometimes but not very often; from time to time 偶尔
+
+---
+
+accent**déjà vu** 既视感
+
+[逮虾户](https://www.youtube.com/watch?v=dv13gl0a-FA) 🚐💨

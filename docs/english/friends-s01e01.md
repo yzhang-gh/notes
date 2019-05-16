@@ -1,6 +1,6 @@
 # *Friends* S01 E01
 
-> 句子加粗表示 常见词、短语的 非常见用法
+> **句子加粗**表示 常见词、短语的 非常见用法
 > 很多单词或短语还有其它用法，这里就不全部列举了
 > 用 (UPPERCASE) 简洁地概括该单词/短语的含义（见 [Cambridge Dictionary](https://dictionary.cambridge.org/) 词条的格式）
 

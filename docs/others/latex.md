@@ -22,6 +22,8 @@ logreq
 
 # Required by Matplotlib while using LaTeX backend
 dvipng
+
+IEEEtran
 ```
 
 ## `tlmgr` Common Commands
@@ -83,18 +85,6 @@ Local : use `\noindent` in the front of that paragraph
 
 ---
 
-## Beamer
-
-```latex
-%gets rid of bottom navigation bars
-\setbeamertemplate{footline}[page number]{}
-
-%gets rid of navigation symbols
-\setbeamertemplate{navigation symbols}{}
-```
-
----
-
 ## Personal Template
 
 <details>
@@ -103,35 +93,57 @@ Local : use `\noindent` in the front of that paragraph
 ```latex
 \documentclass{article}
 
-% Improve typesetting.
+%% Improve typesetting.
 \usepackage{microtype}
 
-% Use geometry package to set up margins.
-% A4 paper is 8.27 × 11.69 inch.
+%% Use geometry package to set up margins.
+%% A4 paper is 8.27 × 11.69 inch.
 \usepackage[a4paper, width=6.27in, height=9.69in, includehead]{geometry}
 
-% Set line spacing.
+%% Set line spacing.
 \usepackage{setspace}
 \onehalfspacing%
+
+%% For `\includegraphics'
+\usepackage{graphicx}
 
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{xcolor}
-\usepackage{amsmath}
 
+%% ***** Math*****
+\usepackage{amsmath}
+%% For `\mathbb'
+\usepackage{amssymb}
+%% For `\coloneqq'
+% \usepackage{mathtools}
+
+% \DeclareMathOperator*{\argmin}{arg\,min}
+
+%% ***** URL *****
 \colorlet{urlcolor}{red}
 
-% Setup the hyperref package for enabling links, bookmarks, and PDF properties.
-\usepackage[hyphens]{url} % Embedding URL's in document.
+%% Setup the hyperref package for enabling links, bookmarks, and PDF properties.
+\usepackage[hyphens]{url} %% Embedding URL's in document.
 \usepackage[backref=page]{hyperref}
 \hypersetup{
     colorlinks = true,
     citecolor  = blue
 }
 
-% Must come as late as possible, especially after hyperref.
+%% Capitalising all cross-reference names (e.g. Figure, Equation)
+%% Must come as late as possible, especially after hyperref.
 \usepackage[capitalise]{cleveref}
 
+%% ***** Change the default font to sans-serif *****
+%% <https://en.wikibooks.org/wiki/LaTeX/Fonts#Font_families>
+\renewcommand{\familydefault}{\sfdefault}
+%% Prevent a warning caused by sf font
+%% <https://tex.stackexchange.com/questions/155604/itemize-under-sf-produce-a-font-warning>
+\let\oldtextbullet\textbullet%
+\renewcommand{\textbullet}{\rmfamily\oldtextbullet}
+
+%% ***** Others *****
 % \newcommand{\todo}[1]{\textcolor{blue}{[To-do: #1]}}
 
 \begin{document}
@@ -175,3 +187,15 @@ Your text
 [List of mathematical symbols by subject](https://en.wikipedia.org/wiki/List_of_mathematical_symbols_by_subject) - Wikipedia
 
 [LaTeX `twoside` document binding offset](https://tex.stackexchange.com/questions/27776/how-to-force-latex-to-put-even-pages-on-the-right-hand-side-in-documentclass-art/27786#27786)
+
+---
+
+## Beamer
+
+```latex
+% Gets rid of bottom navigation bars
+\setbeamertemplate{footline}[page number]{}
+
+% Gets rid of navigation symbols
+\setbeamertemplate{navigation symbols}{}
+```

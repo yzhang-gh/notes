@@ -111,7 +111,7 @@ Local : use `\noindent` in the front of that paragraph
 \usepackage{multirow}
 \usepackage{xcolor}
 
-%% ***** Math*****
+%% ***** Math *****
 \usepackage{amsmath}
 %% For `\mathbb'
 \usepackage{amssymb}

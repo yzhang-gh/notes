@@ -26,6 +26,8 @@ dvipng
 IEEEtran
 ```
 
+---
+
 ## `tlmgr` Common Commands
 
 ```
@@ -38,50 +40,11 @@ tlmgr update [option...] [pkg...]
 
 ---
 
-## 中文支持
-
-`\usepackage{ctex}`
-
-TeX Live 完整安装，使用 XeLaTeX 编译
-
-（英文版 Windows 需要自己手动安装中文字体，`Settings`>`Time & Language`>`Region & Language`>`中文`>`Options`>`Basic typing`）
-
----
-
 ## Escape
 
 `& % $ # _ { } ~ ^ \`
 
-Use `\ell` in place of `l` in math mode
-
----
-
-## A4paper vs. Letterpaper
-
-Quite a lot of old classes (e.g. `article`) don't set the pdf sizes. An option like `a4paper` sets only things like the TeX `\paperwidth`, the linewidth and similar lengths.
-
-You will have to insert the necessary command yourself. For pdflatex this is
-
-```latex
-\pdfpagewidth = \paperwidth
-\pdfpageheight = \paperheight
-```
-
-Btw: The people who can't reproduce your problem probably have a4paper as default. In this case they would see your problem if they used e.g. the option `letterpaper`.
-
-### Change TeX Live Default Setting
-
-```
-tlmgr paper letter
-tlmgr paper a4
-```
-
----
-
-## Set Noindent for Entire File
-
-Global: use `\setlength{\parindent}{0pt}` in **preamble**.
-Local : use `\noindent` in the front of that paragraph
+**Note**: use `\ell` instead of `l` in math mode
 
 ---
 
@@ -187,6 +150,45 @@ Your text
 [List of mathematical symbols by subject](https://en.wikipedia.org/wiki/List_of_mathematical_symbols_by_subject) - Wikipedia
 
 [LaTeX `twoside` document binding offset](https://tex.stackexchange.com/questions/27776/how-to-force-latex-to-put-even-pages-on-the-right-hand-side-in-documentclass-art/27786#27786)
+
+---
+
+## 中文支持
+
+`\usepackage{ctex}`
+
+TeX Live 完整安装，使用 XeLaTeX 编译
+
+（英文版 Windows 需要自己手动安装中文字体，`Settings`>`Time & Language`>`Region & Language`>`中文`>`Options`>`Basic typing`）
+
+---
+
+## A4paper vs. Letterpaper
+
+Quite a lot of old classes (e.g. `article`) don't set the pdf sizes. An option like `a4paper` sets only things like the TeX `\paperwidth`, the linewidth and similar lengths.
+
+You will have to insert the necessary command yourself. For pdflatex this is
+
+```latex
+\pdfpagewidth = \paperwidth
+\pdfpageheight = \paperheight
+```
+
+BTW: The people who can't reproduce your problem probably have a4paper as default. In this case they would see your problem if they used e.g. the option `letterpaper`.
+
+### Change TeX Live Default Setting
+
+```
+tlmgr paper letter
+tlmgr paper a4
+```
+
+---
+
+## Set `noindent` for the Entire File
+
+Global: use `\setlength{\parindent}{0pt}` in **preamble**.
+Local : use `\noindent` in the front of that paragraph
 
 ---
 

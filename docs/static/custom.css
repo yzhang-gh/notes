@@ -1,7 +1,7 @@
 /* Override */
 
 body {
-    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Microsoft Yahei', Arial, sans-serif, 'Segoe UI Emoji';
+    font-family: Lato, "Helvetica Neue", "Microsoft Yahei", sans-serif, "Segoe UI Emoji";
 }
 
 .sidebar ul li {
@@ -22,6 +22,12 @@ body {
     font-size: 1.5rem;
 }
 
+.markdown-section code,
+.markdown-section pre,
+.markdown-section pre > code {
+    font-family: Consolas, monospace, "Microsoft Yahei";
+}
+
 /* --- */
 
 img {
@@ -35,11 +41,11 @@ figure {
 figcaption {
     text-align: center;
     color: gray;
-    margin-top: .6em;
+    margin-top: 0.6em;
 }
 
-p+ul {
-    margin-top: -.2em;
+p + ul {
+    margin-top: -0.2em;
 }
 
 .markdown-section strong {

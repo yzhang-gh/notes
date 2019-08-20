@@ -22,6 +22,7 @@ body {
     font-size: 1.5rem;
 }
 
+code,
 .markdown-section code,
 .markdown-section pre,
 .markdown-section pre > code {

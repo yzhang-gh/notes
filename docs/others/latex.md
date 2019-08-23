@@ -101,10 +101,11 @@ tlmgr update [option...] [pkg...]
 %% ***** Change the default font to sans-serif *****
 %% <https://en.wikibooks.org/wiki/LaTeX/Fonts#Font_families>
 \renewcommand{\familydefault}{\sfdefault}
-%% Prevent a warning caused by sf font
+%% Prevent warnings caused by sf font
 %% <https://tex.stackexchange.com/questions/155604/itemize-under-sf-produce-a-font-warning>
 \let\oldtextbullet\textbullet%
 \renewcommand{\textbullet}{\rmfamily\oldtextbullet}
+\usepackage{lmodern}
 
 %% ***** Others *****
 % \newcommand{\todo}[1]{\textcolor{blue}{[To-do: #1]}}
@@ -139,8 +140,27 @@ Your text
 ```latex
 \definecolor{math}{HTML}{0c7f99}
 \everymath{\color{math}}
-% \everydisplay{\color{math}}
-\let\displaystyle\textstyle% % Compatible with `align' environment
+%% Clear unwanted coloring
+\usepackage{etoolbox}
+\AtBeginEnvironment{table}{\everymath{}}
+```
+
+---
+
+## Table Snippet
+
+```latex
+\begin{table}
+    \centering
+    \begin{tabular}{llll}
+        \toprule
+          & A & B & C \\
+        \midrule
+        D & E & F & G \\
+        \bottomrule
+    \end{tabular}
+    \caption{Caption}\label{tab:example}
+\end{table}
 ```
 
 ---

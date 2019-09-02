@@ -67,6 +67,10 @@ tlmgr update [option...] [pkg...]
 \usepackage{setspace}
 \onehalfspacing%
 
+%% Compact list (avoid too loose list under 1.5 linespace)
+\usepackage{enumitem}
+\setlist{noitemsep}
+
 %% For `\includegraphics'
 \usepackage{graphicx}
 
@@ -78,7 +82,8 @@ tlmgr update [option...] [pkg...]
 \usepackage{amsmath}
 %% For `\mathbb'
 \usepackage{amssymb}
-%% For `\coloneqq'
+%% For `\coloneqq', `\underbrace'
+%% If enabled, no longer need to load `amsmath' manually
 % \usepackage{mathtools}
 
 % \DeclareMathOperator*{\argmin}{arg\,min}
@@ -133,21 +138,35 @@ Your text
 
 ---
 
-## Change Math Color
+## Useful Snippets
+
+### Change Math Color
 
 <https://tex.stackexchange.com/questions/347268/change-math-color-globallyx>
 
 ```latex
 \definecolor{math}{HTML}{0c7f99}
 \everymath{\color{math}}
+\everydisplay{\color{math}}
 %% Clear unwanted coloring
 \usepackage{etoolbox}
 \AtBeginEnvironment{table}{\everymath{}}
 ```
 
----
+### Proper Brackets
 
-## Table Snippet
+```latex
+%% Remove the unexpected spacing introduced by `\left` and `\right`
+\let\oldleft\left
+\let\oldright\right
+\renewcommand{\left}{\mathopen{}\mathclose\bgroup\oldleft}
+\renewcommand{\right}{\aftergroup\egroup\oldright}
+\newcommand{\rbracket}[1]{\left(#1\right)}
+\newcommand{\sbracket}[1]{\left[#1\right]}
+\newcommand{\cbracket}[1]{\left\{#1\right\}}
+```
+
+### Sample Table
 
 ```latex
 \begin{table}

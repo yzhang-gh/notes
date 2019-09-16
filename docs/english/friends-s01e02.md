@@ -78,7 +78,9 @@ accent**put sth in(to) perspective**
 - to compare something to other things so that it can be accurately and fairly judged（不是很理解）
   *Total investments for this year reached $53 million, and, to put this into perspective, investments this year were double those made in 2013.*
   *You can put your worries into perspective when you realise how many people in the world are so much worse off than you.* ([Wiktionary](https://en.wiktionary.org/wiki/put_something_into_perspective))
-  ***Let's try to put these numbers into perspective*** ([Kurzgesagt - What If We Detonated All Nuclear Bombs at Once?](https://youtu.be/JyECrGp-Sw8?t=41))
+  ***Let's try to put these numbers into perspective*** ([What If We Detonated All Nuclear Bombs at Once? - Kurzgesagt](https://youtu.be/JyECrGp-Sw8?t=41))
+  *The proposed classification of approaches to open black box models should also be useful for putting the many research open questions in perspective.* (A Survey of Methods for Explaining Black Box Models - Guidotti et al.)
+  [LinusTechTips - 新 Mac Pro...老莱怎么看](https://www.bilibili.com/video/av55391946) 12:12
 
 ---
 

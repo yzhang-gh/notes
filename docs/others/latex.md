@@ -51,7 +51,7 @@ tlmgr update [option...] [pkg...]
 ## Personal Template
 
 <details>
-<summary>TeX Code</summary>
+<summary>LaTeX code</summary>
 
 ```latex
 \documentclass{article}

@@ -142,8 +142,6 @@ Your text
 
 ### Change Math Color
 
-<https://tex.stackexchange.com/questions/347268/change-math-color-globallyx>
-
 ```latex
 \definecolor{math}{HTML}{0c7f99}
 \everymath{\color{math}}
@@ -152,6 +150,8 @@ Your text
 \usepackage{etoolbox}
 \AtBeginEnvironment{table}{\everymath{}}
 ```
+
+<https://tex.stackexchange.com/questions/347268/change-math-color-globallyx>
 
 ### Proper Brackets
 
@@ -181,6 +181,12 @@ Your text
     \caption{Caption}\label{tab:example}
 \end{table}
 ```
+
+### 为表头指定不同的对齐方式
+
+> I suggest using `\multicolumn{1}{c}{header text}`. `\multicolumn` allows changing the formatting of single cells.
+
+<https://tex.stackexchange.com/a/2927>
 
 ---
 

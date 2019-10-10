@@ -5,6 +5,7 @@
 ```python
 import matplotlib
 print(matplotlib.matplotlib_fname())
+## e.g. C:\Users\<username>\Miniconda3\lib\site-packages\matplotlib\mpl-data\matplotlibrc
 ```
 
 可以用来设置默认字体

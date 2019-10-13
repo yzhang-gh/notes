@@ -1,3 +1,4 @@
 {
-    "editor.snippetSuggestions": "top"
+    "editor.snippetSuggestions": "top",
+    "markdown.extension.completion.root": "docs"
 }

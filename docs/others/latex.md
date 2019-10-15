@@ -78,7 +78,7 @@ tlmgr update [option...] [pkg...]
 \usepackage{multirow}
 \usepackage{xcolor}
 
-%% ***** Math *****
+%% ━━━━━ Math ━━━━━
 \usepackage{amsmath}
 %% For `\mathbb'
 \usepackage{amssymb}
@@ -88,7 +88,7 @@ tlmgr update [option...] [pkg...]
 
 % \DeclareMathOperator*{\argmin}{arg\,min}
 
-%% ***** URL *****
+%% ━━━━━ URL ━━━━━
 \colorlet{urlcolor}{red}
 
 %% Setup the hyperref package for enabling links, bookmarks, and PDF properties.
@@ -103,7 +103,7 @@ tlmgr update [option...] [pkg...]
 %% Must come as late as possible, especially after hyperref.
 \usepackage[capitalise]{cleveref}
 
-%% ***** Change the default font to sans-serif *****
+%% ━━━━━ Change the default font to sans-serif ━━━━━
 %% <https://en.wikibooks.org/wiki/LaTeX/Fonts#Font_families>
 \renewcommand{\familydefault}{\sfdefault}
 %% Prevent warnings caused by sf font
@@ -112,7 +112,7 @@ tlmgr update [option...] [pkg...]
 \renewcommand{\textbullet}{\rmfamily\oldtextbullet}
 \usepackage{lmodern}
 
-%% ***** Others *****
+%% ━━━━━ Others ━━━━━
 % \newcommand{\todo}[1]{\textcolor{blue}{[To-do: #1]}}
 
 \begin{document}

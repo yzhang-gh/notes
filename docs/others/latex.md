@@ -182,11 +182,15 @@ Your text
 \end{table}
 ```
 
-### 为表头指定不同的对齐方式
+### 为表头单独指定对齐方式
 
 > I suggest using `\multicolumn{1}{c}{header text}`. `\multicolumn` allows changing the formatting of single cells.
 
 <https://tex.stackexchange.com/a/2927>
+
+```latex
+\newcommand{\tablehead}[1]{\multicolumn{1}{c}{\bfseries#1}}
+```
 
 ---
 

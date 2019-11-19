@@ -65,6 +65,10 @@ details summary {
     cursor: pointer;
 }
 
+summary:focus {
+    outline: none;
+}
+
 .docsify-copy-code-button {
     font-family: Consolas, monospace, "Microsoft Yahei";
     padding: .4em .8em .48em!important;

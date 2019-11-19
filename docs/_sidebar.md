@@ -15,3 +15,4 @@
 - Others
   - [遗传学 (Genetics Basics)](others/genetics.md)
   - [LaTeX](others/latex.md)
+  - [常用特殊字符](others/characters.md)

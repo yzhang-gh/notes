@@ -7,6 +7,7 @@ from tkinter import Tk, messagebox
 
 ## Get rid of the root window
 root = Tk()
+root.title("Title")
 root.iconify()
 
 messagebox.showinfo("Title", "Message")

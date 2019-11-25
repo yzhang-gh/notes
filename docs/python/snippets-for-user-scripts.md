@@ -8,7 +8,8 @@ from tkinter import Tk, messagebox
 ## Get rid of the root window
 root = Tk()
 root.title("Title")
-root.iconify()
+root.attributes("-alpha", 0.0)
+root.wm_state("iconic")
 
 messagebox.showinfo("Title", "Message")
 

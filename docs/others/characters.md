@@ -24,6 +24,7 @@
             <td>✓</td>
             <td>✗</td>
             <td title="middle dot">·</td>
+            <td title="bullet">•</td>
             <td title="en dash">–</td>
             <td title="em dash">—</td>
         </tr>

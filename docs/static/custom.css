@@ -73,3 +73,48 @@ summary:focus {
     font-family: Consolas, monospace, "Microsoft Yahei";
     padding: .4em .8em .48em!important;
 }
+
+/*
+ * flasky.css_t
+ * ~~~~~~~~~~~~
+ *
+ * :copyright: Copyright 2010 by Armin Ronacher.
+ * :license: Flask Design License, see LICENSE for details.
+ */
+
+/* scrollbars */
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    display: block;
+    height: 10px;
+}
+
+::-webkit-scrollbar-button:vertical:increment {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #eee;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    width: 50px;
+    background-color: #ccc;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}

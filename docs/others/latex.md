@@ -182,7 +182,7 @@ Your text
 \end{table}
 ```
 
-### 为表头单独指定对齐方式
+### 表格：为单元格单独指定对齐方式 / 样式
 
 > I suggest using `\multicolumn{1}{c}{header text}`. `\multicolumn` allows changing the formatting of single cells.
 

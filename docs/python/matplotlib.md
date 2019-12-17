@@ -15,6 +15,7 @@ print(matplotlib.matplotlib_fname())
 ```python
 plt.rc("text", usetex=True)
 plt.rc("font", family="serif")
+plt.rc("font", **{"sans-serif": "Consolas"})
 ```
 
 ---

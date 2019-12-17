@@ -42,10 +42,10 @@
             <td>┐</td>
         </tr>
         <tr>
-            <td>|</td>
+            <td>│</td>
             <td></td>
-            <td>|</td>
-            <td>|</td>
+            <td>│</td>
+            <td>│</td>
         </tr>
         <tr>
             <td>├</td>
@@ -64,3 +64,9 @@
         </tr>
     </tbody>
 </table>
+
+For quick copy
+
+<pre style="line-height: 1rem"><code>┌─────┐
+│     │
+└─────┘</code><button class="docsify-copy-code-button"><span class="label">Copy</span><span class="error">Error</span><span class="success">Copied</span></button></pre>

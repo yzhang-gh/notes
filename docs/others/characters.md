@@ -23,6 +23,7 @@
             <td>😂</td>
             <td>✓</td>
             <td>✗</td>
+            <td title="U+1f816">🠖</td>
             <td title="middle dot">·</td>
             <td title="bullet">•</td>
             <td title="en dash">–</td>

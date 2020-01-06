@@ -23,7 +23,8 @@
             <td>😂</td>
             <td>✓</td>
             <td>✗</td>
-            <td title="U+1f816">🠖</td>
+            <td title="U+2192, Rightwards arrow">→</td>
+            <td title="U+1f816, Rightwards arrow with equilateral arrowhead">🠖</td>
             <td title="middle dot">·</td>
             <td title="bullet">•</td>
             <td title="en dash">–</td>

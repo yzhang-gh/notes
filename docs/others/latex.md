@@ -24,6 +24,12 @@ logreq
 dvipng
 
 IEEEtran
+
+# 中文
+ctex
+cjk
+cjkpunct
+xecjk
 ```
 
 ---
@@ -209,6 +215,10 @@ Your text
 TeX Live 完整安装，使用 XeLaTeX 编译
 
 （英文版 Windows 需要自己手动安装中文字体，`Settings`>`Time & Language`>`Region & Language`>`中文`>`Options`>`Basic typing`）
+
+查看字体 `fc-list>>fonts.txt`
+
+设置字体 `\setCJKmainfont{Source Han Sans CN}`
 
 ---
 

@@ -1,18 +1,16 @@
-- Math
-- Classic Machine Learning
+- **Math**
+- **Classic Machine Learning**
   - 计算学习理论 (Learning Theory)
   - 规则学习 (Rule Learning)
-- Deep Learning
-- Python
+- **Deep Learning**
+- **Python**
   - [Matplotlib](python/matplotlib.md)
-- English
+- **English**
   - [Learned in UK](english/learned-in-uk.md)
-  - [*Friends* S01 E01](english/friends-s01e01.md)
-  - [*Friends* S01 E02](english/friends-s01e02.md)
-  - [*Friends* S01 E03](english/friends-s01e03.md)
-- Windows
+  - [*Friends*](english/friends/s01e01.md)
+- **Windows**
   - [自定义右键菜单 Custom Context Menu](windows/context-menu.md)
-- Others
+- **Others**
   - [遗传学 (Genetics Basics)](others/genetics.md)
   - [LaTeX](others/latex.md)
   - [常用特殊字符](others/characters.md)

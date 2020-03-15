@@ -5,6 +5,7 @@
 - **Deep Learning**
 - **Python**
   - [Matplotlib](python/matplotlib.md)
+  - [Miniconda](python/miniconda.md)
 - **English**
   - [Learned in UK](english/learned-in-uk.md)
   - [*Friends*](english/friends/s01e01.md)

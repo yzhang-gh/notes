@@ -12,7 +12,8 @@
 - **Windows**
   - [自定义右键菜单 Custom Context Menu](windows/context-menu.md)
 - **Others**
-  - [遗传学 (Genetics Basics)](others/genetics.md)
   - [LaTeX](others/latex.md)
+  - [Shell](others/shell.md)
+  - [遗传学 (Genetics Basics)](others/genetics.md)
   - [常用特殊字符](others/characters.md)
   - [《手术两百年》](others/200-years-of-surgery.md)

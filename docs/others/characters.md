@@ -27,8 +27,8 @@
             <td title="U+1f816, Rightwards arrow with equilateral arrowhead">🠖</td>
             <td title="middle dot">·</td>
             <td title="bullet">•</td>
-            <td title="en dash">–</td>
-            <td title="em dash">—</td>
+            <td title="en dash (can be used to show ranges of numbers)">–</td>
+            <td title="em dash (is most often used to indicate a pause in a sentence)">—</td>
         </tr>
     </tbody>
 </table>

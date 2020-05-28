@@ -15,3 +15,11 @@
 ```
 scipy numpy pandas matplotlib notebook
 ```
+
+## Managing environments
+
+```
+conda create --name <env_name> [--clone base]
+conda info --envs # conda env list
+conda activate <env_name>
+```

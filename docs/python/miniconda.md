@@ -19,7 +19,10 @@ scipy numpy pandas matplotlib notebook
 ## Managing environments
 
 ```
-conda create --name <env_name> [--clone base]
-conda info --envs # conda env list
+conda create -n <env_name> [--clone <another_env>] # `-n` is shortcut for `--name`
+conda env list
 conda activate <env_name>
+conda env remove -n <env_name>
 ```
+
+<https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html>

@@ -42,10 +42,13 @@ plt.gca().set_aspect("equal", adjustable="box")
 ## 使用 Colormap
 
 ```python
+from matplotlib.cm import ScalarMappable
+from matplotlib.colors import Normalize
+
 ## The default colormap assumes range [0, 1]. `ScalarMappable` allows custom range.
 min_value = -1
 max_value = 1
-mappable = matplotlib.cm.ScalarMappable(matplotlib.colors.Normalize(min_value, max_value), "bwr")
+mappable = ScalarMappable(Normalize(min_value, max_value), "bwr")
 mappable.set_array(np.array([min_value, max_value]))  ## Don't know why but `set_array` is needed
 
 certain_patch.set_color(mappable.to_rgba(value))

@@ -17,3 +17,5 @@
   - [遗传学 (Genetics Basics)](others/genetics.md)
   - [常用特殊字符](others/characters.md)
   - [《手术两百年》](others/200-years-of-surgery.md)
+- **Japanese**
+  - [初级](japanese/beginner.md)

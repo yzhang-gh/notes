@@ -64,3 +64,15 @@ plt.colorbar(mappable)
 plt.savefig("filename.pdf", bbox_inches="tight")
 plt.savefig("filename.png", bbox_inches="tight", dpi=200)
 ```
+
+---
+
+## 使 colorbar 刻度为整数
+
+```python
+from matplotlib.ticker import MaxNLocator
+
+bar = fig.colorbar()
+bar.locator = MaxNLocator(integer=True)
+bar.update_ticks()
+```

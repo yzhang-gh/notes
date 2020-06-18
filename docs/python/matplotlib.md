@@ -75,4 +75,7 @@ from matplotlib.ticker import MaxNLocator
 bar = fig.colorbar()
 bar.locator = MaxNLocator(integer=True)
 bar.update_ticks()
+
+## 如果是坐标轴的话
+# plt.gca().yaxis.set_major_locator(MaxNLocator(integer=True))
 ```

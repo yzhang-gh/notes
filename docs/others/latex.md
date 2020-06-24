@@ -60,7 +60,7 @@ tlmgr update [option...] [pkg...]
 <summary>LaTeX code</summary>
 
 ```latex
-\documentclass{article}
+\documentclass[11pt]{article}
 
 %% Improve typesetting.
 \usepackage{microtype}

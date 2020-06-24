@@ -98,7 +98,6 @@ tlmgr update [option...] [pkg...]
 \colorlet{urlcolor}{red}
 
 %% Setup the hyperref package for enabling links, bookmarks, and PDF properties.
-\usepackage[hyphens]{url} %% Embedding URL's in document.
 \usepackage[backref=page]{hyperref}
 \hypersetup{
     colorlinks = true,
@@ -205,6 +204,21 @@ Your text
 [List of mathematical symbols by subject](https://en.wikipedia.org/wiki/List_of_mathematical_symbols_by_subject) - Wikipedia
 
 [LaTeX `twoside` document binding offset](https://tex.stackexchange.com/questions/27776/how-to-force-latex-to-put-even-pages-on-the-right-hand-side-in-documentclass-art/27786#27786)
+
+---
+
+## BibLaTeX
+
+```latex
+%% 最好放在 hyperref 之前
+\usepackage{biblatex}
+\addbibresource{ref.bib}
+
+\begin{document}
+...
+\printbibliography
+\end{document}
+```
 
 ---
 

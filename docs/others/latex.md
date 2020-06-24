@@ -124,7 +124,7 @@ tlmgr update [option...] [pkg...]
 \begin{document}
 
 \begin{center}
-	\Large\textbf{Title}\\[5pt]
+	\LARGE\textbf{Title}\\[5pt]
 	\normalsize Author\\\today
 \end{center}
 

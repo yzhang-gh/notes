@@ -18,4 +18,5 @@
   - [常用特殊字符](others/characters.md)
   - [《手术两百年》](others/200-years-of-surgery.md)
 - **Japanese**
-  - [初级](japanese/beginner.md)
+  - [初级 1](japanese/beginner-unit-1-3.md)
+  - [初级 2](japanese/beginner-unit-4-6.md)

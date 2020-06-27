@@ -1,4 +1,4 @@
-# 标准日本语 初级
+# 标准日本语 初级 1－3 单元总结
 
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 <style>
@@ -6,8 +6,6 @@
         font-family: 'Noto Sans JP', sans-serif;
     }
 </style>
-
-> 第 1－4 单元总结
 
 ## 五十音
 
@@ -40,10 +38,10 @@
 
 <!--  -->
 
-- 做谓语　　（<span class="jp">楽しいです</span>）
-- 过去式　　（<span class="jp">楽しかったです</span>）
-- 否定式　　（<span class="jp">楽しくないです／楽しくありません</span>）
-- 过去否定式（<span class="jp">楽しくなかったです／楽しくありませんでした</span>）
+- 做谓语　　（<span class="jp">楽しい<b>です</b></span>）
+- 过去式　　（<span class="jp">楽し<b>かったです</b></span>）
+- 否定式　　（<span class="jp">楽し<b>くないです</b>／楽し<b>くありません</b></span>）
+- 过去否定式（<span class="jp">楽し<b>くなかったです</b>／楽し<b>くありませんでした</b></span>）
 
 ### 形容动词
 
@@ -56,10 +54,10 @@
 
 <!--  -->
 
-- 做谓语　　　　（<span class="jp">元気です</span>）
-- 过去式　　　　（<span class="jp">元気でした</span>）
-- 否定式　　　　（<span class="jp">元気ではないです／元気ではありません</span>）
-- 过去否定式　　（<span class="jp">元気ではなかったです／元気ではありませんでした</span>）
+- 做谓语　　　　（<span class="jp">元気<b>です</b></span>）
+- 过去式　　　　（<span class="jp">元気<b>でした</b></span>）
+- 否定式　　　　（<span class="jp">元気<b>ではないです</b>／元気<b>ではありません</b></span>）
+- 过去否定式　　（<span class="jp">元気<b>ではなかったです</b>／元気<b>ではありませんでした</b></span>）
 
 ## 副词
 
@@ -74,14 +72,14 @@
 
 - <span class="jp">わたし<b>は</b>料理<b class="green">が</b>上手です／できます／わかります。</span>
 
-- <span class="jp">李さん<b>は</b>今教室<b class="green">に</b>います。本<b>は</b>本棚<b class="green">に</b>あります。</span>（～在～）
-  <span class="jp">本棚<b class="green">に</b>本<b>が</b>あります。</span>（～有～）
+- <span class="jp">李さん<b>は</b>今教室<b class="green">に</b>います。本<b>は</b>本棚<b class="green">に</b>あります。</span>（表示存在的场所，～在～）
+  <span class="jp">本棚<b class="green">に</b>本<b>が</b>あります。</span>　　　　（表示存在的场所，～有～）
   <span class="jp">王さん<b class="green">に</b>電話します。</span>
-  <span class="jp">家<b class="green">に</b>帰ります。家<b>へ</b>帰ります。</span>
-  <span class="jp">携帯電話<b>を</b>取りに行きます。　取る　とりに行きます</span> TODO
+  <span class="jp">家<b class="green">に</b>帰ります。家<b>へ</b>帰ります。（表示移动行为的目的地）</span>
+  <span class="jp">携帯電話<b>を</b>取り<b class="green">に</b>行きます。　（表示移动行为的目的）</span>
   <span class="jp">課長<b class="green">に</b>（から）スケジュール表<b>を</b>もらいました。</span>
-  <span class="jp">いつも７時<b class="green">に</b>起きます。</span>
-  <span class="jp">友達<b class="green">に</b>会います。</span>
+  <span class="jp">いつも７時<b class="green">に</b>起きます。　　　（表示时间）</span>
+  <span class="jp">友達<b class="green">に</b>会います。　　　　　　（表示动作的对象）</span>
 
 - <span class="jp">公園<b class="green">で</b>歌<b>を</b>歌います。美術館<b class="green">で</b>写真展<b>が</b>あります。</span>（在某处发生某事用<b class="green">で</b>）
   <span class="jp">車<b class="green">で</b>会社<b>へ</b>行きます。バス<b class="green">で</b>行きます。</span>
@@ -109,8 +107,8 @@
 
 ## 文型
 
-- <span class="jp">～は～です</span>（第二个～可以是名词 / 形容词 / 形容动词）
+- <span class="jp">～は～です</span>　　（第二个～可以是名词 / 形容词 / 形容动词）
 - <span class="jp">～に～があります／います</span>（存在）
   <span class="jp">～は～にあります／います</span>
-- <span class="jp">～から～まで</span>（从～到～，可以是时间或者地点）
-  <span class="jp">～より</span>（与～相比）
+- <span class="jp">～から～まで</span>　（从～到～，可以是时间或者地点）
+  <span class="jp">～より</span>　　　　（与～相比）

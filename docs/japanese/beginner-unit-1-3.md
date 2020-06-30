@@ -1,11 +1,6 @@
 # 标准日本语 初级 1－3 单元总结
 
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-<style>
-    .jp {
-        font-family: 'Noto Sans JP', sans-serif;
-    }
-</style>
+<link href="/notes/static/jp.css" rel="stylesheet">
 
 ## 五十音
 

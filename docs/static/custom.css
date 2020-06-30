@@ -80,27 +80,29 @@ summary:focus {
 
 /* Heading styles */
 
-h2::before,
-h3::before,
-h4::before {
-    font-size: 0.8em;
-    color: #b7c1cc;
-    position: absolute;
-    left: 0;
-    text-align: right;
-}
+@media (min-width: 1200px) {
+    h2::before,
+    h3::before,
+    h4::before {
+        font-size: 0.8em;
+        color: #b7c1cc;
+        position: absolute;
+        left: 0;
+        text-align: right;
+    }
 
-h2::before {
-    content: "#";
-    transform: translateX(calc(-100% + 0.5rem)) translateY(5px);
-}
-h3::before {
-    content: "##";
-    transform: translateX(calc(-100% + 0.5rem)) translateY(4px);
-}
-h4::before {
-    content: "###";
-    transform: translateX(calc(-100% + 0.5rem)) translateY(3px);
+    h2::before {
+        content: "#";
+        transform: translateX(calc(-100% + 0.5rem)) translateY(5px);
+    }
+    h3::before {
+        content: "##";
+        transform: translateX(calc(-100% + 0.5rem)) translateY(4px);
+    }
+    h4::before {
+        content: "###";
+        transform: translateX(calc(-100% + 0.5rem)) translateY(3px);
+    }
 }
 
 /*

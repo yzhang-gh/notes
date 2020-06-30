@@ -18,6 +18,12 @@ plt.rc("font", family="serif")
 plt.rc("font", **{"sans-serif": "Consolas"})
 ```
 
+一些默认值
+
+```
+figure.figsize: 6.4, 4.8  ## figure size in inches
+```
+
 ---
 
 ## Default Color Cycle

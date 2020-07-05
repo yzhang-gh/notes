@@ -4,14 +4,38 @@
 
 ## 助词
 
-- <span class="jp">李さんは電車<b class="green">に</b>乗りました。</span>↴
-  <span class="jp">李さんはかばん<b class="green">に</b>書類<b>を</b>入れました。</span>（表示人或物体的附着点，不能用<b class="jp">を</b>）
+- <span class="jp">小野さんはプール<b>へ 泳ぎ</b> <b class="green">に</b> <b>行きます</b>。</span>（表示移动行为的目的，动词要去掉<span class="jp">ます</span>）
+  <span class="jp">李さんは私の家<b>へ 遊び</b> <b class="green">に</b> <b>来ました</b>。</span>
+- <span class="jp">李さんは電車<b class="green">に</b>乗りました。</span>　　（表示人或物体的附着点，不能用<b class="jp">を</b>）
+  <span class="jp">李さんはかばん<b class="green">に</b>書類<b>を</b>入れました。</span>
+
+<!--  -->
+
+- <span class="jp">駅前<b class="green">を</b>通ります。橋<b class="green">を</b>渡ります。</span>（经过 / 离开某场所）
+  <span class="jp">家<b class="green">を</b>出ます。大学<b class="green">を</b>卒業します。</span>
 
 ## 动词
+
+### 动词<span class="jp">で</span>形
+
+ーーー
 
 - <span class="jp">小野さんは今新聞を<b>読んでいます</b>。</span>（正在进行时，动词<span class="jp">で</span>形 + <span class="jp">います</span>）
 
 ## 文型
 
-- <span class="jp">家で仕事をし<b>てもいいです</b>。</span>（表示许可，动词<span class="jp">で</span>形 + <span class="jp">も</span> + <span class="jp">いいです</span>）
+- <span class="jp">卵を<b>１個</b>食べます。</span>　　　　　　（数量词用在动词前面）
+  <span class="jp">本を<b>２冊</b>買いました。</span>
+- <span class="jp">李さんは毎日<b>７時間</b>働きます。</span>　（时间数量 + 动词，小李每天工作 7 小时）
+- <span class="jp">李さんは<b>１週間に２回</b>プールへ行きます。</span>（一周两次，常省略为<span class="jp">週に／日に／月に／年に～回</span>）
+
+<!--  -->
+
+- <span class="jp">家へ<b>帰って</b>、宿題をします。</span>　　（动作相继发生，动词<span class="jp">で</span>形 + 动词）
+  <span class="jp">家へ<b>帰ってから</b>、もう一度日本語の勉強をします。</span>（差别为<span class="jp">てから</span>不能在一个句子中多次使用）
+- <span class="jp">この荷物を航空便で<b>送ってください</b>。</span>（动词<span class="jp">で</span>形 + <span class="jp">ください</span>，命令或要求某人做某事，虽然翻译为「请」，但是并不表示敬意）
+
+<!--  -->
+
+- <span class="jp">家で仕事をし<b>てもいいです</b>。</span>　　（表示许可，动词<span class="jp">で</span>形 + <span class="jp">も</span> + <span class="jp">いいです</span>）
 - <span class="jp">教室で物を食べ<b>ではいけません</b>。</span>（表示禁止，动词<span class="jp">で</span>形 + <span class="jp">は</span> + <span class="jp">いけません</span>）

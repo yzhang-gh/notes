@@ -33,7 +33,12 @@ code,
 
 img {
     border: 1px solid lightgrey;
-    max-width: 900px;
+}
+
+@media (min-width: 1000px) {
+    img {
+        max-width: 80%;
+    }
 }
 
 figure {
@@ -81,7 +86,7 @@ summary:focus {
 
 /* Heading styles */
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
     h2::before,
     h3::before,
     h4::before {

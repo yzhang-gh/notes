@@ -70,11 +70,11 @@
 - <span class="jp">李さん<b>は</b>今教室<b class="green">に</b>います。本<b>は</b>本棚<b class="green">に</b>あります。</span>（表示存在的场所，～在～）
   <span class="jp">本棚<b class="green">に</b>本<b>が</b>あります。</span>　　　　（表示存在的场所，～有～）
   <span class="jp">王さん<b class="green">に</b>電話します。</span>
-  <span class="jp">家<b class="green">に</b>帰ります。家<b>へ</b>帰ります。（表示移动行为的目的地）</span>
-  <span class="jp">携帯電話<b>を</b>取り<b class="green">に</b>行きます。　（表示移动行为的目的）</span>
+  <span class="jp">家<b class="green">に</b>帰ります。家<b>へ</b>帰ります。</span>（表示移动行为的目的地）
+  <span class="jp">携帯電話<b>を</b>取り<b class="green">に</b>行きます。</span>　（表示移动行为的目的）
   <span class="jp">課長<b class="green">に</b>（から）スケジュール表<b>を</b>もらいました。</span>
-  <span class="jp">いつも７時<b class="green">に</b>起きます。　　　（表示时间）</span>
-  <span class="jp">友達<b class="green">に</b>会います。　　　　　　（表示动作的对象）</span>
+  <span class="jp">いつも７時<b class="green">に</b>起きます。</span>　　　（表示时间）
+  <span class="jp">友達<b class="green">に</b>会います。</span>　　　　　　（表示动作的对象）
 
 - <span class="jp">公園<b class="green">で</b>歌<b>を</b>歌います。美術館<b class="green">で</b>写真展<b>が</b>あります。</span>（在某处发生某事用<b class="green">で</b>）
   <span class="jp">車<b class="green">で</b>会社<b>へ</b>行きます。バス<b class="green">で</b>行きます。</span>

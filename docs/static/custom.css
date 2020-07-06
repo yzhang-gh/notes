@@ -33,6 +33,7 @@ code,
 
 img {
     border: 1px solid lightgrey;
+    max-width: 900px;
 }
 
 figure {

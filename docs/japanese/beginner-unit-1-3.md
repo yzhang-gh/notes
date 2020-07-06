@@ -102,8 +102,8 @@
 
 ## 文型
 
-- <span class="jp">～は～です</span>　　（第二个～可以是名词 / 形容词 / 形容动词）
-- <span class="jp">～に～があります／います</span>（存在）
-  <span class="jp">～は～にあります／います</span>
-- <span class="jp">～から～まで</span>　（从～到～，可以是时间或者地点）
-  <span class="jp">～より</span>　　　　（与～相比）
+- <span class="jp">～は～<b>です</b></span>　　（第二个～可以是名词 / 形容词 / 形容动词）
+- <span class="jp">～に～が<b>あります</b>／<b>います</b></span>（存在）
+  <span class="jp">～は～に<b>あります</b>／<b>います</b></span>
+- <span class="jp">～<b>から</b>～<b>まで</b></span>　（从～到～，可以是时间或者地点）
+  <span class="jp">～<b>より</b></span>　　　　（与～相比）

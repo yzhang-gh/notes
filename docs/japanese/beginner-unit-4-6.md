@@ -38,7 +38,8 @@
 
 一类动词，去掉<span class="jp">ます</span>之后最后一个音位于<b class="jp">い</b>段的绝大部分动词
 二类动词，去掉<span class="jp">ます</span>之后最后一个音位于<b class="jp">え</b>段，以及位于<b class="jp">い</b>段的一小部分动词
-二类动词，<span class="jp">来ます</span>和<span class="jp">します</span>，以及使用<span class="jp">します</span>的动词
+三类动词，<span class="jp">来ます</span> 和 <span class="jp">します</span>，以及使用 <span class="jp">します</span> 的动词
+（比如前接汉字词或外来词，<span class="jp">仕事します</span>，<span class="jp">旅行します</span>，<span class="jp">コピーします</span>）
 
 ……
 

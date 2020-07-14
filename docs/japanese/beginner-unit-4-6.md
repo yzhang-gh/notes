@@ -13,6 +13,7 @@
   <span class="jp">李さんは私の家<b>へ 遊び</b> <b class="green">に</b> <b>来ました</b>。</span>
 - <span class="jp">李さんは電車<b class="green">に</b>乗りました。</span>　　（表示人或物体的附着点，不能用<b class="jp">を</b>）
   <span class="jp">李さんはかばん<b class="green">に</b>書類<b>を</b>入れました。</span>
+- <span class="jp">今年<b>中</b><b class="green">に</b>結婚したいです。</span>　　　（表示该期间结束之前）
 
 <!--  -->
 
@@ -22,7 +23,12 @@
 <!--  -->
 
 - <span class="jp">このレストランはおいしいです<b class="green">が</b>、ちょっと高いです。</span>（转折）
+- <span class="jp">私は新しい洋服<b class="green">が</b><b>欲しい</b>です。</span>　（愿望，想要）
 
+<!--  -->
+
+- <span class="jp">だれ<b class="green">でも</b>分かります。</span>（「都」，肯定形式）
+  <span class="jp">だれ<b class="green">も</b>分かりません。</span>（「都」，否定形式）
 
 ## 动词
 
@@ -34,7 +40,7 @@
 二类动词，去掉<span class="jp">ます</span>之后最后一个音位于<b class="jp">え</b>段，以及位于<b class="jp">い</b>段的一小部分动词
 二类动词，<span class="jp">来ます</span>和<span class="jp">します</span>，以及使用<span class="jp">します</span>的动词
 
-ーーー
+……
 
 - <span class="jp">小野さんは今新聞を<b>読んでいます</b>。</span>（正在进行时，动词<span class="jp">て</span>形 + <span class="jp">います</span>）
 - <span class="jp">私は北京に<b>住んでいます</b>。</span>（表示动作的结果状态，动词<span class="jp">て</span>形 + <span class="jp">います</span>）
@@ -66,3 +72,9 @@
 - <span class="jp">このリンゴは<b>大きくて</b>、<b>甘くて</b>、おいしいです。</span>（形容词 / 形容动词并列使用，用<span class="jp">て</span>形，形容词和形容动词可以连接使用）
   <span class="jp">森さんは<b>親切で</b>優しいです。</span>
   <span class="jp">スミスさんは<b>旅行会社の社員で</b>、営業部の部長です。</span>（名词并列使用，用<span class="jp">で</span>连接）
+
+<!--  -->
+
+- <span class="jp">（私は）映画を<b>見たいです</b>。</span>（想（做）～，动词（去掉<span class="jp">ます</span>）+ <span class="jp">たいです</span>）
+- <span class="jp">少し<b>休みませんか</b>。</span>　　（动词否定形式加上疑问句，表示提议）
+- <span class="jp">ちょっと<b>休みましょう</b>。</span>（<span class="jp">ます</span>→<span class="jp">ましょう</span>，表示提议，语气偏随意）

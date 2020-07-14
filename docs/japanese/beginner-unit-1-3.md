@@ -82,9 +82,9 @@
   <span class="jp">航空便<b class="green">で</b>プレゼント<b>を</b>送ります。</span>
   <span class="jp">日本の季節の中<b class="green">で</b>、どの季節<b>が</b>いちばん好きですか。一年<b class="green">で</b>７月<b>が</b>いちばん暑いです。</span>
 
-- <span class="jp">わたし<b class="green">も</b>行きます。</span>
-  <span class="jp">どこ<b>へ</b><b class="green">も</b>行きません。</span>
-  <span class="jp">どれ<b class="green">も</b>好きです。</span>
+- <span class="jp">わたし<b class="green">も</b>行きます。</span>　（相当于「也」）
+  <span class="jp">どこ<b>へ</b><b class="green">も</b>行きません。</span>（表示全面否定）
+  <span class="jp">どれ<b class="green">も</b>好きです。</span>　　（🤔<span class="jp">でも？</span>）
 
 - <span class="jp">静か<b class="green">な</b>町　にぎやか<b class="green">な</b>上海　有名<b class="green">な</b>人</span>
 

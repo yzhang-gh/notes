@@ -46,9 +46,13 @@
 - <span class="jp">小野さんは今新聞を<b>読んでいます</b>。</span>（正在进行时，动词<span class="jp">て</span>形 + <span class="jp">います</span>）
 - <span class="jp">私は北京に<b>住んでいます</b>。</span>（表示动作的结果状态，动词<span class="jp">て</span>形 + <span class="jp">います</span>）
   <span class="jp">車を<b>持っています</b>か。</span>
-  <span class="jp">——いいえ、<b>持っていません</b>。</span>（否定回答）
+  <span class="jp">⸺いいえ、<b>持っていません</b>。</span>（否定回答）
   <span class="jp">田中さんを知っていますか。</span>
-  <span class="jp">——いいえ、<b>知りません</b>。</span>　　（特例）
+  <span class="jp">⸺いいえ、<b>知りません</b>。</span>　　（特例）
+
+### 自动词 / 他动词
+
+……
 
 ## 文型
 
@@ -79,3 +83,15 @@
 - <span class="jp">（私は）映画を<b>見たいです</b>。</span>（想（做）～，动词（去掉<span class="jp">ます</span>）+ <span class="jp">たいです</span>）
 - <span class="jp">少し<b>休みませんか</b>。</span>　　（动词否定形式加上疑问句，表示提议）
 - <span class="jp">ちょっと<b>休みましょう</b>。</span>（<span class="jp">ます</span>→<span class="jp">ましょう</span>，表示提议，语气偏随意）
+
+<!--  -->
+
+- <span class="jp">だんだん暖か<b>くなります</b>。</span>　　（表示变化，形容词<span class="jp">い</span>变<span class="jp">く</span> + <span class="jp">なります</span>）
+  <span class="jp">テレビの音を大き<b>くします</b>。</span>　（因主语的意志而产生变化，+ <span class="jp">します</span>）
+- <span class="jp">もう元気<b>になりました</b>。</span>　　　（表示变化，形容动词 / 名词 + <span class="jp">に</span> + <span class="jp">なります</span>）
+  <span class="jp">来年社会人<b>になります</b>。</span>
+  <span class="jp">部屋をきれい<b>にしてください</b>。</span>（因主语的意志而产生变化，+ <span class="jp">に</span> + <span class="jp">します</span>）
+  <span class="jp">会議室を禁煙<b>にします</b>。</span>
+- <span class="jp">部屋は広い<b>ほうが</b>いいです。</span>　（某种性质更好，形容词 + <span class="jp">ほうが</span> + <span class="jp">いいです</span>）
+  <span class="jp">子供は元気な<b>ほうが</b>いいです。</span>（⸺，形容动词 + <span class="jp">な</span> + <span class="jp">ほうが</span> + <span class="jp">いいです</span>）
+

@@ -29,6 +29,7 @@
             <td title="bullet">•</td>
             <td title="en dash (can be used to show ranges of numbers)">–</td>
             <td title="em dash (is most often used to indicate a pause in a sentence)">—</td>
+            <td title="two-em dash">⸺</td>
         </tr>
     </tbody>
 </table>

@@ -2,6 +2,8 @@
 
 <link href="/notes/static/jp.css" rel="stylesheet">
 
+<!-- 19 finished -->
+
 ## 形容词 / 形容动词
 
 形容词<span class="jp">て</span>形，<b class="jp">い</b>变为<b class="jp">くて</b>
@@ -24,6 +26,8 @@
 
 - <span class="jp">このレストランはおいしいです<b class="green">が</b>、ちょっと高いです。</span>（转折）
 - <span class="jp">私は新しい洋服<b class="green">が</b><b>欲しい</b>です。</span>　（愿望，想要）
+- <span class="jp">あの方<b class="green">が</b>山田さんです。</span>（新信息做主语？）
+  <span class="jp">山田さん<b>は</b>あの方です。</span>
 
 <!--  -->
 
@@ -43,14 +47,16 @@
 
 ……
 
-- <span class="jp">小野さんは今新聞を<b>読んでいます</b>。</span>（正在进行时，动词<span class="jp">て</span>形 + <span class="jp">います</span>）
-- <span class="jp">私は北京に<b>住んでいます</b>。</span>（表示动作的结果状态，动词<span class="jp">て</span>形 + <span class="jp">います</span>）
+- <span class="jp">小野さんは今新聞を<b>読んでいます</b>。</span>（正在进行时，〔动词<span class="jp">て</span>形〕+ <span class="jp">います</span>）
+- <span class="jp">私は北京に<b>住んでいます</b>。</span>（表示动作的结果状态，〔动词<span class="jp">て</span>形〕+ <span class="jp">います</span>）
   <span class="jp">車を<b>持っています</b>か。</span>
   <span class="jp">⸺いいえ、<b>持っていません</b>。</span>（否定回答）
   <span class="jp">田中さんを知っていますか。</span>
   <span class="jp">⸺いいえ、<b>知りません</b>。</span>　　（特例）
 
 ### 自动词 / 他动词
+
+### 动词<span class="jp">ない</span>形
 
 ……
 
@@ -63,14 +69,16 @@
 
 <!--  -->
 
-- <span class="jp">家へ<b>帰って</b>、宿題をします。</span>　　（动作相继发生，动词<span class="jp">て</span>形 + 动词）
+- <span class="jp">家へ<b>帰って</b>、宿題をします。</span>　　（动作相继发生，〔动词<span class="jp">て</span>形〕+ 动词）
   <span class="jp">家へ<b>帰ってから</b>、もう一度日本語の勉強をします。</span>（差别为<span class="jp">てから</span>不能在一个句子中多次使用）
-- <span class="jp">この荷物を航空便で<b>送ってください</b>。</span>（动词<span class="jp">て</span>形 + <span class="jp">ください</span>，命令或要求某人做某事，虽然翻译为「请」，但是并不表示敬意）
+- <span class="jp">この荷物を航空便で<b>送ってください</b>。</span>（〔动词<span class="jp">て</span>形〕+ <span class="jp">ください</span>，命令或要求某人做某事，虽然翻译为「请」，但是并不表示敬意）
+  <span class="jp">この部屋には入ら<b>ないでください</b>。</span>　（⸺否定形式，〔动词<span class="jp">ない</span>形〕+ <span class="jp">で</span> + <span class="jp">ください</span>）
 
 <!--  -->
 
-- <span class="jp">家で仕事をし<b>てもいいです</b>。</span>　　（表示许可，动词<span class="jp">て</span>形 + <span class="jp">も</span> + <span class="jp">いいです</span>）
-- <span class="jp">教室で物を食べ<b>ではいけません</b>。</span>（表示禁止，动词<span class="jp">て</span>形 + <span class="jp">は</span> + <span class="jp">いけません</span>）
+- <span class="jp">家で仕事をし<b>てもいいです</b>。</span>　　（表示许可，〔动词<span class="jp">て</span>形〕+ <span class="jp">も</span> + <span class="jp">いいです</span>）
+- <span class="jp">明日は残業し<b>なくてもいいです</b>。</span>（表示不做某事也行，〔动词<span class="jp">ない</span>形〕→<span class="jp">なくても</span> + <span class="jp">いいです</span>）
+- <span class="jp">教室で物を食べ<b>ではいけません</b>。</span>（表示禁止，〔动词<span class="jp">て</span>形〕+ <span class="jp">は</span> + <span class="jp">いけません</span>）
 
 <!--  -->
 
@@ -80,9 +88,9 @@
 
 <!--  -->
 
-- <span class="jp">（私は）映画を<b>見たいです</b>。</span>（想（做）～，动词（去掉<span class="jp">ます</span>）+ <span class="jp">たいです</span>）
-- <span class="jp">少し<b>休みませんか</b>。</span>　　（动词否定形式加上疑问句，表示提议）
-- <span class="jp">ちょっと<b>休みましょう</b>。</span>（<span class="jp">ます</span>→<span class="jp">ましょう</span>，表示提议，语气偏随意）
+- <span class="jp">（私は）映画を<b>見たいです</b>。</span>　（想（做）～，〔动词去掉<span class="jp">ます</span>〕+ <span class="jp">たいです</span>）
+- <span class="jp">少し<b>休みませんか</b>。</span>　　　　　（动词否定形式加上疑问句，表示提议）
+- <span class="jp">ちょっと<b>休みましょう</b>。</span>　　　（<span class="jp">ます</span>→<span class="jp">ましょう</span>，表示提议，语气偏随意）
 
 <!--  -->
 
@@ -95,3 +103,7 @@
 - <span class="jp">部屋は広い<b>ほうが</b>いいです。</span>　（某种性质更好，形容词 + <span class="jp">ほうが</span> + <span class="jp">いいです</span>）
   <span class="jp">子供は元気な<b>ほうが</b>いいです。</span>（⸺，形容动词 + <span class="jp">な</span> + <span class="jp">ほうが</span> + <span class="jp">いいです</span>）
 
+<!--  -->
+
+- <span class="jp">李さんは今日早く帰ら<b>なければなりません</b>。</span>（必须，〔动词<span class="jp">ない</span>形〕→<span class="jp">なければ</span> + <span class="jp">なりません</span>）
+  <span class="jp">すぐに書類を送ら<b>ないと（いけません）</b>。</span>　　　（⸺，主要用于口语，〔动词<span class="jp">ない</span>形〕<span class="jp">と</span> + <span class="jp">いけません</span>（可省略））

@@ -94,6 +94,8 @@ accent**You're good (to go) / You're all set**
 
 ![all-set](imgs/all-set.png)
 
+![all-set2](imgs/all-set2.png)
+
 </details>
 
 问法可以是 Am I all set?

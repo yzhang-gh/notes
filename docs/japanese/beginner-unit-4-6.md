@@ -2,7 +2,7 @@
 
 <link href="/notes/static/jp.css" rel="stylesheet">
 
-<!-- 19 finished -->
+<!-- 20 finished -->
 
 ## 形容词 / 形容动词
 
@@ -31,8 +31,22 @@
 
 <!--  -->
 
+- <span class="jp">部屋に<b>だれ</b><b class="green">か</b>いますか。</span>（「房间里有人吗？」）
+  <span class="jp">部屋に<b>だれ</b><b>が</b>いますか。</span>（「房间里有谁？」）
+  （疑问词 <span class="jp">いつ／どこ／だれ／何</span> + <span class="jp">か</span>，表示某时 / 某地 / 某人等，类似于 somewhere/someone）
+
+<!--  -->
+
 - <span class="jp">だれ<b class="green">でも</b>分かります。</span>（「都」，肯定形式）
   <span class="jp">だれ<b class="green">も</b>分かりません。</span>（「都」，否定形式）
+
+<!--  -->
+
+- <span class="jp">小野さんも一緒に行きます<b class="green">よね</b>。</span>（对自己说出的想法没有足够把握时，大部分时候类似于「吧」）
+
+<!--  -->
+
+- <span class="jp">みんな<b class="green">で</b>餃子を作ります。</span>（<span class="jp">一人で／自分で／全員で</span>）
 
 ## 动词
 
@@ -57,6 +71,8 @@
 ### 自动词 / 他动词
 
 ### 动词<span class="jp">ない</span>形
+
+### 动词基本形
 
 ……
 
@@ -105,5 +121,14 @@
 
 <!--  -->
 
-- <span class="jp">李さんは今日早く帰ら<b>なければなりません</b>。</span>（必须，〔动词<span class="jp">ない</span>形〕→<span class="jp">なければ</span> + <span class="jp">なりません</span>）
-  <span class="jp">すぐに書類を送ら<b>ないと（いけません）</b>。</span>　　　（⸺，主要用于口语，〔动词<span class="jp">ない</span>形〕<span class="jp">と</span> + <span class="jp">いけません</span>（可省略））
+- <span class="jp">李さんは今日早く<b>帰らなければなりません</b>。</span>（必须，〔动词<span class="jp">ない</span>形〕→<span class="jp">なければ</span> + <span class="jp">なりません</span>）
+  <span class="jp">すぐに書類を<b>送らないと（いけません）</b>。</span>　（⸺，主要用于口语，〔动词<span class="jp">ない</span>形〕<span class="jp">と</span> + <span class="jp">いけません</span>（可省略））
+
+<!--  -->
+
+- <span class="jp">李さんはピアノを<b>弾く</b><b class="green">ことが</b><b>できます</b>。</span>（表示能力，〔动词基本形〕+ <span class="jp">ことが</span> + <span class="jp">できます／できません</span>）
+  <span class="jp">日本では何歳から<b>結婚する</b><b class="green">ことが</b><b>できます</b>か。</span>（也可以表示允许）
+- <span class="jp">私の趣味は切手を<b>集める</b><b class="green">こと</b>です。</span>（〔动词基本形〕+ <span class="jp">こと</span>→形式名词）
+- <span class="jp">毎日<b>寝る</b><b class="green">前に</b>シャワーを浴びます。</span>（一个动作在另一个动作之前发生，〔动词基本形〕+ <span class="jp">前に</span>～）
+  <span class="jp"><b>会議</b><b class="green">の前に</b>資料をコピーします。</span>　（⸺，〔名词〕+ <span class="jp">の</span> + <span class="jp">前に</span>～）
+

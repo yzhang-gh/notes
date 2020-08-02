@@ -6,9 +6,6 @@
 - **Python**
   - [Matplotlib](python/matplotlib.md)
   - [Miniconda](python/miniconda.md)
-- **English**
-  - [Learned in UK](english/learned-in-uk.md)
-  - [*Friends*](english/friends/s01e01.md)
 - **Windows**
   - [自定义右键菜单 Custom Context Menu](windows/context-menu.md)
 - **Others**
@@ -17,6 +14,9 @@
   - [遗传学 (Genetics Basics)](others/genetics.md)
   - [常用特殊字符](others/characters.md)
   - [《手术两百年》](others/200-years-of-surgery.md)
+- **English**
+  - [Learned in UK](english/learned-in-uk.md)
+  - [*Friends*](english/friends/s01e01.md)
 - **Japanese**
   - [初级 1](japanese/beginner-unit-1-3.md)
   - [初级 2](japanese/beginner-unit-4-6.md)

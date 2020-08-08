@@ -2,7 +2,7 @@
 
 <link href="/notes/static/jp.css" rel="stylesheet">
 
-<!-- 20 finished -->
+<!-- 21 finished -->
 
 ## 形容词 / 形容动词
 
@@ -33,7 +33,7 @@
 
 - <span class="jp">部屋に<b>だれ</b><b class="green">か</b>いますか。</span>（「房间里有人吗？」）
   <span class="jp">部屋に<b>だれ</b><b>が</b>いますか。</span>（「房间里有谁？」）
-  （疑问词 <span class="jp">いつ／どこ／だれ／何</span> + <span class="jp">か</span>，表示某时 / 某地 / 某人等，类似于 somewhere/someone）
+  （疑问词 <span class="jp">いつ／どこ／だれ／何／何度</span> + <span class="jp">か</span>，表示某时 / 某地 / 某人等，类似于 somewhere/someone）
 
 <!--  -->
 
@@ -68,6 +68,10 @@
   <span class="jp">田中さんを知っていますか。</span>
   <span class="jp">⸺いいえ、<b>知りません</b>。</span>　　（特例）
 
+### 动词<span class="jp">た</span>形
+
+<span class="jp">て</span>形的<span class="jp">て→た</span>，<span class="jp">で→だ</span>
+
 ### 自动词 / 他动词
 
 ### 动词<span class="jp">ない</span>形
@@ -93,7 +97,7 @@
 <!--  -->
 
 - <span class="jp">家で仕事をし<b>てもいいです</b>。</span>　　（表示许可，〔动词<span class="jp">て</span>形〕+ <span class="jp">も</span> + <span class="jp">いいです</span>）
-- <span class="jp">明日は残業し<b>なくてもいいです</b>。</span>（表示不做某事也行，〔动词<span class="jp">ない</span>形〕→<span class="jp">なくても</span> + <span class="jp">いいです</span>）
+- <span class="jp">明日は残業し<b>なくてもいいです</b>。</span>（表示不做某事也行，〔动词<span class="jp">ない</span>形〕<span class="jp">→なくても</span> + <span class="jp">いいです</span>）
 - <span class="jp">教室で物を食べ<b>ではいけません</b>。</span>（表示禁止，〔动词<span class="jp">て</span>形〕+ <span class="jp">は</span> + <span class="jp">いけません</span>）
 
 <!--  -->
@@ -106,7 +110,8 @@
 
 - <span class="jp">（私は）映画を<b>見たいです</b>。</span>　（想（做）～，〔动词去掉<span class="jp">ます</span>〕+ <span class="jp">たいです</span>）
 - <span class="jp">少し<b>休みませんか</b>。</span>　　　　　（动词否定形式加上疑问句，表示提议）
-- <span class="jp">ちょっと<b>休みましょう</b>。</span>　　　（<span class="jp">ます</span>→<span class="jp">ましょう</span>，表示提议，语气偏随意）
+- <span class="jp">ちょっと<b>休みましょう</b>。</span>　　　（<span class="jp">ます→ましょう</span>，表示提议（一起做某事），语气偏随意）
+- <span class="jp">何か食べ<b>ましょう</b><b class="green">か</b>。</span>　　　　（⸺，此外还可表示提议自己为对方做某事）
 
 <!--  -->
 
@@ -116,19 +121,27 @@
   <span class="jp">来年社会人<b>になります</b>。</span>
   <span class="jp">部屋をきれい<b>にしてください</b>。</span>（因主语的意志而产生变化，+ <span class="jp">に</span> + <span class="jp">します</span>）
   <span class="jp">会議室を禁煙<b>にします</b>。</span>
-- <span class="jp">部屋は広い<b>ほうが</b>いいです。</span>　（某种性质更好，形容词 + <span class="jp">ほうが</span> + <span class="jp">いいです</span>）
-  <span class="jp">子供は元気な<b>ほうが</b>いいです。</span>（⸺，形容动词 + <span class="jp">な</span> + <span class="jp">ほうが</span> + <span class="jp">いいです</span>）
+- <span class="jp">部屋は<b>広い</b><b class="green">ほうが</b><b>いいです</b>。</span>　（某种性质更好，〔形容词〕+ <span class="jp">ほうが</span> + <span class="jp">いいです</span>）
+  <span class="jp">子供は<b>元気</b><b class="green">なほうが</b><b>いいです</b>。</span>（⸺，〔形容动词〕+ <span class="jp">な</span> + <span class="jp">ほうが</span> + <span class="jp">いいです</span>）
+- <span class="jp">もっと野菜を<b>食べた</b><b class="green">ほうが</b><b>いいです</b>よ。</span>　（某种行为更好，〔动词<span class="jp">た</span>形〕+ <span class="jp">ほうが</span> + <span class="jp">いいです</span>）
+  <span class="jp">そんなに<b>慌てない</b><b class="green">ほうが</b><b>いいです</b>よ。</span>　　（不～也好，〔动词<span class="jp">ない</span>形〕+ <span class="jp">ほうが</span> + <span class="jp">いいです</span>）
+- <span class="jp">速いですから、<b>飛行機</b><b class="green">のほうが</b><b>いいです</b>。</span>（⸺，〔名词〕+ <span class="jp">の</span> + <span class="jp">ほうが</span> + <span class="jp">いいです</span>）
 
 <!--  -->
 
-- <span class="jp">李さんは今日早く<b>帰らなければなりません</b>。</span>（必须，〔动词<span class="jp">ない</span>形〕→<span class="jp">なければ</span> + <span class="jp">なりません</span>）
+- <span class="jp">李さんは今日早く<b>帰らなければなりません</b>。</span>（必须，〔动词<span class="jp">ない</span>形<span class="jp">→なければ</span>〕+ <span class="jp">なりません</span>）
   <span class="jp">すぐに書類を<b>送らないと（いけません）</b>。</span>　（⸺，主要用于口语，〔动词<span class="jp">ない</span>形〕<span class="jp">と</span> + <span class="jp">いけません</span>（可省略））
 
 <!--  -->
 
 - <span class="jp">李さんはピアノを<b>弾く</b><b class="green">ことが</b><b>できます</b>。</span>（表示能力，〔动词基本形〕+ <span class="jp">ことが</span> + <span class="jp">できます／できません</span>）
-  <span class="jp">日本では何歳から<b>結婚する</b><b class="green">ことが</b><b>できます</b>か。</span>（也可以表示允许）
-- <span class="jp">私の趣味は切手を<b>集める</b><b class="green">こと</b>です。</span>（〔动词基本形〕+ <span class="jp">こと</span>→形式名词）
+  <span class="jp">日本では何歳から<b>結婚する</b><b class="green">ことが</b><b>できます</b>か。</span>（也可以表示允许 / 可能）
+- <span class="jp">私の趣味は切手を<b>集める</b><b class="green">こと</b>です。</span>（〔动词基本形〕+ <span class="jp">こと</span> = 形式名词）
 - <span class="jp">毎日<b>寝る</b><b class="green">前に</b>シャワーを浴びます。</span>（一个动作在另一个动作之前发生，〔动词基本形〕+ <span class="jp">前に</span>～）
   <span class="jp"><b>会議</b><b class="green">の前に</b>資料をコピーします。</span>　（⸺，〔名词〕+ <span class="jp">の</span> + <span class="jp">前に</span>～）
+- <span class="jp">映画を<b>見た</b><b class="green">後で</b>、食事をしました。</span>（一个动作在另一个动作之后发生，〔动词<span class="jp">た</span>形〕+ <span class="jp">後で</span>、～）
+  <span class="jp"><b>仕事</b><b class="green">の後で</b>、食事をしました。</span>　　（⸺，〔名词〕+ <span class="jp">の</span> + <span class="jp">後で</span>、～）
 
+<!--  -->
+
+- <span class="jp">私はすき焼きを<b>食べた</b><b class="green">ことが</b><b>あります</b>。</span>（表示过去的经历，「～过」，通常用于至少半年以前的事情）

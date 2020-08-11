@@ -14,11 +14,18 @@
 ---
 
 - accent**顺式作用原件**，**cis-regulatory element**，位于基因的旁侧，是可以调控**其旁侧基因**表达的**非编码 DNA 序列**，包括启动子、增强子、应答元件等；
-  - 通过与<abbr title="见下一小节">转录因子</abbr>（transcription factor）结合来调控基因；
+  - 通过与<abbr title="见下一小节"><b>转录因子</b></abbr>（transcription factor）结合来调控基因；
   - cis 表示 "on this side"，即和被调控的基因在同一个 DNA 分子上
+  - accent**增强子**，enhancer，increase the likelihood that transcription of a particular gene will occur
 - accent**反式作用原件**，**trans-regulatory element**，是可以调控**别的基因**表达的**基因**
   - 更具体一点，就是编码转录因子的基因
-- cis-regulatory 有时也叫 cis-acting，cis-regulation；trans-regulatory 同样
+- cis-regulatory 有时也叫 **cis-acting**，cis-regulation；trans-regulatory 同样
+
+---
+
+- accent**in vivo**，in the living，在活体内（进行于活体内的实验）
+- accent**in vitro**，in the glass，在玻璃里（进行于试管内 / 活体外的实验）
+- accent**ChIP-seq**，chromatin immunoprecipitation（ChIP）+ massively parallel DNA sequencing TODO
 
 ---
 

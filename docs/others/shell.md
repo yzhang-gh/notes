@@ -2,6 +2,12 @@
 
 ## SSH
 
+```shell
+# cd ~/.ssh
+ssh-keygen
+ssh-copy-id -i id_rsa.pub user@host
+```
+
 https://www.ssh.com/ssh/keygen/
 
 ## 传文件 `scp`
@@ -55,10 +61,18 @@ kill %i
 
 https://tecadmin.net/run-command-in-background-on-linux/
 
-## alias, `type`
+## 别名 `alias`, `type`
+
+```
+# Append the following line to `~/.bashrc`
+alias name='your command'
+
+type name
+# -> name is aliased to `your command'
+```
 
 ## Command history
 
-<kbd>Ctrl</kbd>+<kbd>R</kbd>
+<kbd>Ctrl</kbd> + <kbd>R</kbd>
 
 https://www.digitalocean.com/community/tutorials/how-to-use-bash-history-commands-and-expansions-on-a-linux-vps#searching-through-bash-history

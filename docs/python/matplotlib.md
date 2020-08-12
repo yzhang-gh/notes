@@ -1,6 +1,8 @@
 # Matplotlib
 
-## Configuration File
+## 配置 Configuration
+
+配置文件
 
 ```python
 import matplotlib
@@ -9,6 +11,7 @@ print(matplotlib.matplotlib_fname())
 ```
 
 可以用来设置默认字体
+（新安装的字体可能会找不到，删掉 `$HOME\.matplotlib\fontlist-*.json` 缓存文件即可）
 
 在程序中也可以进行配置，比如
 

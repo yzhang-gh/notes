@@ -15,12 +15,12 @@ No fancy tips, just for simple editing
 
 ## Copy and paste
 
-| Key                      | Operation                                            |
-| ------------------------ | ---------------------------------------------------- |
-| <kbd>y</kbd><kbd>y</kbd> | copy the line (mnemonic: **y**ank)                   |
-| <kbd>d</kbd><kbd>d</kbd> | **d**elete the line (behaves like a *cut* operation) |
-| <kbd>p</kbd>             | **p**aste *after* the current line                   |
-| <kbd>P</kbd>             | **p**aste *before* the current line                  |
+| Key                      | Operation                                          |
+| ------------------------ | -------------------------------------------------- |
+| <kbd>y</kbd><kbd>y</kbd> | copy the line (mnemonic: **y**ank)                 |
+| <kbd>d</kbd><kbd>d</kbd> | **d**elete the line (behaves like a cut operation) |
+| <kbd>p</kbd>             | **p**aste after the current line                   |
+| <kbd>P</kbd>             | **p**aste before the current line                  |
 
 <kbd>yj</kbd> copy 2 lines, <kbd>y2k</kbd> copy 3 lines (which includes 2 lines above)
 

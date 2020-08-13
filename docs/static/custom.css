@@ -29,6 +29,11 @@ code,
     font-family: Consolas, monospace, "Microsoft Yahei";
 }
 
+kbd {
+    box-shadow: inset 0 -1px 0 rgba(186, 186, 186, 0.7);
+    margin-bottom: 0;
+}
+
 /* --- */
 
 img {

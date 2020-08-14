@@ -8,6 +8,10 @@ body {
     font-size: 14px;
 }
 
+.markdown-section {
+    max-width: 1000px;
+}
+
 .markdown-section a {
     font-weight: normal;
 }
@@ -90,8 +94,8 @@ summary:focus {
 }
 
 /* Heading styles */
-
-@media (min-width: 1000px) {
+/* (main: 1000px) + (padding: 15px * 2) + (sidebar: 300px) */
+@media (min-width: 1330px) {
     h2::before,
     h3::before,
     h4::before {

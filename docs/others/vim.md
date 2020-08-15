@@ -1,6 +1,6 @@
 # Vim
 
-No fancy tips, just for simple editing
+?> No fancy tips, just for simple editing
 
 ## Moving cursor
 

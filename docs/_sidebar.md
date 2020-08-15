@@ -11,6 +11,7 @@
 - **Others**
   - [LaTeX](others/latex.md)
   - [Shell](others/shell.md)
+  - [Vim](others/vim.md)
   - [遗传学 (Genetics Basics)](others/genetics.md)
   - [常用特殊字符 (Special Chars)](others/characters.md)
   - [《手术两百年》](others/200-years-of-surgery.md)

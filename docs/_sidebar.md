@@ -7,12 +7,12 @@
   - [Matplotlib](python/matplotlib.md)
   - [Miniconda](python/miniconda.md)
 - **Windows**
-  - [自定义右键菜单 Custom Context Menu](windows/context-menu.md)
+  - [自定义右键菜单 (Custom Context Menu)](windows/context-menu.md)
 - **Others**
   - [LaTeX](others/latex.md)
   - [Shell](others/shell.md)
   - [遗传学 (Genetics Basics)](others/genetics.md)
-  - [常用特殊字符](others/characters.md)
+  - [常用特殊字符 (Special Chars)](others/characters.md)
   - [《手术两百年》](others/200-years-of-surgery.md)
 - **English**
   - [Learned in UK](english/learned-in-uk.md)

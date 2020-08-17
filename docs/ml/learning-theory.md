@@ -18,7 +18,7 @@
 - accent**泛化误差**，在样本分布 $\mathcal{D}$ 之下预测值与真实值不同的概率
   $$ E(h;\mathcal{D}) = \Pr_{x\sim\mathcal{D}}\left[h(x) \neq y^{(i)}\right]. $$
 - accent**经验误差**，在样例集上的错误率
-  <span>$$ \widehat{E}(h;D)=\frac{1}{m}\sum_{i=1}^m \mathrm{loss}\left(h(x^{(i)}), y^{(i)}\right). $$</span>学习理论主要研究二分类问题，所以使用 0-1 loss，$1_{h(x) \neq y}$
+  <span>$$ \widehat{E}(h;D)=\frac{1}{m}\sum_{i=1}^m \mathrm{loss}\left(h(x^{(i)}), y^{(i)}\right). $$</span>学习理论主要研究二分类问题，所以常使用 0-1 loss，$1_{h(x) \neq y}$
 
 ## PAC 学习框架
 

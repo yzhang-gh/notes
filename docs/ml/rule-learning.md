@@ -75,4 +75,4 @@ inverse resolution，四种方式，在一阶规则里要用到 置换 和 合�
 
 1. Stephen Muggleton. Inductive Logic Programming. *New Generation Computing*. 1991. ([PDF](https://www.doc.ic.ac.uk/~shm/Papers/ilp.pdf))
    最有用的是附录 A，正文不是很懂，只看到有很多种 operations
-2. 周志华. 机器学习. 第 15 章，规则学习
+2. 周志华. 机器学习.（第 15 章，规则学习）

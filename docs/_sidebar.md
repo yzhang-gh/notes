@@ -1,6 +1,6 @@
 - **Math**
 - **Classic Machine Learning**
-  - 计算学习理论 (Learning Theory)
+  - [计算学习理论 (Learning Theory)](ml/learning-theory)
   - 规则学习 (Rule Learning)
 - **Deep Learning**
 - **Python**

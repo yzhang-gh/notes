@@ -2,7 +2,7 @@
 
 <link href="/notes/static/jp.css" rel="stylesheet">
 
-<!-- 21 finished -->
+<!-- 22 finished -->
 
 ## 形容词 / 形容动词
 
@@ -78,7 +78,37 @@
 
 ### 动词基本形
 
-……
+## 敬体形与简体形
+
+| <span class="green">动词</span> | 敬体形                                          | 简体形                                                                     |
+| ------------------------------- | ----------------------------------------------- | -------------------------------------------------------------------------- |
+| 现在将来形式，肯定              | <span class="jp">買い<b>ます</b></span>         | <span class="jp">買う</span>　　　　（基本形）                             |
+| 现在将来形式，否定              | <span class="jp">買い<b>ません</b></span>       | <span class="jp">買わない</span>　　（<span class="jp">ない</span>形）     |
+| 过去形式，肯定                  | <span class="jp">買い<b>ました</b></span>       | <span class="jp">買った</span>　　　（<span class="jp">た</span>形）       |
+| 过去形式，否定                  | <span class="jp">買い<b>ませんでした</b></span> | <span class="jp">買わなかった</span>（<span class="jp">なかった</span>形） |
+
+\* <span class="jp">ありません</span>的简体形是<span class="jp">ない</span>
+
+| <span class="green">形容词（做谓语）</span> | 敬体形                                            | 简体形                                                                     |
+| ------------------------------------------- | ------------------------------------------------- | -------------------------------------------------------------------------- |
+| 现在将来形式，肯定                          | <span class="jp">忙しい<b>です</b></span>         | <span class="jp">忙しい</span>　　（去掉<span class="jp">ます</span>即可） |
+| 现在将来形式，否定                          | <span class="jp">忙しくない<b>です</b></span>     | <span class="jp">忙しくない</span>                                         |
+| 过去形式，肯定                              | <span class="jp">忙しかった<b>です</b></span>     | <span class="jp">忙しかった</span>                                         |
+| 过去形式，否定                              | <span class="jp">忙しくなかった<b>です</b></span> | <span class="jp">忙しくなかった</span>                                     |
+
+| <span class="green">形容动词（做谓语）</span> | 敬体形                                                  | 简体形                                          |
+| --------------------------------------------- | ------------------------------------------------------- | ----------------------------------------------- |
+| 现在将来形式，肯定                            | <span class="jp">簡単<b>です</b></span>                 | <span class="jp">簡単<b>だ</b></span>           |
+| 现在将来形式，否定                            | <span class="jp">簡単<b>ではありません</b></span>       | <span class="jp">簡単<b>ではない</b></span>     |
+| 过去形式，肯定                                | <span class="jp">簡単<b>でした</b></span>               | <span class="jp">簡単<b>だった</b></span>       |
+| 过去形式，否定                                | <span class="jp">簡単<b>ではありませんでした</b></span> | <span class="jp">簡単<b>ではなかった</b></span> |
+
+| <span class="green">名词（做谓语）</span> | 敬体形                                                  | 简体形                                          |
+| ----------------------------------------- | ------------------------------------------------------- | ----------------------------------------------- |
+| 现在将来形式，肯定                        | <span class="jp">晴れ<b>です</b></span>                 | <span class="jp">晴れ<b>だ</b></span>           |
+| 现在将来形式，否定                        | <span class="jp">晴れ<b>ではありません</b></span>       | <span class="jp">晴れ<b>ではない</b></span>     |
+| 过去形式，肯定                            | <span class="jp">晴れ<b>でした</b></span>               | <span class="jp">晴れ<b>だった</b></span>       |
+| 过去形式，否定                            | <span class="jp">晴れ<b>ではありませんでした</b></span> | <span class="jp">晴れ<b>ではなかった</b></span> |
 
 ## 文型
 
@@ -145,3 +175,9 @@
 <!--  -->
 
 - <span class="jp">私はすき焼きを<b>食べた</b><b class="green">ことが</b><b>あります</b>。</span>（表示过去的经历，「～过」，通常用于至少半年以前的事情）
+
+<!--  -->
+
+- <span class="jp">昨日の試験、どうだった？</span>
+  <span class="jp">⸺ちょっと難しかった<b>けど</b>、まあまあできたよ。</span>（<span class="jp">けど</span>连接两个句子，表示转折，用于口语）
+  <span class="jp">来週、送別会をする<b>けど</b>、都合はどうかた？</span>　　　（或者表示铺垫）

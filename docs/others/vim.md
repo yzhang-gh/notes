@@ -6,8 +6,8 @@
 
 | Key                      | Operation           |
 | ------------------------ | ------------------- |
-| <kbd>g</kbd><kbd>g</kbd> | go to start of flie |
-| <kbd>G</kbd>             | go to end of flie   |
+| <kbd>g</kbd><kbd>g</kbd> | go to start of file |
+| <kbd>G</kbd>             | go to end of file   |
 | <kbd>ctrl f</kbd>        | next page           |
 | <kbd>ctrl b</kbd>        | previous page       |
 | <kbd>w</kbd>             | next word           |

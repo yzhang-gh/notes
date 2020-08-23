@@ -2,7 +2,7 @@
 
 <link href="/notes/static/jp.css" rel="stylesheet">
 
-<!-- 22 finished -->
+<!-- 23 finished -->
 
 ## 形容词 / 形容动词
 
@@ -11,8 +11,8 @@
 
 ## 助词
 
-- <span class="jp">小野さんはプール<b>へ 泳ぎ</b> <b class="green">に</b> <b>行きます</b>。</span>（表示移动行为的目的，目的动词要去掉<span class="jp">ます</span>）
-  <span class="jp">李さんは私の家<b>へ 遊び</b> <b class="green">に</b> <b>来ました</b>。</span>
+- <span class="jp">小野さんはプール<b>へ泳ぎ</b><b class="green">に</b><b>行きます</b>。</span>（表示移动行为的目的，目的动词要去掉<span class="jp">ます</span>）
+  <span class="jp">李さんは私の家<b>へ遊び</b><b class="green">に</b><b>来ました</b>。</span>
 - <span class="jp">李さんは電車<b class="green">に</b>乗りました。</span>　　（表示人或物体的附着点，不能用<b class="jp">を</b>）
   <span class="jp">李さんはかばん<b class="green">に</b>書類<b>を</b>入れました。</span>
 - <span class="jp">今年<b>中</b><b class="green">に</b>結婚したいです。</span>　　　（表示该期间结束之前）
@@ -52,7 +52,7 @@
 
 ### 动词<span class="jp">て</span>形
 
-<!-- TODO 专业的语法是什么 -->
+?> 更专业的分类叫 五段动词
 
 一类动词，去掉<span class="jp">ます</span>之后最后一个音位于<b class="jp">い</b>段的绝大部分动词
 二类动词，去掉<span class="jp">ます</span>之后最后一个音位于<b class="jp">え</b>段，以及位于<b class="jp">い</b>段的一小部分动词
@@ -181,3 +181,30 @@
 - <span class="jp">昨日の試験、どうだった？</span>
   <span class="jp">⸺ちょっと難しかった<b>けど</b>、まあまあできたよ。</span>（<span class="jp">けど</span>连接两个句子，表示转折，用于口语）
   <span class="jp">来週、送別会をする<b>けど</b>、都合はどうかた？</span>　　　（或者表示铺垫）
+
+<!--  -->
+
+- <span class="jp">小野さんは休みの日、<b>散歩し<b class="green">たり</b></b>買い物に<b>行っ<b class="green">たり</b>します</b>。</span>　（列举若干种动作，〔动词<span class="jp">た</span>形〕<span class="jp">→たり</span>）
+  <span class="jp">飛行機のチケットは<b>高かっ<b class="green">たり</b>安かっ<b class="green">たり</b>です</b>。</span>　　　　　　（列举多种状况，〔形容词过去简体形<span class="jp">～かった→たり</span>）
+  <span class="jp">この公園は時間によっで<b>静かだっ<b class="green">たり</b>にぎやかだっ<b class="green">たり</b>です</b>。</span>（⸺，〔形容动词⸺〕<span class="jp">～だった→たり</span>）
+  <span class="jp">日本語の先生は<b>中国人だっ<b class="green">たり</b>日本人だっ<b class="green">たり</b>です</b>。</span>　　　　（⸺，〔名词⸺〕，⸺）
+  <span class="jp">浴衣は<b>高かっ<b class="green">たり</b>安かっ<b class="green">たり</b></b>、いろいろ<b>あります</b>。</span>　　　　　（更多例子）
+
+<!--  -->
+
+- <span class="jp">この公園は時間<b>によっで</b>静かだったりにぎやかだったりです。</span>（「根据……（而不同）/ 因……而异」）
+- <span class="jp">この電車はいつも込みますか。</span>
+  <span class="jp">⸺いえ、時間<b>によります</b>。</span>　（也可以以另一种形式用于句尾）
+
+（疑问句做从句）
+
+- <span class="jp">（私は）今年の夏、北京へ行きますか。＋私は分かりません。</span>（不包含疑问词的疑问句（相当于英语的一般疑问句））
+  <span class="jp">→私は今年の夏、北京へ<b>行く</b><b class="green">かどうか</b>分かりません。</span>　　　　（动词 / 形容词变为〔简体形〕然后加上<span class="jp">かどうか</span>）
+  <span class="jp">＝私は今年の夏、北京へ<b>行く<b class="green">か</b>行かない<b class="green">か</b></b>分かりません。</span>　　（也可以使用〔基本形〕加〔<span class="jp">ない</span>形〕表示相同的含义）
+- <span class="jp">キムさんは中国人ですか。＋私は知りません。</span>　　　　　　　（⸺）
+  <span class="jp">→私はキムさん<b class="green">が</b><b>中国人</b><b class="green">かどうか</b>知りません。</span>　　　　　　　（形容动词 / 名词直接加<span class="jp">かどうか</span>，中间不加<span class="jp">だ</span>）
+  <span class="jp">＝私はキムさん<b class="green">が</b><b>中国人<b class="green">か</b>中国人ではない<b class="green">か</b></b>知りません。</span>　　（<span class="jp">かどうか</span>小句的主语后面必须用<span class="jp">が</span>）
+- <span class="jp">かぎが<b>どこ</b>にある<b class="green">か</b>教えてください。</span>　（有疑问词的小句，aka 特殊疑问句）
+  <span class="jp">昨日<b>何</b>を食べた<b class="green">か</b>忘れました。</span>　　　　（使用〔简体形〕加<span class="jp">か</span>，形容动词 / 名词同上，不加<span class="jp">だ</span>）
+  <span class="jp"><b>どの</b>料理が辛い<b class="green">か</b>知りません。</span>
+

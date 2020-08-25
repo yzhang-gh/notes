@@ -32,9 +32,13 @@
 | <kbd>cw</kbd> | replace current word (delete current word and enter *insert* mode) |
 | <kbd>R</kbd>  | enter *replace* mode                                               |
 
+<kbd>x</kbd> to delete current char
+
 ## Search
 
 | Key                       | Operation                                                                                                   |
 | ------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | <kbd>/</kbd>              | enter *search* mode, type your search string, press <kbd>Enter</kbd> to confirm or <kbd>ESC</kbd> to cancel |
 | <kbd>n</kbd>/<kbd>N</kbd> | go to next/previous occurrence (similar to <kbd>F3</kbd>/<kbd>Shift</kbd>+<kbd>F3</kbd> in most IDEs)       |
+
+Type `:noh` to turn off highlighting until the next search

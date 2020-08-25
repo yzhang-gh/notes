@@ -1,17 +1,17 @@
 # Vim
 
-?> No fancy tips, just for simple editing
+?> No fancy tips, just for simple editing (otherwise use VSCode instead!)
 
 ## Moving cursor
 
-| Key                      | Operation           |
-| ------------------------ | ------------------- |
-| <kbd>g</kbd><kbd>g</kbd> | go to start of file |
-| <kbd>G</kbd>             | go to end of file   |
-| <kbd>ctrl f</kbd>        | next page           |
-| <kbd>ctrl b</kbd>        | previous page       |
-| <kbd>w</kbd>             | next word           |
-| <kbd>b</kbd>             | previous word       |
+| Key                          | Operation           |
+| ---------------------------- | ------------------- |
+| <kbd>g</kbd><kbd>g</kbd>     | go to start of file |
+| <kbd>G</kbd>                 | go to end of file   |
+| <kbd>Ctrl</kbd>+<kbd>f</kbd> | next page           |
+| <kbd>Ctrl</kbd>+<kbd>b</kbd> | previous page       |
+| <kbd>w</kbd>                 | next word           |
+| <kbd>b</kbd>                 | previous word       |
 
 ## Copy and paste
 
@@ -31,3 +31,10 @@
 | <kbd>r</kbd>  | replace current char (in-place)                                    |
 | <kbd>cw</kbd> | replace current word (delete current word and enter *insert* mode) |
 | <kbd>R</kbd>  | enter *replace* mode                                               |
+
+## Search
+
+| Key                       | Operation                                                                                                   |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| <kbd>/</kbd>              | enter *search* mode, type your search string, press <kbd>Enter</kbd> to confirm or <kbd>ESC</kbd> to cancel |
+| <kbd>n</kbd>/<kbd>N</kbd> | go to next/previous occurrence (similar to <kbd>F3</kbd>/<kbd>Shift</kbd>+<kbd>F3</kbd> in most IDEs)       |

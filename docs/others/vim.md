@@ -4,14 +4,14 @@
 
 ## Moving cursor
 
-| Key                          | Operation                                                |
-| ---------------------------- | -------------------------------------------------------- |
-| <kbd>g</kbd><kbd>g</kbd>     | go to start of file                                      |
-| <kbd>G</kbd>                 | go to end of file                                        |
-| <kbd>Ctrl</kbd>+<kbd>f</kbd> | next page                                                |
-| <kbd>Ctrl</kbd>+<kbd>b</kbd> | previous page                                            |
-| <kbd>w</kbd>                 | next word (<kbd>d</kbd><kbd>w</kbd> delete current word) |
-| <kbd>b</kbd>                 | previous word                                            |
+| Key                                       | Operation                                                |
+| ----------------------------------------- | -------------------------------------------------------- |
+| <kbd>g</kbd><kbd>g</kbd>                  | go to start of file                                      |
+| <kbd>G</kbd>                              | go to end of file                                        |
+| <kbd>Ctrl</kbd>+<kbd>f</kbd>/<kbd>d</kbd> | next page/half page                                      |
+| <kbd>Ctrl</kbd>+<kbd>b</kbd>/<kbd>u</kbd> | previous page/half page                                  |
+| <kbd>w</kbd>                              | next word (<kbd>d</kbd><kbd>w</kbd> delete current word) |
+| <kbd>b</kbd>                              | previous word                                            |
 
 ## Copy and paste
 
@@ -23,7 +23,8 @@
 | <kbd>P</kbd>             | **p**aste before the current line                  |
 
 <kbd>yj</kbd> copy 2 lines, <kbd>y2k</kbd> copy 3 lines (which includes 2 lines above)
-<kbd>d4l</kbd> delete 4 chars rightwards (including current char)
+
+<kbd>dt</kbd><kbd>&lt;char&gt;</kbd> delete up to this char (excluding) on this line
 
 ## Replace/Overtype
 

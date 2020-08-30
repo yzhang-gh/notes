@@ -63,13 +63,13 @@
 - <span class="jp">小野さんは今新聞を<b>読んでいます</b>。</span>（正在进行时，〔动词<span class="jp">て</span>形〕+ <span class="jp">います</span>）
 - <span class="jp">私は北京に<b>住んでいます</b>。</span>（表示动作的结果状态，〔动词<span class="jp">て</span>形〕+ <span class="jp">います</span>）
   <span class="jp">車を<b>持っています</b>か。</span>
-  <span class="jp">⸺いいえ、<b>持っていません</b>。</span>（否定回答）
+  <span class="jp">ーーいいえ、<b>持っていません</b>。</span>（否定回答）
   <span class="jp">田中さんを知っていますか。</span>
-  <span class="jp">⸺いいえ、<b>知りません</b>。</span>　　（特例）
+  <span class="jp">ーーいいえ、<b>知りません</b>。</span>　　（特例）
 
 ### 动词<span class="jp">た</span>形
 
-<span class="jp">て</span>形的<span class="jp">て→た</span>，<span class="jp">で→だ</span>
+〔<b class="jp">て</b>形〕的<b class="jp">て→た</b>，<b class="jp">で→だ</b>
 
 ### 自动词 / 他动词
 
@@ -152,7 +152,7 @@
   <span class="jp">会議室を禁煙<b>にします</b>。</span>
 - <span class="jp">部屋は<b>広い</b><b class="green">ほうが</b><b>いいです</b>。</span>　（某种性质更好，〔形容词〕+ <b class="jp">ほうが</b> + <b class="jp">いいです</b>）
   <span class="jp">子供は<b>元気</b><b class="green">なほうが</b><b>いいです</b>。</span>（⸺，〔形容动词〕+ <b class="jp">な</b> + <b class="jp">ほうが</b> + <b class="jp">いいです</b>）
-- <span class="jp">もっと野菜を<b>食べた</b><b class="green">ほうが</b><b>いいです</b>よ。</span>　（某种行为更好，〔动词<span class="jp">た</span>形〕+ <span class="jp">ほうが</span> + <span class="jp">いいです</span>）
+- <span class="jp">もっと野菜を<b>食べた</b><b class="green">ほうが</b><b>いいです</b>よ。</span>　（某种行为更好，〔动词<b class="jp">た</b>形〕+ <b class="jp">ほうが</b> + <b class="jp">いいです</b>）
   <span class="jp">そんなに<b>慌てない</b><b class="green">ほうが</b><b>いいです</b>よ。</span>　　（不～也好，〔动词<b class="jp">ない</b>形〕+ <b class="jp">ほうが</b> + <b class="jp">いいです</b>）
 - <span class="jp">速いですから、<b>飛行機</b><b class="green">のほうが</b><b>いいです</b>。</span>（⸺，〔名词〕+ <b class="jp">の</b> + <b class="jp">ほうが</b> + <b class="jp">いいです</b>）
 
@@ -178,13 +178,13 @@
 <!--  -->
 
 - <span class="jp">昨日の試験、どうだった？</span>
-  <span class="jp">⸺ちょっと難しかった<b>けど</b>、まあまあできたよ。</span>（<b class="jp">けど</b>连接两个句子，表示转折，用于口语；书面语用<b class="jp">が</b>）
+  <span class="jp">ーーちょっと難しかった<b>けど</b>、まあまあできたよ。</span>（<b class="jp">けど</b>连接两个句子，表示转折，用于口语；书面语用<b class="jp">が</b>）
   <span class="jp">来週、送別会をする<b>けど</b>、都合はどうかた？</span>　　　（或者表示铺垫）
 
 <!--  -->
 
 - <span class="jp">小野さんは休みの日、<b>散歩し<b class="green">たり</b></b>買い物に<b>行っ<b class="green">たり</b>します</b>。</span>　（列举若干种动作，〔动词<b class="jp">た</b>形〕<b class="jp">→たり</b>）
-  <span class="jp">飛行機のチケットは<b>高かっ<b class="green">たり</b>安かっ<b class="green">たり</b>です</b>。</span>　　　　　　（列举多种状况，〔形容词过去简体形<span class="jp">～かった→たり</span>）
+  <span class="jp">飛行機のチケットは<b>高かっ<b class="green">たり</b>安かっ<b class="green">たり</b>です</b>。</span>　　　　　　（列举多种状况，〔形容词过去简体形<b class="jp">～かった→たり</b>）
   <span class="jp">この公園は時間によっで<b>静かだっ<b class="green">たり</b>にぎやかだっ<b class="green">たり</b>です</b>。</span>（⸺，〔形容动词⸺〕<b class="jp">～だった→たり</b>）
   <span class="jp">日本語の先生は<b>中国人だっ<b class="green">たり</b>日本人だっ<b class="green">たり</b>です</b>。</span>　　　　（⸺，〔名词⸺〕，⸺）
   <span class="jp">浴衣は<b>高かっ<b class="green">たり</b>安かっ<b class="green">たり</b></b>、いろいろ<b>あります</b>。</span>　　　　　（更多例子）
@@ -193,7 +193,7 @@
 
 - <span class="jp">この公園は時間<b>によっで</b>静かだったりにぎやかだったりです。</span>（「根据……（而不同）/ 因……而异」）
 - <span class="jp">この電車はいつも込みますか。</span>
-  <span class="jp">⸺いえ、時間<b>によります</b>。</span>　（也可以以另一种形式用于句尾）
+  <span class="jp">ーーいえ、時間<b>によります</b>。</span>　（也可以以另一种形式用于句尾）
 
 （疑问句做从句）
 

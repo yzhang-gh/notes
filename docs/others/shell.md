@@ -41,6 +41,8 @@ https://www.ssh.com/ssh/keygen/
   <https://stackoverflow.com/a/21691584/8682688>
   <https://stackoverflow.com/a/11304926/8682688>
 
+`user@your.server.example.com:/path/to/foo` 一般很长，可以考虑在 `.bashrc` 中[定义一个变量](#使用变量)
+
 <!-- 按功能总结 -->
 
 🚧
@@ -76,3 +78,13 @@ type name
 <kbd>Ctrl</kbd> + <kbd>R</kbd>
 
 https://www.digitalocean.com/community/tutorials/how-to-use-bash-history-commands-and-expansions-on-a-linux-vps#searching-through-bash-history
+
+## 使用变量
+
+实例
+
+```
+export rdsdir='username@bluebear.bham.ac.uk:/rds/...'  ## in .bashrc
+```
+
+http://www.compciv.org/topics/bash/variables-and-substitution/

@@ -1,5 +1,7 @@
 # Matplotlib
 
+?> https://github.com/matplotlib/cheatsheets
+
 ## 配置 Configuration
 
 配置文件
@@ -76,7 +78,9 @@ plt.savefig("filename.png", bbox_inches="tight", dpi=200)
 
 ---
 
-## 使 colorbar 刻度为整数
+## Colorbar
+
+### 使 colorbar 刻度为整数
 
 ```python
 from matplotlib.ticker import MaxNLocator
@@ -88,3 +92,12 @@ bar.update_ticks()
 ## 如果是坐标轴的话
 # plt.gca().yaxis.set_major_locator(MaxNLocator(integer=True))
 ```
+
+### 使 colorbar 和作图内容的高度相符
+
+```python
+im = plt.imshow()  ## ...
+plt.colorbar(im, fraction=0.046, pad=0.4)
+```
+
+不知道原理但是很神奇（[更多讨论](https://stackoverflow.com/a/26720422)）

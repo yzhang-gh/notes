@@ -1,4 +1,4 @@
-# 标准日本语 初级 4－6 单元总结
+# 标准日本语 初级（上）4－6 单元总结
 
 <link href="/notes/static/jp.css" rel="stylesheet">
 
@@ -51,7 +51,7 @@
 
 ### 动词<span class="jp">て</span>形
 
-?> 更专业的分类叫 五段动词
+?> 「学校语法」中称为 五段动词，可在书本开头查看对应关系
 
 一类动词，去掉<span class="jp">ます</span>之后最后一个音位于<b class="jp">い</b>段的绝大部分动词
 二类动词，去掉<span class="jp">ます</span>之后最后一个音位于<b class="jp">え</b>段，以及位于<b class="jp">い</b>段的一小部分动词

@@ -1,4 +1,4 @@
-# 标准日本语 初级 1－3 单元总结
+# 标准日本语 初级（上）1－3 单元总结
 
 <link href="/notes/static/jp.css" rel="stylesheet">
 

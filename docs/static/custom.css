@@ -4,8 +4,16 @@ body {
     font-family: 'Source Sans Pro', Lato, "Helvetica Neue", "Microsoft Yahei", sans-serif, "Segoe UI Emoji";
 }
 
+.sidebar {
+    background: #f7f8f9;
+}
+
 .sidebar ul li {
     font-size: 14px;
+}
+
+.sidebar-toggle {
+    background: transparent;
 }
 
 .markdown-section {

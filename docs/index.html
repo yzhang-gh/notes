@@ -30,8 +30,8 @@
                 function (hook) {
                     hook.beforeEach(function (html) {
                         html = html.replace(/accent\*\*(.*?)\*\*/g, (_, g1) => '<strong class="accent">' + g1 + '</strong>');
+                        html += '\n\n<hr>\n\nLast modified: {docsify-updated}';
                         return html;
-                        // return html + '\n\n<hr>\n\nLast modified: {docsify-updated}';
                     });
 
                     // KaTeX

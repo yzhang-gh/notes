@@ -1640,7 +1640,7 @@
     if ( hasBar === void 0 ) hasBar = false;
     if ( headers === void 0 ) headers = {};
 
-    var path = 'docs' + url;
+    var path = 'docs' + url.replace(/^\/notes/, '');
     var xhr = new XMLHttpRequest();
     var on = function() {
       xhr.addEventListener.apply(xhr, arguments);

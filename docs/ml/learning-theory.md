@@ -16,7 +16,7 @@
 - 学习器的输出，accent**假设函数** $h\colon\mathcal{X}\to\mathcal{Y}$，所有可能的 $h$ 的集合叫做**假设空间** $\mathcal{H}$（比如所有形如 $h=ax+b$ 的函数），$\mathcal{H}$ 由 [inductive bias](https://en.wikipedia.org/wiki/Inductive_bias) 决定（即对某类 $h$ 的偏好）
 - accent**损失函数**（loss function），$\ell\colon\mathcal{Y}\times\mathcal{Y}\to\mathbb{R}$，学习理论主要研究二分类问题，常使用 0-1 loss，即 $\ell=1_{h(x) \neq y}$，其中 $1$ 为指示函数
 
-<!--  -->
+得到一个 $h$ 后，我们如何评估它的好坏
 
 - accent**泛化误差**，在样本分布 $\mathcal{D}$ 之下 loss 的期望
   $$ E(h;\mathcal{D}) = \mathbb{E}_{x\sim\mathcal{D}}\thinspace[\ell(h(x),y)]. $$

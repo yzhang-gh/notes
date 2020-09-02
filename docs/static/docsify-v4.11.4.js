@@ -1640,7 +1640,7 @@
     if ( hasBar === void 0 ) hasBar = false;
     if ( headers === void 0 ) headers = {};
 
-    var path = url.includes('yzhang-gh/notes/')? 'docs/' + url.split('yzhang-gh/notes/')[1]: 0;
+    var path = 'docs' + url;
     var xhr = new XMLHttpRequest();
     var on = function() {
       xhr.addEventListener.apply(xhr, arguments);
@@ -1687,18 +1687,30 @@
           if (target.status >= 400) {
             error(target);
           } else {
-            fetch('https://api.github.com/repos/yzhang-gh/notes/commits?path=' + path)
-              .then(resp => resp.json()[0]['commit']['committer']['date'].slice(0,10))
-              .then(updatedAt => {
-                var result = (cache[url] = {
-                  content: target.response,
-                  opt: {
-                    updatedAt: updatedAt,
-                  },
-                });
-
-                success(result.content, result.opt);
+            if (path.includes('_sidebar')) {
+              var result = (cache[url] = {
+                content: target.response,
+                opt: {
+                  updatedAt: '',
+                },
               });
+
+              success(result.content, result.opt);
+            } else {
+              fetch('https://api.github.com/repos/yzhang-gh/notes/commits?path=' + path)
+                .then(resp => resp.json())
+                .then(resp => resp[0]['commit']['committer']['date'].slice(0,10))
+                .then(updatedAt => {
+                  var result = (cache[url] = {
+                    content: target.response,
+                    opt: {
+                      updatedAt: updatedAt,
+                    },
+                  });
+
+                  success(result.content, result.opt);
+                });
+            }
           }
         });
       },

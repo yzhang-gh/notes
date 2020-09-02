@@ -28,10 +28,11 @@
             auto2top: true,
             plugins: [
                 function (hook) {
-                    // hook.beforeEach(function (html) {
-                    //     html = html.replace(/accent\*\*(.*?)\*\*/g, (_, g1) => '<strong class="accent">' + g1 + '</strong>');
-                    //     return html + '\n\n<hr>\n\nLast modified: {docsify-updated}';
-                    // });
+                    hook.beforeEach(function (html) {
+                        html = html.replace(/accent\*\*(.*?)\*\*/g, (_, g1) => '<strong class="accent">' + g1 + '</strong>');
+                        return html;
+                        // return html + '\n\n<hr>\n\nLast modified: {docsify-updated}';
+                    });
 
                     // KaTeX
                     hook.afterEach(content => {

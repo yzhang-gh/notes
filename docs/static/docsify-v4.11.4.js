@@ -1699,8 +1699,10 @@
             } else {
               fetch('https://api.github.com/repos/yzhang-gh/notes/commits?path=' + path)
                 .then(resp => resp.json())
-                .then(resp => resp[0]['commit']['committer']['date'].slice(0,10))
-                .then(updatedAt => {
+                .then(resp => {
+                  if(resp.length > 0) return resp[0]['commit']['committer']['date'].slice(0,10);
+                  return '';
+                }).then(updatedAt => {
                   var result = (cache[url] = {
                     content: target.response,
                     opt: {

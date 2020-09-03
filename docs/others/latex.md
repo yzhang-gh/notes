@@ -201,7 +201,6 @@ Your text
 
 ```latex
 \usepackage{ulem}
-
 \sout{text to be striked out}
 ```
 

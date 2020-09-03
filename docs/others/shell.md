@@ -56,6 +56,8 @@ More on <https://linux.die.net/man/5/ssh_config>
 ## `ls` 命令
 
 ```
+ls [OPTION]... [FILE or DIR]...
+
 ls -a  ## including entries starting with `.`
 ls -l  ## detailed information
 ls | head [-<n>]  ## only show first n entries (default 10)

@@ -1,5 +1,7 @@
 # Shell
 
+<!-- 按功能分类总结 -->
+
 ## SSH
 
 ```shell
@@ -51,13 +53,15 @@ More on <https://linux.die.net/man/5/ssh_config>
 
 `user@your.server.example.com:/path/to/foo` 一般很长，可以考虑在 `.bashrc` 中[定义一个变量](#使用变量)
 
-<!-- 按功能总结 -->
+## `ls` 命令
+
+```
+ls -a  ## including entries starting with `.`
+ls -l  ## detailed information
+ls | head [-<n>]  ## only show first n entries (default 10)
+```
 
 🚧
-
-## `ls -a`, `ls -l -h`
-
-`ls -U | head -<n>`
 
 ## `wget`
 

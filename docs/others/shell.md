@@ -4,11 +4,19 @@
 
 ```shell
 # cd ~/.ssh
-ssh-keygen
+ssh-keygen  ## https://www.ssh.com/ssh/keygen/
 ssh-copy-id -i id_rsa.pub user@host
 ```
 
-https://www.ssh.com/ssh/keygen/
+配置文件：`~/.ssh/config` （用户）和 `/etc/ssh/ssh_config`（全局）
+
+```
+Host *.ac.uk 192.108.0.?  ## One or more patterns separated by whitespace
+#   HostName <the real hostname (or IP) to login to>
+    PreferredAuthentications publickey,keyboard-interactive,password,hostbased
+```
+
+More on <https://linux.die.net/man/5/ssh_config>
 
 ## 传文件 `scp`
 
@@ -48,6 +56,8 @@ https://www.ssh.com/ssh/keygen/
 🚧
 
 ## `ls -a`, `ls -l -h`
+
+`ls -U | head -<n>`
 
 ## `wget`
 

@@ -28,7 +28,7 @@ Press `.` to repeat last change，给多行加/去注释的时候很实用
 
 <kbd>yj</kbd> copy 2 lines, <kbd>y2k</kbd> copy 3 lines (which includes 2 lines above)
 
-<kbd>dt</kbd><kbd>&lt;char&gt;</kbd> delete up to this char (excluding) on this line
+<kbd>dt</kbd><kbd>&lt;char&gt;</kbd> delete up **t**o this char (excluding) on this line
 
 ## Replace/Overtype
 

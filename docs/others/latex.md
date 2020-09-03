@@ -197,6 +197,36 @@ Your text
 \newcommand{\tablehead}[1]{\multicolumn{1}{c}{\bfseries#1}}
 ```
 
+### 删除线 (Strikethrough)
+
+```latex
+\usepackage{ulem}
+
+\sout{text to be striked out}
+```
+
+### 其它
+
+```
+authblk
+```
+
+---
+
+## 段落样式
+
+### 行距
+
+```latex
+\usepackage{setspace}
+\onehalfspacing%
+```
+
+### 设置段首无缩进
+
+Global: use `\setlength{\parindent}{0pt}` in **preamble**.
+Local : use `\noindent` in the front of that paragraph
+
 ---
 
 ## Useful Links
@@ -218,6 +248,18 @@ Your text
 ...
 \printbibliography
 \end{document}
+```
+
+---
+
+## 字体
+
+```latex
+\usepackage[utf8]{inputenc} %% So you can use Unicode chars (enc -- encoding)
+\usepackage[T1]{fontenc}    %% `OT1` (old TeX) only contains 128 chars, that why `<` and `>` result in `¡` and `¿`
+
+\usepackage{mathpazo}       %% Pazo Math font for math (bettr in combination with Palatino font for text)
+\usepackage{tgpagella}      %% Palladio font for text
 ```
 
 ---
@@ -255,13 +297,6 @@ BTW: The people who can't reproduce your problem probably have a4paper as defaul
 tlmgr paper letter
 tlmgr paper a4
 ```
-
----
-
-## Set `noindent` for the Entire File
-
-Global: use `\setlength{\parindent}{0pt}` in **preamble**.
-Local : use `\noindent` in the front of that paragraph
 
 ---
 

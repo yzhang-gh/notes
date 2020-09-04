@@ -4,16 +4,23 @@
 
 ## SSH
 
+### 生成并配置密钥
+
 ```shell
 # cd ~/.ssh
 ssh-keygen  ## https://www.ssh.com/ssh/keygen/
 ssh-copy-id -i id_rsa.pub user@host
 ```
 
-配置文件：`~/.ssh/config` （用户）和 `/etc/ssh/ssh_config`（全局）
+### 配置文件
+
+全局 `/etc/ssh/ssh_config`  
+用户 `~/.ssh/config`
+
+比如设置首选公钥验证方式
 
 ```
-Host *.ac.uk 192.108.0.?  ## One or more patterns separated by whitespace
+Host *.ac.uk  ## One or more patterns separated by whitespace
 #   HostName <the real hostname (or IP) to login to>
     PreferredAuthentications publickey,keyboard-interactive,password,hostbased
 ```
@@ -56,7 +63,7 @@ More on <https://linux.die.net/man/5/ssh_config>
 ## `ls` 命令
 
 ```
-ls [OPTION]... [FILE or DIR]...
+ls [OPTION...] [FILE or DIR...]
 
 ls -a  ## including entries starting with `.`
 ls -l  ## detailed information
@@ -82,11 +89,11 @@ https://tecadmin.net/run-command-in-background-on-linux/
 ## 别名 `alias`, `type`
 
 ```
-# Append the following line to `~/.bashrc`
+## Append the following line to `~/.bashrc`
 alias name='your command'
 
 type name
-# -> name is aliased to `your command'
+## -> name is aliased to `your command'
 ```
 
 ## Command history
@@ -97,10 +104,11 @@ https://www.digitalocean.com/community/tutorials/how-to-use-bash-history-command
 
 ## 使用变量
 
-实例
-
 ```
-export rdsdir='username@bluebear.bham.ac.uk:/rds/...'  ## in .bashrc
+export rdsdir='username@bluebear.bham.ac.uk:/rds'  ## in `.bashrc` file
+
+## Usage
+scp $rdsdir/path/to/foo .
 ```
 
 http://www.compciv.org/topics/bash/variables-and-substitution/

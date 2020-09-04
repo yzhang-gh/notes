@@ -19,4 +19,27 @@ def outer():
         local_var = 3  ## Local
 ```
 
-https://docs.python.org/3/reference/executionmodel.html
+[Python 执行模型](https://docs.python.org/3/reference/executionmodel.html)
+
+---
+
+## 格式化字符串 (string format)
+
+```python
+## Basics             ## use "·" to visualize whitespace
+"{} {}".format(1, 2)  ## "1·2"
+f"{1} {2}"            ## "1·2"
+
+## Padding and alignment
+a = "test"
+f"{a:10}"             ## "test······"
+f"{a:>10}"            ## "······test"
+f"{a:^10}"            ## "···test···"
+f"{a:_<10}"           ## "test______"
+
+f"{a!s} {a!r:10}"     ## equals to f"{str(a)} {repr(a):10}"
+```
+
+[PyFormat (intuitive examples)](https://pyformat.info/)
+[Python strftime reference](https://strftime.org/)
+[PEP 3101 -- Standard Format Specifiers](https://www.python.org/dev/peps/pep-3101/#format-specifiers)

@@ -42,10 +42,7 @@ accent**中心法则**：DNA 制造 RNA，RNA 制造蛋白质，蛋白质反过�
 
 ## 转录 (Transcription)
 
-<figure>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/MRNA.svg" alt="Transcription">
-    <figcaption>Transcription (from Wiki)</figcaption>
-</figure>
+![Transcription (from Wiki)](https://upload.wikimedia.org/wikipedia/commons/9/9b/MRNA.svg)
 
 - accent**转录因子**，**transcription factor**，是指能够结合在某基因上游<abbr title="应该就是指顺式作用原件，cis-regulatory elements">特异核苷酸序列</abbr>（如启动子，增强子）上的**蛋白质**，这些蛋白质能调控该基因的转录
 - 真核生物的 RNA 可以进一步被处理，可能包括**聚腺苷酸化**，accent**端帽**和accent**剪接**
@@ -59,9 +56,6 @@ Particular exons of a gene may be *included* or *excluded* under particular cond
 
 There are numerous modes of alternative splicing observed, of which the most common is **exon skipping**
 
-<figure>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/DNA_alternative_splicing.gif" alt="DNA alternative splicing">
-    <figcaption>DNA alternative splicing (from Wiki)</figcaption>
-</figure>
+![DNA alternative splicing (from Wiki)](https://upload.wikimedia.org/wikipedia/commons/0/0a/DNA_alternative_splicing.gif)
 
 详见 [Wiki](https://en.wikipedia.org/wiki/Alternative_splicing)

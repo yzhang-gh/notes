@@ -1,6 +1,8 @@
 # 计算学习理论 (Computational Learning Theory)
 
-!> 🚧 under construction...
+::: warning 🚧
+under construction...
+:::
 
 ## 什么是「学习」
 
@@ -27,9 +29,7 @@
 
 ## VC 维
 
----
-
-## 阅读材料 {docsify-ignore}
+## 阅读材料
 
 - Mehryar Mohri, Afshin Rostamizadeh, Ameet Talwalkar. Foundations of Machine Learning. *The MIT Press*. 2012. (Chapter 2, 3)
 - 周志华. 机器学习.（第 12 章，计算学习理论）

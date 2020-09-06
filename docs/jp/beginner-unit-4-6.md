@@ -1,6 +1,6 @@
 # 标准日本语 初级（上）4－6 单元总结
 
-<link href="/notes/static/jp.css" rel="stylesheet">
+<link href="/notes/public/jp.css" rel="stylesheet">
 
 ## 形容词 / 形容动词
 

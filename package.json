@@ -1,0 +1,21 @@
+{
+    "name": "notes",
+    "version": "0.0.1",
+    "description": "Notes",
+    "authors": "Yu Zhang",
+    "repository": "https://github.com/yzhang-gh/notes",
+    "scripts": {
+        "dev": "vuepress dev docs",
+        "build": "vuepress build docs"
+    },
+    "license": "CC-BY-NC-SA-4.0",
+    "devDependencies": {
+        "@vuepress/plugin-back-to-top": "^1.5.4",
+        "@vuepress/plugin-google-analytics": "^1.5.4",
+        "@vuepress/plugin-medium-zoom": "^1.5.4",
+        "markdown-it-footnote": "^3.0.2",
+        "vuepress-plugin-container": "^2.1.2",
+        "vuepress-theme-book": "^0.0.4",
+        "vuepress": "^1.5.3"
+    }
+}

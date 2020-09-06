@@ -1,0 +1,66 @@
+// Adapted from https://github.com/spencerwooo/dowww
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body
+  font-family $secondaryFont
+
+h1, h2, h3, h4, h5, h6
+  font-family $primaryFont !important
+  font-weight bold
+
+.callout
+  margin 1rem 0
+  padding 0.1rem 1.5rem
+  border-radius 0.4rem
+  background-color #255b9f09
+
+  .title
+    font-weight bold
+
+pre.tree
+  border-left-width 0.5rem
+  border-left-style solid
+  border-color $accentColor !important
+  border-radius 0
+
+  & > code
+    font-size 14px !important
+
+    & > p
+      margin -5px 0 -20px 0
+
+    code
+      background-color $accentColor !important
+      color #ffffff
+
+      padding 3px 5px
+      border-radius 3px
+
+    em
+      color #808080
+      font-weight light
+
+.hero
+  img
+    width 240px
+    height auto
+
+  h1
+    border none
+    padding-bottom 0
+
+#search-form
+  line-height inherit
+
+.sidebar-links a.sidebar-link:hover
+  background-color #e6ecf1 !important
+
+// SCROLLBAR
+@media (min-width: 719px)
+  ::-webkit-scrollbar
+    max-width 6px
+    max-height 12px
+  ::-webkit-scrollbar-thumb
+    background-color rgba(255, 255, 255, 0.4)
+    border-radius 6px

@@ -230,3 +230,4 @@
   　　<span class="annot">（⸺，但是名词和形容动词（的现在将来形的肯定形）的<b class="jp">だ</b>要换成<b class="jp">な</b>）</span>
 - <span class="jp">どうして食べない<b>んですか</b>。</span>　　<span class="annot">（询问理由，省略的用法为<b class="jp">どうしてですか</b>）</span>
   <span class="jp">もうお腹がいっぱい<b>なんです</b>。</span>
+- <span class="jp">日本の音楽<b>について</b>どう思いますか</b>。</span>　　<span class="annot">（<b class="jp">～について</b>，相当于「关于～」）</span>

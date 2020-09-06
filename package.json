@@ -14,8 +14,8 @@
         "@vuepress/plugin-google-analytics": "^1.5.4",
         "@vuepress/plugin-medium-zoom": "^1.5.4",
         "markdown-it-footnote": "^3.0.2",
+        "vuepress": "^1.5.4",
         "vuepress-plugin-container": "^2.1.2",
-        "vuepress-theme-book": "^0.0.4",
-        "vuepress": "^1.5.3"
+        "vuepress-theme-book": "^0.0.4"
     }
 }

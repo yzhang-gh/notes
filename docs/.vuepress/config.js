@@ -3,28 +3,18 @@ const { description } = require('../../package')
 module.exports = {
     title: 'Notes',
     description: description,
+    base: '/notes/',
     head: [
         ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-        ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
     ],
     theme: "book",
     themeConfig: {
         repo: 'yzhang-gh/notes',
-        base: '/notes/',
         editLinks: false,
         docsDir: 'docs',
         lastUpdated: 'Last updated',
         smoothScroll: true,
-        nav: [
-            {
-                text: 'Guide',
-                link: '/guide/',
-            },
-            {
-                text: 'Config',
-                link: '/config/'
-            }
-        ],
+        nav: [],
         sidebar: [
             {
                 title: 'Classic Machine Learning',
@@ -67,21 +57,22 @@ module.exports = {
                     'jp/beginner-unit-7-9',
                 ]
             },
-        ],
-        plugins: [
-            '@vuepress/plugin-back-to-top',
-            '@vuepress/plugin-medium-zoom',
-            // [
-            //     '@vuepress/google-analytics',
-            //     {
-            //         ga: 'UA-177325112-1',
-            //     },
-            // ],
-        ],
-        markdown: {
-            extendMarkdown: md => {
-                md.use(require('markdown-it-footnote'))
+        ]
+    },
+    plugins: [
+        '@vuepress/back-to-top',
+        '@vuepress/medium-zoom',
+        [
+            '@vuepress/google-analytics',
+            {
+                ga: 'UA-177325112-1',
             },
-        }
+        ],
+    ],
+    markdown: {
+        extendMarkdown: md => {
+            md.set({ breaks: true })
+            md.use(require('markdown-it-footnote'))
+        },
     }
 }

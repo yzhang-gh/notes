@@ -218,9 +218,9 @@
 <!--  -->
 
 - <span class="jp">李さんはもうすぐ来る<b class="green">と</b><b>思います</b>。</span>
-  　　<span class="annot">（「（我）觉得～」，～小句用〔简体形〕，只能表示说话人自己的想法）</span>
+  　　<span class="annot">（「（我）觉得 / 想～」，～小句用〔简体形〕，只能表示说话人自己的思考内容）</span>
   <span class="jp">馬さんは日本へ行きたい<b class="green">と</b><b>思っています</b>。</span>
-  　　<span class="annot">（「～觉得～」，若是<b class="jp">～と思いました</b>或<b class="jp">～と思っています</b>则也可以表示其他人的想法）</span>
+  　　<span class="annot">（「～觉得 / 想～」，若是<b class="jp">～と思いました</b>或<b class="jp">～と思っています</b>则也可以表示其他人的思考内容）</span>
 - <span class="jp">森さん<b>は</b>中国語の試験は難しかった<b class="green">と</b><b>言いました</b>。</span>　<span class="annot">（转述别人的话，<b class="jp">～と言いました</b>）</span>
   <span class="jp">小野さん<b>は</b>李さん<b>に</b>ちょっと休みたい<b class="green">と</b><b>言いました</b>。</span><span class="annot">（指出话是对谁说的，<b class="jp">～に</b>）</span>
 - <span class="jp">すみません、頭が痛い<b>んです</b>。</span>

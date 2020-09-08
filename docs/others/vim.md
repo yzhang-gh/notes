@@ -16,19 +16,21 @@ Press `.` to repeat last change，给多行加/去注释的时候很实用
 | <kbd>Ctrl</kbd>+<kbd>b</kbd>/<kbd>u</kbd> | previous page/half page                                  |
 | <kbd>w</kbd>                              | next word (<kbd>d</kbd><kbd>w</kbd> delete current word) |
 | <kbd>b</kbd>                              | previous word                                            |
+| <kbd>f</kbd><kbd>{char}</kbd>             | jump to next `{char}` (on this line)                     |
+
+<kbd>;</kbd> repeat last <kbd>f</kbd> (or <kbd>F/t/T</kbd>) operation
 
 ## Copy and paste
 
-| Key                      | Operation                                          |
-| ------------------------ | -------------------------------------------------- |
-| <kbd>y</kbd><kbd>y</kbd> | copy the line (mnemonic: **y**ank)                 |
-| <kbd>d</kbd><kbd>d</kbd> | **d**elete the line (behaves like a cut operation) |
-| <kbd>p</kbd>             | **p**aste after the current line                   |
-| <kbd>P</kbd>             | **p**aste before the current line                  |
+| Key                            | Operation                                               |
+| ------------------------------ | ------------------------------------------------------- |
+| <kbd>y</kbd><kbd>y</kbd>       | copy the line (mnemonic: **y**ank)                      |
+| <kbd>d</kbd><kbd>d</kbd>       | **d**elete the line (behaves like a cut operation)      |
+| <kbd>p</kbd>                   | **p**aste after the current line                        |
+| <kbd>P</kbd>                   | **p**aste before the current line                       |
+| <kbd>dt</kbd><kbd>{char}</kbd> | delete up **t**o this `{char}` (excluding) on this line |
 
 <kbd>yj</kbd> copy 2 lines, <kbd>y2k</kbd> copy 3 lines (which includes 2 lines above)
-
-<kbd>dt</kbd><kbd>&lt;char&gt;</kbd> delete up **t**o this char (excluding) on this line
 
 ## Replace/Overtype
 
@@ -38,7 +40,7 @@ Press `.` to repeat last change，给多行加/去注释的时候很实用
 | <kbd>cw</kbd> | replace current word (delete current word and enter *insert* mode) |
 | <kbd>R</kbd>  | enter *replace* mode                                               |
 
-<kbd>x</kbd> to delete current char
+<kbd>x</kbd> delete current char
 
 ## Search
 

@@ -1,4 +1,10 @@
+---
+title: 计算学习理论
+---
+
 # 计算学习理论 (Computational Learning Theory)
+
+<link rel="stylesheet" href="/notes/katex@0.11.1.min.css">
 
 ::: warning 🚧
 under construction...
@@ -23,7 +29,7 @@ under construction...
 - accent**泛化误差**，在样本分布 $\mathcal{D}$ 之下 loss 的期望
   $$ E(h;\mathcal{D}) = \mathbb{E}_{x\sim\mathcal{D}}\thinspace[\ell(h(x),y)]. $$
 - accent**经验误差**，在样例集上的平均 loss
-  <span>$$ \widehat{E}(h;D)=\frac{1}{m}\sum_{i=1}^m \ell\mathopen{}\left(h(x^{(i)}), y^{(i)}\right)\mathclose{}. $$</span>
+  $$ \widehat{E}(h;D)=\frac{1}{m}\sum_{i=1}^m \ell\mathopen{}\left(h(x^{(i)}), y^{(i)}\right)\mathclose{}. $$
 
 ## PAC 学习框架
 

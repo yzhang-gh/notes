@@ -63,11 +63,15 @@ More on <https://linux.die.net/man/5/ssh_config>
 ## `ls` 命令
 
 ```
-ls [OPTION...] [FILE or DIR...]
-
+## ls [OPTION...] [FILE or DIR...]
 ls -a  ## including entries starting with `.`
 ls -l  ## detailed information
 ls | head [-<n>]  ## only show first n entries (default 10)
+
+## `.bashrc` 中其实默认定义了一些 aliases
+alias ll='ls -alF'
+alias la='ls -A'   ## except for `.` and `..`
+alias l='ls -CF'
 ```
 
 🚧
@@ -89,7 +93,7 @@ https://tecadmin.net/run-command-in-background-on-linux/
 ## 别名 `alias`, `type`
 
 ```
-## Append the following line to `~/.bashrc`
+## Append the following line to `~/.bashrc` (or `~/.bash_aliases`)
 alias name='your command'
 
 type name

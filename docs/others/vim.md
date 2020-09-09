@@ -2,7 +2,7 @@
 
 ?> No fancy tips, just for simple editing (otherwise use VSCode instead!)
 
-Press `.` to repeat last change，给多行加/去注释的时候很实用
+Press <kbd>.</kbd> to repeat last change，给多行加/去注释的时候很实用
 
 ---
 
@@ -31,6 +31,7 @@ Press `.` to repeat last change，给多行加/去注释的时候很实用
 | <kbd>dt</kbd><kbd>{char}</kbd> | delete up **t**o this `{char}` (excluding) on this line |
 
 <kbd>yj</kbd> copy 2 lines, <kbd>y2k</kbd> copy 3 lines (which includes 2 lines above)
+<kbd>df</kbd><kbd>{char}</kbd> ~ (including)
 
 ## Replace/Overtype
 

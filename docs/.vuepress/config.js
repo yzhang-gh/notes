@@ -14,50 +14,50 @@ module.exports = {
         docsDir: 'docs',
         lastUpdated: 'Last updated',
         smoothScroll: true,
-        nav: [],
-        sidebar: [
-            {
-                title: 'Classic Machine Learning',
-                collapsable: false,
-                children: [
-                    'ml/learning-theory',
-                ]
-            },
-            {
-                title: 'Python',
-                collapsable: false,
-                children: [
-                    'python/miniconda',
-                    'python/matplotlib',
-                ]
-            },
-            {
-                title: 'Windows',
-                collapsable: false,
-                children: [
-                    'windows/context-menu',
-                ]
-            },
-            {
-                title: 'Others',
-                collapsable: true,
-                children: [
-                    'others/latex',
-                    'others/shell',
-                    'others/vim',
-                    'others/genetics',
-                ]
-            },
-            {
-                title: 'Japanese',
-                collapsable: false,
-                children: [
-                    'jp/beginner-unit-1-3',
-                    'jp/beginner-unit-4-6',
-                    'jp/beginner-unit-7-9',
-                ]
-            },
-        ]
+        nav: [
+            // { text: 'Machine Learning', link: '/' },
+            { text: 'Software and Tools', link: '/software/' },
+            { text: 'Languages', link: '/langs/' },
+        ],
+        sidebar: {
+            '/langs/': [
+                {
+                    title: 'English',
+                    collapsable: false,
+                    children: [
+                        'en/learned-in-uk',
+                    ]
+                },
+                {
+                    title: 'Japanese',
+                    collapsable: false,
+                    children: [
+                        'jp/beginner-unit-1-3',
+                        'jp/beginner-unit-4-6',
+                        'jp/beginner-unit-7-9',
+                    ]
+                }
+            ],
+            '/ml/': [
+                {
+                    title: 'Machine Learning',
+                    collapsable: false,
+                    children: [
+                        'ml/learning-theory',
+                    ]
+                },
+            ],
+            '/software/': [
+                {
+                    title: 'Windows',
+                    collapsable: false,
+                    children: [
+                        'windows/autohotkey',
+                    ]
+                },
+            ],
+            '/': ['']
+        }
     },
     plugins: [
         '@vuepress/back-to-top',

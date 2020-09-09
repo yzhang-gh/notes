@@ -43,7 +43,7 @@ module.exports = {
                     title: 'Machine Learning',
                     collapsable: false,
                     children: [
-                        'ml/learning-theory',
+                        'learning-theory',
                     ]
                 },
             ],

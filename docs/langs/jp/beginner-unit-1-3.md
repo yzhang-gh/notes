@@ -1,6 +1,10 @@
-# 标准日本语初级（上）1－3 单元总结
+---
+title: 标准日本语初级（上）1－3 单元
+---
 
-<link href="/notes/public/jp.css" rel="stylesheet">
+# 标准日本语 初级（上）1－3 单元总结
+
+<link href="/notes/jp.css" rel="stylesheet">
 
 ## 五十音
 

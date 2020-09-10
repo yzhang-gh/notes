@@ -21,7 +21,7 @@ return      ; 结束命令
 ### 自动填写表单
 
 ```
-#IfWinActive, ahk_class YourWinClass  ; 可以用 Window Spy（见托盘右键菜单）查看各个窗口的 Window Class 值
+#IfWinActive, ahk_class YourWinClass  ; 可以用附带的 Window Spy 程序查看各个窗口的 WindowClass 值
 !f::
 ; 切换英文输入法 https://www.autohotkey.com/docs/commands/PostMessage.htm#ExSwitchKeybLang
 PostMessage, 0x50, 0, 0x4090409,, A

@@ -18,6 +18,7 @@ module.exports = {
             // { text: 'Machine Learning', link: '/' },
             { text: 'Software and Tools', link: '/software/' },
             { text: 'Languages', link: '/langs/' },
+            { text: 'Others', link: '/others/' },
         ],
         sidebar: {
             '/langs/': [
@@ -47,12 +48,38 @@ module.exports = {
                     ]
                 },
             ],
+            '/programming/': [
+                {
+                    title: 'Python',
+                    collapsable: false,
+                    children: [
+                        'python/miniconda',
+                        'python/matplotlib',
+                    ]
+                },
+                {
+                    title: 'LaTeX',
+                    collapsable: false,
+                    children: [
+                        'latex',
+                    ]
+                },
+            ],
             '/software/': [
                 {
                     title: 'Windows',
                     collapsable: false,
                     children: [
                         'windows/autohotkey',
+                    ]
+                },
+            ],
+            '/others/': [
+                {
+                    title: 'Misc.',
+                    collapsable: false,
+                    children: [
+                        'characters',
                     ]
                 },
             ],

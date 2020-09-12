@@ -73,6 +73,13 @@ module.exports = {
                         'windows/autohotkey',
                     ]
                 },
+                {
+                    title: 'General',
+                    collapsable: false,
+                    children: [
+                        'vim',
+                    ]
+                },
             ],
             '/others/': [
                 {
@@ -80,6 +87,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'characters',
+                        'genetics',
                     ]
                 },
             ],

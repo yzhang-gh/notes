@@ -1,13 +1,13 @@
 // Adapted from https://github.com/spencerwooo/dowww
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body
   font-family $secondaryFont
 
 h1, h2, h3, h4, h5, h6
   font-family $primaryFont !important
-  font-weight bold
+  font-weight 600
 
 .callout
   margin 1rem 0
@@ -53,9 +53,6 @@ pre.tree
 #search-form
   line-height inherit
 
-.sidebar-links a.sidebar-link:hover
-  background-color #e6ecf1 !important
-
 // SCROLLBAR
 @media (min-width: 719px)
   ::-webkit-scrollbar
@@ -64,3 +61,16 @@ pre.tree
   ::-webkit-scrollbar-thumb
     background-color rgba(255, 255, 255, 0.4)
     border-radius 6px
+
+// SIDEBAR
+
+.sidebar-links
+  a.sidebar-link
+    transition-duration 0.1s
+    transition-function ease-out
+
+    &:hover
+      background-color #e6ecf1
+    &.active:hover
+      color $accentColor
+      

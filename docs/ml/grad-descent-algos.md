@@ -1,14 +1,22 @@
-# 梯度下降优化算法
+# 梯度下降优化算法总结
 
-## ...
+<link rel="stylesheet" href="/notes/katex@0.11.1.min.css">
 
-[回顾一下](./learning-theory.md)，我们有假设函数 $h$，其所有参数用 $\theta$ 表示（$h$ is parametrized by $\theta$），$D$ 是样例集 $\lbrace(x^{(1)},y^{(1)}),\cdots,(x^{(m)},y^{(m)})\rbrace$，我们想用梯度下降来最小化经验误差（以此找到最优的 $h$，也即 $\theta$）
+## 背景
 
-$$ \min\widehat{E}(\theta;D)\text{, where }\widehat{E}(\theta;D)=\frac{1}{m}\sum_{i=1}^m \ell\mathopen{}\left(h(x^{(i)}), y^{(i)}\right)\mathclose{}. $$
+[回顾一下](./learning-theory.md)，现实中我们有了数据集 $D = \lbrace(x^{(1)},y^{(1)}),\cdots,(x^{(m)},y^{(m)})\rbrace$，也定义了损失函数 $\ell\colon\mathcal{Y}\times\mathcal{Y}\to\mathbb{R}$，我们想要寻找一个假设函数 $h$，which 能最小化经验误差（$h$ 的所有参数由 $\theta$ 表示）：
 
-$$ \theta = \theta - \eta\cdot\nabla_\theta\widehat{E}(\theta). $$
+$$ \min_\theta\widehat{E}(\theta;D)\text{,}\qquad\text{where }\widehat{E}(\theta;D)=\frac{1}{m}\sum_{i=1}^m \ell\mathopen{}\left(h(x^{(i)};\theta), y^{(i)}\right)\mathclose{}. $$
 
-## 挑战
+这个（凸）优化的过程就可以用梯度下降来做
+
+$$ \theta = \theta - \eta\cdot g $$
+
+其中 $\eta$ 为学习率，$g = \nabla_\theta\widehat{E}(\theta)$ 为梯度
+
+## 朴素
+
+**挑战**
 
 - 选择学习率
 - 选择学习率 scheduler
@@ -39,7 +47,7 @@ $$ g_{t,i} = \nabla_\theta\widehat{E}(\theta_{t,i}). $$
 
 ($\theta_{t+1,i} = \theta_{t,i} - \eta\cdot g_{t,i}$)
 
-$$ \theta_{t+1,i} = \theta_{t,i} - \frac{\eta}{\textcolor{orange}{\sqrt{G_{t,ii}+\epsilon}}}\cdot g_{t,i} $$
+$$ \theta_{t+1,i} = \theta_{t,i} - \frac{\eta}{\textcolor{#FF7800}{\sqrt{G_{t,ii}+\epsilon}}}\cdot g_{t,i} $$
 
 $G_t$
 

@@ -103,6 +103,9 @@ module.exports = {
                 ga: 'UA-177325112-1',
             },
         ],
+        [
+            'shiki', { theme: 'github-light' }
+        ],
     ],
     markdown: {
         extendMarkdown: md => {

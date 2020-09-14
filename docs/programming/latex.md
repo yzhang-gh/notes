@@ -4,11 +4,10 @@
 
 A lightweight, cross-platform, portable, and easy-to-maintain LaTeX distribution based on TeX Live
 
-<https://github.com/yihui/tinytex>
+- 主页及介绍：<https://yihui.name/tinytex/>
+- GitHub 仓库：<https://github.com/yihui/tinytex>
 
-执行完 `.bat`（在项目的 `tools` 目录下）安装脚本后，再用下述 `tlmgr install pkg1 pkg2 ...` 命令把 `pkgs-yihui.txt` 和自己需要的其它包安装一下（善用 VSCode 多光标和 `Join Lines` 命令）
-
-### Other Packages
+从仓库的 `tools` 目录中下载执行 `install-windows.bat` 安装脚本，然后使用 `tlmgr install pkg1 pkg2 ...` 命令安装 `pkgs-yihui.txt` 以及其它自己需要的包（善用 VSCode 多光标和 `Join Lines` 命令），比如：
 
 ```
 chktex
@@ -32,9 +31,7 @@ cjkpunct
 xecjk
 ```
 
----
-
-## `tlmgr` Common Commands
+### `tlmgr` Common Commands
 
 ```
 tlmgr search --global --file "keywords"

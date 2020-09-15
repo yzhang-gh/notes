@@ -57,10 +57,13 @@ pre.tree
 @media (min-width: 719px)
   ::-webkit-scrollbar
     max-width 6px
-    max-height 12px
+    max-height 6px
   ::-webkit-scrollbar-thumb
-    background-color rgba(255, 255, 255, 0.4)
+    background-color #f2f3f4
     border-radius 6px
+
+    &:hover
+      background-color #eaebed
 
 // SIDEBAR
 
@@ -89,10 +92,26 @@ kbd
   margin-bottom 0.1rem
 
 // CODE BLOCK
-.theme-default-content pre
-  background-color #f6f8fa !important
-  border-radius 5px
-  color $textColor
-
+.theme-default-content
   code
     color $textColor
+
+  p
+  h1
+  h2
+  h3
+  a
+    & > code
+      padding 0.25rem 0.3rem
+      white-space nowrap
+
+  a > code
+    color $accentColor
+
+  pre
+    background-color #f6f8fa !important
+    border-radius 5px
+    color $textColor
+
+    code
+      color $textColor

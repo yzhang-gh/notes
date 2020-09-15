@@ -39,17 +39,13 @@ tlmgr install [option...] pkg...
 tlmgr update [option...] [pkg...]
 ```
 
-<https://www.tug.org/texlive/doc/tlmgr.html>
-
----
+[`tlmgr` manual](https://www.tug.org/texlive/doc/tlmgr.html)
 
 ## Escape
 
 `& % $ # _ { } ~ ^ \`
 
 **Note**: use `\ell` instead of `l` in math mode
-
----
 
 ## Personal Template
 
@@ -138,8 +134,6 @@ Your text
 
 </details>
 
----
-
 ## Useful Snippets
 
 ### Change Math Color
@@ -207,8 +201,6 @@ Your text
 authblk
 ```
 
----
-
 ## 段落样式
 
 ### 行距
@@ -223,15 +215,11 @@ authblk
 Global: use `\setlength{\parindent}{0pt}` in **preamble**.
 Local : use `\noindent` in the front of that paragraph
 
----
-
 ## Useful Links
 
 [List of mathematical symbols by subject](https://en.wikipedia.org/wiki/List_of_mathematical_symbols_by_subject) - Wikipedia
 
 [LaTeX `twoside` document binding offset](https://tex.stackexchange.com/questions/27776/how-to-force-latex-to-put-even-pages-on-the-right-hand-side-in-documentclass-art/27786#27786)
-
----
 
 ## BibLaTeX
 
@@ -246,8 +234,6 @@ Local : use `\noindent` in the front of that paragraph
 \end{document}
 ```
 
----
-
 ## 字体
 
 ```latex
@@ -258,21 +244,17 @@ Local : use `\noindent` in the front of that paragraph
 \usepackage{tgpagella}      %% Palladio font for text
 ```
 
----
-
 ## 中文支持
 
 `\usepackage{ctex}`
 
-TeX Live 完整安装，使用 XeLaTeX 编译
+使用 XeLaTeX 编译
 
 （英文版 Windows 需要自己手动安装中文字体，`Settings`>`Time & Language`>`Region & Language`>`中文`>`Options`>`Basic typing`）
 
 查看字体 `fc-list>>fonts.txt`
 
 设置字体 `\setCJKmainfont{Source Han Sans CN}`
-
----
 
 ## `a4paper`/`letterpaper` 不起作用
 
@@ -293,8 +275,6 @@ BTW: The people who can't reproduce your problem probably have a4paper as defaul
 tlmgr paper letter
 tlmgr paper a4
 ```
-
----
 
 ## Beamer
 

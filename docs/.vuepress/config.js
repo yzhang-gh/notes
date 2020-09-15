@@ -17,6 +17,7 @@ module.exports = {
         nav: [
             // { text: 'Machine Learning', link: '/' },
             { text: 'Software and Tools', link: '/software/' },
+            { text: 'Programming', link: '/programming/' },
             { text: 'Languages', link: '/langs/' },
             { text: 'Others', link: '/others/' },
         ],

@@ -238,11 +238,13 @@ Local : use `\noindent` in the front of that paragraph
 
 ```latex
 \usepackage[utf8]{inputenc} %% So you can use Unicode chars (enc -- encoding)
-\usepackage[T1]{fontenc}    %% `OT1` (old TeX) only contains 128 chars, that why `<` and `>` result in `¡` and `¿`
+\usepackage[T1]{fontenc}    %% `OT1` (old TeX) only contains 128 chars, that's why `<` and `>` are shown as `¡` and `¿`
 
 \usepackage{mathpazo}       %% Pazo Math font for math (bettr in combination with Palatino font for text)
 \usepackage{tgpagella}      %% Palladio font for text
 ```
+
+[LaTeX font selection guide](https://www.latex-project.org/help/documentation/fntguide.pdf)
 
 ## 中文支持
 

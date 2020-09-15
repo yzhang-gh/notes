@@ -274,15 +274,15 @@ TeX Live 完整安装，使用 XeLaTeX 编译
 
 ---
 
-## A4paper vs. Letterpaper
+## `a4paper`/`letterpaper` 不起作用
 
 Quite a lot of old classes (e.g. `article`) don't set the pdf sizes. An option like `a4paper` sets only things like the TeX `\paperwidth`, the linewidth and similar lengths.
 
 You will have to insert the necessary command yourself. For pdflatex this is
 
 ```latex
-\pdfpagewidth = \paperwidth
-\pdfpageheight = \paperheight
+\pdfpagewidth=\paperwidth%
+\pdfpageheight=\paperheight%
 ```
 
 BTW: The people who can't reproduce your problem probably have a4paper as default. In this case they would see your problem if they used e.g. the option `letterpaper`.

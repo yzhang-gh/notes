@@ -67,6 +67,7 @@ More on <https://linux.die.net/man/5/ssh_config>
 ls -a  ## including entries starting with `.`
 ls -l  ## detailed information
 ls | head [-<n>]  ## only show first n entries (default 10)
+ls | tail         ## ...
 
 ## `.bashrc` 中其实默认定义了一些 aliases
 alias ll='ls -alF'

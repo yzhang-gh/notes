@@ -112,6 +112,7 @@ module.exports = {
         extendMarkdown: md => {
             md.set({ breaks: true })
             md.use(require('markdown-it-footnote'))
+                .use(require('markdown-it-mark'))
                 .use(require('@neilsustc/markdown-it-katex'))
         },
     }

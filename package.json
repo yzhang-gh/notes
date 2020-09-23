@@ -15,6 +15,7 @@
         "@vuepress/plugin-google-analytics": "^1.5.4",
         "@vuepress/plugin-medium-zoom": "^1.5.4",
         "markdown-it-footnote": "^3.0.2",
+        "markdown-it-mark": "^2.0.0",
         "vuepress": "^1.5.4",
         "vuepress-plugin-container": "^2.1.2",
         "vuepress-plugin-shiki": "^0.2.4",

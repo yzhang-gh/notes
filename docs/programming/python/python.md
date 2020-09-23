@@ -2,7 +2,7 @@
 
 ## 作用域 scope
 
-- Python 程序由accent**代码块**组成，包括模块（mudule），类（class），函数（def）等
+- Python 程序由==代码块==组成，包括模块（mudule），类（class），函数（def）等
   if，for 等语句不构成代码块
 - 当变量在**代码块**中被定义时，作用域为该代码块（局部变量）
 

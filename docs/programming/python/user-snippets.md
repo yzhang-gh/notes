@@ -12,15 +12,11 @@ expanduser("~/somewhere")
 gettempdir()
 ```
 
----
-
 ## 在命令行打印进度
 
 ```python
 print(f"{progress:.2f}%", end="\r", flush=True)
 ```
-
----
 
 ## GUI 相关
 
@@ -49,5 +45,3 @@ pyinstaller --onefile --noconsole main.py
 #### 附：更改图标
 
 用 Resource Hacker 打开要改图标的 exe，`Action > Replace Icon ...`，然后选择一个有图标的 exe 替换（比如 `pythonw.exe`）
-
----

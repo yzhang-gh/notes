@@ -56,6 +56,8 @@ module.exports = {
                     children: [
                         'python/miniconda',
                         'python/matplotlib',
+                        'python/python',
+                        'python/user-snippets',
                     ]
                 },
                 {

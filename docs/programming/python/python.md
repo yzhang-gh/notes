@@ -21,8 +21,6 @@ def outer():
 
 [Python 执行模型](https://docs.python.org/3/reference/executionmodel.html)
 
----
-
 ## 格式化字符串 (string format)
 
 ```python

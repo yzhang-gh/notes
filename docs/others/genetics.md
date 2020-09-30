@@ -4,19 +4,19 @@
 
 ## 基本概念
 
-- ==染色体==，主要由 DNA 和 5 种被称为组蛋白的蛋白质构成
-- ==DNA==，脱氧核糖核酸，双链，由核苷酸构成
+- ==染色体==，由一个长链 DNA 分子和被称为**组蛋白**（**histone**）的蛋白质构成
+- ==DNA==，脱氧核糖核酸，由核苷酸构成的双链分子
 - ==基因==，**具有遗传效应（编码蛋白质）的** DNA 或 RNA **片段**，每个 DNA 分子包含**许多个**基因
-- 基因包含==编码区==和==非编码区==，启动子位于非编码区
-- 编码区又分为==外显子==和==内含子==，内含子又是非编码序列（*有待考证*）
+- **基因**包含==编码区==和==非编码区==，启动子位于非编码区
+- **编码区**又分为==外显子==和==内含子==，内含子又是非编码序列（*有待考证*）
 - ==基因组==，**genome**，指包含在该生物的 DNA（部分病毒是 RNA）中的全部遗传信息，即其完整的 DNA 序列，包括基因和非编码 DNA
 
 ---
 
-- ==顺式作用原件==，**cis-regulatory element**，位于基因的旁侧，是可以调控**其旁侧基因**表达的**非编码 DNA 序列**，包括启动子、增强子、应答元件等；
-  - 通过与<abbr title="见下一小节"><b>转录因子</b></abbr>（transcription factor）结合来调控基因；
+- ==顺式作用原件==，**cis-regulatory element**，位于基因的旁侧，是可以调控**其旁侧基因**表达的**非编码 DNA 序列**，包括启动子（promoter）、增强子、应答元件等；
+  - 通过与<abbr title="见下一小节"><b>转录因子（transcription factor）</b></abbr>结合来调控基因；
   - cis 表示 "on this side"，即和被调控的基因在同一个 DNA 分子上
-  - ==增强子==，enhancer，increase the likelihood that transcription of a particular gene will occur
+  - ==增强子==，**enhancer**，increase the likelihood that transcription of a particular gene will occur
 - ==反式作用原件==，**trans-regulatory element**，是可以调控**别的基因**表达的**基因**
   - 更具体一点，就是编码转录因子的基因
 - cis-regulatory 有时也叫 **cis-acting**，cis-regulation；trans-regulatory 同样

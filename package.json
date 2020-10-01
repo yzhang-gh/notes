@@ -11,14 +11,14 @@
     "license": "CC-BY-NC-SA-4.0",
     "devDependencies": {
         "@neilsustc/markdown-it-katex": "^0.5.0",
-        "@vuepress/plugin-back-to-top": "^1.5.4",
-        "@vuepress/plugin-google-analytics": "^1.5.4",
-        "@vuepress/plugin-medium-zoom": "^1.5.4",
+        "@vuepress/plugin-back-to-top": "^1.6.0",
+        "@vuepress/plugin-google-analytics": "^1.6.0",
+        "@vuepress/plugin-medium-zoom": "^1.6.0",
         "markdown-it-footnote": "^3.0.2",
         "markdown-it-mark": "^2.0.0",
-        "vuepress": "^1.5.4",
-        "vuepress-plugin-container": "^2.1.2",
-        "vuepress-plugin-shiki": "^0.2.4",
+        "vuepress": "^1.6.0",
+        "vuepress-plugin-container": "^2.1.5",
+        "vuepress-plugin-shiki": "^0.2.6",
         "vuepress-theme-book": "^0.0.4"
     }
 }

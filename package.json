@@ -19,6 +19,6 @@
         "vuepress": "^1.6.0",
         "vuepress-plugin-container": "^2.1.5",
         "vuepress-plugin-shiki": "^0.2.6",
-        "vuepress-theme-book": "^0.0.4"
+        "vuepress-theme-book": "^0.0.5"
     }
 }

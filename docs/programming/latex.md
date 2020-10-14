@@ -49,9 +49,7 @@ tlmgr update [option...] [pkg...]
 
 ## Personal Template
 
-<details>
-<summary>LaTeX code</summary>
-
+::: details LaTeX code
 ```latex
 \documentclass[11pt]{article}
 
@@ -131,8 +129,7 @@ Your text
 
 \end{document}
 ```
-
-</details>
+:::
 
 ## Useful Snippets
 

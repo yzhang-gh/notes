@@ -1,6 +1,8 @@
 # Matplotlib
 
-?> https://github.com/matplotlib/cheatsheets
+::: tip
+https://github.com/matplotlib/cheatsheets
+:::
 
 ## 配置 Configuration
 

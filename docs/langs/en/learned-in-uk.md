@@ -1,10 +1,10 @@
 # 在英国学英语
 
-accent**liner** 内衬
+==liner== 内衬
 
 ---
 
-accent**film**
+==film==
 
 - `n.` 影片；胶卷；**膜**
   （食品包装很常用这个词）
@@ -12,20 +12,20 @@ accent**film**
 
 ---
 
-accent**bag**
+==bag==
 
 超市结账时问你要不要袋子用的就是 bag
 
 ---
 
-accent**chill**
+==chill==
 
 - `n.` 寒意
 - `v.` 使寒冷，使恐怖；（非正式）**放松，休息**（[Urban Dict](https://www.urbandictionary.com/define.php?term=chilling)）
 
 ---
 
-accent**counter**
+==counter==
 
 - `n.` 计数器；（商店、银行等的）**柜台**
 - `v.` 反驳；抵制；抵消
@@ -34,14 +34,14 @@ accent**counter**
 
 ---
 
-accent**call**
+==call==
 
 - `v.` 喊，叫；打电话；**到，访问**（车站时刻表上常见）
 - `n.` ...
 
 ---
 
-accent**express**
+==express==
 
 - `v.` 表达，表示
 - `n.` **特快列车，快递服务**
@@ -62,7 +62,7 @@ accent**express**
 
 ---
 
-accent**I'm good**
+==I'm good==
 
 除了用来回复 How are you? 之外，常用于
 
@@ -83,18 +83,18 @@ accent**I'm good**
 
 ---
 
-accent**You're good (to go) / You're all set**
+==You're good (to go) / You're all set==
 
 你的事情都办好了
 
 <details>
 <summary>眼见为实</summary>
 
-![good-to-go](imgs/good-to-go.png)
+![good-to-go](./imgs/good-to-go.png)
 
-![all-set](imgs/all-set.png)
+![all-set](./imgs/all-set.png)
 
-![all-set2](imgs/all-set2.png)
+![all-set2](./imgs/all-set2.png)
 
 </details>
 
@@ -102,29 +102,29 @@ accent**You're good (to go) / You're all set**
 
 ---
 
-accent**till**
+==till==
 
-- `prep.`/`conj.` 直到（utill 的非正式形式）
+- `prep./conj.` 直到（utill 的非正式形式）
 - `n.` **收银台，（现金出纳机的）放钱的抽屉**（A cash register or drawer for money in a shop, bank, or restaurant）
 - `v.` 耕作，犁地
 
 ---
 
-accent**attraction**
+==attraction==
 
 - `n.` 吸引；吸引力；**A place which draws visitors by providing something of interest or pleasure**
 
 ---
 
-accent**quote**
+==quote==
 
-- `v.`/`n.` 引用；**报价**
+- `v./n.` 引用；**报价**
 
 travel insurance quotes
 
 ---
 
-accent**北约音标字母**
+==北约音标字母==
 
 打电话需要报字母的时候会用到（比如给银行打电话需要报名字，邮编等）
 
@@ -136,7 +136,7 @@ accent**北约音标字母**
 
 ---
 
-accent**serve**
+==serve==
 
 - `v.` 服务；提供；**发球**
 - `n.` **发球**

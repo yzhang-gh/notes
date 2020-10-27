@@ -23,7 +23,7 @@ def outer():
 
 ## 格式化字符串 (string format)
 
-```python
+```python{17}
 ## Basics             ## use "·" to visualize whitespace
 "{} {}".format(1, 2)  ## "1·2"
 f"{1} {2}"            ## "1·2"
@@ -35,7 +35,16 @@ f"{a:>10}"            ## "······test"
 f"{a:^10}"            ## "···test···"
 f"{a:_<10}"           ## "test______"
 
-f"{a!s} {a!r:10}"     ## equals to f"{str(a)} {repr(a):10}"
+f"{a!s}"              ## equals to f"{str(a)}"
+f"{a!r:10}"           ## f"{repr(a):10}"
+
+## Floats
+b = 0.5
+f"{b:5}"              ## "··0.5" !!!
+f"{b!s:5}"            ## "0.5··"
+
+f"{b:05}"             ## "000.5"
+f"{b:.3f}"            ## "0.500"
 ```
 
 [PyFormat (intuitive examples)](https://pyformat.info/)

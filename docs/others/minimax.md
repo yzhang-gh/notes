@@ -79,6 +79,7 @@ def minmax_decision(state, game):
 </figure>
 
 具体来说，对于一个 Max 节点（例如 $s$），每计算出一个子节点 $m_i$ 都会更新 $s$ 的下限（$s \ge \alpha$），其中 $\alpha=\text{max}(m_1,m_2,\dots)$。在 $s$ 还未探索的后代节点中，如果能够确定某个节点 $n\le\alpha$，也就表明其肯定不是最优解，可以剪掉（无需再考察 $n$ 的其它子节点）。而想要确定 $n\le\alpha$，需要两个条件：$n$ 是 Min 节点，$n$ 的一个子节点 $n^\prime\le\alpha$。
+（简而言之，在 Max 节点中更新 $\alpha$，在其后代的 Min 节点中发现小于 $\alpha$ 时剪枝，即直接 return）
 
 同理，假如 $s$ 是 Min 节点，已知的子节点会确定 $s$ 的上限（$s \le \beta$），$\beta=\text{min}(m_1,m_2,\dots)$。剪枝只会发生在其后代的某个 Max 节点 $n$，如果发现 $(n\ge)\,n^\prime\ge\beta$。
 
@@ -133,6 +134,117 @@ def alpha_beta_search(state, game):
 ::: tip
 即使使用了 alpha-beta 剪枝，在实际中也基本不可能搜索到游戏结束，这就需要使用**启发式**==评估函数==（heuristic evaluation function）来代替游戏最终的效用函数，这里不再展开。
 :::
+
+## 其它
+
+在搜索资料的时候偶然发现 LeetCode 上也有一些 [minimax 相关的题目](https://leetcode.com/tag/minimax/)，比如
+
+> [486. 预测赢家](https://leetcode-cn.com/problems/predict-the-winner)
+>
+> 给定一个表示分数的非负整数数组。 玩家一从数组任意一端拿取一个分数，随后玩家二继续从剩余数组任意一端拿取分数，然后玩家一拿，…… 。每次一个玩家只能拿取一个分数，分数被拿取之后不再可取。直到没有剩余分数可取时游戏结束。最终获得分数总和最多的玩家获胜。
+>
+> 给定一个表示分数的数组，预测玩家一是否会成为赢家（包括平局）。你可以假设每个玩家的玩法都会使他的分数最大化。
+>
+> **示例：**
+>
+> ```
+> 输入：[1, 5, 2]
+> 输出：False
+>
+> 输入：[1, 5, 233, 7]
+> 输出：True
+> ```
+
+::: details 最朴素 minimax 解法
+```python
+class Solution:
+    def PredictTheWinner(self, nums: List[int]) -> bool:
+
+        l = len(nums)
+        if l == 1:
+            return True
+
+        def max_value(i, j, hist_sum):
+            if i == j:
+                return hist_sum + nums[i]
+            v_i = min_value(i + 1, j, hist_sum + nums[i])
+            v_j = min_value(i, j - 1, hist_sum + nums[j])
+            return max(v_i, v_j)
+
+        def min_value(i, j, hist_sum):
+            if i == j:
+                return hist_sum
+            v_i = max_value(i + 1, j, hist_sum)
+            v_j = max_value(i, j - 1, hist_sum)
+            return min(v_i, v_j)
+
+        v_0 = min_value(1, l - 1, nums[0])
+        v__1 = min_value(0, l - 2, nums[l - 1])
+        return max(v_0, v__1) >= sum(nums) / 2
+```
+:::
+
+然后一运行，好家伙，直接倒数
+
+> 执行用时: 5012 ms (beats 13.11% of python3 submissions)
+> 内存消耗: 14.1 MB
+
+假如依据题目特性提前剪枝（`max_value` 和 `min_value` 函数中）
+
+```python
+if hist_sum >= half_sum:  ## sum(nums) / 2
+    return hist_sum
+```
+
+> 执行用时: 4280 ms (beats 22.67% of python3 submissions)
+> 内存消耗: 13.6 MB
+
+好了一丢丢，但是还是不太行
+
+那么既然有递归（和很多重复计算的可能性），加一点缓存如何？（注意缓存和剪枝有冲突，因为剪枝往往依赖的一些额外的 context，比如 `hist_sum`，`alpha/beta`，而缓存一般不会记录这些）
+
+::: details minimax + 缓存
+```python
+class Solution:
+    def PredictTheWinner(self, nums: List[int]) -> bool:
+        l = len(nums)
+        if l == 1:
+            return True
+
+        cache = {}
+
+        def max_value(i, j, hist_sum):
+            if i == j:
+                return hist_sum + nums[i]
+            if f"{i}-{j}" in cache.keys():
+                return cache.get(f"{i}-{j}") + hist_sum
+            v_i = min_value(i + 1, j, hist_sum + nums[i])
+            v_j = min_value(i, j - 1, hist_sum + nums[j])
+            v = max(v_i, v_j)
+            cache.update({f"{i}-{j}": v - hist_sum})
+            return v
+
+        def min_value(i, j, hist_sum):
+            if i == j:
+                return hist_sum
+            if f"{i}-{j}" in cache.keys():
+                return cache.get(f"{i}-{j}") + hist_sum
+            v_i = max_value(i + 1, j, hist_sum)
+            v_j = max_value(i, j - 1, hist_sum)
+            v = min(v_i, v_j)
+            cache.update({f"{i}-{j}": v - hist_sum})
+            return v
+
+        v_0 = min_value(1, l - 1, nums[0])
+        v__1 = min_value(0, l - 2, nums[l - 1])
+        return max(v_0, v__1) >= sum(nums) / 2
+```
+:::
+
+> 执行用时: 44~48 ms (74%~54%)
+> 内存消耗: 14 MB
+
+好了很多，但是还是不够。其它细节比如：数组长度为偶数时玩家一必胜。另外还有动态规划视角的解法（TODO）。
 
 ## 阅读材料
 

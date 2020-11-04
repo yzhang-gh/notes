@@ -248,7 +248,8 @@ class Solution:
 
 ## 阅读材料
 
-- Russell, Stuart, and Peter Norvig. Artificial Intelligence: A Modern Approach. *Prentice Hall*. 3rd 2009. (Chapter 5: Adversarial Search)
+- Russell, Stuart, and Peter Norvig. Artificial Intelligence: A Modern Approach. *Prentice Hall*. 3rd 2009.
+  (Chapter 5: Adversarial Search)
 
 扩展阅读
 

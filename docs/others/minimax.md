@@ -2,13 +2,13 @@
 
 <link rel="stylesheet" href="/notes/katex@0.11.1.min.css">
 
-Minimax 算法常用于「有限状态，零和，完全信息，两人」博弈问题，比如棋类
+Minimax 算法常用于「有限状态，零和，完全信息（，两人）」博弈问题，比如棋类
 
 ## 问题定义
 
 - ==状态== **state**，$s \in S$（棋盘的局面）
-- ==允许的动作== **actions**，$A(s)$（即可以落子的点）
-- The ==transition model== $t(s, a) \colon S \times A \to S$（比如黑白棋的翻转，围棋的提子）
+- ==允许的动作== **action**，$a \in A(s)$（即可以落子的位置）
+- The ==transition model== $T(s, a) \colon S \times A \to S$（比如黑白棋的翻转，围棋的提子）
 
 这三者（其实也就是游戏规则）决定了 **game tree**
 
@@ -32,7 +32,7 @@ Minimax 算法常用于「有限状态，零和，完全信息，两人」博弈
     \min_{a \in A(s)}\text{minimax}(s^\prime) & \text{if }\texttt{Min}\text{'s turn} \\
   \end{cases}
   $$
-  其中 $s^\prime=t(s,a)$
+  其中 $s^\prime=T(s,a)$
 
 从上述定义中不难看出，计算 minimax 值时需要沿着 game tree 一直推演（深度优先）至叶子节点（游戏结束），然后回溯计算出之前每个节点的值。一个节点只要计算出了 minimax 值，就已经看到了游戏的结局（效用值），假设对手（Min）也采取最优策略的话。而如果 Min 不采取最优策略，Max 仍然采取 minimax 策略，Max 的最终效用只会更高（不一定最优）。
 

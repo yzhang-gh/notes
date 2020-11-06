@@ -253,4 +253,4 @@ class Solution:
 
 扩展阅读
 
-- ⭐ [浅述：从 Minimax 到 AlphaZero，完全信息博弈之路](https://zhuanlan.zhihu.com/p/31809930)
+- ⭐ [浅述：从 Minimax 到 AlphaZero，完全信息博弈之路 - 知乎专栏](https://zhuanlan.zhihu.com/p/31809930)

@@ -102,6 +102,22 @@ module.exports = {
         '@vuepress/back-to-top',
         '@vuepress/medium-zoom',
         [
+            'vuepress-plugin-container',
+            {
+                type: 'callout',
+                before: info => `<div class="callout"><p class="title">${info}</p>`,
+                after: '</div>',
+            },
+        ],
+        [
+            'vuepress-plugin-container',
+            {
+                type: 'tree',
+                before: `<pre class="tree"><code>`,
+                after: `</code></pre>`,
+            },
+        ],
+        [
             '@vuepress/google-analytics',
             {
                 ga: 'UA-177325112-1',

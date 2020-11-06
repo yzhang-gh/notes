@@ -74,7 +74,7 @@ def minmax_decision(state, game):
 假设我们当前处于 $s$ 节点，并且已经计算出了其一个**直接子节点** $m$ 的 minimax 值，那么对于 $s$ 的其它**后代节点**，如果 $n$「差于」$m$，那么 $n$ 节点肯定不是最优路线了
 
 <figure>
-  <img src="./imgs/alpha-beta-general-case.png" alt="">
+  <img class="border" src="./imgs/alpha-beta-general-case.png" alt="">
   <figcaption>Alpha-beta 剪枝原理</figcaption>
 </figure>
 
@@ -84,6 +84,10 @@ def minmax_decision(state, game):
 同理，假如 $s$ 是 Min 节点，已知的子节点会确定 $s$ 的上限（$s \le \beta$），$\beta=\text{min}(m_1,m_2,\dots)$。剪枝只会发生在其后代的某个 Max 节点 $n$，如果发现 $(n\ge)\,n^\prime\ge\beta$。
 
 每个节点的 $\alpha$，$\beta$ 值继承于它的父节点。
+
+::: details 实例
+![example](./imgs/alpha-beta-example.png)
+:::
 
 ::: details Python 代码
 ```python

@@ -128,12 +128,23 @@ summary:focus
   outline none
 
 details.custom-block.details
-  background-color #f6f8fa
+  background-color white
+  border 1px solid #dddddd
+  box-shadow 1px 1px 1px #dddddd
+  padding 1em 1.2em
+  transition: box-shadow 0.2s ease-in;
+
+  &[open]
+    box-shadow none
+
+  div
+  img
+    &:nth-child(2)
+      margin-top 1em
 
   pre
-    border-top 1px #ccc solid
-    border-radius 0
-    padding-bottom 0
+    margin-bottom 0
+    margin-top 0
 
 // BLOCKQUOTE
 
@@ -152,3 +163,6 @@ mark
   background-color unset
   color $accentColor
   font-weight 600
+
+img.border
+  border 1px solid #dddddd

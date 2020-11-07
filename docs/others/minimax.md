@@ -6,19 +6,23 @@ Minimax 算法常用于「有限状态，零和，完全信息（，两人）」
 
 ## 问题定义
 
-- ==状态== **state**，$s \in S$（棋盘的局面）
-- ==允许的动作== **action**，$a \in A(s)$（即可以落子的位置）
-- The ==transition model== $T(s, a) \colon S \times A \to S$（比如黑白棋的翻转，围棋的提子）
+### 输入
 
-这三者（其实也就是游戏规则）决定了 **game tree**
+- ==可能的状态== **state**，$s \in S$（棋盘的局面）
+- ==允许的动作== **action**，$a \in A(s)$（即可以落子的位置）
+- A ==transition model==，$T(s, a) \colon S \times A \to S$（比如黑白棋的翻转，围棋的提子）
+- ==效用函数== **utility function**，$u(s,p)$，即玩家 $p$ 在游戏结束时（状态 $s$）获得的「收益」
+
+其中前三者决定了 **game tree**（博弈树），也即搜索空间
 
 <figure>
   <img src="./imgs/game-tree.webp" alt="">
   <figcaption>A branch of a game tree. (source: <a href="https://www.5dchesswithmultiversetimetravel.com/">5D Chess With Multiverse Time Travel</a>)</figcaption>
 </figure>
 
-- ==效用函数==，**utility function**: $u(s,p)$，（玩家 $p$）在游戏结束时（状态 $s$）获得的「收益」
-- 玩家需要的是一个==策略==，**strategy**，即在给定状态（棋局）下选择一个动作（落子）
+### 输出
+
+- ==策略== **strategy**，$\pi(s) \colon S \to A$，即在给定状态（棋局）下选择一个动作（落子）
 
 ## Minimax 算法
 
@@ -85,7 +89,7 @@ def minmax_decision(state, game):
 
 每个节点的 $\alpha$，$\beta$ 值继承于它的父节点。
 
-::: details 实例
+::: details A step-by-step example
 ![example](./imgs/alpha-beta-example.png)
 :::
 
@@ -136,7 +140,7 @@ def alpha_beta_search(state, game):
 :::
 
 ::: tip
-即使使用了 alpha-beta 剪枝，在实际中也基本不可能搜索到游戏结束，这就需要使用**启发式**==评估函数==（heuristic evaluation function）来代替游戏最终的效用函数，这里不再展开。
+即使使用了 alpha-beta 剪枝，在实际中也基本不可能搜索到游戏结束，这就需要使用**启发式**==评估函数==（heuristic evaluation function）来代替游戏结束时的效用函数，这里不再展开。
 :::
 
 ## 其它
@@ -252,7 +256,7 @@ class Solution:
 
 ## 阅读材料
 
-- Russell, Stuart, and Peter Norvig. Artificial Intelligence: A Modern Approach. *Prentice Hall*. 3rd 2009.
+- Stuart Russell and Peter Norvig. Artificial Intelligence: A Modern Approach. *Prentice Hall*. 3rd 2009.
   (Chapter 5: Adversarial Search)
 
 扩展阅读

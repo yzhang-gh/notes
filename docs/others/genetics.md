@@ -1,6 +1,8 @@
 # 遗传学知识回顾
 
-> 主要参考维基百科
+::: tip INFO
+主要参考维基百科
+:::
 
 ## 基本概念
 
@@ -36,13 +38,15 @@
 - DNA → DNA，==DNA 复制==
 
 <figure>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Centraldogma_nodetails.png" alt="Central dogma of molecular biology" style="max-width: 200px;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Centraldogma_nodetails.png" alt="Central dogma of molecular biology" style="max-width: 200px" class="border">
     <figcaption>Central dogma of molecular biology (from Wiki)</figcaption>
 </figure>
 
 ## 转录 (Transcription)
 
-![Transcription (from Wiki)](https://upload.wikimedia.org/wikipedia/commons/9/9b/MRNA.svg)
+<figure>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/MRNA.svg" alt="Transcription (from Wiki)" class="border">
+</figure>
 
 - ==转录因子==，**transcription factor**，是指能够结合在某基因上游<abbr title="应该就是指顺式作用原件，cis-regulatory elements">特异核苷酸序列</abbr>（如启动子，增强子）上的**蛋白质**，这些蛋白质能调控该基因的转录
 - 真核生物的 RNA 可以进一步被处理，可能包括**聚腺苷酸化**，==端帽==和==剪接==
@@ -56,6 +60,8 @@ Particular exons of a gene may be *included* or *excluded* under particular cond
 
 There are numerous modes of alternative splicing observed, of which the most common is **exon skipping**
 
-![DNA alternative splicing (from Wiki)](https://upload.wikimedia.org/wikipedia/commons/0/0a/DNA_alternative_splicing.gif)
+<figure>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/DNA_alternative_splicing.gif" alt="DNA alternative splicing (from Wiki)" class="border">
+</figure>
 
 详见 [Wiki](https://en.wikipedia.org/wiki/Alternative_splicing)

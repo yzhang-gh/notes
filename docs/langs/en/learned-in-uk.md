@@ -53,12 +53,9 @@
 但表示**充值**用 top-up
 充了钱，储蓄或余额叫 savings
 
-<details>
-<summary>眼见为实</summary>
-
-![add-money](imgs/oyster-card.png)
-
-</details>
+::: details 眼见为实
+![add-money](./imgs/oyster-card.png)
+:::
 
 ---
 
@@ -87,16 +84,13 @@
 
 你的事情都办好了
 
-<details>
-<summary>眼见为实</summary>
-
+::: details 眼见为实
 ![good-to-go](./imgs/good-to-go.png)
 
 ![all-set](./imgs/all-set.png)
 
 ![all-set2](./imgs/all-set2.png)
-
-</details>
+:::
 
 问法可以是 Am I all set?
 

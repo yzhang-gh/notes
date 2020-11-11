@@ -39,7 +39,8 @@ jobs:
         ## Need to specifiy a working-directory, otherwise it cannot find the path
         working-directory: gh-pages
         run: |
-          rm -rf assets fonts langs math ml others programming reading software *.html *.css english jp python windows
+          # rm -rf assets fonts langs math ml others programming reading software *.html *.css english jp python windows
+          git rm -r *
           mv ../master/docs/.vuepress/dist/* .
 
       - name: "Deploy"

@@ -2,8 +2,8 @@
 
 <link rel="stylesheet" href="/notes/katex@0.11.1.min.css">
 
-::: warning 🚧
-Under construction...
+::: warning
+UNDER CONSTRUCTION
 :::
 
 ## 背景

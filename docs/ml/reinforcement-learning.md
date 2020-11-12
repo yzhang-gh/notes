@@ -1,9 +1,13 @@
-# 强化学习 - Reinforcement Learning
+---
+title: 强化学习
+---
+
+# 强化学习 (Reinforcement Learning)
 
 <link rel="stylesheet" href="/notes/katex@0.11.1.min.css">
 
-::: warning 🚧
-Under construction...
+::: warning
+UNDER CONSTRUCTION
 :::
 
 ::: callout 🥥 In a Nutshell
@@ -11,13 +15,18 @@ Under construction...
 ——（如何下得更好）这就是强化学习
 :::
 
-强化学习是 通过与环境交互来解决连续决策的问题
+::: warning TODO
+强化学习的特点：不知道规则->？，几十上百步->？
+:::
+
+==强化学习==是通过与环境交互来解决**连续决策**的问题，而**监督学习**可以看作是**单轮决策**（预测）问题
 
 - ==可能的状态== **state**，$s \in S$（棋盘的局面）
 - ==允许的动作== **action**，$a \in A(s)$（即可以落子的位置）
-- A ==transition model== $T(s, a) \colon S \times A \to S$（比如黑白棋的翻转，围棋的提子）
+- A ==(probabilistic) transition model==，$P(s^\prime;s, a) \colon S \times A \times S \to [0,1]$（比如黑白棋的翻转，围棋的提子）
+- ~~==效用函数== **utility function**，$u(s,p)$，即玩家 $p$ 在游戏结束时（状态 $s$）获得的「收益」~~
 
-## 马尔可夫决策过程 - Markov Decision Processes (MDPs)
+## 马尔可夫决策过程 (Markov Decision Processes, aka MDPs)
 
 TODO
 

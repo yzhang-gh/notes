@@ -6,8 +6,8 @@ title: 计算学习理论
 
 <link rel="stylesheet" href="/notes/katex@0.11.1.min.css">
 
-::: warning 🚧
-under construction...
+::: warning
+UNDER CONSTRUCTION
 :::
 
 ## 什么是「学习」

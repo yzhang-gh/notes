@@ -46,6 +46,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'learning-theory',
+                        'grad-descent-algos',
                         'reinforcement-learning',
                     ]
                 },

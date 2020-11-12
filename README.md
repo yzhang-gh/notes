@@ -14,6 +14,10 @@ CSS 文件放到 `.vuepress/public` 目录下，该目录会被复制到网站�
 <link rel="stylesheet" href="/notes/katex@0.11.1.min.css">
 ```
 
+## 排版
+
+中英文混排需要用到括号时，如果括号里全是英文，则用半角括号，此外则使用全角括号
+
 ---
 
 Many styles based on [Dev on Windows with WSL](https://dowww.spencerwoo.com/).

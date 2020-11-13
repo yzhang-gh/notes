@@ -78,7 +78,20 @@ Adam
 
 ## 阅读材料
 
+**总览：**
+
 - [一个框架看懂优化算法之异同 SGD/AdaGrad/Adam - 知乎专栏](https://zhuanlan.zhihu.com/p/32230623)
 - [An overview of gradient descent optimization algorithms](https://ruder.io/optimizing-gradient-descent/index.html)
 - Wilson, Ashia C., et al. **The marginal value of adaptive gradient methods in machine learning**. In *Advances in neural information processing systems*. 2017. [link](https://proceedings.neurips.cc/paper/2017/hash/81b3833e2504647f9d794f7d7b9bf341-Abstract.html)
+- [Parameter updates - CS231n](https://cs231n.github.io/neural-networks-3/#update)
+
+<!--  -->
+
+**Momentum/NAG:**
+
+- [路遥知马力——Momentum](https://zhuanlan.zhihu.com/p/21486826)
+- [比 Momentum 更快：揭开 Nesterov Accelerated Gradient 的真面目 - 知乎专栏](https://zhuanlan.zhihu.com/p/22810533)
+
+<!--  -->
+
 - https://towardsdatascience.com/adam-latest-trends-in-deep-learning-optimization-6be9a291375c

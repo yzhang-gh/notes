@@ -66,12 +66,12 @@ title: 标准日本语初级（上）4－6 单元
 
 ……
 
-- <span class="jp">小野さんは今新聞を<b>読んでいます</b>。</span>（正在进行时，〔动词<span class="jp">て</span>形〕+ <span class="jp">います</span>）
-- <span class="jp">私は北京に<b>住んでいます</b>。</span>（表示动作的结果状态，〔动词<span class="jp">て</span>形〕+ <span class="jp">います</span>）
+- <span class="jp">小野さんは今新聞を<b>読んでいます</b>。</span><span class="annot">（正在进行时，〔动词<span class="jp">て</span>形〕+ <span class="jp">います</span>）</span>
+- <span class="jp">私は北京に<b>住んでいます</b>。</span><span class="annot">（表示动作的结果状态，〔动词<span class="jp">て</span>形〕+ <span class="jp">います</span>）</span>
   <span class="jp">車を<b>持っています</b>か。</span>
-  <span class="jp">ーーいいえ、<b>持っていません</b>。</span>（否定回答）
+  <span class="jp">ーーいいえ、<b>持っていません</b>。</span><span class="annot">（否定回答）</span>
   <span class="jp">田中さんを知っていますか。</span>
-  <span class="jp">ーーいいえ、<b>知りません</b>。</span>　　（特例）
+  <span class="jp">ーーいいえ、<b>知りません</b>。　　</span><span class="annot">（特例）</span>
 
 ### 动词<span class="jp">た</span>形
 

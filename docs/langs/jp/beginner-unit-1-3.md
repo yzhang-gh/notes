@@ -11,7 +11,7 @@ title: 标准日本语初级（上）1－3 单元
 不用考虑什么记忆技巧，基础的东西死记硬背反而最直接（就像九九乘法表）
 
 <figure>
-    <img src="./imgs/hiragana.png" alt="平假名">
+    <img src="./imgs/hiragana.png" alt="平假名" class="border">
     <figcaption>幼児教材：<a href="https://happylilac.net/hiragana-g-01.pdf" target="_blank" rel="noopener noreferrer">平假名</a>，<a href="https://happylilac.net/katakana-g-01.pdf" target="_blank" rel="noopener noreferrer">片假名</a></figcaption>
 </figure>
 

@@ -4,9 +4,9 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "serve",
+            "label": "dev",
             "type": "shell",
-            "command": "docsify serve docs",
+            "command": "npm run dev",
             "group": {
                 "kind": "build",
                 "isDefault": true

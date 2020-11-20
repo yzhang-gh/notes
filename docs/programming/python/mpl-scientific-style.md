@@ -3,7 +3,7 @@
 - 刻度 (ticks)
   - 刻度放到图的内部
   - 主、副刻度
-- 图例（legend）边框
+- 图例 (legend) 边框
 
 ```
 savefig.bbox      : tight       ## 'tight' or 'standard'. 'tight' is incompatible with pipe-based animation backends but will work with temporary file based ones

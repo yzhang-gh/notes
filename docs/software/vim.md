@@ -4,7 +4,7 @@
 Just for simple editing (otherwise use VSCode instead!)
 :::
 
-Press <kbd>.</kbd> to repeat last change，给多行加/去注释的时候很实用
+Press <kbd>.</kbd> to repeat last change，给多行加 / 去注释的时候很实用
 
 ---
 

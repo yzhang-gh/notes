@@ -107,19 +107,20 @@ module.exports = {
             'vuepress-plugin-container',
             {
                 type: 'callout',
-                before: info => `<div class="callout"><p class="title">${info}</p>`,
-                after: '</div>',
-                // render: function (tokens, idx) {
-                //     let m = tokens[idx].info.trim().match(/^callout\s+(.*)$/);
-                //     if (tokens[idx].nesting === 1) {
-                //         // opening tag
-                //         let title = m !== null ? m[1] : '';
-                //         return `<div class="callout">${title.length > 0 ? `<p class="title">${title}</p>` : ''}`;
-                //     } else {
-                //         // closing tag
-                //         return '</div>\n';
-                //     }
-                // },
+                // before: info => `<div class="callout"><p class="title">${info}</p>`,
+                // after: '</div>',
+                // Hide title if there isn't
+                render: function (tokens, idx) {
+                    let m = tokens[idx].info.trim().match(/^callout\s+(.*)$/);
+                    if (tokens[idx].nesting === 1) {
+                        // opening tag
+                        let title = m !== null ? m[1] : '';
+                        return `<div class="callout">${title.length > 0 ? `<p class="title">1 ${title}</p>` : ''}`;
+                    } else {
+                        // closing tag
+                        return '</div>\n';
+                    }
+                },
             },
         ],
         [

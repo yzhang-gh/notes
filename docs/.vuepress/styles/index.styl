@@ -108,7 +108,7 @@ kbd
     color $accentColor
 
   pre
-    background-color #f6f8fa !important
+    background-color #f6f8fa !important // Override the hardcoded background color of shiki
     border-radius 5px
     color $textColor
 
@@ -151,11 +151,19 @@ details.custom-block.details
 
 .theme-default-content
   blockquote
-    border-bottom: 1px solid #dfe2e5
+    border-left: 0.5rem solid #dfe2e5
+    padding 0.5rem 1rem
+    background #fbfbfc
 
     pre
+      background #fbfbfc !important
+      border 1px solid #dfe2e5
+
       code
         color #999
+  
+    code
+      color #999
   
     & > p
       margin .5em 0

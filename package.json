@@ -6,6 +6,7 @@
     "repository": "https://github.com/yzhang-gh/notes",
     "scripts": {
         "dev": "vuepress dev docs",
+        "devnoc": "vuepress dev docs --no-cache",
         "build": "vuepress build docs"
     },
     "license": "CC-BY-NC-SA-4.0",

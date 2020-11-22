@@ -26,7 +26,7 @@ CUDA 编程方式包括
 `@vectorize`（GPU 并行，ufunc）
 
 ::: tip Best Practice
-尽量减少 CPU (Host) 和 GPU (Device) 间的数据传输，即便与 CPU 相比，在设备上运行某些核函数并未实现性能提升时，也需遵照此规则
+尽量减少 CPU (Host) 和 GPU (Device) 间的数据传输，即便中途遇到在 GPU 上并不比在 CPU 上运行快的函数，也需遵照此规则
 
 [CUDA Best Practices Guide](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html)
 :::
@@ -52,8 +52,12 @@ CUDA 编程方式包括
 
 `cuda.gridsize`
 
+练习：使用网格跨度 (stride) 处理超大数据集
+
 ### 原子操作
 
 `cuda.atomic.*`
 
 ## CUDA 多维网格与共享内存
+
+练习：矩阵转置与矩阵乘法

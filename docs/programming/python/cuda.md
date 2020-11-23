@@ -1,3 +1,7 @@
+---
+title: CUDA
+---
+
 # 加速计算基础──CUDA Python 编程
 
 ::: callout
@@ -61,3 +65,11 @@ CUDA 编程方式包括
 ## CUDA 多维网格与共享内存
 
 练习：矩阵转置与矩阵乘法
+
+……
+
+## 😎
+
+<figure>
+    <img src="./imgs/cuda-certificate.png" alt="cuda certificate" class="border">
+</figure>

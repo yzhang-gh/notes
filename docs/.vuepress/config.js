@@ -60,6 +60,7 @@ module.exports = {
                         'python/matplotlib',
                         'python/python',
                         'python/user-snippets',
+                        'python/cuda',
                     ]
                 },
                 {

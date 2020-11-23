@@ -1,0 +1,175 @@
+/* Override */
+
+body {
+    font-family: 'Source Sans Pro', Lato, "Helvetica Neue", "Microsoft Yahei", sans-serif, "Segoe UI Emoji";
+}
+
+.sidebar {
+    background: #f7f8f9;
+}
+
+.sidebar ul li {
+    font-size: 14px;
+}
+
+.sidebar-toggle {
+    background: transparent;
+}
+
+.markdown-section {
+    max-width: 800px;
+}
+
+.markdown-section a {
+    font-weight: normal;
+}
+
+.markdown-section h1 a,
+.markdown-section h2 a,
+.markdown-section h3 a,
+.markdown-section h4 a {
+    font-weight: 600;
+}
+
+.markdown-section h2 code {
+    font-size: 1.5rem;
+}
+
+code,
+.markdown-section code,
+.markdown-section pre,
+.markdown-section pre > code {
+    font-family: Consolas, monospace, "Microsoft Yahei";
+}
+
+kbd {
+    box-shadow: inset 0 -1px 0 rgba(186, 186, 186, 0.7);
+    margin-bottom: 2px;
+}
+
+/* --- */
+
+img {
+    border: 1px solid lightgrey;
+}
+
+@media (min-width: 800px) {
+    img {
+        max-width: 80%;
+    }
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    text-align: center;
+    color: gray;
+    margin-top: 0.6em;
+}
+
+p + ul {
+    margin-top: -0.2em;
+}
+
+.markdown-section strong {
+    font-weight: bold;
+}
+
+strong.accent {
+    color: var(--color-green);
+}
+
+.green {
+    color: var(--color-green);
+}
+
+abbr {
+    cursor: help;
+}
+
+details summary {
+    cursor: pointer;
+}
+
+summary:focus {
+    outline: none;
+}
+
+.docsify-copy-code-button {
+    font-family: Consolas, monospace, "Microsoft Yahei";
+    padding: 0.4em 0.8em 0.48em !important;
+}
+
+/* Heading styles */
+/* (main: 800px) + (padding: 15px * 2) + (sidebar: 300px) */
+@media (min-width: 1130px) {
+    h2::before,
+    h3::before,
+    h4::before {
+        font-size: 0.8em;
+        color: #b7c1cc;
+        position: absolute;
+        left: 0;
+        text-align: right;
+    }
+
+    h2::before {
+        content: "#";
+        transform: translateX(calc(-100% + 0.5rem)) translateY(5px);
+    }
+    h3::before {
+        content: "##";
+        transform: translateX(calc(-100% + 0.5rem)) translateY(4px);
+    }
+    h4::before {
+        content: "###";
+        transform: translateX(calc(-100% + 0.5rem)) translateY(3px);
+    }
+}
+
+/*
+ * flasky.css_t
+ * ~~~~~~~~~~~~
+ *
+ * :copyright: Copyright 2010 by Armin Ronacher.
+ * :license: Flask Design License, see LICENSE for details.
+ */
+
+/* scrollbars */
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    display: block;
+    height: 10px;
+}
+
+::-webkit-scrollbar-button:vertical:increment {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #eee;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    width: 50px;
+    background-color: #ccc;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}

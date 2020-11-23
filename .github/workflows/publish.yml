@@ -19,12 +19,14 @@ jobs:
         uses: actions/checkout@v2
         with:
           path: master
+          fetch-depth: 0  # Fetch all history to get correct 'Last updated' information
 
       - name: "Checkout branch: gh-pages"
         uses: actions/checkout@v2
         with:
           ref: gh-pages
           path: gh-pages
+          fetch-depth: 0
 
       - name: "Clean install dependencies and build"
         working-directory: master
@@ -45,7 +47,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # git reset HEAD~ # Shouldn't do this as the 'Last updated' information will be removed
+          git reset HEAD~
           git add -A
           git commit -m "deploy"
-          git push
+          git push -f

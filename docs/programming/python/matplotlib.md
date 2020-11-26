@@ -4,7 +4,7 @@
 <https://github.com/matplotlib/cheatsheets>
 :::
 
-## 配置 Configuration
+## 配置 (Configuration)
 
 配置文件
 
@@ -31,18 +31,11 @@ plt.rc("font", **{"sans-serif": "Consolas"})
 figure.figsize: 6.4, 4.8  ## figure size in inches
 ```
 
----
+## 刻度 (Ticks)
 
-## Default Color Cycle
+总的来说，可以使用 [`matplotlib.axes.Axes.tick_params`](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.tick_params.html) 方法来控制刻度的方向，颜色，大小等等
 
-```python
-prop_cycle = plt.rcParams["axes.prop_cycle"]
-colors = prop_cycle.by_key()["color"]
-```
-
----
-
-## 让 x, y 轴等刻度
+### 让 x, y 轴等刻度
 
 ```python
 # plt.axis("equal")
@@ -50,9 +43,40 @@ colors = prop_cycle.by_key()["color"]
 plt.gca().set_aspect("equal", adjustable="box")
 ```
 
----
+### 主、副刻度 (Major and minor ticks)
 
-## 使用 Colormap
+```python
+ax = plt.gca()
+ax.xaxis.set_major_locator(MultipleLocator(20))
+# ax.xaxis.set_major_formatter(FormatStrFormatter('%d'))
+ax.xaxis.set_minor_locator(MultipleLocator(5))
+```
+
+## Colorbar 与 Colormap
+
+### 使 Colorbar 刻度为整数
+
+```python
+from matplotlib.ticker import MaxNLocator
+
+bar = fig.colorbar()
+bar.locator = MaxNLocator(integer=True)
+bar.update_ticks()
+
+## 如果是坐标轴的话
+# plt.gca().yaxis.set_major_locator(MaxNLocator(integer=True))
+```
+
+### 使 Colorbar 和作图区域等高
+
+```python
+im = plt.imshow()  ## ...
+plt.colorbar(im, fraction=0.046, pad=0.4)
+```
+
+不知道原理但是很神奇（[更多讨论](https://stackoverflow.com/a/26720422)）
+
+### 使用 Colormap
 
 ```python
 from matplotlib.cm import ScalarMappable
@@ -69,37 +93,9 @@ certain_patch.set_color(mappable.to_rgba(value))
 plt.colorbar(mappable)
 ```
 
----
-
-## 保存图片时常用的设置
+## Default Color Cycle
 
 ```python
-plt.savefig("filename.pdf", bbox_inches="tight")
-plt.savefig("filename.png", bbox_inches="tight", dpi=200)
+prop_cycle = plt.rcParams["axes.prop_cycle"]
+colors = prop_cycle.by_key()["color"]
 ```
-
----
-
-## Colorbar
-
-### 使 colorbar 刻度为整数
-
-```python
-from matplotlib.ticker import MaxNLocator
-
-bar = fig.colorbar()
-bar.locator = MaxNLocator(integer=True)
-bar.update_ticks()
-
-## 如果是坐标轴的话
-# plt.gca().yaxis.set_major_locator(MaxNLocator(integer=True))
-```
-
-### 使 colorbar 和作图内容的高度相符
-
-```python
-im = plt.imshow()  ## ...
-plt.colorbar(im, fraction=0.046, pad=0.4)
-```
-
-不知道原理但是很神奇（[更多讨论](https://stackoverflow.com/a/26720422)）

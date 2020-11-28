@@ -116,7 +116,7 @@ module.exports = {
                     if (tokens[idx].nesting === 1) {
                         // opening tag
                         let title = m !== null ? m[1] : '';
-                        return `<div class="callout">${title.length > 0 ? `<p class="title">1 ${title}</p>` : ''}`;
+                        return `<div class="callout">${title.length > 0 ? `<p class="title">${title}</p>` : ''}`;
                     } else {
                         // closing tag
                         return '</div>\n';
@@ -148,6 +148,11 @@ module.exports = {
             md.use(require('markdown-it-footnote'))
                 .use(require('markdown-it-mark'))
                 .use(require('@neilsustc/markdown-it-katex'))
+                .use(require('markdown-it-attrs'), {
+                    leftDelimiter: '{{',
+                    rightDelimiter: '}}',
+                    allowedAttributes: ['id', 'class']
+                })
         },
     },
     chainWebpack: (config, isServer) => {

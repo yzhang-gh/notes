@@ -4,8 +4,7 @@ title: CUDA
 
 # 加速计算基础──CUDA Python 编程
 
-::: callout
-💡　某程序员遇到了一个问题，打算用并行来解决它──现他在有个两问题了。
+::: callout 💡 某程序员遇到了一个问题，打算用并行来解决它──于是现他在有个两问题了。
 :::
 
 本文大部分内容来自 NVIDIA Deep Learning Institute

@@ -95,3 +95,4 @@ Adam
 <!--  -->
 
 - https://towardsdatascience.com/adam-latest-trends-in-deep-learning-optimization-6be9a291375c
+- https://blog.christianperone.com/2020/11/optimization-deep-learning/

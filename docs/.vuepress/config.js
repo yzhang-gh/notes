@@ -95,6 +95,7 @@ module.exports = {
                         'characters',
                         'genetics',
                         'minimax',
+                        'p-np',
                     ]
                 },
             ],

@@ -26,9 +26,9 @@ Minimax 算法常用于「有限状态，零和，完全信息（，两人）」
 
 ## Minimax 算法
 
-在零和博弈的设定下，玩家一的目标为最大化自己的收益 $\max u_1$，玩家二的目标则等价于最小化玩家一的收益 $\min u_1$，方便起见分别称为 Max 和 Min。给定一个 game tree，最优策略可以由每个节点的 **minimax 值**决定
+在零和博弈的设定下，玩家一的目标为最大化自己的收益 $\max u_1$，玩家二的目标则等价于最小化玩家一的收益 $\min u_1$，方便起见分别称为玩家 Max 和 Min。给定一个 game tree，最优策略可以由每个节点的 **minimax 值**决定
 
-- ==Minimax 值==，一个递归定义的值，表示从当前状态 $s$ 开始，双方均采取最优策略直至游戏结束时玩家一（Max）的**效用值**
+- ==Minimax 值==，一个递归定义的值，表示从当前状态 $s$ 开始，双方均采取最优策略直至游戏结束时玩家一 (Max) 的**效用值**
   $$
   \text{minimax}(s) = \begin{cases}
     u(s, \texttt{Max})                         & \text{if GameOver}(s) \\
@@ -38,7 +38,12 @@ Minimax 算法常用于「有限状态，零和，完全信息（，两人）」
   $$
   其中 $s^\prime=T(s,a)$
 
-从上述定义中不难看出，计算 minimax 值时需要沿着 game tree 一直推演（深度优先）至叶子节点（游戏结束），然后回溯计算出之前每个节点的值。一个节点只要计算出了 minimax 值，就已经看到了游戏的结局（效用值），假设对手（Min）也采取最优策略的话。而如果 Min 不采取最优策略，Max 仍然采取 minimax 策略，Max 的最终效用只会更高（不一定最优）。
+从上述定义中不难看出，计算 minimax 值时需要沿着 game tree 一直推演（深度优先）至叶子节点（游戏结束），然后回溯计算出之前每个节点的值。一个节点只要计算出了 minimax 值，就已经看到了游戏的结局（效用值）──假如对手 (Min) 也采取最优策略的话。如果 Min 不采取最优策略，Max 仍然采取 minimax 策略，Max 的最终效用只会更高（不一定最优）。
+
+<figure>
+    <img src="./imgs/doctor-strange.jpg" alt="Dr. Strange" width="400px">
+    <figcaption>然后算出了 minimax 值</figcaption>
+</figure>
 
 假设 game tree 的深度为 $m$，每个节点有 $b$ 种走法，则该算法的时间复杂度为 $O(b^m)$，在实际情况中是不现实的。
 
@@ -82,8 +87,8 @@ def minmax_decision(state, game):
   <figcaption>Alpha-beta 剪枝原理</figcaption>
 </figure>
 
-具体来说，对于一个 Max 节点（例如 $s$），每计算出一个子节点 $m_i$ 都会更新 $s$ 的下限（$s \ge \alpha$），其中 $\alpha=\text{max}(m_1,m_2,\dots)$。在 $s$ 还未探索的后代节点中，如果能够确定某个节点 $n\le\alpha$，也就表明其肯定不是最优解，可以剪掉（无需再考察 $n$ 的其它子节点）。而想要确定 $n\le\alpha$，需要两个条件：$n$ 是 Min 节点，$n$ 的一个子节点 $n^\prime\le\alpha$。
-（简而言之，在 Max 节点中更新 $\alpha$，在其后代的 Min 节点中发现小于 $\alpha$ 时剪枝，即直接 return）
+具体来说，对于一个 Max 节点（例如 $s$），每计算出一个子节点 $m_i$ 都会更新 $s$ 的下限（$s \ge \alpha$），其中 $\alpha=\text{max}(m_1,m_2,\dots)$。在 $s$ 还未探索的后代节点中，如果发现某个节点 $n\le\alpha$，也就表明其肯定不是最优解，其后续分支也可以剪掉（即无需再考察 $n$ 的其它子节点）。而想要确定 $n\le\alpha$，需要两个条件：① $n$ 是 Min 节点，② $n$ 的一个子节点 $n^\prime\le\alpha$。
+（简而言之，在 Max 节点中更新已知最小效益 $\alpha$，在其后代的 Min 节点中发现小于 $\alpha$ 的效益时剪枝，即直接 return）
 
 同理，假如 $s$ 是 Min 节点，已知的子节点会确定 $s$ 的上限（$s \le \beta$），$\beta=\text{min}(m_1,m_2,\dots)$。剪枝只会发生在其后代的某个 Max 节点 $n$，如果发现 $(n\ge)\,n^\prime\ge\beta$。
 
@@ -140,7 +145,7 @@ def alpha_beta_search(state, game):
 :::
 
 ::: tip
-即使使用了 alpha-beta 剪枝，在实际中也基本不可能搜索到游戏结束，这就需要使用**启发式**==评估函数==（heuristic evaluation function）来代替游戏结束时的效用函数，这里不再展开。
+即使使用了 alpha-beta 剪枝，在实际中也基本不可能搜索到游戏结束，这就需要使用**启发式**==评估函数== (heuristic evaluation function) 来代替游戏结束时的效用函数，这里不再展开。
 :::
 
 ## 其它

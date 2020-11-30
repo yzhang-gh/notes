@@ -1,4 +1,4 @@
-# P、NP 与 NPC 问题
+# P、NP 与 NP 完全问题
 
 <link rel="stylesheet" href="/notes/katex@0.11.1.min.css">
 
@@ -21,21 +21,23 @@
 | 阶乘时间     | $O(n!)$      | 使用暴力搜索解决旅行商问题                                                                                                  |
 {{.center}}
 
-时间复杂度常用大 $O$ 符号表示，不包括这个函数的首项系数和低阶项。比如 $3n^2+5n$ 对应的时间复杂度为 $O(n^2)$，首项系数 $3$ 不影响时间增长速度，而低阶项 $5n$ 随着 $n$ 的增长（至极限）会远小于 $n^2$，这种方式称为**渐进时间复杂度**。从理论分析的角度，$O(0.01n^3)$ 要比 $O(100n^2+100n)$ 复杂度高，不过对于现实中的具体问题，首项系数和低阶项仍然值得具体分析（[银河式算法](https://zh.wikipedia.org/wiki/%E9%93%B6%E6%B2%B3%E5%BC%8F%E7%AE%97%E6%B3%95)）。
+时间复杂度常用大 $O$ 符号表示，不包括这个函数的首项系数和低阶项。比如 $3n^2+5n$ 对应的时间复杂度为 $O(n^2)$，首项系数 $3$ 不影响时间增长速度，而低阶项 $5n$ 随着 $n$ 的增长（至极限）会远小于 $n^2$，这种方式称为**渐进时间复杂度**。从理论分析的角度，$O(0.01n^\textcolor{#F26400}{3})$ 要比 $O(100n^\textcolor{#F26400}{2}+100n)$ 复杂度高，不过对于现实中的具体问题，首项系数和低阶项仍然值得具体分析。（[银河式算法](https://zh.wikipedia.org/wiki/%E9%93%B6%E6%B2%B3%E5%BC%8F%E7%AE%97%E6%B3%95)）
 
 时间复杂度常被分为两种级别，一种是**多项式级复杂度**，比如 $O(1)$，$O(n\log n)$，$O(n^c)$ 等，其特点是规模 $n$ 出现在底数的位置。另一种是**非多项式级复杂度**，比如 $O(c^n)$，$O(n!)$。后者的复杂度远远大于前者，使用其来解决问题往往是不现实的。
 
 ## P、NP、NP-complete 与 NP-hard
 
-### P 问题──可以在多项式时间<span class="accent">找出解</span>的问题^[严格来说是判定性问题或最优化问题]
+### P 问题──可以在多项式时间<span class="accent">找出解</span>的问题[^decision-problem]
 
-**P** 通常表示那类可以「有效率地解决」或「温驯」的可计算型问题（即使指数级可能非常高）。数据结构与算法课中遇到的问题基本都属于 **P** 类，比如排序问题。
+**P** 通常表示那类可以「有效率地解决」或「温驯」的可计算型问题，即使指数级可能非常高[^does-p-mean-easy]。数据结构与算法课中遇到的问题基本都属于 **P** 类，比如排序问题。
 
 那么比 **P** 更难一些的问题是什么呢？
 
 ### NP 问题──可以在多项式时间里<span class="accent">验证一个解</span>的问题
 
-**NP** 问题不是「非 **P** 问题 / non-**P**」，而是「可以由非确定型图灵机 (**N**ondeterministic Turing machine) 在多项式 (**P**olynomial) 时间解决的问题」。其另一个等价的定义是「可以在多项式时间**验证**一个解的问题」。
+**NP** 问题不是「非 **P** 问题 / non-**P**」，而是「可以由**非**确定型图灵机 (**N**ondeterministic Turing machine) 在多项式 (**P**olynomial) 时间解决的问题」（图灵机是一种用来研究算法复杂度的计算模型，此处我们不深究。严格来说，**P** 问题是指「可以由确定型图灵机在多项式时间解决的问题」）。
+
+但是上面这个定义看着就有点吓人，我们不妨关注 **NP** 的另一个**等价定义**：「可以在多项式时间**验证**一个解的问题」。
 
 <figure>
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Hamiltonian_path_3d.svg" alt="Hamiltonian path 3d" style="width: 200px; margin-bottom: 10px;">
@@ -43,7 +45,7 @@
     <figcaption>（左）十二面体上的一个哈密顿环（右）平面图 (source: <a href="https://en.wikipedia.org/wiki/Hamiltonian_path" target="_blank" rel="noopener noreferrer">Wiki</a>)</figcaption>
 </figure>
 
-**哈密顿路径 / 环** (Hamiltonian path/cycle) 就是经典的 **NP** 问题，意思是给定一个图（顶点和边），判断是否存在一条 恰好经过每个顶点一次 的路径或者环。验证这个问题的解只需要 $O(n)$（顺着路径检查就行），但是想寻找这样一个 Hamiltonian path 到现在还没有多项式级的算法。
+**哈密顿路径 / 环** (Hamiltonian path/cycle) 就是经典的 **NP** 问题，意思是给定一个图（顶点和边），判断是否存在一条 恰好经过每个顶点一次 的路径或者环。验证这个问题的解只需要 $O(n)$（顺着路径检查就行），但是想从一个图中寻找这样一个 Hamiltonian path 到现在还没有多项式级的算法。
 
 **很明显，P 问题是 NP 问题的子集**：对于一个判定性问题（输出 yes 或 no），如果你能在多项式时间解出答案，那么验证一个解只需要比较一下了。
 
@@ -53,9 +55,9 @@
 
 虽然 **P** = **NP**? 问题直到现在仍没有找到解决的思路，但是在研究这个问题的过程中，人们也有其它发现。
 
-### NPC 问题 / NP 完全问题 (NP-complete problems)
+### NP 完全问题 (NP-complete problems)
 
-一言以蔽之，**NPC** 问题指的是 **NP** 问题中最**难**的一部分问题。在此之前，我们需要先引入一个概念：==规约== **(reduction)**。
+一言以蔽之，**NP 完全**问题（方便起见下文写作 **NPC**）指的是 **NP** 问题中**最难**的一部分问题。在此之前，我们需要先引入一个概念：==规约== **(reduction)**。
 
 ::: callout 🌰 Before we continue
 一天数学家的房子着了火。
@@ -78,6 +80,12 @@ A list of NPC problems: SAT
 
 ……
 
+::: tip
+TODO: 实际中 NPC 不一定难。最好的解是很难，但是足够好的解不难，比如旅行商问题的很多研究
+:::
+
+那么还有没有更难的问题呢？
+
 <figure>
     <img src="./imgs/whatif.png" style="width: 240px" title="图片来源：《那些古怪又让人忧心的问题》，激光笔">
 </figure>
@@ -85,6 +93,12 @@ A list of NPC problems: SAT
 ### NP-hard
 
 ……
+
+指数时间 国际象棋 围棋 最佳走法
+
+2^2^cn Presburger 算术 https://en.wikipedia.org/wiki/Presburger_arithmetic
+
+不可判定问题 停机问题
 
 <figure>
     <img src="./imgs/p-np-npc.svg" alt="p np npc" class="border">
@@ -102,3 +116,6 @@ A list of NPC problems: SAT
 
 - https://www.codenong.com/cs106039225/
 - https://blog.csdn.net/crfoxzl/article/details/2192957
+
+[^decision-problem]: 严格来说是判定性问题（输出为 yes 或 no）或最优化问题。此外还有函数式问题 (function problem)，允许其它形式的输出，比如求两数之和的问题，这些相应的问题称为 **FP** 和 **FNP**。
+[^does-p-mean-easy]: [**P** 真的容易处理吗？](https://zh.wikipedia.org/wiki/P/NP%E9%97%AE%E9%A2%98#P.E7.9C.9F.E7.9A.84.E5.AE.B9.E6.98.93.E5.A4.84.E7.90.86.E5.90.97.EF.BC.9F)

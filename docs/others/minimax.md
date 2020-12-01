@@ -197,7 +197,7 @@ class Solution:
 ```
 :::
 
-然后一运行，好家伙，直接倒数
+然后一运行，<img src="./imgs/good-guy.webp" alt="好家伙" title="好家伙（来源：b 站）" width="50" style="vertical-align: text-bottom" class="no-zoom">，直接倒数
 
 > 执行用时: 5012 ms (beats 13.11% of python3 submissions)
 > 内存消耗: 14.1 MB
@@ -214,7 +214,7 @@ if hist_sum >= half_sum:  ## sum(nums) / 2
 
 好了一丢丢，但是还是不太行
 
-那么既然有递归（和很多重复计算的可能性），加一点缓存如何？（注意缓存和剪枝有冲突，因为剪枝往往依赖的一些额外的 context，比如 `hist_sum`，`alpha/beta`，而缓存一般不会记录这些）
+那么既然有递归（和很多重复计算的可能性），加一点缓存如何？（注意缓存和剪枝有冲突，因为剪枝往往会依赖一些额外的 context，比如 `hist_sum`，`alpha/beta`，而缓存一般不会记录这些）
 
 ::: details minimax + 缓存
 ```python

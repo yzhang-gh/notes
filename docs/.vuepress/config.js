@@ -104,7 +104,12 @@ module.exports = {
     },
     plugins: [
         '@vuepress/back-to-top',
-        '@vuepress/medium-zoom',
+        [
+            '@vuepress/medium-zoom',
+            {
+                selector: '.theme-default-content :not(a) > img:not(.no-zoom)'
+            }
+        ],
         [
             'vuepress-plugin-container',
             {

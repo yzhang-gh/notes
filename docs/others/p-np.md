@@ -29,7 +29,7 @@
 
 ### P 问题──可以在多项式时间<span class="accent">找出解</span>的问题[^decision-problem]
 
-**P** 通常表示那类可以「有效率地解决」或「温驯」的可计算型问题，即使指数级可能非常高[^does-p-mean-easy]。数据结构与算法课中遇到的问题基本都属于 **P** 类，比如排序问题。
+**P** 通常表示那类可以「有效率地解决」或「温驯」的可计算型问题，即使指数级可能非常高。数据结构与算法课中遇到的问题基本都属于 **P** 类，比如排序问题。
 
 那么比 **P** 更难一些的问题是什么呢？
 
@@ -40,8 +40,8 @@
 但是上面这个定义看着就有点吓人，我们不妨关注 **NP** 的另一个**等价定义**：「可以在多项式时间**验证**一个解的问题」。
 
 <figure>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Hamiltonian_path_3d.svg" alt="Hamiltonian path 3d" style="width: 200px; margin-bottom: 10px;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Hamiltonian_path.svg" alt="Hamiltonian path" style="width: 200px; margin-bottom: 10px; margin-left: 30px;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Hamiltonian_path_3d.svg" alt="Hamiltonian path 3d" width="200" style="margin: 0 15px 10px">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Hamiltonian_path.svg" alt="Hamiltonian path" width="200" style="margin: 0 15px 10px">
     <figcaption>（左）十二面体上的一个哈密顿环（右）平面图 (source: <a href="https://en.wikipedia.org/wiki/Hamiltonian_path" target="_blank" rel="noopener noreferrer">Wiki</a>)</figcaption>
 </figure>
 
@@ -51,13 +51,13 @@
 
 **那么 P 等不等于 NP 呢？** 这个问题对数学家尤其有吸引力。「对于数学家来说如果有一个机器能帮助他们证明各种定理那就爽了。数学家经常干的两件事：① 给出证明，② 验证某个证明是不是对的。直觉上肯定验证更容易一些，但如果 somehow 可以证明 **NP** = **P**，也就是说**验证**和**给出证明**其实在数学上是等价的，那么这个证明很可能给出了如何把**验证一个证明是否正确 (NP)** 转化为**如何给出一个证明 (P)** 的方法，从此以后数学家只要思考如何验证证明的正确性就能自动得到证明了，那不爽炸了。那个时候密码学的重要性只是崭露头角，但即使是在数学上的重要性，也足够让这个定义吸引人了。」
 
-而 **P** 与 **NP** 对于密码学的重要性则在于：现在最广泛应用的非对称加密方法（如 RSA）的核心假设就是大整数分解是**难**的（非 **P**）。两个数相乘得到乘积很容易，但是想找出大整数（乘积）的因数就不容易了，而其中最难分解的是两个大质数^[两个差不多大小的质数]的乘积。目前已知的最好算法比指数时间要快，比多项式时间要慢。整数分解显然是 **NP** 问题，如果 **P** = **NP**，则意味着其肯定存在多项式时间的算法，破解加密算法也就「容易」了。
+而 **P** 与 **NP** 对于密码学的重要性则在于：现在最广泛应用的非对称加密方法（如 RSA）的核心假设就是大整数分解是**难**的（非 **P**）。两个数相乘得到乘积很容易，但是想找出大整数（乘积）的因数就不容易了，而其中最难分解的是两个大质数^[两个差不多大小的质数]的乘积。整数分解显然是 **NP** 问题，如果 **P** = **NP**，则意味着其肯定存在多项式时间的算法，破解加密算法也就「容易」了。目前已知的最好算法比指数时间要快，比多项式时间要慢。
 
-虽然 **P** = **NP**? 问题直到现在仍没有找到解决的思路，但是在研究这个问题的过程中，人们也有其它发现。
+虽然 $\small \mathsf{P} = \mathsf{NP}?$ 问题一直到现在仍然没有找到解决的思路，但是在研究这个问题的过程中，人们也有很多其它的发现。
 
 ### NP 完全问题 (NP-complete problems)
 
-一言以蔽之，**NP 完全**问题（方便起见下文写作 **NPC**）指的是 **NP** 问题中**最难**的一部分问题。在此之前，我们需要先引入一个概念：==规约== **(reduction)**。
+一言以蔽之，**NP 完全**问题指的是 **NP** 问题中**最难**的一部分问题。在此之前，我们需要先引入一个概念：==归约== **(reduction)**。
 
 ::: callout 🌰 Before we continue
 一天数学家的房子着了火。
@@ -70,24 +70,30 @@
 数学家望着天花板平静地说，这样一来，问题就可以转化成一个已经解决了的问题。
 :::
 
+简单来说，**归约**就是从一个问题 A 转化为另一个问题 B，于是可以用问题 B 的解法来解决问题 A。假如 A 问题是求解一个一元一次方程，B 是求解一个一元二次方程，很显然 A 可以归约为 B，因为一个一元一次方程相当于一个二次项系数为 0 的一元二次方程，解法就可以照搬了。
+
+「问题 A 可归约为问题 B」有一个重要的直观意义：问题 A 不会比问题 B 难 ($\small A \le_F\! B$)。通过归约，我们可以找到应用范围更广，但是复杂度也更高的问题。那如果我们把若干「小」**NP** 问题不断地归约到更通用的「大」**NP** 问题上，最后会得到什么呢？答案就是**超级 NP** 问题──**NP 完全**问题，只需要满足两个条件：① 是 **NP** 问题，② 所有的 **NP** 问题都能归约为它。
+
+现在人们已经发现了很多 **NP 完全**问题：
+
 ::: warning
 UNDER CONSTRUCTION
 :::
 
-**规约**
+- SAT？
+- 旅行商
 
-A list of NPC problems: SAT
-
-……
-
-::: tip
-TODO: 实际中 NPC 不一定难。最好的解是很难，但是足够好的解不难，比如旅行商问题的很多研究
+::: tip 理论与实际
+**P** 不一定简单[^does-p-mean-easy]，**NP 完全**问题也不一定难
+TODO: 最好的解是很难，但是足够好的解不难，比如旅行商问题的很多研究
 :::
 
-那么还有没有更难的问题呢？
+在 **NP** 问题中，还存在一些问题，目前人们既不能确定是不是 **P**，也不确定是不是 **NP 完全**，比如前面提到的整数分解问题。
+
+那么还有没有比 **NP 完全问题**更难的呢？
 
 <figure>
-    <img src="./imgs/whatif.png" style="width: 240px" title="图片来源：《那些古怪又让人忧心的问题》，激光笔">
+    <img src="./imgs/whatif.png" width="240" title="来源：《那些古怪又让人忧心的问题》，激光笔" class="no-zoom">
 </figure>
 
 ### NP-hard
@@ -107,8 +113,8 @@ TODO: 实际中 NPC 不一定难。最好的解是很难，但是足够好的解
 
 ## 参考材料
 
+- 维基百科：[时间复杂度](https://zh.wikipedia.org/wiki/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6) [**P**/**NP** 问题](https://zh.wikipedia.org/wiki/P/NP%E9%97%AE%E9%A2%98)
 - [什么是 P 问题、NP 问题和 NPC 问题 - Matrix67](http://www.matrix67.com/blog/archives/105)
-- [时间复杂度 - Wikipedia](https://zh.wikipedia.org/wiki/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6)
 - [怎么理解 P 问题和 NP 问题？- 王宇的回答 - 知乎](https://www.zhihu.com/question/27039635/answer/101730260)
 - [P & NP - COMP3721: Theory of Computation - HKUST](http://home.cse.ust.hk/~lzhang/teach/comp3721/Notes/21.pdf)
 

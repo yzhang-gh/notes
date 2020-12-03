@@ -31,6 +31,15 @@ module.exports = {
                     ]
                 },
                 {
+                    title: 'Friends',
+                    collapsable: false,
+                    children: [
+                        'en/friends/s01e01',
+                        'en/friends/s01e02',
+                        'en/friends/s01e03',
+                    ]
+                },
+                {
                     title: 'Japanese',
                     collapsable: false,
                     children: [

@@ -1,4 +1,0 @@
-- [**< Back to Home**](/)
-- [*Friends* S01 E01](english/friends/s01e01.md)
-- [*Friends* S01 E02](english/friends/s01e02.md)
-- [*Friends* S01 E03](english/friends/s01e03.md)

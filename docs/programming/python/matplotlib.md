@@ -46,6 +46,8 @@ plt.gca().set_aspect("equal", adjustable="box")
 ### 主、副刻度 (Major and minor ticks)
 
 ```python
+from matplotlib.ticker import MultipleLocator
+
 ax = plt.gca()
 ax.xaxis.set_major_locator(MultipleLocator(20))
 # ax.xaxis.set_major_formatter(FormatStrFormatter('%d'))
@@ -92,6 +94,12 @@ certain_patch.set_color(mappable.to_rgba(value))
 
 plt.colorbar(mappable)
 ```
+
+## Subplots
+
+[Matplotlib Demo](https://matplotlib.org/3.1.1/gallery/subplots_axes_and_figures/subplots_demo.html)
+
+[Shared xlabel/ylabel](https://stackoverflow.com/a/53172335/8682688)
 
 ## Default Color Cycle
 

@@ -93,6 +93,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'vim',
+                        'shell',
                     ]
                 },
             ],

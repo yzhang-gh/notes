@@ -201,6 +201,15 @@ section.footnotes
 .target&:target
     background #FFD20088
 
+@media print
+  header
+  .page-nav
+    display none
+  
+  .theme-default-content:not(.custom) > *:first-child
+    padding-top 1.5rem
+    margin-top 0
+
 // OVERWIRTE default theme
 
 .theme-default-content:not(.custom) > h1

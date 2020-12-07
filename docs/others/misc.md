@@ -12,3 +12,10 @@
     <img src="./imgs/misc/2020-12-06.png" alt="" width="432">
     <!-- <figcaption>2020.12.06</figcaption> -->
 </figure>
+
+### 2020.12.07
+
+> No code is the best way to write secure and reliable applications. Write nothing; deploy nowhere.
+>
+> [No Code](https://marketplace.visualstudio.com/items?itemName=writenothing.no-code) - VS Code Marketplace - **5,825,050** installs (in 4 days)
+> <sub>Trivia: Markdown All in One has 1,981,617 installs.</sub>

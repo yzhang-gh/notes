@@ -98,3 +98,48 @@ f"{b:.2%}"            ## "50.00%"
 [PyFormat (intuitive examples)](https://pyformat.info/)
 [Python strftime reference](https://strftime.org/)
 [PEP 3101 -- Standard Format Specifiers](https://www.python.org/dev/peps/pep-3101/#format-specifiers)
+
+## 正则表达式
+
+正则表达式本身就不多介绍了，见 [regex 101](https://regex101.com/)
+
+首先值得一提的就是 Python ==raw string==，其中的反斜杠 `\` 不表示转义字符，而是 literal `\`
+
+```python
+"\\d" == r"\d"  # True
+```
+
+### 字符串替换──`re.sub`
+
+大部分时候我们仅仅只是想做个（正则）字符串替换
+`re.sub(pattern, repl, string, count=0, flags=0)`
+
+- `pattern` 要被换掉的模式
+- `repl` 要换成的模式，可以是字符串（支持 backreference 如 `\2`）或者函数
+- `string` 要进行替换的字符串
+
+（`count` 若非 0 则表示最大替换次数，`flags` 对应正则表达式的 flags）
+
+```python
+re.sub(r"(.*) > (.*)", r"\2 < \1", "a > b")
+# 'b < a'
+```
+
+### 字符串匹配和提取
+
+`re.match` 和 `re.search`，都接受参数 `(pattern, string, flags=0)`，返回 `None` 或者 match 对象
+
+```python
+m = re.match(r"(\w+) (\w+)", "Isaac Newton, physicist")
+m.group(0)     # 'Isaac Newton'       The entire match
+m.group(1)     # 'Isaac'              The first parenthesized subgroup.
+m.group(2)     # 'Newton'             The second parenthesized subgroup.
+m.group(1, 2)  # ('Isaac', 'Newton')  Multiple arguments give us a tuple.
+m.groups()     # ('Isaac', 'Newton')  All subgroups in a tuple.
+```
+
+`re.match` 要求 `pattern` 出现在字符串 `string` 的开头，`re.search` 则允许其出现在字符串的任意位置
+
+如果需要多次使用某个正则表达式，可以用 `re.compile()` 来生成一个 pattern 对象，其同样可以使用上面这些函数（甚至更精细的功能）
+
+[Regular expression operations - Python documentation](https://docs.python.org/3/library/re.html)

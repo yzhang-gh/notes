@@ -1,5 +1,9 @@
 # 因果推断
 
+::: callout
+冰淇淋的销量与溺死的人数
+:::
+
 ::: warning
 UNDER CONSTRUCTION
 :::
@@ -13,3 +17,4 @@ https://www.guokr.com/article/6222/
 - [因果推断 | 统计之都](https://cosx.org/tags/%E5%9B%A0%E6%9E%9C%E6%8E%A8%E6%96%AD)
 - [因果关系是什么？结构因果模型入门 - 知乎专栏](https://zhuanlan.zhihu.com/p/33860572)
 - [Structural Causal Models (by Bruno Gonçalves)](https://medium.com/data-for-science/causal-inference-part-iv-structural-causal-models-df10a83be580)
+- [Invited Talk: Causal Learning (by Marloes Maathuis) - NeurIPS 2020](https://nips.cc/virtual/2020/public/invited_16169.html). ([PDF](https://stat.ethz.ch/~mmarloes/meetings/SlidesMaathuisNeurIPS2020.pdf))

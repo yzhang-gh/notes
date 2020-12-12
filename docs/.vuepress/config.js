@@ -108,6 +108,13 @@ module.exports = {
                         'p-np',
                     ]
                 },
+                {
+                    title: 'Life',
+                    collapsable: false,
+                    children: [
+                        'glasses',
+                    ]
+                },
             ],
             '/': ['']
         }

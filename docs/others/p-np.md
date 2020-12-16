@@ -57,7 +57,9 @@
 
 虽然 $\small \mathsf{P} = \mathsf{NP}?$ 问题一直到现在仍然没有找到解决的思路，但是在研究这个问题的过程中，人们也有很多其它的发现。
 
-## NP 完全问题 (NP-complete problems)
+## NP 完全问题
+
+(aka **NP-complete problems**)
 
 一言以蔽之，**NP 完全**问题指的是 **NP** 问题中**最难**的一部分问题。在此之前，我们需要先引入一个概念：==归约== **(reduction)**。
 
@@ -92,7 +94,9 @@
     <img src="./imgs/whatif.png" width="240" title="来源：《那些古怪又让人忧心的问题》，激光笔" class="no-zoom">
 </figure>
 
-## NP 困难 (NP-hard)
+## NP 困难
+
+(aka **NP-hard**)
 
 了解了 **NP 完全**问题之后，**NP-hard** 问题就很好理解了：~~① 是 **NP** 问题~~（不要求），<span style="color: #F26400">①</span> 所有的 **NP** 问题都能（在多项式时间内）归约为它。换句话说，**NP-hard** 问题是和**NP 完全**问题一样难或更难的问题（而 **NP 完全**问题是 **NP** 问题中最难的那部分问题）
 
@@ -123,5 +127,5 @@
 - [怎么理解 P 问题和 NP 问题？- 王宇的回答 - 知乎](https://www.zhihu.com/question/27039635/answer/101730260)
 - [P & NP - COMP3721: Theory of Computation - HKUST](http://home.cse.ust.hk/~lzhang/teach/comp3721/Notes/21.pdf)
 
-[^decision-problem]: 严格来说是判定性问题（输出为 yes 或 no）或最优化问题。此外还有函数式问题 (function problem)，允许其它形式的输出，比如求两数之和的问题，这些相应的问题称为 **FP** 和 **FNP**。
+[^decision-problem]: 严格来说是**判定性问题 / 决策问题**（输出为 yes 或 no）或**最优化问题**，几乎所有最优化问题都有对应的**简单一点的**判定性问题，比如「求最小路径」与「是否存在小于 $\small \ell$ 的路径」。此外还有函数式问题 (function problem)，允许其它形式的输出，比如「求两数之和」，这些相应的问题称为 **FP** 和 **FNP**。
 [^does-p-mean-easy]: [**P** 真的容易处理吗？](https://zh.wikipedia.org/wiki/P/NP%E9%97%AE%E9%A2%98#P.E7.9C.9F.E7.9A.84.E5.AE.B9.E6.98.93.E5.A4.84.E7.90.86.E5.90.97.EF.BC.9F)

@@ -106,6 +106,7 @@ module.exports = {
                         'genetics',
                         'minimax',
                         'p-np',
+                        'literature-review-the-hard-way',
                     ]
                 },
                 {

@@ -113,6 +113,7 @@ module.exports = {
                     title: 'Life',
                     collapsable: false,
                     children: [
+                        '2015-summary',
                         'glasses',
                     ]
                 },

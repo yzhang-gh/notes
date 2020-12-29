@@ -1,17 +1,15 @@
-# 手术两百年
+# 《手术两百年》
 
-https://www.youtube.com/playlist?list=PLwXMmy5fUrVy1d4RBHQbG1nJFQ_HheAGi
+<https://www.youtube.com/playlist?list=PLwXMmy5fUrVy1d4RBHQbG1nJFQ_HheAGi>
 
-### 理性之光
+## 理性之光
 
 - （一两百年以前）**对人体的认识**，两个里程碑：
   - 维萨里的[解剖](https://zh.wikipedia.org/zh-cn/%E5%AE%89%E5%BE%B7%E9%9B%B7%E4%BA%9A%E6%96%AF%C2%B7%E7%BB%B4%E8%90%A8%E9%87%8C#%E3%80%8A%E4%BA%BA%E4%BD%93%E7%9A%84%E6%9E%84%E9%80%A0%E3%80%8B)
   - 哈维的[循环](https://en.wikipedia.org/wiki/William_Harvey#De_Motu_Cordis_(Anatomical_Account_of_the_Motion_of_the_Heart_and_Blood))
 - （之后）**对疾病的认识**
 
----
-
-### 手术基石
+## 手术基石
 
 手术三大基石：止血，麻醉，消毒
 
@@ -21,9 +19,7 @@ https://www.youtube.com/playlist?list=PLwXMmy5fUrVy1d4RBHQbG1nJFQ_HheAGi
 
 1846 年，[莫顿](https://zh.wikipedia.org/zh-cn/%E5%A8%81%E5%BB%89%C2%B7%E8%8E%AB%E9%A1%BF)，乙醚麻醉剂，历史第一次公开的无痛手术
 
----
-
-### 长驱直入
+## 长驱直入
 
 X 射线，医疗影像
 
@@ -31,9 +27,7 @@ X 射线，医疗影像
 
 1983 年，腹腔镜手术，微创手术的开端
 
----
-
-### 攻入颅腔
+## 攻入颅腔
 
 哈维・库欣，神经外科之父
 
@@ -43,9 +37,7 @@ X 射线，医疗影像
 
 帕金森
 
----
-
-### 打开心脏
+## 打开心脏
 
 低温手段
 
@@ -57,9 +49,7 @@ X 射线，医疗影像
 
 人工心脏（等待心脏移植的过渡）
 
----
-
-### 生死「器」约
+## 生死「器」约
 
 器官移植，血管连接，三点吻合法
 
@@ -69,15 +59,11 @@ X 射线，医疗影像
 
 来源：遗体捐献，干细胞培养
 
----
-
-### 重病之王
+## 重病之王
 
 癌症
 
----
-
-### 手术未来
+## 手术未来
 
 干细胞与组织工程学
 

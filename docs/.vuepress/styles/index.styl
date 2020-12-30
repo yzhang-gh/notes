@@ -186,6 +186,9 @@ table.center
 .accent
   color #297abd
 
+.accent.mord // Fix for KaTeX
+  color $textColor
+
 sup.footnote-ref
   a
     font-weight normal
@@ -199,10 +202,12 @@ section.footnotes
       margin-bottom 0
 
 .target&:target
-    background #FFD20088
+  background #FFD20088
 
-.theme-default-content:not(.custom) > ul
-  margin-left 1em
+.theme-default-content:not(.custom)
+  & > ul
+  & > ol
+    margin-left 1em
 
 @media print
   header

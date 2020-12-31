@@ -2,5 +2,22 @@
 	"accent bold": {
 		"prefix": "accent",
 		"body": "accent**$1**$0"
+	},
+	"img with caption": {
+		"prefix": "imgwithcaption",
+		"body": [
+			"<figure>",
+			"  <img src=\"./imgs/$1\" alt=\"\" class=\"border\">",
+			"  <figcapion>$2</figcapion>",
+			"</figure>"
+		]
+	},
+	"img": {
+		"prefix": "imgindiv",
+		"body": [
+			"<div>",
+			"  <img src=\"./imgs/$1\" alt=\"\" class=\"border\">",
+			"</div>"
+		]
 	}
 }

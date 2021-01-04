@@ -6,11 +6,20 @@ sidebar: auto
 
 <link rel="stylesheet" href="/notes/katex@0.11.1.min.css">
 
+<style>
+    @media (max-width: 500px) {
+        figure {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+</style>
+
 ## 前言
 
-从 2017 年底就开始调研神经网络可解释性方面的研究了，但是由于各种原因一直拖拖拖到现在才正式放到网上。尤其今年看到许多新的工作都逐渐填补了从我们的论文归纳中能明显发现的空白部分，感觉我们的思考还是有一些分享价值的，就当抛砖引玉了（也可以阅读 [arXiv 版本](https://arxiv.org/abs/2012.14261)）
+从 2017 年底就开始调研神经网络可解释性方面的研究了，但是由于各种原因一直拖拖拖到最近才正式放到网上。尤其今年看到许多新的工作都逐渐填补了从我们的论文归纳中能明显发现的空白部分，感觉我们的思考还是有一些分享价值的，就当抛砖引玉了（也可以阅读 [arXiv 版本](https://arxiv.org/abs/2012.14261)）
 
-再多说一点题外话，因为可解释性的研究比较杂乱，刚开始调研的时候只好使用暴力搜索来寻找相关的文章，直观地体会到了这一波深度学习热潮让多少会议的论文数量大增😂
+多说一点题外话，因为可解释性的研究比较杂乱，刚开始调研的时候只好使用暴力搜索来寻找相关的文章，直观地体会到了这一波深度学习热潮让多少会议的论文数量大增😂
 
 <div>
   <img src="./imgs/interpretability/papers.png" alt="" class="border">
@@ -20,13 +29,13 @@ sidebar: auto
 
 <!-- 区分学习理论 -->
 
-从主流的学术研究来说，**可解释性 (interpretability)** 这个词主要是指解释 **具体的 / 已经训练好的网络**。但是在日常说法中，对深度学习理论的研究也常被称为 深度学习的可解释性。两者的差别在于**解释的对象**，其中后者想解释的是**深度学习这套方法**（为什么这么好用）。本文我们只关注前者——具体的网络的可解释性，不过在文章的最后也顺便介绍一些与后者相关的内容。
+从主流的学术研究来说，==可解释性== **(interpretability)** 这个词主要是指解释 **具体的 / 已经训练好的网络**。但是在日常说法中，对深度学习理论的研究也常被称为 **深度学习的可解释性**。两者的差别在于**解释的对象**，其中后者想解释的是**深度学习这套方法**（为什么这么好用）。本文我们只关注前者——具体的网络的可解释性，不过在文章的最后也顺便介绍一些与后者相关的内容。
 
 <div>
   <img src="./imgs/interpretability/disambiguation.gif" alt="" class="border">
 </div>
 
-一个具体的神经网络无非是一个从输入 $x$ 到输出 $y$ 的非线性映射，可解释性就是想理解这个映射背后的「思路 / 逻辑 / rationale」，而不是仅仅知道该结果是怎么经过一堆意义不明的数值（权值）计算出来的。我们采用以往论文中提到的一种释义
+一个具体的神经网络无非是一个从输入 $x$ 到输出 $y$ 的非线性映射，可解释性就是想理解这个映射背后的「思路 / 逻辑 / rationale」，而不是仅仅知道该结果是怎么经过一堆意义不明的数值（权值）计算出来的。我们采用以往论文中提到的一种释义，
 
 > **Interpretability** is the ability to provide *explanations*<sup>1</sup> in *understandable terms*<sup>2</sup> to a human.
 > <sub>⸺ F. Doshi-Velez and B. Kim, “Towards A Rigorous Science of Interpretable Machine Learning”, <em>arXiv</em>, 2017.</sub>
@@ -55,17 +64,18 @@ sidebar: auto
 
 ## How. 可解释性论文分类维度
 
-终于到了最重要的部分——可解释性研究的现状如何。之前的综述文章的分类往往依赖于一些 pre-recognized interpretable **explanator**s（比如决策树，决策集，saliency maps，linear proxy model，feature importance 等等），但是各种 explanator 之间的关系很混乱（有的相互包含，有的不在一个层面上）。一个好的综述应该能为该研究领域提供一个「坐标系」，包括一系列正交的分类维度。对于可解释性研究我们认为有 3 个维度（虽然许多内容在以往的论文中都有提及，但是都不完整）：
+终于到了最重要的部分——可解释性研究的现状。之前的综述文章的分类往往依赖于一些 pre-recognized interpretable **explanator**s（比如决策树，决策集，saliency maps，linear proxy model，feature importance 等等），但是各种 explanator 之间的关系很混乱（有些相互包含，有些根本不在一个层面上）。一个好的综述应该能为该研究领域提供一个「坐标系」——包括一系列正交的分类维度。对于可解释性研究，我们认为有 3 个维度（虽然许多内容在以往的论文中都有提及，但是都不完整）：
 
-- **Passive (post hoc) vs. Active (intervention)**，事后解释与主动干预
-  是否在模型的架构设计或者训练过程中进行干预
+- **Passive (post hoc) vs. Active (intervention)**，事后解释 vs. 主动干预
+  ——是否在模型的架构设计或者训练过程中进行干预
 
 - **Type/Format of Explanations**，所产生的解释的表现形式
   基本都能归纳为 4 类（解释完整程度递减）：
   - Logic rule，包括决策树和决策集 (decision sets) 等
-  - Hidden semantics，指的是解释神经网络内部的某一部分（比如可视化某个神经元的激活模式）
-  - Attribution，不知道怎么翻译好，直观的例子就是 saliency maps
-  - By example，比如直接返回一个训练集里的样本作为解释
+  - Hidden semantics，解释神经网络内部的某一部分（比如可视化某个神经元的激活模式）
+  - Attribution，不知道怎么翻译好，直观的例子就是 saliency maps 或者 feature importance
+  - By examples，比如直接返回一个训练集里的样本作为解释
+
 - **Local-Semilocal-Global** (w.r.t. the input space)，是解释单独的输入还是整个模型
 
 图解版本
@@ -82,19 +92,19 @@ sidebar: auto
 
 ### Passive (post hoc)
 
-现在大部分的工作都集中在事后解释上，毕竟最直观并且适用范围广。下面用 [G] 和 [L] 来分别标识 global/local 解释。
+目前大部分的可解释性工作都集中在**事后解释**上，毕竟最直观并且适用范围广。下面我们先分为 Passive 和 Active 两个大章节，然后按**所产生的解释类型**依次列举一些代表性的工作，同时分别用 **[G]**，**[semi-L]** 和 **[L]** 来标识 global/semi-local/local 解释。
 
 #### Rules as explanations (Rule extraction)
 
 - **KT algorithm**，提取命题逻辑规则 [G]
   L. Fu, “Rule Learning by Searching on Adapted Nets”, *AAAI*, 1991.
-- 形如 M-of-N 的规则 [G]
+- 形如 **M-of-N** 的规则 [G]
   G. G. Towell and J. W. Shavlik, “Extracting refined rules from knowledge-based neural networks”, *Machine Learning*, 1993.
-- 一阶逻辑规则 [G]
+- **Gyan**，一阶逻辑规则 [G]
   R. Nayak, “Generating rules with predicates, terms and variables from the pruned neural networks”, *Neural Networks*, 2009.
 - 模糊逻辑 [G]
   J. L. Castro et al., “Interpretation of artificial neural networks by means of fuzzy rules”, *IEEE Transactions on Neural Networks*, 2002.
-- ……
+- ……（可以直接用各种决策树学习算法，比如 CART、C4.5，来拟合一个网络的输入输出）
 - **Contrastive explanations**，通过扰动一个输入来寻找其哪些部分是必不可少 / 多的 [L]
   A. Dhurandhar et al., “Explanations based on the missing: Towards contrastive explanations with pertinent negatives”, *NeurIPS*, 2018.
   2020 年有一篇 NeurIPS 续作 [G]
@@ -105,16 +115,18 @@ sidebar: auto
 
 #### Explaining hidden semantics
 
-主要工作集中在可视化（某个神经元）上，思路就是找到一个能最大化其输出的 input pattern (activation maximization)。不妨参看 [Feature Visualization](https://distill.pub/2017/feature-visualization/)。
+**Hidden semantics** 的主要想法是，既然我们还不能理解整个神经网络，那不如先尝试**理解网络内部的某一部分**（比如某个神经元，某个 channel）。目前主要工作集中在可视化上，思路就是找到一个能最大化某目标（比如某个神经元）输出的 input pattern (activation maximization)。不妨参看 [Feature Visualization](https://distill.pub/2017/feature-visualization/)。
 
 <figure>
   <img src="./imgs/interpretability/viz.png" alt="" class="border">
   <figcaption>C. Olah et al., “Feature visualization”, <em>Distill</em>, 2017.</figcaption>
 </figure>
 
-另外介绍一篇 NLP 领域的文章：F. Dalvi et al., “What is one grain of sand in the desert? analyzing individual neurons in deep nlp models”, *AAAI*, 2019.
+另外介绍一篇 NLP 领域的文章：F. Dalvi et al., “What Is One Grain of Sand in the Desert? Analyzing Individual Neurons in Deep NLP Models”, *AAAI*, 2019.
 
 #### Attribution
+
+**Attribution** is to assign *credit* or *blame* to the input features in terms of their impact on the output (prediction).
 
 <figure>
   <img src="./imgs/interpretability/attribution.png" alt="" class="border">
@@ -169,9 +181,13 @@ sidebar: auto
 
 得益于前面提到的分类维度，我们可以把现有的可解释性论文放到一个三维空间中（访问[在线版](https://yzhang-gh.github.io/tmp-data/index.html)）
 
-![](./imgs/interpretability/paper-space.png)
+<div>
+  <img src="./imgs/interpretability/paper-space.png" alt="" class="border">
+</div>
 
-不同位置的研究数量有多有少，比如 active 类的方法数量明显少于 passive 类。具体就不多做分析了，不过从近年的趋势来看，一是 active 方法的研究变多了，二是 local 与 global 的融合 (multi-level) 研究也在增多。
+不同类别的研究数量有多有少（比如 active 类的方法数量明显少于 passive 类），这里就不多做分析了。不过从近年的趋势来看，一是 active 方法的研究变多了，二是 local 与 global 解释的融合 (multi-level) 研究也在增多。
+
+<hr style="width: 50%; margin: 3em auto;">
 
 ## 扩展：深度学习理论（方法可解释性）
 
@@ -191,7 +207,7 @@ sidebar: auto
   还有工作尝试可视化不同模型架构下的 loss surface，便于研究怎样的模型架构（比如网络深度，skip connection）以及优化算法 $\mathcal{A}$ 比较好。
   “Visualizing the Loss Landscape of Neural Nets”, *NeurIPS*, 2018.
 
-- 另外有一些可能并不是用来解释泛化性能的理论研究，比如 SGD 的收敛性分析，正好可以列举两个（在用知乎的）大佬的论文
+- 此外有一些可能并不是用来解释泛化性能的理论研究，比如 SGD 的收敛性分析，正好可以列举两个（在用知乎的）大佬的论文
   “An Analytical Formula of Population Gradient for two-layered ReLU network and its Applications in Convergence and Critical Point Analysis”, *ICML*, 2017. 田渊栋
   “Convergence Analysis of Two-layer Neural Networks with ReLU Activation”, *NeurIPS*, 2017, 袁洋（等）
 

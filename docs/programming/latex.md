@@ -66,7 +66,7 @@ tlmgr update [option...] [pkg...]
 
 %% Compact list (avoid too loose list under 1.5 linespace)
 \usepackage{enumitem}
-\setlist{noitemsep}
+\setlist{itemsep=0pt}
 
 %% For `\includegraphics'
 \usepackage{graphicx}

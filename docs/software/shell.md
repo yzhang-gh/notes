@@ -84,7 +84,8 @@ alias l='ls -CF'
 ```shell
 nohup your_command_here > output_file 2>&1 </dev/null &
 
-jobs
+jobs  ## doesn't work once logged out
+ps x
 
 kill %i
 ```
@@ -103,7 +104,9 @@ type name
 
 ## Command history
 
-<kbd>Ctrl</kbd> + <kbd>R</kbd>
+- press <kbd>Ctrl</kbd> + <kbd>R</kbd> to start search
+- press <kbd>Ctrl</kbd> + <kbd>R</kbd> again to see the next result
+- press <kbd>Tab</kbd> to accept a result
 
 [How to use bash history commands](https://www.digitalocean.com/community/tutorials/how-to-use-bash-history-commands-and-expansions-on-a-linux-vps#searching-through-bash-history)
 

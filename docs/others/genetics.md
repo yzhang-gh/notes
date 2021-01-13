@@ -1,14 +1,10 @@
-# 遗传学知识回顾
-
-::: tip INFO
-主要参考维基百科
-:::
+# 遗传学知识回顾 (genetics)
 
 ## 基本概念
 
-- ==染色体==，由一个长链 DNA 分子和被称为**组蛋白 (histone)** 的蛋白质构成
+- ==染色体==，**chromosome**，由一个长链 DNA 分子和被称为**组蛋白 (histone)** 的蛋白质构成
 - ==DNA==，脱氧核糖核酸，由核苷酸构成的双链分子
-- ==基因==，**具有遗传效应（编码蛋白质）的** DNA 或 RNA **片段**，每个 DNA 分子包含**许多个**基因
+- ==基因==，**gene**，**具有遗传效应（编码蛋白质）的** DNA 或 RNA **片段**，每个 DNA 分子包含**许多个**基因
 - **基因**包含==编码区==和==非编码区==，启动子位于非编码区
 - **编码区**又分为==外显子==和==内含子==，内含子又是非编码序列（*有待考证*）
 - ==基因组==，**genome**，指包含在该生物的 DNA（部分病毒是 RNA）中的全部遗传信息，即其完整的 DNA 序列，包括基因和非编码 DNA
@@ -65,3 +61,7 @@ There are numerous modes of alternative splicing observed, of which the most com
 </figure>
 
 详见 [Wiki](https://en.wikipedia.org/wiki/Alternative_splicing)
+
+## More
+
+[Gene expression and regulation - Khan Academy](https://www.khanacademy.org/science/ap-biology/gene-expression-and-regulation)

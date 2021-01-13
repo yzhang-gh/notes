@@ -187,7 +187,7 @@ sidebar: auto
 
 不同类别的研究数量有多有少（比如 active 类的方法数量明显少于 passive 类），这里就不多做分析了。不过从近年的趋势来看，一是 active 方法的研究变多了，二是 local 与 global 解释的融合 (multi-level) 研究也在增多。
 
-<hr style="width: 50%; margin: 3em auto;">
+---
 
 ## 扩展：深度学习理论（方法可解释性）
 

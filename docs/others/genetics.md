@@ -29,19 +29,25 @@
 
 ==中心法则==：DNA 制造 RNA，RNA 制造蛋白质，蛋白质反过来协助前两项流程，并协助 DNA 自我复制
 
-- DNA → RNA，==转录==
-- RNA → 蛋白质，==翻译==
+- DNA → RNA，==转录== (transcription)
+- RNA → 蛋白质，==翻译== (translation)
 - DNA → DNA，==DNA 复制==
 
 <figure>
     <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Centraldogma_nodetails.png" alt="Central dogma of molecular biology" style="max-width: 200px" class="border">
-    <figcaption>Central dogma of molecular biology (from Wiki)</figcaption>
+    <figcaption>Central dogma of molecular biology (source: Wiki)</figcaption>
 </figure>
 
 ## 转录 (Transcription)
 
 <figure>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/MRNA.svg" alt="Transcription (from Wiki)" class="border">
+    <img src="https://cdn.kastatic.org/ka-perseus-images/20ce29384b2e7ff0cdea72acaa5b1dbd7287ab00.png" alt="" class="border">
+    <figcapion>Overview of transcription (source: <a href="https://www.khanacademy.org/science/ap-biology/gene-expression-and-regulation/transcription-and-rna-processing/a/overview-of-transcription" target="_blank" rel="noopener noreferrer">Khan Academy</a>)</figcapion>
+</figure>
+
+<figure>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/MRNA.svg" alt="Transcription" class="border">
+    <figcaption>Transcription (source: Wiki)</figcaption>
 </figure>
 
 - ==转录因子==，**transcription factor**，是指能够结合在某基因上游<abbr title="应该就是指顺式作用原件，cis-regulatory elements">特异核苷酸序列</abbr>（如启动子，增强子）上的**蛋白质**，这些蛋白质能调控该基因的转录

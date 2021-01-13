@@ -20,8 +20,16 @@ CSS 文件放到 `.vuepress/public` 目录下，该目录会被复制到网站�
 
 比如
 
-```
+```html
 <link rel="stylesheet" href="/notes/katex@0.11.1.min.css">
+```
+
+---
+
+## Misc.
+
+```html
+<a href="" target="_blank" rel="noopener noreferrer"></a>
 ```
 
 ---

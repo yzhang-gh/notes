@@ -42,7 +42,7 @@
 
 <figure>
     <img src="https://cdn.kastatic.org/ka-perseus-images/20ce29384b2e7ff0cdea72acaa5b1dbd7287ab00.png" alt="" class="border">
-    <figcapion>Overview of transcription (source: <a href="https://www.khanacademy.org/science/ap-biology/gene-expression-and-regulation/transcription-and-rna-processing/a/overview-of-transcription" target="_blank" rel="noopener noreferrer">Khan Academy</a>)</figcapion>
+    <figcaption>Overview of transcription (source: <a href="https://www.khanacademy.org/science/ap-biology/gene-expression-and-regulation/transcription-and-rna-processing/a/overview-of-transcription" target="_blank" rel="noopener noreferrer">Khan Academy</a>)</figcaption>
 </figure>
 
 <figure>

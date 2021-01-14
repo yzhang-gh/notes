@@ -82,12 +82,12 @@ sidebar: auto
 
 <figure>
   <img src="./imgs/interpretability/dim1.png" alt="" class="border">
-  <figcapion>Type/Format of Explanations</figcapion>
+  <figcaption>Type/Format of Explanations</figcaption>
 </figure>
 
 <figure>
   <img src="./imgs/interpretability/dim2.png" alt="" class="border">
-  <figcapion>Local vs. Global</figcapion>
+  <figcaption>Local vs. Global</figcaption>
 </figure>
 
 ### Passive (post hoc)

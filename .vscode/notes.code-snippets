@@ -8,7 +8,7 @@
 		"body": [
 			"<figure>",
 			"  <img src=\"./imgs/$1\" alt=\"\" class=\"border\">",
-			"  <figcapion>$2</figcapion>",
+			"  <figcaption>$2</figcaption>",
 			"</figure>"
 		]
 	},

@@ -48,7 +48,7 @@ CUDA 编程方式包括
 
 <figure>
     <img src="./imgs/grid-of-thread-blocks.png" alt="Grid of thread blocks" class="border">
-    <figcaption>Thread hierarchy. <a href="https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#thread-hierarchy" target="_blank" rel="noopener noreferrer">source</a></figcaption>
+    <figcaption>Thread hierarchy. <a href="https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#thread-hierarchy" target="_blank" rel="noopener noreferrer" class="outbound">source</a></figcaption>
 </figure>
 
 `cuda.gird`

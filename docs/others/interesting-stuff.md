@@ -21,7 +21,8 @@
   <img src="./imgs/interesting/mc-the-peach-blossom-spring.jpg" alt="">
   <div>
     <p class="title">EpicWork 建筑团队出品——武陵尘梦・新・桃花源 (2015-02-24)</p>
-    <p>只可惜那时还没有<a href="https://www.minecraft.net/zh-hans/article/minecraft-ray-tracing-windows-10-launch-today" target="_blank" rel="noopener noreferrer">光线追踪</a></p>
+    <p>只可惜那时还没有<a href="https://www.minecraft.net/zh-hans/article/minecraft-ray-tracing-windows-10-launch-today" target="_blank" rel="noopener noreferrer" class="outbound">光线追踪</a></p>
+    <p><sub><a href="https://www.bilibili.com/video/BV1vx411A7ou" target="_blank" rel="noopener noreferrer" class="outbound smaller">国内源</a></sub></p>
   </div>
   <img src="/notes/imgs/youtube-logo.png" alt="youtube" class="logo no-zoom">
 </a>
@@ -30,7 +31,7 @@
   <img src="./imgs/interesting/mc-redstone-computer.jpg" alt="">
   <div>
     <p class="title">红石计算机 Redstone Computer (V1.0)</p>
-    <p></p>
+    <p>禁止套娃</p>
   </div>
   <img src="/notes/imgs/youtube-logo.png" alt="youtube" class="logo no-zoom">
 </a>

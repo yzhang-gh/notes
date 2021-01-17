@@ -17,7 +17,7 @@ Minimax 算法常用于「有限状态，零和，完全信息（，两人）」
 
 <figure>
   <img src="./imgs/game-tree.webp" alt="">
-  <figcaption>A branch of a game tree. (source: <a href="https://www.5dchesswithmultiversetimetravel.com/" target="_blank" rel="noopener noreferrer">5D Chess With Multiverse Time Travel</a>)</figcaption>
+  <figcaption>A branch of a game tree. (source: <a href="https://www.5dchesswithmultiversetimetravel.com/" target="_blank" rel="noopener noreferrer" class="outbound">5D Chess With Multiverse Time Travel</a>)</figcaption>
 </figure>
 
 ### 输出

@@ -44,7 +44,7 @@
 <figure>
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Hamiltonian_path_3d.svg" alt="Hamiltonian path 3d" width="200" style="margin: 0 15px 10px">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Hamiltonian_path.svg" alt="Hamiltonian path" width="200" style="margin: 0 15px 10px">
-    <figcaption>（左）十二面体上的一个哈密顿环（右）平面图 (source: <a href="https://en.wikipedia.org/wiki/Hamiltonian_path" target="_blank" rel="noopener noreferrer">Wiki</a>)</figcaption>
+    <figcaption>（左）十二面体上的一个哈密顿环（右）平面图 (source: <a href="https://en.wikipedia.org/wiki/Hamiltonian_path" target="_blank" rel="noopener noreferrer" class="outbound">Wiki</a>)</figcaption>
 </figure>
 
 **哈密顿路径 / 环** (Hamiltonian path/cycle) 就是经典的 **NP** 问题，意思是给定一个图（顶点和边），判断是否存在一条 恰好经过每个顶点一次 的路径或者环。验证这个问题的解只需要 $O(n)$（顺着路径检查就行），但是想从一个图中寻找这样一个 Hamiltonian path 到现在还没有多项式级的算法。
@@ -117,7 +117,7 @@
 
 <figure>
     <img src="./imgs/p-np-npc.svg" alt="p np npc" class="border">
-    <figcaption>Euler diagram for P, NP, NP-complete, and NP-hard set of problems. (source: <a href="https://commons.wikimedia.org/w/index.php?curid=3532181" target="_blank" rel="noopener noreferrer">Wiki</a>)</figcaption>
+    <figcaption>Euler diagram for P, NP, NP-complete, and NP-hard set of problems. (source: <a href="https://commons.wikimedia.org/w/index.php?curid=3532181" target="_blank" rel="noopener noreferrer" class="outbound">Wiki</a>)</figcaption>
 </figure>
 
 ## 参考材料

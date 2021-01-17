@@ -12,7 +12,7 @@ title: 标准日本语初级（上）1－3 单元
 
 <figure>
     <img src="./imgs/hiragana.png" alt="平假名" class="border">
-    <figcaption>幼児教材：<a href="https://happylilac.net/hiragana-g-01.pdf" target="_blank" rel="noopener noreferrer">平假名</a>，<a href="https://happylilac.net/katakana-g-01.pdf" target="_blank" rel="noopener noreferrer">片假名</a></figcaption>
+    <figcaption>幼児教材：<a href="https://happylilac.net/hiragana-g-01.pdf" target="_blank" rel="noopener noreferrer" class="outbound">平假名</a>，<a href="https://happylilac.net/katakana-g-01.pdf" target="_blank" rel="noopener noreferrer" class="outbound">片假名</a></figcaption>
 </figure>
 
 **声调**：[漫画解读](https://zhuanlan.zhihu.com/p/25810894)

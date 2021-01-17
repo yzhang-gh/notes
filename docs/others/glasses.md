@@ -43,7 +43,7 @@
 
 <figure>
     <img src="./imgs/prism-rainbow.svg" alt="Prism rainbow" width="300">
-    <figcaption>色散 (source: <a href="https://commons.wikimedia.org/wiki/File:Prism-rainbow.svg" target="_blank" rel="noopener noreferrer">Wiki</a>)</figcaption>
+    <figcaption>色散 (source: <a href="https://commons.wikimedia.org/wiki/File:Prism-rainbow.svg" target="_blank" rel="noopener noreferrer" class="outbound">Wiki</a>)</figcaption>
 </figure>
 
 其它方面，比如**材质**，基本不用多考虑了，最主流的就是树脂（玻璃硬度高，但是重，主要用在高折射率如 1.8 以上）

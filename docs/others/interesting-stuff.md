@@ -14,7 +14,7 @@
     <p class="title">红石音乐——《卡农》(2016-07-17)</p>
     <p>一定要看到最后！（迅捷药水注入灵魂）</p>
   </div>
-  <img src="/notes/imgs/bilibili-logo.png" alt="bilibili" class="logo no-zoom" style="max-height: 20px">
+  <img src="/notes/imgs/bilibili-logo.png" alt="bilibili" class="logo no-zoom">
 </a>
 
 <a href="https://youtu.be/cgdUfGsTujs" class="card" target="_blank">
@@ -31,7 +31,7 @@
   <img src="./imgs/interesting/mc-redstone-computer.jpg" alt="">
   <div>
     <p class="title">红石计算机 Redstone Computer (V1.0)</p>
-    <p>禁止套娃</p>
+    <p>禁 止 套 娃</p>
   </div>
   <img src="/notes/imgs/youtube-logo.png" alt="youtube" class="logo no-zoom">
 </a>
@@ -46,10 +46,57 @@
 
 ## 音乐
 
+<div class="cards">
+
+<a href="https://www.bilibili.com/video/BV1jx411M75e" class="card" target="_blank">
+  <img src="./imgs/interesting/sing.jpg" alt="">
+  <div>
+    <p class="title">[青歌赛] 评委大佬飙歌 让你们见识什么是神仙唱歌</p>
+    <p>「这种水平是国家队？？？这是国家教练队……」</p>
+    <p>这个就叫专业.jpg</p>
+  </div>
+  <img src="/notes/imgs/bilibili-logo.png" alt="bilibili" class="logo no-zoom">
+</a>
+
+</div>
+
 ## 摄影
 
-LKs 十分钟摄影挑战
+<div class="cards">
+
+<a href="https://www.bilibili.com/video/BV1Zp4y1S7i3" class="card" target="_blank">
+  <img src="./imgs/interesting/photography-challenge.jpg" alt="">
+  <div>
+    <p class="title">10 分钟拍照挑战！（系列）</p>
+    <p>同一时间，同一地点，同一模特——4 位业余与专业的 UP 主分别会拍出怎样的照片</p>
+    <p>有趣之处就在于他们大相径庭的创作思路</p>
+  </div>
+  <img src="/notes/imgs/bilibili-logo.png" alt="bilibili" class="logo no-zoom">
+</a>
+
+</div>
+
+## 设计
+
+<div class="cards">
+
+<a href="https://www.bilibili.com/video/BV1FZ4y1g74Y" class="card" target="_blank">
+  <img src="./imgs/interesting/typography.jpg" alt="">
+  <div>
+    <p class="title">[排版 #1] 非设计师也该学的排版知识：视觉动线篇（系列）</p>
+    <p>看过《写给大家看的设计书》之后这里的内容并不算新鲜，但是仍然非常值得一看</p>
+  </div>
+  <img src="/notes/imgs/bilibili-logo.png" alt="bilibili" class="logo no-zoom">
+</a>
+
+</div>
+
+## Behind The Scenes
+
+蔚蓝
 
 ## 其它游戏
+
+饥荒
 
 Ori

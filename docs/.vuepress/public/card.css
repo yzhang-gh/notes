@@ -32,12 +32,18 @@ a.card p {
     margin: 0;
     line-height: 1.5;
     margin-bottom: 0.5rem;
+    color: #747a81;
 }
 
 a.card p.title {
     margin-top: 0;
     font-size: 1.25rem;
     font-weight: 500;
+    color: #242a31;
+}
+
+a.card p a {
+    color: #499add;
 }
 
 a.card img.logo {
@@ -47,6 +53,10 @@ a.card img.logo {
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+a.card img.logo[src$="bilibili-logo.png"] {
+    max-height: 20px;
 }
 
 /* Reset links styles */

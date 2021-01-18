@@ -4,7 +4,7 @@ a.card {
     padding: 1.5rem;
     margin-top: 1.5rem;
     background: #f7f9fa;
-    border-radius: 0.375rem;
+    border-radius: 0.5rem;
     transition-duration: 0.2s;
     position: relative; /* so that the logos can be placed absolutely */
 }
@@ -14,7 +14,21 @@ a.card:last-of-type {
 }
 
 a.card:hover {
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 2px 2px 4px -1px rgb(0 0 0 / 6%);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 1px 1px 4px -1px rgb(0 0 0 / 6%);
+    z-index: 2;
+}
+
+a.card.has-bts {
+    border-bottom: 1px dashed #dadcdd;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+a.card.has-bts + a.card {
+    border-top: 1px dashed #dadcdd;
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 a.card > img:first-child {
@@ -43,7 +57,7 @@ a.card p.title {
 }
 
 a.card p a {
-    color: #499add;
+    color: #529cda;
 }
 
 a.card img.logo {

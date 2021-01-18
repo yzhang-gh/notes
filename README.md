@@ -29,7 +29,7 @@ CSS 文件放到 `.vuepress/public` 目录下，该目录会被复制到网站�
 ## Misc.
 
 ```html
-<a href="" target="_blank" rel="noopener noreferrer"></a>
+<a href="" target="_blank" rel="noopener noreferrer" class="outbound"></a>
 ```
 
 ---

@@ -175,6 +175,9 @@ Your text
 \end{table}
 ```
 
+`tabular` 用来容纳表格真正的内容（必要成分）
+`table` 则额外创建了一个 float 环境（就像 figure），还可以包含 caption
+
 ### 表格：为单元格单独指定对齐方式 / 样式
 
 > I suggest using `\multicolumn{1}{c}{header text}`. `\multicolumn` allows changing the formatting of single cells.
@@ -205,12 +208,16 @@ authblk
 ```latex
 \usepackage{setspace}
 \onehalfspacing%
+
+%% Compact list (avoid too loose list under 1.5 linespace)
+\usepackage{enumitem}
+\setlist{itemsep=0pt}
 ```
 
 ### 设置段首无缩进
 
-Global: use `\setlength{\parindent}{0pt}` in **preamble**.
-Local : use `\noindent` in the front of that paragraph
+- 全局：use `\setlength{\parindent}{0pt}` in **preamble**.
+- 局部：use `\noindent` in the front of that paragraph
 
 ## Useful Links
 

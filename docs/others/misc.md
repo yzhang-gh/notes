@@ -10,7 +10,6 @@
 
 <figure>
     <img src="./imgs/misc/2020-12-06.png" alt="" width="432">
-    <!-- <figcaption>2020.12.06</figcaption> -->
 </figure>
 
 ### 2020.12.07
@@ -19,3 +18,9 @@
 >
 > [No Code](https://marketplace.visualstudio.com/items?itemName=writenothing.no-code) - VS Code Marketplace - **5,825,050** installs (in 4 days)
 > <sub>Trivia: Markdown All in One has 1,981,617 installs.</sub>
+
+### 2021.01.19
+
+<figure>
+    <img src="./imgs/misc/2021-01-19-2333.png" alt="" width="350" class="border">
+</figure>

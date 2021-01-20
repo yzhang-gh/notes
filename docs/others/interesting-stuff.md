@@ -1,8 +1,10 @@
 # Interesting Stuff
 
-<!-- TODO 卡片样式 -->
-
 <link rel="stylesheet" href="/notes/card.css">
+
+::: callout
+🎮 **偏娱乐向**
+:::
 
 ## Minecraft
 
@@ -44,9 +46,20 @@
 
 ## 绘画，CG
 
-How League of Legends Champions Are Illustrated
+<div class="cards">
 
-https://www.youtube.com/watch?v=mBqWbS1mUy4
+<a href="https://www.youtube.com/watch?v=mBqWbS1mUy4" class="card" target="_blank">
+  <img src="./imgs/interesting/project-vayne.gif" alt="">
+  <div>
+    <p class="title">How League of Legends Champions Are Illustrated</p>
+    <p>Chengwei Pan - Principle illustrator at Riot Games</p>
+    <p>脑：我学会了<br>手：不，你没有</p>
+    <p><sub><a href="https://www.artstation.com/artwork/aq6ek" target="_blank" rel="noopener noreferrer" class="outbound smaller">原图 (ArtStation)</a></sub></p>
+  </div>
+  <img src="/notes/imgs/youtube-logo.png" alt="youtube" class="logo no-zoom">
+</a>
+
+</div>
 
 ## 音乐
 
@@ -73,7 +86,7 @@ https://www.youtube.com/watch?v=mBqWbS1mUy4
   <div>
     <p class="title">10 分钟拍照挑战！（系列）</p>
     <p>同一时间，同一地点，同一模特——4 位业余与专业的 UP 主分别会拍出怎样的照片</p>
-    <p>有趣之处就在于各种大相径庭的创作思路</p>
+    <p>人和人的脑洞不能一概而论</p>
   </div>
   <img src="/notes/imgs/bilibili-logo.png" alt="bilibili" class="logo no-zoom">
 </a>
@@ -122,7 +135,7 @@ https://www.youtube.com/watch?v=mBqWbS1mUy4
   <img src="./imgs/interesting/lol-a-new-dawn-bts.jpg" alt="">
   <div>
     <p class="title">A New Dawn | Behind the Scenes</p>
-    <p>满是创作的乐趣</p>
+    <p>满满的创作的乐趣</p>
     <p>第一次意识到音效设计师的存在</p>
   </div>
   <img src="/notes/imgs/youtube-logo.png" alt="youtube" class="logo no-zoom">
@@ -132,7 +145,8 @@ https://www.youtube.com/watch?v=mBqWbS1mUy4
   <img src="./imgs/interesting/kda-music-video.jpg" alt="">
   <div>
     <p class="title">[LOL] K/DA - POP/STARS | Music Video (2018-11-03)</p>
-    <p></p>
+    <p>发布一个月即超过一亿播放</p>
+    <p>拳头公司音乐大厂诚不我欺</p>
   </div>
   <img src="/notes/imgs/youtube-logo.png" alt="youtube" class="logo no-zoom">
 </a>
@@ -141,16 +155,16 @@ https://www.youtube.com/watch?v=mBqWbS1mUy4
   <img src="./imgs/interesting/kda-dance-bts.jpg" alt="">
   <div>
     <p class="title">Dance | Behind the Scenes</p>
-    <p></p>
+    <p>作为外行也能感觉这个水平非同一般……</p>
   </div>
   <img src="/notes/imgs/youtube-logo.png" alt="youtube" class="logo no-zoom">
 </a>
 
 <a href="https://www.youtube.com/watch?v=vJFv8eUXvyg" class="card" target="_blank">
-  <img src="./imgs/interesting/dev-doodles-sylas.jpg" alt="">
+  <img src="./imgs/interesting/dev-doodles-sylas.webp" alt="">
   <div>
     <p class="title">[LOL] Dev Doodles: Sylas</p>
-    <p></p>
+    <p>可爱</p>
   </div>
   <img src="/notes/imgs/youtube-logo.png" alt="youtube" class="logo no-zoom">
 </a>

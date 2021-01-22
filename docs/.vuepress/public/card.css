@@ -31,9 +31,10 @@ a.card.has-bts + a.card {
     border-top-right-radius: 0;
 }
 
-a.card > img:first-child {
-    width: 300px;
+a.card > div.cover {
+    max-width: 300px;
     margin-right: 1.5rem;
+    pointer-events: none;
 }
 
 a.card > div {
@@ -47,6 +48,7 @@ a.card p {
     line-height: 1.5;
     margin-bottom: 0.5rem;
     color: #747a81;
+    z-index: 1;
 }
 
 a.card p.title {
@@ -67,6 +69,7 @@ a.card img.logo {
     position: absolute;
     bottom: 0;
     right: 0;
+    z-index: 0;
 }
 
 a.card img.logo[src$="bilibili-logo.png"] {
@@ -80,4 +83,18 @@ a.card img.logo[src$="bilibili-logo.png"] {
     text-decoration: inherit;
     color: inherit;
     font-weight: inherit;
+}
+
+/* Mobile devices */
+
+@media (max-width: 500px) {
+    a.card {
+        flex-direction: column;
+    }
+
+    a.card > div.cover {
+        max-width: 400px;
+        margin-right: 0rem;
+        margin-bottom: 1.5rem;
+    }    
 }

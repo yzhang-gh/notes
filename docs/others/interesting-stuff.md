@@ -3,15 +3,17 @@
 <link rel="stylesheet" href="/notes/card.css">
 
 ::: callout
-🎮 **偏娱乐向**
+🎮 **偏娱乐向** 🕹
 :::
 
 ## Minecraft
 
+让人回想起本科时和室友一起玩的快乐时光。
+
 <div class="cards">
 
 <a href="https://www.bilibili.com/video/BV11s411y7QE" class="card" target="_blank">
-  <img src="./imgs/interesting/mc-canon.jpg" alt="">
+  <div class="cover"><img src="./imgs/interesting/mc-canon.jpg"></div>
   <div>
     <p class="title">红石音乐——《卡农》(2016-07-17)</p>
     <p>一定要看到最后！（迅捷药水注入灵魂）</p>
@@ -20,7 +22,7 @@
 </a>
 
 <a href="https://www.youtube.com/watch?v=cgdUfGsTujs" class="card" target="_blank">
-  <img src="./imgs/interesting/mc-the-peach-blossom-spring.jpg" alt="">
+  <div class="cover"><img src="./imgs/interesting/mc-the-peach-blossom-spring.jpg"></div>
   <div>
     <p class="title">EpicWork 建筑团队出品——武陵尘梦・新・桃花源 (2015-02-24)</p>
     <p>只可惜那时还没有<a href="https://www.minecraft.net/zh-hans/article/minecraft-ray-tracing-windows-10-launch-today" target="_blank" rel="noopener noreferrer" class="outbound">光线追踪</a></p>
@@ -30,7 +32,7 @@
 </a>
 
 <a href="https://www.youtube.com/watch?v=0xkYXbgiNxY" class="card" target="_blank">
-  <img src="./imgs/interesting/mc-redstone-computer.jpg" alt="">
+  <div class="cover"><img src="./imgs/interesting/mc-redstone-computer.jpg"></div>
   <div>
     <p class="title">红石计算机 Redstone Computer (V1.0)</p>
     <p>禁 止 套 娃</p>
@@ -41,7 +43,7 @@
 </div>
 
 <figure>
-    <img src="./imgs/interesting/professional.jpg" alt="" class="no-zoom" width="240">
+  <img src="./imgs/interesting/professional.jpg" class="no-zoom" width="240">
 </figure>
 
 ## 绘画，CG
@@ -49,24 +51,34 @@
 <div class="cards">
 
 <a href="https://www.youtube.com/watch?v=mBqWbS1mUy4" class="card" target="_blank">
-  <img src="./imgs/interesting/project-vayne.gif" alt="">
+  <div class="cover"><img src="./imgs/interesting/project-vayne.gif"></div>
   <div>
     <p class="title">How League of Legends Champions Are Illustrated</p>
     <p>Chengwei Pan - Principle illustrator at Riot Games</p>
     <p>脑：我学会了<br>手：不，你没有</p>
-    <p><sub><a href="https://www.artstation.com/artwork/aq6ek" target="_blank" rel="noopener noreferrer" class="outbound smaller">原图 (ArtStation)</a></sub></p>
+    <p><sub><a href="https://www.artstation.com/artwork/aq6ek" target="_blank" rel="noopener noreferrer" class="outbound smaller">原图：源计划 薇恩 (ArtStation)</a></sub></p>
   </div>
   <img src="/notes/imgs/youtube-logo.png" alt="youtube" class="logo no-zoom">
 </a>
 
 </div>
 
+<figure>
+  <img src="./imgs/interesting/lol-immortal-journey-talon.jpg">
+  <figcaption>玉剑传说 无影 - <a href="https://www.artstation.com/artwork/Jl3d8R" target="_blank" rel="noopener noreferrer" class="outbound">创作过程</a></figcaption>
+</figure>
+
+<figure>
+  <img src="./imgs/interesting/lol-divine-sword-irelia.jpg">
+  <figcaption>玉剑传说 舞剑仙 - <a href="https://www.artstation.com/artwork/G4N0Q" target="_blank" rel="noopener noreferrer" class="outbound">创作过程</a></figcaption>
+</figure>
+
 ## 音乐
 
 <div class="cards">
 
 <a href="https://www.bilibili.com/video/BV1jx411M75e" class="card" target="_blank">
-  <img src="./imgs/interesting/sing.jpg" alt="">
+  <div class="cover"><img src="./imgs/interesting/sing.jpg"></div>
   <div>
     <p class="title">[青歌赛] 评委大佬飙歌 让你们见识什么是神仙唱歌</p>
     <p>「这种水平是国家队？？？这是国家教练队……」</p>
@@ -82,7 +94,7 @@
 <div class="cards">
 
 <a href="https://www.bilibili.com/video/BV1Zp4y1S7i3" class="card" target="_blank">
-  <img src="./imgs/interesting/photography-challenge.jpg" alt="">
+  <div class="cover"><img src="./imgs/interesting/photography-challenge.jpg"></div>
   <div>
     <p class="title">10 分钟拍照挑战！（系列）</p>
     <p>同一时间，同一地点，同一模特——4 位业余与专业的 UP 主分别会拍出怎样的照片</p>
@@ -98,7 +110,7 @@
 <div class="cards">
 
 <a href="https://www.bilibili.com/video/BV1FZ4y1g74Y" class="card" target="_blank">
-  <img src="./imgs/interesting/typography.jpg" alt="">
+  <div class="cover"><img src="./imgs/interesting/typography.jpg"></div>
   <div>
     <p class="title">[排版 #1] 非设计师也该学的排版知识：视觉动线篇（系列）</p>
     <p>看过《写给大家看的设计书》之后这里的内容并不算新鲜，但是仍然非常值得一看</p>
@@ -113,7 +125,7 @@
 <div class="cards">
 
 <a href="https://www.youtube.com/watch?v=yorTG9at90g" class="card" target="_blank">
-  <img src="./imgs/interesting/celeste.webp" alt="">
+  <div class="cover"><img src="./imgs/interesting/celeste.webp"></div>
   <div>
     <p class="title">[蔚蓝] Why Does Celeste Feel So Good to Play?</p>
     <p>2018 TGA 最佳独立游戏、最具影响力游戏</p>
@@ -123,7 +135,7 @@
 </a>
 
 <a href="https://www.youtube.com/watch?v=vzHrjOMfHPY" class="card has-bts" target="_blank">
-  <img src="./imgs/interesting/lol-a-new-dawn.jpg" alt="">
+  <div class="cover"><img src="./imgs/interesting/lol-a-new-dawn.jpg"></div>
   <div>
     <p class="title">[LOL] 新的曙光 | 动画短片 (2014-07-22)</p>
     <p>一转眼多少年过去了……视觉效果和如今当然不能比了，但是很多细节仍然很棒</p>
@@ -132,7 +144,7 @@
 </a>
 
 <a href="https://www.youtube.com/watch?v=Q40IfQbYlSw" class="card" target="_blank">
-  <img src="./imgs/interesting/lol-a-new-dawn-bts.jpg" alt="">
+  <div class="cover"><img src="./imgs/interesting/lol-a-new-dawn-bts.jpg"></div>
   <div>
     <p class="title">A New Dawn | Behind the Scenes</p>
     <p>满满的创作的乐趣</p>
@@ -142,7 +154,7 @@
 </a>
 
 <a href="https://www.youtube.com/watch?v=UOxkGD8qRB4" class="card has-bts" target="_blank">
-  <img src="./imgs/interesting/kda-music-video.jpg" alt="">
+  <div class="cover"><img src="./imgs/interesting/kda-music-video.jpg"></div>
   <div>
     <p class="title">[LOL] K/DA - POP/STARS | Music Video (2018-11-03)</p>
     <p>发布一个月即超过一亿播放</p>
@@ -152,7 +164,7 @@
 </a>
 
 <a href="https://www.youtube.com/watch?v=qaAkvzLSg0s" class="card" target="_blank">
-  <img src="./imgs/interesting/kda-dance-bts.jpg" alt="">
+  <div class="cover"><img src="./imgs/interesting/kda-dance-bts.jpg"></div>
   <div>
     <p class="title">Dance | Behind the Scenes</p>
     <p>作为外行也能感觉这个水平非同一般……</p>
@@ -161,7 +173,7 @@
 </a>
 
 <a href="https://www.youtube.com/watch?v=vJFv8eUXvyg" class="card" target="_blank">
-  <img src="./imgs/interesting/dev-doodles-sylas.webp" alt="">
+  <div class="cover"><img src="./imgs/interesting/dev-doodles-sylas.webp"></div>
   <div>
     <p class="title">[LOL] Dev Doodles: Sylas</p>
     <p>可爱</p>
@@ -176,3 +188,5 @@
 饥荒
 
 Ori
+
+inside 2016 TGA 最佳独立游戏、最佳美术指导

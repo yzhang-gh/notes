@@ -128,7 +128,7 @@
   <div class="cover"><img src="./imgs/interesting/celeste.webp"></div>
   <div>
     <p class="title">[蔚蓝] Why Does Celeste Feel So Good to Play?</p>
-    <p>2018 TGA 最佳独立游戏、最具影响力游戏</p>
+    <p>TGA<sup><a href="#fn-tga" id="fnref-tga">[1]</a></sup> 2018 最佳独立游戏、最具影响力游戏</p>
     <p>「手感」与细节</p>
   </div>
   <img src="/notes/imgs/youtube-logo.png" alt="youtube" class="logo no-zoom">
@@ -167,7 +167,7 @@
   <div class="cover"><img src="./imgs/interesting/kda-dance-bts.jpg"></div>
   <div>
     <p class="title">Dance | Behind the Scenes</p>
-    <p>作为外行也能感觉这个水平非同一般……</p>
+    <p>作为外行也能感觉出这水平非同一般……</p>
   </div>
   <img src="/notes/imgs/youtube-logo.png" alt="youtube" class="logo no-zoom">
 </a>
@@ -183,10 +183,37 @@
 
 </div>
 
-## 其它游戏
+## 其它
 
-饥荒
+<div class="cards">
 
-Ori
+<a href="https://store.steampowered.com/app/219740/Dont_Starve/" class="card" target="_blank">
+  <div class="cover"><img src="./imgs/interesting/dontstarve.webp"></div>
+  <div>
+    <p class="title">饥荒 (Don't Starve)</p>
+    <p>200+ hrs</p>
+  </div>
+  <img src="/notes/imgs/steam-logo.png" alt="steam" class="logo no-zoom">
+</a>
 
-inside 2016 TGA 最佳独立游戏、最佳美术指导
+<a href="https://store.steampowered.com/app/261570/Ori_and_the_Blind_Forest/" class="card" target="_blank">
+  <div class="cover"><img src="./imgs/interesting/ori-blind-forest.jpg"></div>
+  <div>
+    <p class="title">奥日与黑暗森林 (Ori and the Blind Forest)</p>
+    <p>TGA 2015 最佳美术指导</p>
+    <p>音乐、画面绝佳——只是对手残党不是很友好</p>
+  </div>
+  <img src="/notes/imgs/steam-logo.png" alt="steam" class="logo no-zoom">
+</a>
+
+</div>
+
+<!-- Inside TGA 2016 最佳独立游戏、最佳美术指导 -->
+
+---
+
+<section class="footnotes">
+  <ol>
+    <li id="fn-tga">游戏大奖 (The Game Awards, TGA) ——「游戏界的奥斯卡奖」<a href="#fnref-tga" class="footnote-backref">↩︎</a></li>
+  </ol>
+</section>

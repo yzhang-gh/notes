@@ -76,6 +76,10 @@ a.card img.logo[src$="bilibili-logo.png"] {
     max-height: 20px;
 }
 
+a.card img.logo[src$="steam-logo.png"] {
+    max-height: 22px;
+}
+
 /* Reset links styles */
 
 .theme-default-content:not(.custom) a.card,

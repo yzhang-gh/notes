@@ -6,16 +6,20 @@
 
 ### 生成并配置密钥
 
+<https://www.ssh.com/ssh/keygen/>
+
 ```shell
 # cd ~/.ssh
-ssh-keygen  ## https://www.ssh.com/ssh/keygen/
-ssh-copy-id -i id_rsa.pub user@host
+ssh-keygen                           ## 生成公、私钥
+ssh-copy-id -i id_rsa.pub user@host  ## 将公钥复制到服务器
+
+ssh -v user@root                     ## 输出调试信息 (verbose)
 ```
 
 ### 配置文件
 
-全局 `/etc/ssh/ssh_config`  
-用户 `~/.ssh/config`
+- 全局 `/etc/ssh/ssh_config`
+- 用户 `~/.ssh/config`
 
 比如设置首选公钥验证方式
 
@@ -23,7 +27,10 @@ ssh-copy-id -i id_rsa.pub user@host
 Host *.ac.uk  ## One or more patterns separated by whitespace
 #   HostName <the real hostname (or IP) to login to>
     PreferredAuthentications publickey,keyboard-interactive,password,hostbased
+#   IdentityFile ~/.ssh/another_id_rsa
 ```
+
+对于每个参数，其取值为最先匹配到的值，所以 `Host *` 这种规则应该放在最后，相当于 fallback
 
 More on <https://linux.die.net/man/5/ssh_config>
 
@@ -113,10 +120,11 @@ type name
 ## 使用变量
 
 ```shell
-export rdsdir='username@bluebear.bham.ac.uk:/rds'  ## in `.bashrc` file
+## In the `.bashrc` file
+export rds='username@bluebear.bham.ac.uk:/rds'
 
 ## Usage
-scp $rdsdir/path/to/foo .
+scp $rds/path/to/foo .
 ```
 
 <http://www.compciv.org/topics/bash/variables-and-substitution/>

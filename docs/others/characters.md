@@ -2,15 +2,12 @@
 
 ## 标点
 
-<table style="font-family: 'Microsoft Yahei'">
+<table>
     <tbody>
         <tr>
-            <td>「</td>
-            <td>」</td>
-            <td>“</td>
-            <td>”</td>
-            <td>‘</td>
-            <td>’</td>
+            <td style="font-family: 'Microsoft Yahei'">「」</td>
+            <td style="font-family: monospace">“”</td>
+            <td style="font-family: monospace">‘’</td>
         </tr>
     </tbody>
 </table>

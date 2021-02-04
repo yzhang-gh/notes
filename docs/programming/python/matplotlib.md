@@ -11,11 +11,17 @@
 ```python
 import matplotlib
 print(matplotlib.matplotlib_fname())
-## e.g. C:\Users\<username>\Miniconda3\lib\site-packages\matplotlib\mpl-data\matplotlibrc
+## 'C:\Users\<username>\Miniconda3\lib\site-packages\matplotlib\mpl-data\matplotlibrc'
+
+## User-level config file:
+## 'C:\Users\<username>\.matplotlib\matplotlibrc'
 ```
 
-可以用来设置默认字体
-（新安装的字体可能会找不到，删掉 `$HOME\.matplotlib\fontlist-*.json` 缓存文件即可）
+可以用来设置**默认字体**
+
+::: warning
+**新安装的字体**可能会找不到，删掉 `$HOME\.matplotlib\fontlist-*.json` 缓存文件即可
+:::
 
 在程序中也可以进行配置，比如
 

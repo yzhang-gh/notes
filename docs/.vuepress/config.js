@@ -19,6 +19,7 @@ module.exports = {
             { text: 'Software and Tools', link: '/software/' },
             { text: 'Programming', link: '/programming/' },
             { text: 'Languages', link: '/langs/' },
+            { text: 'Reading', link: '/reading/' },
             { text: 'Others', link: '/others/' },
         ],
         sidebar: {
@@ -115,6 +116,7 @@ module.exports = {
                     children: [
                         '2015-summary',
                         'glasses',
+                        'interesting-stuff',
                     ]
                 },
             ],

@@ -34,12 +34,14 @@ plt.rc("font", **{"sans-serif": "Consolas"})
 一些默认值
 
 ```
-figure.figsize: 6.4, 4.8  ## figure size in inches
+figure.figsize : 6.4, 4.8  ## figure size in inches
+font.size      : 10        ## default 'medium' size
+## xx-small, x-small, small, medium, large, x-large, xx-large, larger, or smaller
 ```
 
 ## 刻度 (Ticks)
 
-总的来说，可以使用 [`matplotlib.axes.Axes.tick_params`](https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.tick_params.html) 方法来控制刻度的方向，颜色，大小等等
+总的来说，可以使用 [`matplotlib.axes.Axes.tick_params`](https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.tick_params.html) 方法来控制刻度的方向，颜色，大小等等
 
 ### 让 x, y 轴等刻度
 
@@ -56,8 +58,9 @@ from matplotlib.ticker import MultipleLocator
 
 ax = plt.gca()
 ax.xaxis.set_major_locator(MultipleLocator(20))
-# ax.xaxis.set_major_formatter(FormatStrFormatter('%d'))
 ax.xaxis.set_minor_locator(MultipleLocator(5))
+# 使用下面一行来显示副刻度的标签 (minor tick labels)
+# ax.xaxis.set_minor_formatter(FormatStrFormatter('%d'))
 ```
 
 ## Colorbar 与 Colormap

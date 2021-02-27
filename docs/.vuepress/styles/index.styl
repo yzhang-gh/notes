@@ -54,6 +54,24 @@ pre.tree
 #search-form
   line-height inherit
 
+// FIX @yzhang
+
+.theme-container
+  .sidebar-button
+    top 0.7rem
+
+  .sidebar
+    .nav-links
+      padding-top 1rem
+      padding-bottom 1rem
+      border-bottom-color #dadcdf
+
+      .nav-item
+      .repo-link
+        font-size 1.2em
+        padding-left 1.2rem
+        border 1px solid transparent
+
 // SCROLLBAR
 @media (min-width: 719px)
   ::-webkit-scrollbar
@@ -125,6 +143,10 @@ figure
 
     a
       color $accentColor075
+
+@media (max-width calc(719px + 244px))
+  figure
+    margin 1em 0
 
 // DETAILS
 

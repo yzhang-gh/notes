@@ -1,5 +1,46 @@
 # Matplotlib
 
+## 基本概念：Figure 与 Axes
+
+<figure>
+  <img src="./imgs/mpl/fig-vs-axes.png" alt="" class="">
+  <figcaption>A <code>Figure</code> with 2 <code>Axes</code></figcaption>
+</figure>
+
+- `Figure` 代表了整张图片 (`figure.savefig`)，像一个容器（可以设置 `figsize`，`dpi` 等）
+- `Axes` 则包括了**真正要画的内容**，比如坐标轴、折线、文本
+
+Matplotlib 提供了两套 API：
+- `pyplot` API，模仿 MATLAB 的语法风格，适合临时画图（一通 `plt.xxx` 搞定），
+- 面向对象风格的 API，显式地操作上述 `Figure`，`Axes` 对象，便于进行细节的控制和管理，特别是代码需要重复使用的时候。
+
+前者 `plt.xxx` 相当于始终在「当前的」`Figure` 或 `Axes` 对象上操作，与 `ax.xxx` 或者 `ax.set_xxx` 相对应。
+
+```python
+import matplotlib.pyplot as plt
+
+## 默认一个 Axes
+fig, ax = plt.subplots()
+ax.plot(x, y)
+fig.savefig("out.png")
+
+## ==================
+
+## 多个 Axes，两行一列
+fig, (ax1, ax2) = plt.subplots(2, 1)  ## 使用 `constrained_layout=True` 避免 Axes 重叠
+
+ax1.plot(x1, y1)
+ax1.set_title("Axes 1")
+
+ax2.plot(x2, y2)
+ax2.set_title("Axes 2")
+
+fig.suptitle("Figure")
+fig.savefig("out.png")
+```
+
+---
+
 ::: tip
 <https://github.com/matplotlib/cheatsheets>
 :::
@@ -35,8 +76,8 @@ plt.rc("font", **{"sans-serif": "Consolas"})
 
 ```
 figure.figsize : 6.4, 4.8  ## figure size in inches
-font.size      : 10        ## default 'medium' size
-## xx-small, x-small, small, medium, large, x-large, xx-large, larger, or smaller
+font.size      : 10        ## default 'medium' size (all relative values: xx-small, x-small,
+                           ## small, medium, large, x-large, xx-large, larger, or smaller)
 ```
 
 ## 刻度 (Ticks)

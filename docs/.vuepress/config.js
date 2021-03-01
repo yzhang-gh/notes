@@ -15,7 +15,7 @@ module.exports = {
         lastUpdated: 'Last updated',
         smoothScroll: true,
         nav: [
-            // { text: 'Machine Learning', link: '/' },
+            { text: 'Machine Learning', link: '/ml/' },
             { text: 'Software and Tools', link: '/software/' },
             { text: 'Programming', link: '/programming/' },
             { text: 'Languages', link: '/langs/' },
@@ -55,9 +55,10 @@ module.exports = {
                     title: 'Machine Learning',
                     collapsable: false,
                     children: [
-                        'learning-theory',
-                        'grad-descent-algos',
-                        'reinforcement-learning',
+                        // 'learning-theory',
+                        // 'grad-descent-algos',
+                        // 'reinforcement-learning',
+                        'nn-interpretability'
                     ]
                 },
             ],
@@ -87,6 +88,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'windows/autohotkey',
+                        'windows/context-menu',
                     ]
                 },
                 {
@@ -95,6 +97,7 @@ module.exports = {
                     children: [
                         'vim',
                         'shell',
+                        'powershell',
                     ]
                 },
             ],

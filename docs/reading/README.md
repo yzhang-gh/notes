@@ -1,4 +1,12 @@
+---
+sidebar: auto
+---
+
 # Reading
+
+::: callout
+随缘摘录
+:::
 
 ## 笔记
 

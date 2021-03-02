@@ -8,6 +8,10 @@
 
 ## Minecraft
 
+:::tip Minecraft 是什么？
+[Official Minecraft Trailer (2011-12-06)](https://www.youtube.com/watch?v=MmB9b5njVbA) <img src="/notes/imgs/youtube-logo.png" alt="youtube" class="logo no-zoom" style="max-height: 14px; position: relative; top: 1px;">
+:::
+
 让人回想起本科时和室友一起玩的快乐时光。
 
 <div class="cards">

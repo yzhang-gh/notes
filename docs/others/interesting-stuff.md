@@ -91,6 +91,16 @@
   <img src="/notes/imgs/bilibili-logo.png" alt="bilibili" class="logo no-zoom">
 </a>
 
+<a href="https://www.bilibili.com/video/BV1vx411w7Hc" class="card" target="_blank">
+  <div class="cover"><img src="./imgs/interesting/pipa-liudehai.jpg"></div>
+  <div>
+    <p class="title">《十面埋伏》刘德海</p>
+    <p>银瓶乍破水浆迸，铁骑突出刀枪鸣</p>
+    <p>——《琵琶行》白居易</p>
+  </div>
+  <img src="/notes/imgs/bilibili-logo.png" alt="bilibili" class="logo no-zoom">
+</a>
+
 </div>
 
 ## 摄影

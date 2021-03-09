@@ -46,6 +46,7 @@ module.exports = {
                     children: [
                         'jp/beginner-unit-1-3',
                         'jp/beginner-unit-4-6',
+                        'jp/grammar',
                         'jp/beginner-unit-7-9',
                     ]
                 }

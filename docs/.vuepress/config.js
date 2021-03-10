@@ -112,6 +112,7 @@ module.exports = {
                         'minimax',
                         'p-np',
                         'literature-review-the-hard-way',
+                        'misc',
                     ]
                 },
                 {

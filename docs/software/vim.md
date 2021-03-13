@@ -1,7 +1,7 @@
 # Vim
 
-::: tip
-Just for simple editing (otherwise use VSCode instead!)
+::: callout
+Just for simple editing, otherwise why not use VS Code ;)
 :::
 
 Press <kbd>.</kbd> to repeat last change，给多行加 / 去注释的时候很实用
@@ -10,15 +10,18 @@ Press <kbd>.</kbd> to repeat last change，给多行加 / 去注释的时候很�
 
 ## Moving cursor
 
-| Key                                       | Operation                                                |
-| ----------------------------------------- | -------------------------------------------------------- |
-| <kbd>g</kbd><kbd>g</kbd>                  | go to start of file                                      |
-| <kbd>G</kbd>                              | go to end of file                                        |
-| <kbd>Ctrl</kbd>+<kbd>f</kbd>/<kbd>d</kbd> | next page/half page                                      |
-| <kbd>Ctrl</kbd>+<kbd>b</kbd>/<kbd>u</kbd> | previous page/half page                                  |
-| <kbd>w</kbd>                              | next word (<kbd>d</kbd><kbd>w</kbd> delete current word) |
-| <kbd>b</kbd>                              | previous word                                            |
-| <kbd>f</kbd><kbd>{char}</kbd>             | jump to next `{char}` (on this line)                     |
+| Key                                       | Operation                                                    |
+| ----------------------------------------- | ------------------------------------------------------------ |
+| <kbd>g</kbd><kbd>g</kbd>                  | go to start of the **file**                                  |
+| <kbd>G</kbd>                              | go to end of the file                                        |
+| <kbd>0</kbd>/<kbd>Home</kbd>              | go to first char in the **line**                             |
+| <kbd>^</kbd>                              | go to first non-blank char in the line                       |
+| <kbd>$</kbd>/<kbd>End</kbd>               | go to last char in the line (just like in RegExp)            |
+| <kbd>Ctrl</kbd>+<kbd>f</kbd>/<kbd>d</kbd> | next page/half **page**                                      |
+| <kbd>Ctrl</kbd>+<kbd>b</kbd>/<kbd>u</kbd> | previous page/half page                                      |
+| <kbd>w</kbd>                              | next **word** (<kbd>d</kbd><kbd>w</kbd> delete current word) |
+| <kbd>b</kbd>                              | previous word                                                |
+| <kbd>f</kbd><kbd>{char}</kbd>             | jump to next `{char}` (on this line)                         |
 
 <kbd>;</kbd> repeat last <kbd>f</kbd> (or <kbd>F/t/T</kbd>) operation
 
@@ -53,3 +56,7 @@ Press <kbd>.</kbd> to repeat last change，给多行加 / 去注释的时候很�
 | <kbd>n</kbd>/<kbd>N</kbd> | go to next/previous occurrence (similar to <kbd>F3</kbd>/<kbd>Shift</kbd>+<kbd>F3</kbd> in most IDEs)       |
 
 Type `:noh` to turn off highlighting until the next search
+
+## More
+
+Vim online documentation: <https://vimhelp.org/>

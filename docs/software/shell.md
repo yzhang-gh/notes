@@ -44,7 +44,9 @@ scp username@remote.edu:/some/remote/directory/\{a,b,c\} ./
 
 Glob patterns can be used (e.g. `*.{py,json}` for all Python and JSON files).
 
-**NOTE**: Using `\{a,b,c\}` will transfer the files in a single connection/batch (since they'll be expanded on the remote host), while using `{a,b,c}` will open multiple connections, and the overhead is quite noticeable when transferring many files.
+::: tip
+Using `\{a,b,c\}` will transfer the files in a single connection/batch (since they'll be expanded on the remote host), while using `{a,b,c}` will open multiple connections, and the overhead is quite noticeable when transferring many files.
+:::
 
 ### From local to remote
 

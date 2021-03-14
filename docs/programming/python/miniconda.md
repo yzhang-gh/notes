@@ -13,7 +13,7 @@
 ## 常用包
 
 ```
-scipy numpy pandas matplotlib notebook
+scipy numpy pandas matplotlib scikit-learn notebook
 ```
 
 ## Managing environments

@@ -56,6 +56,9 @@ pre.tree
 
 // FIX @yzhang
 
+img + svg.icon.outbound
+  display none
+
 .theme-container
   .sidebar-button
     top 0.7rem
@@ -69,13 +72,17 @@ pre.tree
       .nav-item
       .repo-link
         font-size 1.2em
-        padding-left 1.2rem
+        padding-left 4px
         border 1px solid transparent
 
     &>.sidebar-links>li>a.sidebar-link
       font-size 0.9rem
       font-weight 500
       line-height 1.5
+
+    .sidebar-group
+      .sidebar-heading
+        padding-left 0
 
 // SCROLLBAR
 @media (min-width: 719px)

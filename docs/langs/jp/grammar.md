@@ -10,8 +10,10 @@ title: 日本語の文法
 
 **传统的**语言形态分类[^morphological-typology]：
 
-- ==分析语==——依赖于**词序** (word order)，助词、介词等特征来表达意思，**很少有词形变化**（类似编程语言可以被解析为语法树）
+- ==分析语==——依赖于**词序** (word order)，助词、介词等特征来表达意思，**很少有词形变化**
   例如：**现代汉语**，完全无词形变化，语法功能由额外文字来表示。名词不分主格宾格，属格用「的」连接。动词本身不随人称、时态等变化；过去时用「了」，现在时用「正在」；被动语态用「被」。
+
+  （开个脑洞：编程「语言」依赖的就是词序，可以被解析为[抽象语法树](https://zh.wikipedia.org/zh-cn/%E6%8A%BD%E8%B1%A1%E8%AA%9E%E6%B3%95%E6%A8%B9)，很分析）[^nlp]
 
   - 一个相关的概念是==孤立语==，指**语素-单词比** (morpheme-per-word ratio) 很低的语言（某种意义上也即意味着很少有词形变化）
 
@@ -67,6 +69,13 @@ title: 日本語の文法
 
 ——动词、形容词、形容动词
 
+::: details 日语现代语基本活用表
+<figure style="margin: 1em 0 0">
+  <img src="./imgs/huoyong.jpg" alt="" class="" style="user-select: none">
+  <figcaption><a href="https://zhuanlan.zhihu.com/p/112110880">日语现代语基本活用表 - 雨宫 Lin 的文章 - 知乎</a></figcaption>
+</figure>
+:::
+
 ### 助词
 
 ## 参考材料
@@ -81,7 +90,9 @@ title: 日本語の文法
 - [浅谈日语中的两大语法体系——学校语法与教育语法](https://www.bilibili.com/read/cv3292464/)
 - [日语教学中「学校教育」和「日本语教育」之间的区别及优劣是什么？- 知乎](https://www.zhihu.com/question/20448242)
 
-[^morphological-typology]: 现在的类型学研究不再使用仅仅四五个粗略的标签来分类语言，因为会有很多不能覆盖到的细节。见 [World Atlas of Language Structure (WALS)](https://en.wikipedia.org/wiki/Morphological_typology#WALS)
+[^morphological-typology]: 现在的语言类型学研究不再使用上述仅仅四五个粗略的标签来进行分类，因为其只体现了语言的大致特征，有很多无法覆盖的语法细节。见 [World Atlas of Language Structure (WALS)](https://en.wikipedia.org/wiki/Morphological_typology#WALS)
+
+[^nlp]: 虽说分析语听起来更容易「分析」，但在目前以神经网络为代表的自然语言处理 (NLP) 技术中，作为分析语的中文反而比英语处理起来更难。首先分词 (tokenization) 就是一个难题，此外综合语的各种词缀（单复数，时态等）比起分析语的语序也更容易处理。
 
 [^compared-to-derivation]: 词形变化（也译作**屈折变化**）指单词（或词根）的变化，以导致语法功能改变，进而使其代表的意义也有所改变。==派生==则是在单词上加上派生词素，藉以从现有词汇中添加意义不同的新词。
   一个直观的认识是：在词典中，单词的词形变化不会列出来，但派生词会。例如英语词典会把 readable 和 readability 分开词条列在其词根 read 之下，但不会把 reads 和 reading 以词条列出来。

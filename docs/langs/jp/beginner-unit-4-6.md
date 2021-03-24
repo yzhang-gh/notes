@@ -55,8 +55,8 @@ title: 标准日本语初级（上）4－6 单元
 
 ### 动词<span class="jp">て</span>形
 
-::: tip
-「学校语法」中称为**五段动词**，可在书本开头查看对应关系
+::: tip 🤔
+[教育文法 vs. 学校文法](./grammar.md#日语语法)
 :::
 
 一类动词，去掉<span class="jp">ます</span>之后最后一个音位于<b class="jp">い</b>段的绝大部分动词
@@ -132,7 +132,8 @@ title: 标准日本语初级（上）4－6 单元
 
 <!--  -->
 
-- <span class="jp">家で仕事をし<b>てもいいです</b>。　　</span><span class="annot">（表示许可，〔动词<b class="jp">て</b>形〕+ <b class="jp">も</b> + <b class="jp">いいです</b>）</span>
+- <span class="jp">家で仕事を<b>して</b>も<b>いいです</b>。　　</span><span class="annot">（表示许可，〔动词<b class="jp">て</b>形〕+ <span class="jp">も</span> + <b class="jp">いいです</b>）</span>
+  <span class="jp">ここに<b>座っていいですか</b>。</span>
 - <span class="jp">明日は残業し<b>なくてもいいです</b>。</span><span class="annot">（表示不做某事也行，〔动词<b class="jp">ない</b>形〕<b class="jp">→なくても</b> + <b class="jp">いいです</b>）</span>
 - <span class="jp">教室で物を食べ<b>ではいけません</b>。</span><span class="annot">（表示禁止，〔动词<b class="jp">て</b>形〕+ <b class="jp">は</b> + <b class="jp">いけません</b>）</span>
 
@@ -184,14 +185,14 @@ title: 标准日本语初级（上）4－6 单元
 <!--  -->
 
 - <span class="jp">私はすき焼きを<b>食べた</b><b class="accent">ことが</b><b>あります</b>。</span>
-  <span class="annot">（表示过去的经历，「～过」，通常用于至少半年以前的事情）</span>
+  <span class="annot">（表示过去的经历，「～过」，通常用于至少半年以前的事情，〔动词<b class="jp">た</b>形〕<b>ことがあります</b>）</span>
 
 <!--  -->
 
 - <span class="jp">昨日の試験、どうだった？</span>
   <span class="jp">ーーちょっと難しかった<b>けど</b>、まあまあできたよ。</span>
   <span class="annot">（<b class="jp">けど</b>连接两个句子，表示转折，用于口语；书面语用<b class="jp">が</b>）</span>
-  <span class="jp">来週、送別会をする<b>けど</b>、都合はどうかた？　　　</span><span class="annot">（或者表示铺垫）</span>
+  <span class="jp">来週、送別会をする<b>けど</b>、都合はどうかた？　</span><span class="annot">（或者表示铺垫）</span>
 
 <!--  -->
 

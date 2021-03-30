@@ -111,6 +111,14 @@ type name
 ## -> name is aliased to `your command'
 ```
 
+## `tee`
+
+复制输出到指定文件（不影响终端的输出）
+
+```shell
+python train.py | tee out.txt
+```
+
 ## Command history
 
 - press <kbd>Ctrl</kbd> + <kbd>R</kbd> to start search

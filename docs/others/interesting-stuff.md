@@ -142,7 +142,7 @@
   <div class="cover"><img src="./imgs/interesting/celeste.webp"></div>
   <div>
     <p class="title">[蔚蓝] Why Does Celeste Feel So Good to Play?</p>
-    <p>TGA<sup><a href="#fn-tga" id="fnref-tga">[1]</a></sup> 2018 最佳独立游戏、最具影响力游戏</p>
+    <p>TGA<sup><a href="#fn-tga" id="fnref-tga" class="target">[1]</a></sup> 2018 最佳独立游戏、最具影响力游戏</p>
     <p>「手感」与细节</p>
   </div>
   <img src="/notes/imgs/youtube-logo.png" alt="youtube" class="logo no-zoom">

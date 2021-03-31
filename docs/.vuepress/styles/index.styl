@@ -261,8 +261,16 @@ section.footnotes
       margin-top 0
       margin-bottom 0.5em
 
-.target&:target
-  background #FFD20088
+.target
+  padding-top 5rem
+  margin-top -5rem
+
+  &:target
+    background-image linear-gradient(0, #FFD200 6%, transparent 6%)
+
+hr + .target
+  p:first-child
+    margin-top 0
 
 .theme-default-content:not(.custom)
   & > ul

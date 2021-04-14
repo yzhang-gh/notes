@@ -280,11 +280,25 @@ hr + .target
 @media print
   header
   .page-nav
+  .sidebar
     display none
   
-  .theme-default-content:not(.custom) > *:first-child
-    padding-top 1.5rem
-    margin-top 0
+  .theme-default-content:not(.custom)
+    padding 0
+
+    h1
+      margin-top 0
+      padding-top 2rem
+    h2
+    h3
+    h4
+      margin-top 0
+      padding-top 1.5rem
+    & > div:first-child
+      margin-top 1rem
+
+@page
+  margin 0.75in
 
 // OVERWIRTE default theme
 

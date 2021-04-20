@@ -104,7 +104,29 @@ ax.xaxis.set_minor_locator(MultipleLocator(5))
 # ax.xaxis.set_minor_formatter(FormatStrFormatter('%d'))
 ```
 
-## Colorbar 与 Colormap
+## Colormap
+
+### Colormap 与 Mappable
+
+- `Colormap` 用来把 [0, 1] 数值转化成 RGBA 颜色值
+  - 比如可以直接使用 [`matplotlib.colors.Colormap.coolwarm(X)`](https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.Colormap.html#matplotlib.colors.Colormap.__call__) 进行转换
+- `Mappable` 则可以对 `Colormap` 进行放缩（借助 `Normalize`）
+  - 然后使用 [`mappable.to_rgba(X)`](https://matplotlib.org/stable/api/cm_api.html#matplotlib.cm.ScalarMappable.to_rgba) 进行转换
+
+```python
+from matplotlib.cm import ScalarMappable
+from matplotlib.colors import Normalize
+
+## The default colormap assumes range [0, 1]. `ScalarMappable` allows custom range.
+mappable = ScalarMappable(Normalize(-1, 1), "bwr")
+## Don't know why but `set_array` may be needed
+## https://stackoverflow.com/a/49036899/8682688
+# mappable.set_array(np.array([...]))
+
+certain_patch.set_color(mappable.to_rgba(value))
+
+plt.colorbar(mappable)
+```
 
 ### 使 Colorbar 刻度为整数
 
@@ -127,23 +149,6 @@ plt.colorbar(im, fraction=0.046, pad=0.4)
 ```
 
 不知道原理但是很神奇（[更多讨论](https://stackoverflow.com/a/26720422)）
-
-### 使用 Colormap
-
-```python
-from matplotlib.cm import ScalarMappable
-from matplotlib.colors import Normalize
-
-## The default colormap assumes range [0, 1]. `ScalarMappable` allows custom range.
-min_value = -1
-max_value = 1
-mappable = ScalarMappable(Normalize(min_value, max_value), "bwr")
-mappable.set_array(np.array([min_value, max_value]))  ## Don't know why but `set_array` is needed
-
-certain_patch.set_color(mappable.to_rgba(value))
-
-plt.colorbar(mappable)
-```
 
 ## Subplots
 

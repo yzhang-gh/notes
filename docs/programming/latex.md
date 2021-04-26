@@ -4,12 +4,14 @@
 
 A lightweight, cross-platform, portable, and easy-to-maintain LaTeX distribution based on TeX Live
 
+相当于 Miniconda 之于 Anaconda
+
 - 主页及介绍：<https://yihui.name/tinytex/>
 - GitHub 仓库：<https://github.com/yihui/tinytex>
 
-从仓库的 `tools` 目录中下载执行 [`install-windows.bat`](https://github.com/yihui/tinytex/raw/master/tools/install-windows.bat) 安装脚本（安装过程中可能会出现「找不到 luatex.dll」的错误，实际不影响使用），然后使用 `tlmgr install pkg1 pkg2 ...` 命令安装 [`pkgs-yihui.txt`](https://github.com/yihui/tinytex/raw/master/tools/pkgs-yihui.txt) 以及其它自己需要的包（善用 VSCode 多光标和 `Join Lines` 命令），比如：
+从仓库的 `tools` 目录中下载执行 [`install-windows.bat`](https://github.com/yihui/tinytex/raw/master/tools/install-windows.bat) 安装脚本（安装过程中可能会出现「找不到 luatex.dll」的错误，实际不影响使用），然后使用 `tlmgr install pkg1 pkg2 ...` 命令安装 [`pkgs-yihui.txt`](https://github.com/yihui/tinytex/raw/master/tools/pkgs-yihui.txt) 以及其它自己需要的包（善用 VS Code `Join Lines` 命令），比如：
 
-```
+```bash
 chktex
 latexindent
 texcount
@@ -18,9 +20,6 @@ texcount
 biblatex
 biber
 logreq
-
-# Required by Matplotlib while using LaTeX backend
-dvipng
 
 IEEEtran
 
@@ -33,13 +32,34 @@ xecjk
 
 ### `tlmgr` Common Commands
 
-```
+搜索缺失的包
+
+```bash
 tlmgr search --global --file "keywords"
+```
+
+```
 tlmgr install [option...] pkg...
 tlmgr update [option...] [pkg...]
 ```
 
 [`tlmgr` manual](https://www.tug.org/texlive/doc/tlmgr.html)
+
+### TinyTex 卸载
+
+```bash
+# Linux
+tlmgr path remove
+rm -r "~/.TinyTeX"
+
+# macOS
+tlmgr path remove
+rm -r ~/Library/TinyTeX
+
+# Windows
+tlmgr path remove
+rd /s /q "%APPDATA%\TinyTeX"
+```
 
 ## Escape
 
@@ -241,14 +261,26 @@ authblk
 ## 字体
 
 ```latex
-\usepackage[utf8]{inputenc} %% So you can use Unicode chars (enc -- encoding)
-\usepackage[T1]{fontenc}    %% `OT1` (old TeX) only contains 128 chars, that's why `<` and `>` are shown as `¡` and `¿`
+%% `enc` means encoding
+\usepackage[T1]{fontenc}    %% `OT1` (old TeX) only contains 128 chars, that's why `<>` becomes `¡¿`
+\usepackage[utf8]{inputenc} %% So you can use Unicode chars
 
-\usepackage{mathpazo}       %% Pazo Math font for math (bettr in combination with Palatino font for text)
-\usepackage{tgpagella}      %% Palladio font for text
+%% Linux Libertine
+% \usepackage{libertine}
+% \usepackage{libertinust1math}
+%% The Libertine Mono looks bad, you may want to revert it
+% \renewcommand{\ttdefault}{cmtt}
+
+%% TeX Gyre Pagella font
+% \usepackage{tgpagella}
+%% Pazo Math font
+% \usepackage{mathpazo}
 ```
 
-[LaTeX font selection guide](https://www.latex-project.org/help/documentation/fntguide.pdf)
+::: tip More
+- [LaTeX font selection guide](https://www.latex-project.org/help/documentation/fntguide.pdf)
+- [Font typefaces](https://www.overleaf.com/learn/latex/font_typefaces)
+:::
 
 ## 中文支持
 

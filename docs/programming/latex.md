@@ -15,6 +15,7 @@ A lightweight, cross-platform, portable, and easy-to-maintain LaTeX distribution
 chktex
 latexindent
 texcount
+libertinust1math
 
 # BibLaTeX
 biblatex
@@ -284,15 +285,27 @@ authblk
 
 ## 中文支持
 
-`\usepackage{ctex}`
+```latex
+\usepackage{ctex}  %% https://ctan.org/pkg/ctex
+
+%% 按需设置字体，\usepackage[fandol]{ctex} 预设也很不错
+% \setCJKmainfont{Source Han Serif SC}[
+%     ItalicFont = KaiTi
+% ]
+% \setCJKsansfont{Source Han Sans SC}
+% \setCJKmonofont{Sarasa Mono SC}
+```
 
 使用 XeLaTeX 编译
 
-（英文版 Windows 需要自己手动安装中文字体，`Settings`>`Time & Language`>`Region & Language`>`中文`>`Options`>`Basic typing`）
+- 自行安装字体时需要选择「为所有用户安装」
+- 使用 `fc-list :lang=zh` 查看有哪些中文字体
 
-查看字体 `fc-list>>fonts.txt`
+（英文版 Windows 需要先安装中文语言包，`Settings`>`Time & Language`>`Region & Language`>`中文`>`Options`>`Basic typing`）
 
-设置字体 `\setCJKmainfont{Source Han Sans CN}`
+::: tip More
+- [在 LaTeX 中使用 OpenType 字体](https://stone-zeng.github.io/2018-08-08-use-opentype-fonts/)
+:::
 
 ## `a4paper`/`letterpaper` 不起作用
 

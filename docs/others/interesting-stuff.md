@@ -21,6 +21,7 @@
   <div>
     <p class="title">红石音乐——《卡农》(2016-07-17)</p>
     <p>一定要看到最后！（迅捷药水注入灵魂）</p>
+    <p><sub>更多：<a href="https://www.bilibili.com/video/BV1h54y1j7pr" target="_blank" rel="noopener noreferrer" class="outbound smaller">2021 年的红石音乐，究竟可以做到什么地步！</a></sub></p>
   </div>
   <img src="/notes/imgs/bilibili-logo.png" alt="bilibili" class="logo no-zoom">
 </a>

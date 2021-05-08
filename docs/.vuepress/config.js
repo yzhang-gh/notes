@@ -120,6 +120,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         '2015-summary',
+                        '2018-uk',
                         'glasses',
                         'interesting-stuff',
                     ]

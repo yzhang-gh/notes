@@ -1,6 +1,51 @@
-# 常用代码片段
+# Python 代码片段
 
-## 各种路径（用户目录与临时目录）
+## 线程池
+
+```python
+import time
+from multiprocessing import Pool
+
+NUM_PROCESSES = 4
+
+
+def func_single_arg(a):
+    time.sleep(1)
+    return a * a
+
+
+def func_multi_args(a, b):
+    time.sleep(1)
+    return a * b
+
+
+def main():
+    single_arg_list = [1, 2, 3, 4]
+    multi_args_list = [(1, 2), (3, 4), (5, 6), (7, 8)]
+
+    with Pool(NUM_PROCESSES) as p:
+        results = p.map(func_single_arg, single_arg_list)
+        print(results)
+
+        results = p.starmap(func_multi_args, multi_args_list)
+        print(results)
+
+        ## imap 可以与 tqdm 配合显示进度条
+        for result in p.imap(func_single_arg, single_arg_list):
+            print(result, end=" ")
+
+
+if __name__ == "__main__":
+    main()
+```
+
+```
+[1, 4, 9, 16]
+[2, 12, 30, 56]
+1 4 9 16 
+```
+
+## 用户目录与临时目录
 
 ```python
 from os.path import expanduser
@@ -17,6 +62,8 @@ gettempdir()
 ```python
 print(f"{progress:.2f}%", end="\r", flush=True)
 ```
+
+或者使用 `tqdm`
 
 ## GUI 相关
 
@@ -45,44 +92,3 @@ pyinstaller --onefile --noconsole main.py
 #### 附：更改图标
 
 用 Resource Hacker 打开要改图标的 exe，`Action > Replace Icon ...`，然后选择一个有图标的 exe 替换（比如 `pythonw.exe`）
-
-## 线程池
-
-```python
-import time
-from multiprocessing import Pool
-
-NUM_CORES = 4
-
-
-def f(a, b):
-    time.sleep(1)
-    return a * b
-
-
-def main():
-    args_list = [(1, 2), (3, 4), (5, 6), (7, 8), (9, 10)]
-
-    t1 = time.time()
-
-    ## Parallel
-    with Pool(NUM_CORES) as p:
-        results = p.starmap(f, args_list)
-
-    t2 = time.time()
-    print(results, f"took {t2 - t1:.4f}s")
-
-    t3 = time.time()
-
-    ## Sequential
-    results = []
-    for args in args_list:
-        results.append(f(*args))
-
-    t4 = time.time()
-    print(results, f"took {t4 - t3:.4f}s")
-
-
-if __name__ == "__main__":
-    main()
-```

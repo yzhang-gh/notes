@@ -4,7 +4,7 @@ title: 强化学习
 
 # 强化学习 (Reinforcement Learning)
 
-<link rel="stylesheet" href="/notes/katex@0.11.1.min.css">
+<link rel="stylesheet" href="/notes/katex@0.13.9.min.css">
 
 ::: warning
 UNDER CONSTRUCTION

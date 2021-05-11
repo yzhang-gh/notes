@@ -59,4 +59,11 @@ Type `:noh` to turn off highlighting until the next search
 
 ## More
 
-Vim online documentation: <https://vimhelp.org/>
+[Vim online documentation](https://vimhelp.org/)
+
+---
+
+<figure>
+  <img src="./imgs/vimcheatsheet.gif" alt="Vim Cheatsheet">
+  <figcaption><a href="https://marketplace.visualstudio.com/items?itemName=kaisun.vscodevimacademy" target="_blank" rel="noopener noreferrer" class="outbound" style="color: #297abd">Vscode Vim Academy</a></figcaption>
+</figure>

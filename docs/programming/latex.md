@@ -16,6 +16,7 @@ chktex
 latexindent
 texcount
 libertinust1math
+nicematrix
 
 # BibLaTeX
 biblatex

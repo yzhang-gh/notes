@@ -28,13 +28,3 @@ Set-ExecutionPolicy RemoteSigned
 
 <https://superuser.com/a/516704/950027>
 <https://stackoverflow.com/a/4038991>
-
----
-
-## Unable to Eject Drive
-
-```powershell
-Get-EventLog -LogName System -after (Get-Date).AddHours(-1) | Where-Object {$_.EventID -eq 225} | Sort-Object TimeGenerated | Format-Table -Wrap
-```
-
-<https://superuser.com/a/1356217/950027>

@@ -90,6 +90,7 @@ module.exports = {
                     children: [
                         'windows/autohotkey',
                         'windows/context-menu',
+                        'windows/general',
                     ]
                 },
                 {

@@ -51,6 +51,41 @@
   <img src="./imgs/interesting/professional.jpg" class="no-zoom" width="240">
 </figure>
 
+## 音乐
+
+<div class="cards">
+
+<a href="https://www.bilibili.com/video/BV1jx411M75e" class="card" target="_blank">
+  <div class="cover"><img src="./imgs/interesting/sing.jpg"></div>
+  <div>
+    <p class="title">[青歌赛] 评委大佬飙歌 让你们见识什么是神仙唱歌</p>
+    <p>「这种水平是国家队？？？这是国家教练队……」</p>
+    <p>这个就叫专业.jpg</p>
+  </div>
+  <img src="/notes/imgs/bilibili-logo.png" alt="bilibili" class="logo no-zoom">
+</a>
+
+<a href="https://www.bilibili.com/video/BV1vx411w7Hc" class="card" target="_blank">
+  <div class="cover"><img src="./imgs/interesting/pipa-liudehai.jpg"></div>
+  <div>
+    <p class="title">《十面埋伏》刘德海</p>
+    <p>银瓶乍破水浆迸，铁骑突出刀枪鸣</p>
+    <p>——《琵琶行》白居易</p>
+  </div>
+  <img src="/notes/imgs/bilibili-logo.png" alt="bilibili" class="logo no-zoom">
+</a>
+
+<a href="https://www.bilibili.com/video/BV1fy4y1C7gU" class="card" target="_blank">
+  <div class="cover"><img src="./imgs/interesting/genshin-ost-bts.jpg"></div>
+  <div>
+    <p class="title">《疾如猛火》《⼭⻛拂萝⾐》</p>
+    <p>[原神] 璃月地区音乐录制实拍</p>
+  </div>
+  <img src="/notes/imgs/bilibili-logo.png" alt="bilibili" class="logo no-zoom">
+</a>
+
+</div>
+
 ## 绘画，CG
 
 <div class="cards">
@@ -77,32 +112,6 @@
   <img src="./imgs/interesting/lol-divine-sword-irelia.jpg">
   <figcaption>玉剑传说 舞剑仙 - <a href="https://www.artstation.com/artwork/G4N0Q" target="_blank" rel="noopener noreferrer" class="outbound">创作过程</a></figcaption>
 </figure>
-
-## 音乐
-
-<div class="cards">
-
-<a href="https://www.bilibili.com/video/BV1jx411M75e" class="card" target="_blank">
-  <div class="cover"><img src="./imgs/interesting/sing.jpg"></div>
-  <div>
-    <p class="title">[青歌赛] 评委大佬飙歌 让你们见识什么是神仙唱歌</p>
-    <p>「这种水平是国家队？？？这是国家教练队……」</p>
-    <p>这个就叫专业.jpg</p>
-  </div>
-  <img src="/notes/imgs/bilibili-logo.png" alt="bilibili" class="logo no-zoom">
-</a>
-
-<a href="https://www.bilibili.com/video/BV1vx411w7Hc" class="card" target="_blank">
-  <div class="cover"><img src="./imgs/interesting/pipa-liudehai.jpg"></div>
-  <div>
-    <p class="title">《十面埋伏》刘德海</p>
-    <p>银瓶乍破水浆迸，铁骑突出刀枪鸣</p>
-    <p>——《琵琶行》白居易</p>
-  </div>
-  <img src="/notes/imgs/bilibili-logo.png" alt="bilibili" class="logo no-zoom">
-</a>
-
-</div>
 
 ## 摄影
 

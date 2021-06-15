@@ -152,9 +152,29 @@ plt.colorbar(im, fraction=0.046, pad=0.4)
 
 ## Subplots
 
-[Matplotlib Demo](https://matplotlib.org/3.1.1/gallery/subplots_axes_and_figures/subplots_demo.html)
+[Matplotlib demo](https://matplotlib.org/3.1.1/gallery/subplots_axes_and_figures/subplots_demo.html)
 
-[Shared xlabel/ylabel](https://stackoverflow.com/a/53172335/8682688)
+<figure>
+  <img src="./imgs/mpl/sharedxylabel.png" alt="" class="border">
+  <figcaption><a href="https://stackoverflow.com/a/53172335/8682688" target="_blank" rel="noopener noreferrer" class="outbound">Shared xlabel/ylabel</a></figcaption>
+</figure>
+
+```python
+import matplotlib.pyplot as plt
+
+fig, axes = plt.subplots(2, 2, sharex=True, sharey=True)
+## add a big axis, hide frame
+fig.add_subplot(111, frameon=False)
+## hide tick and tick label of the big axis
+plt.tick_params(labelcolor='none', which='both', top=False, bottom=False, left=False, right=False)
+
+## 保存为 pgf 格式时 labelcolor 不生效，需要额外添加下面两行
+# plt.xticks([0], [" "])
+# plt.yticks([0], [" "], rotation="vertical", fontsize="xx-large")
+
+plt.xlabel("common X")
+plt.ylabel("common Y")
+```
 
 ## Default Color Cycle
 
@@ -162,3 +182,28 @@ plt.colorbar(im, fraction=0.046, pad=0.4)
 prop_cycle = plt.rcParams["axes.prop_cycle"]
 colors = prop_cycle.by_key()["color"]
 ```
+
+## PGF 格式与 LaTeX
+
+Matplotlib 可以导出 pgf 格式的图片，其本质是一系列 tex 命令。使用 pgf 格式可以让图片中的文本使用当前 LaTeX 文档所用的字体，从而保持一致。
+
+```python
+plt.savefig("example.pgf")
+```
+
+在此之前可以使用 `fig.set_size_inches(w=4, h=3)` 来调整图像画布大小
+
+```latex
+\usepackage{pgf}
+
+\begin{document}
+
+\begin{figure}
+    \centering
+    \input{example.pgf}
+\end{figure}
+
+\end{document}
+```
+
+可以使用 `\resizebox{0.6\textwidth}{!}{\input{example.pgf}}` 来整体缩放图像

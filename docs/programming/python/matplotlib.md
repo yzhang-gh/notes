@@ -183,6 +183,8 @@ prop_cycle = plt.rcParams["axes.prop_cycle"]
 colors = prop_cycle.by_key()["color"]
 ```
 
+<code style="color: white; background: #1f77b4;">#1f77b4</code> <code style="color: white; background: #ff7f0e;">#ff7f0e</code> <code style="color: white; background: #2ca02c;">#2ca02c</code> <code style="color: white; background: #d62728;">#d62728</code> <code style="color: white; background: #9467bd;">#9467bd</code>
+
 ## PGF 格式与 LaTeX
 
 Matplotlib 可以导出 pgf 格式的图片，其本质是一系列 tex 命令。使用 pgf 格式可以让图片中的文本使用当前 LaTeX 文档所用的字体，从而保持一致。

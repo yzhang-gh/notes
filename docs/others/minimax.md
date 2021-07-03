@@ -1,6 +1,6 @@
 # Minimax
 
-<link rel="stylesheet" href="/notes/katex@0.13.9.min.css">
+<link rel="stylesheet" href="/notes/katex.min.css">
 
 Minimax 算法常用于「有限状态，零和，完全信息（，两人）」博弈问题，比如棋类
 

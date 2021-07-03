@@ -1,6 +1,6 @@
 # 梯度下降优化算法总结
 
-<link rel="stylesheet" href="/notes/katex@0.13.9.min.css">
+<link rel="stylesheet" href="/notes/katex.min.css">
 
 ::: warning
 UNDER CONSTRUCTION

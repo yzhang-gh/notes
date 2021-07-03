@@ -4,7 +4,7 @@ title: 计算学习理论
 
 # 计算学习理论 (Computational Learning Theory)
 
-<link rel="stylesheet" href="/notes/katex@0.13.9.min.css">
+<link rel="stylesheet" href="/notes/katex.min.css">
 
 ::: warning
 UNDER CONSTRUCTION

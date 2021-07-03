@@ -4,7 +4,7 @@ sidebar: auto
 
 # 神经网络可解释性综述
 
-<link rel="stylesheet" href="/notes/katex@0.13.9.min.css">
+<link rel="stylesheet" href="/notes/katex.min.css">
 
 <style>
     @media (max-width: 500px) {

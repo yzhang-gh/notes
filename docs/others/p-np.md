@@ -1,6 +1,6 @@
 # P、NP 与 NP 完全问题
 
-<link rel="stylesheet" href="/notes/katex@0.13.9.min.css">
+<link rel="stylesheet" href="/notes/katex.min.css">
 
 ::: callout 🥥 In a Nutshell
 简单的问题，难的问题，更难的问题，更更难的问题……最难的问题，无法解决的问题

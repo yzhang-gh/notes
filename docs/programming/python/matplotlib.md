@@ -183,7 +183,26 @@ prop_cycle = plt.rcParams["axes.prop_cycle"]
 colors = prop_cycle.by_key()["color"]
 ```
 
-<code style="color: white; background: #1f77b4;">#1f77b4</code> <code style="color: white; background: #ff7f0e;">#ff7f0e</code> <code style="color: white; background: #2ca02c;">#2ca02c</code> <code style="color: white; background: #d62728;">#d62728</code> <code style="color: white; background: #9467bd;">#9467bd</code>
+<style>
+    .color-label {
+        color: white;
+        border: none;
+        font-family: Consolas, monospace;
+        font-size: 0.85em;
+        padding: 4px 8px;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-out;
+    }
+    .color-label:hover {
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 20%), 1px 1px 4px -1px rgb(0 0 0 / 12%);
+    }
+    .color-label:active {
+        box-shadow: none;
+    }
+</style>
+
+<span id="copy-msg">Click to copy</span>
+<button class="color-label" style="background: #1f77b4;" onclick="navigator.clipboard.writeText(this.innerHTML); document.getElementById('copy-msg').innerHTML = 'Copied!'; setTimeout(() => { document.getElementById('copy-msg').innerHTML = 'Click to copy' }, 1000)">#1f77b4</button> <button class="color-label" style="background: #ff7f0e;" onclick="navigator.clipboard.writeText(this.innerHTML); document.getElementById('copy-msg').innerHTML = 'Copied!'; setTimeout(() => { document.getElementById('copy-msg').innerHTML = 'Click to copy' }, 1000)">#ff7f0e</button> <button class="color-label" style="background: #2ca02c;" onclick="navigator.clipboard.writeText(this.innerHTML); document.getElementById('copy-msg').innerHTML = 'Copied!'; setTimeout(() => { document.getElementById('copy-msg').innerHTML = 'Click to copy' }, 1000)">#2ca02c</button> <button class="color-label" style="background: #d62728;" onclick="navigator.clipboard.writeText(this.innerHTML); document.getElementById('copy-msg').innerHTML = 'Copied!'; setTimeout(() => { document.getElementById('copy-msg').innerHTML = 'Click to copy' }, 1000)">#d62728</button> <button class="color-label" style="background: #9467bd;" onclick="navigator.clipboard.writeText(this.innerHTML); document.getElementById('copy-msg').innerHTML = 'Copied!'; setTimeout(() => { document.getElementById('copy-msg').innerHTML = 'Click to copy' }, 1000)">#9467bd</button>
 
 ## PGF 格式与 LaTeX
 

@@ -75,6 +75,11 @@ img + svg.icon.outbound
         padding-left 4px
         border 1px solid transparent
 
+        .dropdown-wrapper
+          .dropdown-title
+          .mobile-dropdown-title
+            font-size 1em
+
     &>.sidebar-links>li>a.sidebar-link
       font-size 0.9rem
       font-weight 500
@@ -83,6 +88,21 @@ img + svg.icon.outbound
     .sidebar-group
       .sidebar-heading
         padding-left 0
+
+  .dropdown-wrapper .dropdown-title .arrow
+  .dropdown-wrapper .mobile-dropdown-title .arrow
+    margin-left 0
+
+@media (max-width: 719px)
+  .theme-container
+    .dropdown-wrapper .nav-dropdown .dropdown-item > a
+      line-height 1.7rem
+
+    .sidebar .nav-links .dropdown-wrapper .nav-dropdown
+      padding-top 0.6rem
+
+      .dropdown-item a.router-link-active::after
+        top calc(50% - 2px)
 
 // SCROLLBAR
 @media (min-width: 719px)
@@ -158,6 +178,11 @@ figure
 @media (max-width calc(719px + 244px))
   figure
     margin 1em 0
+
+// CUSTOM-BLOCK TIP
+
+div.custom-block.tip a
+  word-break break-word
 
 // DETAILS
 

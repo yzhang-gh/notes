@@ -15,7 +15,13 @@ module.exports = {
         lastUpdated: 'Last updated',
         smoothScroll: true,
         nav: [
-            { text: 'Machine Learning', link: '/ml/' },
+            {
+                text: 'ML and Math',
+                items: [
+                    { text: 'Machine Learning', link: '/ml/'},
+                    { text: 'Math', link: '/math/'}
+                ]
+            },
             { text: 'Software and Tools', link: '/software/' },
             { text: 'Programming', link: '/programming/' },
             { text: 'Languages', link: '/langs/' },
@@ -50,6 +56,16 @@ module.exports = {
                         'jp/beginner-unit-7-9',
                     ]
                 }
+            ],
+            '/math/': [
+                {
+                    title: 'Math',
+                    collapsable: false,
+                    children: [
+                        'math-sea',
+                        'linear-algebra'
+                    ]
+                },
             ],
             '/ml/': [
                 {

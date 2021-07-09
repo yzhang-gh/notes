@@ -67,6 +67,17 @@ $$
     \textcolor{#a0a0a0}{2}
 \end{bmatrix}
 =
+\textcolor{#a0a0a0}{-1}
+\begin{bmatrix}
+    \textcolor{#1f77b4}{1} \\
+    \textcolor{#1f77b4}{-2}
+\end{bmatrix}
++ \textcolor{#a0a0a0}{2}
+\begin{bmatrix}
+    \textcolor{#ff7f0e}{3} \\
+    \textcolor{#ff7f0e}{0}
+\end{bmatrix}
+=
 \begin{bmatrix}
     \textcolor{#a0a0a0}{5} \\
     \textcolor{#a0a0a0}{2}
@@ -75,7 +86,7 @@ $$
 
 <figure>
     <video controls width="100%">
-        <source src="./linear-algebra/linear-transformation1.mp4">
+        <source src="./linear-algebra/linear-trans1.mp4">
     </video>
 </figure>
 

@@ -4,6 +4,11 @@
 
 ## 几何意义
 
+::: tip Credits
+- 内容整理自 [Essence of Linear Algebra - 3Blue1Brown](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) on <img src="/notes/imgs/youtube-logo.png" alt="youtube" class="logo no-zoom" style="max-height: 14px; position: relative; top: 1px;">
+- 动画使用 [ManimCommunity/manim](https://github.com/ManimCommunity/manim) 制作
+:::
+
 ### Preliminary
 
 向量使用列向量表示，可以理解为标准正交基下的线性组合
@@ -90,9 +95,54 @@ $$
     </video>
 </figure>
 
-### 非方阵
+### 推广：非方阵
 
-### 秩
+变换为由新基向量的维度所决定的空间中的向量
+
+$$
+\begin{bmatrix}
+    \textcolor{#1f77b4}{2}  & \textcolor{#ff7f0e}{1} \\
+    \textcolor{#1f77b4}{-1}  & \textcolor{#ff7f0e}{1} \\
+    \textcolor{#1f77b4}{0} & \textcolor{#ff7f0e}{1}
+\end{bmatrix}
+\begin{bmatrix}
+    \textcolor{#a0a0a0}{-1} \\
+    \textcolor{#a0a0a0}{2}
+\end{bmatrix}
+=
+\begin{bmatrix}
+    \textcolor{#a0a0a0}{0} \\
+    \textcolor{#a0a0a0}{3} \\
+    \textcolor{#a0a0a0}{2}
+\end{bmatrix}
+$$
+
+<figure>
+    <video controls width="100%">
+        <source src="./linear-algebra/linear-trans2.mp4">
+    </video>
+</figure>
+
+---
+
+$$
+\begin{bmatrix}
+    \textcolor{#1f77b4}{2}  & \textcolor{#ff7f0e}{3}
+\end{bmatrix}
+\begin{bmatrix}
+    \textcolor{#a0a0a0}{-1} \\
+    \textcolor{#a0a0a0}{2}
+\end{bmatrix}
+= \textcolor{#a0a0a0}{4}
+$$
+
+<figure>
+    <video controls width="100%">
+        <source src="./linear-algebra/linear-trans3.mp4">
+    </video>
+</figure>
+
+### 秩 (rank)
 
 ### 特征值
 
@@ -107,6 +157,3 @@ Paper: The extraordinary SVD
 谱聚类
 
 PageRank
-
-[Essence of Linear Algebra - 3Blue1Brown](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) on YouTube
-[线性代数的本质【官方双语 / 合集】](https://www.bilibili.com/video/BV1ys411472E)on bilibili

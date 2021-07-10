@@ -255,6 +255,11 @@ a.outbound.smaller:after
 // MATH
 .katex-display
   overflow-x scroll
+  overflow-y hidden
+  scrollbar-width none // Firefox
+
+  &::-webkit-scrollbar // Chrome
+    display none
 
 // SPECIFIC to this site
 

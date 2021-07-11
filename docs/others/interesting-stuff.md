@@ -163,6 +163,7 @@
   <div>
     <p class="title">[LOL] 新的曙光 | 动画短片 (2014-07-22)</p>
     <p>一转眼多少年过去了……视觉效果和如今当然不能比了，但是很多细节仍然很棒</p>
+    <p><sub><a href="https://www.youtube.com/watch?v=tW6eHnIzpQM" target="_blank" rel="noopener noreferrer" class="outbound smaller">2021 动画短片</a></sub></p>
   </div>
   <img src="/notes/imgs/youtube-logo.png" alt="youtube" class="logo no-zoom">
 </a>

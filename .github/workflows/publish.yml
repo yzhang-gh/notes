@@ -49,5 +49,5 @@ jobs:
 
           git reset HEAD~
           git add -A
-          git commit -m "publish '{{ github.event.head_commit.message }}'"
+          git commit -m "publish '${{ github.event.head_commit.message }}'"
           git push -f

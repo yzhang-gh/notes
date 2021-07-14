@@ -2,6 +2,23 @@
 
 <link rel="stylesheet" href="/notes/katex.min.css">
 
+<style>
+    h4 {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .theme-default-content:not(.custom) p + h4,
+    .theme-default-content:not(.custom) hr + h4 {
+        margin-top: -4.5rem;
+    }
+    @media (max-width: calc(719px + 244px)) {
+        h4 {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+</style>
+
 ## 几何意义
 
 ::: tip Credits
@@ -62,6 +79,8 @@ $$
 
 ### 矩阵描述线性变换
 
+#### 例 1
+
 $$
 \begin{bmatrix}
     \textcolor{#1f77b4}{1}  & \textcolor{#ff7f0e}{3} \\
@@ -91,13 +110,19 @@ $$
 
 <figure>
     <video controls width="100%">
-        <source src="./linear-algebra/linear-trans1.mp4">
+        <source src="./linear-algebra/lt1.mp4">
     </video>
 </figure>
 
-### 推广：非方阵
+---
+
+两个矩阵相乘则相当于将两个线性变换相继作用（从右至左顺序）
+
+### 非方阵情形
 
 变换为由新基向量的维度所决定的空间中的向量
+
+#### 例 2
 
 $$
 \begin{bmatrix}
@@ -119,11 +144,13 @@ $$
 
 <figure>
     <video controls width="100%">
-        <source src="./linear-algebra/linear-trans2.mp4">
+        <source src="./linear-algebra/lt2-to3d.mp4">
     </video>
 </figure>
 
 ---
+
+#### 例 3
 
 $$
 \begin{bmatrix}
@@ -138,22 +165,60 @@ $$
 
 <figure>
     <video controls width="100%">
-        <source src="./linear-algebra/linear-trans3.mp4">
+        <source src="./linear-algebra/lt3-to1d.mp4">
     </video>
 </figure>
 
 ### 秩 (rank)
 
+::: definition 秩
+矩阵的（列）**秩**是其列向量所张成 (span) 的向量空间的维度，也即其线性无关的纵列的极大数目
+:::
+
+#### 例 4
+
+$$
+\text{rank}\left(\begin{bmatrix}
+    \textcolor{#1f77b4}{2}  & \textcolor{#ff7f0e}{4} \\
+    \textcolor{#1f77b4}{1} & \textcolor{#ff7f0e}{2}
+\end{bmatrix}\right) = 1
+$$
+
+<figure>
+    <video controls width="100%">
+        <source src="./linear-algebra/lt4-rank.mp4">
+    </video>
+</figure>
+
+<strong><a href="#例-2">例 2</a></strong> 中的矩阵秩为 2
+<strong><a href="#例-3">例 3</a></strong> 中的「矩阵」秩为 1
+
+TODO 行秩等于列秩
+
+### 逆矩阵
+
+$$
+A^{-1}A=I
+$$
+
+矩阵 $A$ 的逆矩阵 $A^{-1}$ 相当于「还原」$A$ 所做的线性变换
+
 ### 特征值
 
-## 实际应用
+<!-- ### （代数余子式） -->
 
-PCA --- Gilbert Strang *Introduction to Linear Algebra*, Ch. 7
+### 奇异值分解 (SVD)
 
 Paper: The extraordinary SVD
 
-马尔科夫链稳态分布
+## 实际应用
 
-谱聚类
+### 主成分分析 (PCA)
 
-PageRank
+--- Gilbert Strang *Introduction to Linear Algebra*, Ch. 7
+
+### 马尔科夫链稳态分布
+
+### PageRank
+
+### 谱聚类

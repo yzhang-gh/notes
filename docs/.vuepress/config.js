@@ -177,6 +177,14 @@ module.exports = {
         [
             'vuepress-plugin-container',
             {
+                type: 'definition',
+                before: info => `<div class="custom-block definition"><p class="title">${info}</p>`,
+                after: '</div>',
+            },
+        ],
+        [
+            'vuepress-plugin-container',
+            {
                 type: 'tree',
                 before: `<pre class="tree"><code>`,
                 after: `</code></pre>`,

@@ -72,10 +72,16 @@ module.exports = {
                     title: 'Machine Learning',
                     collapsable: false,
                     children: [
-                        // 'learning-theory',
-                        // 'grad-descent-algos',
-                        // 'reinforcement-learning',
                         'nn-interpretability'
+                    ]
+                },
+                {
+                    title: '猴年马月',
+                    collapsable: false,
+                    children: [
+                        'learning-theory',
+                        'grad-descent-algos',
+                        'rule-learning'
                     ]
                 },
             ],

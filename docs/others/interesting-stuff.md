@@ -86,6 +86,9 @@
 
 </div>
 
+- [[NieR:Automata] City Ruins: Rays of Light 音乐解读](https://www.bilibili.com/video/BV1KU4y1p7jF)
+  <sup>——拿弓子的波塞东，洛杉矶歌剧院终身签约小提琴家</sup>
+
 ## 绘画，CG
 
 <div class="cards">

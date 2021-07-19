@@ -39,3 +39,4 @@ HKEY_CURRENT_USER\SOFTWARE\Classes\directory\background\shell\
 
 - [ShellMenuView](https://www.nirsoft.net/utils/shell_menu_view.html)
 - [ShellExView](https://www.nirsoft.net/utils/shexview.html)
+  除了 context menu 之外，ShellExView 还可以查看 preview handler（用于资源管理器预览面板）

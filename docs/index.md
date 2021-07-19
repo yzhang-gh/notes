@@ -235,11 +235,15 @@ export default {
             },
             {
                 text: '音乐',
-                links: [{ name: 'Interesting Stuff > 音乐', url: 'others/interesting-stuff.html#音乐' }]
+                links: [
+                    { name: 'Interesting Stuff > 音乐', url: 'others/interesting-stuff.html#音乐' }
+                ]
             },
             {
                 text: 'Markdown',
-                links: [{ name: 'Markdown All in One', url: 'https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one' }]
+                links: [
+                    { name: 'Markdown All in One', url: 'https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one' }
+                ]
             },
             {
                 text: '鸡汤',
@@ -250,7 +254,9 @@ export default {
             },
             {
                 text: '#$%&～…',
-                links: [{ name: '无题', url: 'others/misc.html' }]
+                links: [
+                    { name: '无题', url: 'others/misc.html' }
+                ]
             },
         ];
         const numDuplicates = 6;
@@ -297,8 +303,10 @@ export default {
             startIdleScroll();
         }, 10000);
 
-        function feelingLucky() {
+        // record the slot machine history
+        const choiceHistory = [];
 
+        function feelingLucky() {
             idle = false;
             setIdle();
             // clearInterval(idleLoop);
@@ -306,13 +314,20 @@ export default {
             const elTarget = document.getElementById('target');
             elTarget.style.opacity = 0;
 
-            // shift `tiles` down (reset `top`)
+            // shift `tiles` down (reset `style.top`) so that there are enough items to scroll
             const elTiles = document.getElementById('tiles');
             const shiftedTop = calcShiftedTop(elTiles);
             elTiles.style.transition = 'none';
             elTiles.style.top = `${shiftedTop}px`;
 
-            const choice = getRandomInt(0, tiles.length);
+            let choice = getRandomInt(0, tiles.length);
+            while (choiceHistory.includes(choice)) {
+                choice = getRandomInt(0, tiles.length);
+            }
+            choiceHistory.push(choice);
+            if (choiceHistory.length > tiles.length / 2) {
+                choiceHistory.shift();
+            }
 
             // start scroll with a slight delay
             setTimeout(() => {
@@ -325,6 +340,7 @@ export default {
                 }, 1500);
             }, 10);
 
+            // fadein destination
             setTimeout(() => {
                 const options = tiles[choice].links;
                 const item = options[getRandomInt(0, options.length)];

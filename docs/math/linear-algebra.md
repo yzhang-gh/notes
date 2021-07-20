@@ -3,16 +3,18 @@
 <link rel="stylesheet" href="/notes/katex.min.css">
 
 <style>
-    h4 {
+    h1#线性代数~h4 {
         margin-left: 40px;
         margin-right: 40px;
     }
-    .theme-default-content:not(.custom) p + h4,
-    .theme-default-content:not(.custom) hr + h4 {
+
+    .theme-default-content:not(.custom) h1#线性代数~p + h4,
+    .theme-default-content:not(.custom) h1#线性代数~hr + h4 {
         margin-top: -4.5rem;
     }
+
     @media (max-width: calc(719px + 244px)) {
-        h4 {
+        h1#线性代数~h4 {
             margin-left: 0;
             margin-right: 0;
         }

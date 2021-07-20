@@ -23,21 +23,21 @@ tagline: 「讲内行话」
         font-weight: bold;
     }
 
-    #joshua-tree {
+    #homepage #joshua-tree {
         float: right;
         width: 200px;
         margin: 0.8em 0.2em 0.4em 1em;
     }
 
     @media (max-width: 719px) {
-        #joshua-tree {
+        #homepage #joshua-tree {
             float: none;
             width: 100%;
             margin: 0.5em 0 0;
         }
     }
 
-    hr {
+    #homepage hr {
         height: 1px;
         width: 100%;
         background: linear-gradient(to right, #dadcdf, transparent 60%);
@@ -47,18 +47,18 @@ tagline: 「讲内行话」
 
     /* SLOT MACHINE */
 
-    #outer {
+    #homepage #outer {
         display: flex;
         align-items: flex-start;
         justify-content: center;
     }
 
-    #outer>div:not(#slot-machine) {
+    #homepage #outer>div:not(#slot-machine) {
         line-height: 2;
         margin-top: 32px;
     }
 
-    #slot-machine {
+    #homepage #slot-machine {
         position: relative;
         height: 96px;
         overflow: hidden;
@@ -69,7 +69,7 @@ tagline: 「讲内行话」
         margin-right: 0.6em;
     }
 
-    #slot-machine::before {
+    #homepage #slot-machine::before {
         position: absolute;
         top: 32px;
         left: 0;
@@ -81,7 +81,7 @@ tagline: 「讲内行话」
         box-sizing: border-box;
     }
 
-    #slot-machine::after {
+    #homepage #slot-machine::after {
         position: absolute;
         top: 0;
         left: 0;
@@ -103,21 +103,17 @@ tagline: 「讲内行话」
         }
     } */
 
-    :root {
-        color-scheme: light;
-    }
-
-    #tiles {
+    #homepage #tiles {
         position: relative;
     }
 
-    #btn-group {
+    #homepage #btn-group {
         margin: 0 auto;
         width: -moz-fit-content;
         width: fit-content;
     }
 
-    #btn-feelingLucky {
+    #homepage #btn-feelingLucky {
         background-color: #f8f9fa;
         border: 1px solid #f8f9fa;
         border-radius: 4px;
@@ -129,17 +125,17 @@ tagline: 「讲内行话」
         transition: box-shadow 0.5s ease-in;
     }
 
-    #btn-feelingLucky:hover {
+    #homepage #btn-feelingLucky:hover {
         box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
         border: 1px solid #dadce0;
     }
 
-    #btn-feelingLucky:focus {
+    #homepage #btn-feelingLucky:focus {
         border: 1px solid #529cda;
         outline: none;
     }
 
-    #target {
+    #homepage #target {
         transition: opacity 0.5s ease-in;
         opacity: 0;
         text-align: center;
@@ -149,10 +145,12 @@ tagline: 「讲内行话」
         margin: 0 auto 1em;
     }
 
-    #target>a {
+    #homepage #target>a {
         color: #81B0D8;
     }
 </style>
+
+<div id="homepage">
 
 > <img src="/notes/imgs/joshua-tree.jpg" id="joshua-tree" alt="joshua-tree">
 >
@@ -418,6 +416,8 @@ export default {
         with 拖延症，经常挖坑不填
         <br>Yu Zhang © 2021
     </p>
+</div>
+
 </div>
 
 <!-- <p>

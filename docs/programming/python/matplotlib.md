@@ -184,7 +184,7 @@ colors = prop_cycle.by_key()["color"]
 ```
 
 <style>
-    .color-label {
+    span#copy-msg~.color-label {
         color: white;
         border: none;
         font-family: Consolas, monospace;
@@ -193,10 +193,10 @@ colors = prop_cycle.by_key()["color"]
         transition-duration: 0.2s;
         transition-timing-function: ease-out;
     }
-    .color-label:hover {
+    span#copy-msg~.color-label:hover {
         box-shadow: 0 4px 6px -1px rgb(0 0 0 / 20%), 1px 1px 4px -1px rgb(0 0 0 / 12%);
     }
-    .color-label:active {
+    span#copy-msg~.color-label:active {
         box-shadow: none;
     }
 </style>

@@ -6,24 +6,15 @@ sidebar: auto
 
 <link rel="stylesheet" href="/notes/katex.min.css">
 
-<style>
-    @media (max-width: 500px) {
-        figure {
-            margin-left: 0;
-            margin-right: 0;
-        }
-    }
-</style>
-
 ## 前言
 
 从 2017 年底就开始调研神经网络可解释性方面的研究了，但是由于各种原因一直拖拖拖到最近才正式放到网上。尤其今年看到许多新的工作都逐渐填补了从我们的论文归纳中能明显发现的空白部分，感觉我们的思考还是有一些分享价值的，就当抛砖引玉了（也可以阅读 [arXiv 版本](https://arxiv.org/abs/2012.14261)或[知乎文章](https://zhuanlan.zhihu.com/p/341153242)）
 
 多说一点题外话，因为可解释性的研究比较杂乱，刚开始调研的时候只好使用暴力搜索来寻找相关的文章，直观地体会到了这一波深度学习热潮让多少会议的论文数量大增😂
 
-<div>
+<figure>
   <img src="./imgs/interpretability/papers.png" alt="" class="border">
-</div>
+</figure>
 
 ## What. 什么是可解释性
 
@@ -31,9 +22,9 @@ sidebar: auto
 
 从主流的学术研究来说，==可解释性== **(interpretability)** 这个词主要是指解释 **具体的 / 已经训练好的网络**。但是在日常说法中，对深度学习理论的研究也常被称为 **深度学习的可解释性**。两者的差别在于**解释的对象**，其中后者想解释的是**深度学习这套方法**（为什么这么好用）。本文我们只关注前者——具体的网络的可解释性，不过在文章的最后也顺便介绍一些与后者相关的内容。
 
-<div>
+<figure>
   <img src="./imgs/interpretability/disambiguation.gif" alt="" class="border">
-</div>
+</figure>
 
 一个具体的神经网络无非是一个从输入 $x$ 到输出 $y$ 的非线性映射，可解释性就是想理解这个映射背后的「思路 / 逻辑 / rationale」，而不是仅仅知道该结果是怎么经过一堆意义不明的数值（权值）计算出来的。我们采用以往论文中提到的一种释义，
 
@@ -181,9 +172,9 @@ sidebar: auto
 
 得益于前面提到的分类维度，我们可以把现有的可解释性论文放到一个三维空间中（访问[在线版](https://yzhang-gh.github.io/tmp-data/index.html)）
 
-<div>
+<figure>
   <img src="./imgs/interpretability/paper-space.png" alt="" class="border">
-</div>
+</figure>
 
 不同类别的研究数量有多有少（比如 active 类的方法数量明显少于 passive 类），这里就不多做分析了。不过从近年的趋势来看，一是 active 方法的研究变多了，二是 local 与 global 解释的融合 (multi-level) 研究也在增多。
 

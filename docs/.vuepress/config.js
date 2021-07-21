@@ -102,6 +102,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'latex',
+                        'latex-nicematrix',
                     ]
                 },
             ],

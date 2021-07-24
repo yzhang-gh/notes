@@ -6,6 +6,10 @@
 🎮 **偏娱乐向** 🕹
 :::
 
+::: warning Compatibility
+在 Safari 浏览器中样式有一点问题
+:::
+
 ## Minecraft
 
 :::tip Minecraft 是什么？
@@ -86,7 +90,7 @@
 
 </div>
 
-- [[NieR:Automata] City Ruins: Rays of Light 音乐解读](https://www.bilibili.com/video/BV1KU4y1p7jF)
+- [[NieR:Automata] 遺サレタ場所／斜光 音乐解读](https://www.bilibili.com/video/BV1KU4y1p7jF)
   <sup>——拿弓子的波塞东，洛杉矶歌剧院终身签约小提琴家</sup>
 
 ## 绘画，CG

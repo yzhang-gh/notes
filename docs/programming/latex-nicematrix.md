@@ -14,7 +14,7 @@ title: nicematrix
 \usepackage{nicematrix}
 ```
 
-使用 `\Block` 创建单元格，可跨行，跨列，换行
+使用 `\Block` 创建单元格，可跨行、跨列、换行，还有可选参数比如 `l`，`c`，`r`（横向对齐），`fill`，`draw`（颜色）等等。
 
 ```latex
 \begin{NiceTabular}{ccc}[hvlines]

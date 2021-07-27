@@ -213,6 +213,12 @@ $$
 
 Paper: The extraordinary SVD
 
+<!-- https://zhuanlan.zhihu.com/p/36546367 -->
+
+<!-- https://www.zhihu.com/question/22237507 -->
+
+<!-- https://www.zhihu.com/question/22237507/answer/225371236 -->
+
 ## 实际应用
 
 ### 主成分分析 (PCA)

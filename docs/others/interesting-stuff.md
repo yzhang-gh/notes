@@ -249,3 +249,20 @@
     <li id="fn-tga">游戏大奖 (The Game Awards, TGA) ——「游戏界的奥斯卡奖」<a href="#fnref-tga" class="footnote-backref">↩︎</a></li>
   </ol>
 </section>
+
+<script>
+export default {
+    mounted() {
+        const hash = document.location.hash;
+        if (hash.length > 1) {
+            const id = decodeURI(hash.substring(1));
+            const element = document.getElementById(id);
+            if (element) {
+                setTimeout(() => {
+                    element.scrollIntoView();
+                }, 500);
+            }
+        }
+    }
+}
+</script>

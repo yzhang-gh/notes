@@ -8,20 +8,20 @@ UNDER CONSTRUCTION
 
 ## 背景
 
-[回顾一下](./learning-theory.md)，现实中我们有了数据集 $D = \lbrace(x^{(1)},y^{(1)}),\cdots,(x^{(m)},y^{(m)})\rbrace$，也定义了损失函数 $\ell\colon\mathcal{Y}\times\mathcal{Y}\to\mathbb{R}$，我们想要寻找一个假设函数 $h$，which 能最小化经验误差（$h$ 的所有参数由 $\theta$ 表示）：
+[回顾一下](./learning-theory.md)，现实中我们有了数据集 $D = \lbrace(x^{(1)},y^{(1)}),\cdots,(x^{(m)},y^{(m)})\rbrace$，也定义了损失函数 $\ell\colon\mathcal{Y}\times\mathcal{Y}\to\mathbb{R}$，我们想要寻找一个假设函数 $h$（其所有参数由 $\theta$ 表示），which 能最小化经验误差：
 
-$$ \min_\theta f(\theta;D)\text{,}\qquad\text{where } f(\theta;D)=\frac{1}{m}\sum_{i=1}^m \ell\mathopen{}\left(h(x^{(i)};\theta), y^{(i)}\right)\mathclose{}. $$
+$$ \min_\theta \widehat{E}(\theta;D)\text{,}\quad\text{where } \widehat{E}(\theta;D)=\frac{1}{m}\sum_{i=1}^m \ell\mathopen{}\left(h(x^{(i)};\theta), y^{(i)}\right)\mathclose{}. $$
 
 这个优化问题就可以用梯度下降来解决
 
 $$ \theta^\prime = \theta - \eta\cdot g $$
 
-其中 $\eta$ 为==学习率== (learning rate)，$g = \nabla\widehat{E}(\theta)$ 为梯度（下文把目标函数简记为 $f$）
+其中 $\eta$ 为==学习率== (learning rate)，$g = \nabla\widehat{E}(\theta)$ 为梯度（方便起见，下文将经验误差 $\widehat{E}$ 简记为 $f$）
 
-这里我们引入时刻 $t$ 的标记，并且列出一些重要的量
+假设当前时刻权值为 $\theta_t$，更新后为 $\theta_{t+1}$，引入如下标记
 
 - $g_t = \nabla f(\theta_t)$，**原始梯度**
-- $v_t \coloneqq \theta_{t+1} - \theta_t$，**实际更新量**
+- $v_t \coloneqq \theta_{t+1} - \theta_t$，**实际更新量** (velocity)
 
 很显然，对于随机梯度下降 (SGD) 来说，$v_t = \eta\cdot g_t$。（TODO 一阶二阶动量）
 
@@ -31,14 +31,23 @@ $$ \theta^\prime = \theta - \eta\cdot g $$
 
 - 选择学习率
 - 选择学习率 scheduler
-- 如果数据稀疏或特征频率不同（？？？），我们想给不常出现的特征更大的 update
+- 如果数据稀疏或特征频率不同（？），我们想给不常出现的特征更大的 update
 - 局部极小值
+
+### SGD
+
+$$
+\begin{alignedat}{2}
+    v_t &= \eta\cdot g_t \\
+    \theta_{t+1} &= \theta_t - v_t.
+\end{alignedat}
+$$
 
 ### Momentum
 
 $$
 \begin{alignedat}{2}
-    v_t &= \gamma\,v_{t-1} + \eta\,\nabla f(\theta_t) \\
+    v_t &= \textcolor{#F26400}{\gamma\cdot v_{t-1}} + \eta\cdot g_t \\
     \theta_{t+1} &= \theta_t - v_t.
 \end{alignedat}
 $$
@@ -47,13 +56,13 @@ $$
 
 $$
 \begin{alignedat}{2}
-    v_t &= \gamma\, v_{t-1} + \eta\,\nabla f(\theta_t - \gamma\, v_{t-1}) \\
+    v_t &= \gamma\cdot v_{t-1} + \eta\cdot\nabla f(\theta_t \textcolor{#F26400}{- \gamma\cdot v_{t-1}}) \\
     \theta_{t+1} &= \theta_t - v_t.
 \end{alignedat}
 $$
 
 ::: tip
-PyTorch 中 SGD + Momentum 的[实现方式](https://pytorch.org/docs/master/optim.html#torch.optim.SGD)与上述公式略有不同，学习率 $\eta$ 是乘在 $v_t$ 上而不是梯度 $g$ 上
+PyTorch 中 SGD + Momentum 的[实现方式](https://pytorch.org/docs/master/generated/torch.optim.SGD.html#torch.optim.SGD)与上述公式略有不同，学习率 $\eta$ 是乘在 $v_t$ 上而不是梯度 $g$ 上
 :::
 
 ### Adagrad

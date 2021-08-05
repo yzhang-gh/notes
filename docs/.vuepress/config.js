@@ -80,8 +80,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'learning-theory',
-                        'grad-descent-algos',
-                        'rule-learning'
+                        'grad-descent-algos'
                     ]
                 },
             ],

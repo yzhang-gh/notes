@@ -12,7 +12,7 @@ UNDER CONSTRUCTION
 
 ::: callout 🥥 In a Nutshell
 设想你正在下一局（你）不知道规则的棋，下了几十（上百）步之后，裁判突然宣布「你输了」
-——（如何下得更好）这就是强化学习
+──（如何下得更好）这就是强化学习
 :::
 
 ::: warning TODO

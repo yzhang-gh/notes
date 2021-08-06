@@ -267,3 +267,20 @@ class Solution:
 扩展阅读
 
 - ⭐ [浅述：从 Minimax 到 AlphaZero，完全信息博弈之路 - 知乎专栏](https://zhuanlan.zhihu.com/p/31809930)
+
+<script>
+export default {
+    mounted() {
+        const hash = document.location.hash;
+        if (hash.length > 1) {
+            const id = decodeURI(hash.substring(1));
+            const element = document.getElementById(id);
+            if (element) {
+                setTimeout(() => {
+                    element.scrollIntoView();
+                }, 500);
+            }
+        }
+    }
+}
+</script>

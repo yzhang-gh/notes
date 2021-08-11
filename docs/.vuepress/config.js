@@ -35,6 +35,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'en/learned-in-uk',
+                        'en/think-of-about',
                     ]
                 },
                 {

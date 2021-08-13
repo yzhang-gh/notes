@@ -24,7 +24,7 @@ ssh -v user@root                     ## 输出调试信息 (verbose)
 比如设置首选公钥验证方式
 
 ```ini
-Host *.ac.uk  ## One or more patterns separated by whitespace
+Host *.ac.uk  ## one or more patterns separated by whitespace
 #   HostName <the real hostname (or IP) to login to>
     PreferredAuthentications publickey,keyboard-interactive,password,hostbased
 #   IdentityFile ~/.ssh/another_id_rsa
@@ -69,7 +69,7 @@ scp -r user@your.server.example.com:/path/to/foo /home/user/Desktop/
 
 `user@your.server.example.com:/path/to/foo` 一般很长，可以考虑在 `.bashrc` 中[定义一个变量](#使用变量)
 
-## `ls` 命令
+## `ls`
 
 ```shell
 ## ls [OPTION...] [FILE or DIR...]
@@ -83,8 +83,6 @@ alias ll='ls -alF'
 alias la='ls -A'   ## except for `.` and `..`
 alias l='ls -CF'
 ```
-
-🚧
 
 ## `wget`
 
@@ -104,7 +102,7 @@ kill %i
 ## 别名 `alias`, `type`
 
 ```shell
-## Append the following line to `~/.bashrc` (or `~/.bash_aliases`)
+## append the following line to `~/.bashrc` (or `~/.bash_aliases`)
 alias name='your command'
 
 type name
@@ -119,6 +117,18 @@ type name
 python train.py | tee out.txt
 ```
 
+## `find`
+
+```shell
+find . -name '*.ipynb'
+
+## case insensitive
+find . -iname 'foo*'
+
+## max depth
+find . -maxdepth 3 -name '*bar'
+```
+
 ## Command history
 
 - press <kbd>Ctrl</kbd> + <kbd>R</kbd> to start search
@@ -130,10 +140,10 @@ python train.py | tee out.txt
 ## 使用变量
 
 ```shell
-## In the `.bashrc` file
+## in the `.bashrc` file
 export rds='username@bluebear.bham.ac.uk:/rds'
 
-## Usage
+## usage
 scp $rds/path/to/foo .
 ```
 

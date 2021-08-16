@@ -11,7 +11,7 @@
 
 ## Brute-force
 
-但是——如果想搜索的关键词很宽泛，或者某领域还未 well-defined，那还可以考虑一下暴力搜索。为了不那么暴力，还需要下面两个工具：
+但是<span class="cn-font" lang="zh-CN">——</span>如果想搜索的关键词很宽泛，或者某领域还未 well-defined，那还可以考虑一下暴力搜索。为了不那么暴力，还需要下面两个工具：
 
 - [**dblp**](https://dblp.uni-trier.de/) **计算机文献数据库**
 

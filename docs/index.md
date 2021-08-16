@@ -158,7 +158,7 @@ tagline: 「讲内行话」
 >
 > 之后我拿着这本书走出家门。我的父母住在一个小巷子里，这里共有 6 家住户。其中 4 家的前院里都赫然立着约书亚树。我住在那里已经有 13 年了，此前居然从未注意过约书亚树。我在这个街区转了转，发现似乎每一家布置新居时都会到苗圃买约书亚树，至少 80% 的住家前院都种有约书亚树。而我在此之前居然从来没有注意过！在我知道了这种树之后，我是说在我能够说出它的名字后，它就无处不在了。这正是我要强调的：<strong>一旦能够说出什么东西的名字，就会很容易注意到它。你就会掌握它，拥有它，让它受你所控。</strong>
 >
-> <div style="display: flex; flex-direction: row-reverse"><p style="margin: 0 0 .5em;">——《写给大家看的设计书》引言</p></div>
+> <div style="display: flex; flex-direction: row-reverse"><p style="margin: 0 0 .5em;"><span class="cn-font" lang="zh-CN">——</span>《写给大家看的设计书》引言</p></div>
 
 <!-- Slot Machine -->
 

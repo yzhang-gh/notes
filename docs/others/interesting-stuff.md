@@ -23,7 +23,7 @@
 <a href="https://www.bilibili.com/video/BV11s411y7QE" class="card" target="_blank">
   <div class="cover"><img src="./imgs/interesting/mc-canon.jpg"></div>
   <div>
-    <p class="title">红石音乐——《卡农》(2016-07-17)</p>
+    <p class="title">红石音乐<span class="cn-font" lang="zh-CN">——</span>《卡农》(2016-07-17)</p>
     <p>一定要看到最后！（迅捷药水注入灵魂）</p>
     <p><sub>更多：<a href="https://www.bilibili.com/video/BV1h54y1j7pr" target="_blank" rel="noopener noreferrer" class="outbound smaller">2021 年的红石音乐，究竟可以做到什么地步！</a></sub></p>
   </div>
@@ -33,7 +33,7 @@
 <a href="https://www.youtube.com/watch?v=cgdUfGsTujs" class="card" target="_blank">
   <div class="cover"><img src="./imgs/interesting/mc-the-peach-blossom-spring.jpg"></div>
   <div>
-    <p class="title">EpicWork 建筑团队出品——武陵尘梦・新・桃花源 (2015-02-24)</p>
+    <p class="title">EpicWork 建筑团队出品<span class="cn-font" lang="zh-CN">——</span>武陵尘梦・新・桃花源 (2015-02-24)</p>
     <p>只可惜那时还没有<a href="https://www.minecraft.net/zh-hans/article/minecraft-ray-tracing-windows-10-launch-today" target="_blank" rel="noopener noreferrer" class="outbound">光线追踪</a></p>
     <p><sub><a href="https://www.bilibili.com/video/BV1vx411A7ou" target="_blank" rel="noopener noreferrer" class="outbound smaller">国内源</a></sub></p>
   </div>
@@ -74,7 +74,7 @@
   <div>
     <p class="title">《十面埋伏》刘德海</p>
     <p>银瓶乍破水浆迸，铁骑突出刀枪鸣</p>
-    <p>——《琵琶行》白居易</p>
+    <p><span class="cn-font" lang="zh-CN">——</span>《琵琶行》白居易</p>
   </div>
   <img src="/notes/imgs/bilibili-logo.png" alt="bilibili" class="logo no-zoom">
 </a>
@@ -91,7 +91,7 @@
 </div>
 
 - [[NieR:Automata] 遺サレタ場所／斜光 音乐解读](https://www.bilibili.com/video/BV1KU4y1p7jF)
-  <sup>——拿弓子的波塞东，洛杉矶歌剧院终身签约小提琴家</sup>
+  <sup><span class="cn-font" lang="zh-CN">——</span>拿弓子的波塞东，洛杉矶歌剧院终身签约小提琴家</sup>
 
 ## 绘画，CG
 
@@ -128,7 +128,7 @@
   <div class="cover"><img src="./imgs/interesting/photography-challenge.jpg"></div>
   <div>
     <p class="title">10 分钟拍照挑战！（系列）</p>
-    <p>同一时间，同一地点，同一模特——4 位业余与专业的 UP 主分别会拍出怎样的照片</p>
+    <p>同一时间，同一地点，同一模特<span class="cn-font" lang="zh-CN">——</span>4 位业余与专业的 UP 主分别会拍出怎样的照片</p>
     <p>人和人的脑洞不能一概而论</p>
   </div>
   <img src="/notes/imgs/bilibili-logo.png" alt="bilibili" class="logo no-zoom">
@@ -233,7 +233,7 @@
   <div>
     <p class="title">奥日与黑暗森林 (Ori and the Blind Forest)</p>
     <p>TGA 2015 最佳美术指导</p>
-    <p>音乐、画面绝佳——只是对手残党不是很友好</p>
+    <p>音乐、画面绝佳<span class="cn-font" lang="zh-CN">——</span>只是对手残党不是很友好</p>
   </div>
   <img src="/notes/imgs/steam-logo.png" alt="steam" class="logo no-zoom">
 </a>
@@ -246,7 +246,7 @@
 
 <section class="footnotes">
   <ol>
-    <li id="fn-tga">游戏大奖 (The Game Awards, TGA) ——「游戏界的奥斯卡奖」<a href="#fnref-tga" class="footnote-backref">↩︎</a></li>
+    <li id="fn-tga">游戏大奖 (The Game Awards, TGA) <span class="cn-font" lang="zh-CN">——</span>「游戏界的奥斯卡奖」<a href="#fnref-tga" class="footnote-backref">↩︎</a></li>
   </ol>
 </section>
 

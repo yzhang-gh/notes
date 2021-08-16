@@ -1,16 +1,20 @@
 # 常用特殊字符
 
-## 标点
+## 中文标点
 
 <table>
     <tbody>
         <tr>
-            <td style="font-family: 'Microsoft Yahei'">「」</td>
-            <td style="font-family: monospace">“”</td>
-            <td style="font-family: monospace">‘’</td>
+            <td class="cn-font" lang="zh-CN">「 」</td>
+            <td class="cn-font" lang="zh-CN">“ ”</td>
+            <td class="cn-font" lang="zh-CN">‘ ’</td>
         </tr>
     </tbody>
 </table>
+
+中文破折号使用「<span class="cn-font" lang="zh-CN">——</span>」`U+2014`x2 或「<span class="cn-font" lang="zh-CN">⸺</span>」`U+2E3A`，使用思源黑体并设置 `lang=zh-CN`
+
+[不离不弃的破折号 — The Type](https://www.thetype.com/2019/03/14918/)
 
 ## Emoji 和符号
 
@@ -26,7 +30,7 @@
             <td title="bullet">•</td>
             <td title="en dash (can be used to show ranges of numbers)">–</td>
             <td title="em dash (is most often used to indicate a pause in a sentence)">—</td>
-            <td title="two-em dash">⸺</td>
+            <td title="two-em dash (U+2E3A)">⸺</td>
         </tr>
     </tbody>
 </table>

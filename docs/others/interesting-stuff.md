@@ -1,6 +1,7 @@
 # Interesting Stuff
 
-<link rel="stylesheet" href="/notes/card.css">
+<link href="/notes/card.css" rel="stylesheet">
+<link href="/notes/jp.css" rel="stylesheet">
 
 ::: callout
 🎮 **偏娱乐向** 🕹
@@ -63,7 +64,7 @@
   <div class="cover"><img src="./imgs/interesting/sing.jpg"></div>
   <div>
     <p class="title">[青歌赛] 评委大佬飙歌 让你们见识什么是神仙唱歌</p>
-    <p>「这种水平是国家队？？？这是国家教练队……」</p>
+    <p>「这种水平是国家队？？？这是国家教练队<span class="cn-font" lang="zh-CN">……</span>」</p>
     <p>这个就叫专业.jpg</p>
   </div>
   <img src="/notes/imgs/bilibili-logo.png" alt="bilibili" class="logo no-zoom">
@@ -90,7 +91,7 @@
 
 </div>
 
-- [[NieR:Automata] 遺サレタ場所／斜光 音乐解读](https://www.bilibili.com/video/BV1KU4y1p7jF)
+- [[NieR:Automata] <span class="jp">遺サレタ場所</span> / 斜光 音乐解读](https://www.bilibili.com/video/BV1KU4y1p7jF)
   <sup><span class="cn-font" lang="zh-CN">——</span>拿弓子的波塞东，洛杉矶歌剧院终身签约小提琴家</sup>
 
 ## 绘画，CG
@@ -169,7 +170,7 @@
   <div class="cover"><img src="./imgs/interesting/lol-a-new-dawn.jpg"></div>
   <div>
     <p class="title">[LOL] 新的曙光 | 动画短片 (2014-07-22)</p>
-    <p>一转眼多少年过去了……视觉效果和如今当然不能比了，但是很多细节仍然很棒</p>
+    <p>一转眼多少年过去了<span class="cn-font" lang="zh-CN">……</span>视觉效果和如今当然不能比了，但是很多细节仍然很棒</p>
     <p><sub><a href="https://www.youtube.com/watch?v=tW6eHnIzpQM" target="_blank" rel="noopener noreferrer" class="outbound smaller">2021 动画短片</a></sub></p>
   </div>
   <img src="/notes/imgs/youtube-logo.png" alt="youtube" class="logo no-zoom">
@@ -199,7 +200,7 @@
   <div class="cover"><img src="./imgs/interesting/kda-dance-bts.jpg"></div>
   <div>
     <p class="title">Dance | Behind the Scenes</p>
-    <p>作为外行也能感觉出这水平非同一般……</p>
+    <p>作为外行也能感觉出这水平非同一般<span class="cn-font" lang="zh-CN">……</span></p>
   </div>
   <img src="/notes/imgs/youtube-logo.png" alt="youtube" class="logo no-zoom">
 </a>

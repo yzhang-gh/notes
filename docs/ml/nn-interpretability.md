@@ -95,7 +95,7 @@ sidebar: auto
   R. Nayak, “Generating rules with predicates, terms and variables from the pruned neural networks”, *Neural Networks*, 2009.
 - 模糊逻辑 [G]
   J. L. Castro et al., “Interpretation of artificial neural networks by means of fuzzy rules”, *IEEE Transactions on Neural Networks*, 2002.
-- ……（可以直接用各种决策树学习算法，比如 CART、C4.5，来拟合一个网络的输入输出）
+- <span class="cn-font" lang="zh-CN">……</span>（可以直接用各种决策树学习算法，比如 CART、C4.5，来拟合一个网络的输入输出）
 - **Contrastive explanations**，通过扰动一个输入来寻找其哪些部分是必不可少 / 多的 [L]
   A. Dhurandhar et al., “Explanations based on the missing: Towards contrastive explanations with pertinent negatives”, *NeurIPS*, 2018.
   2020 年有一篇 NeurIPS 续作 [G]

@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="/notes/katex.min.css">
 
 ::: callout 🥥 In a Nutshell
-简单的问题，难的问题，更难的问题，更更难的问题……最难的问题，无法解决的问题
+简单的问题，难的问题，更难的问题，更更难的问题<span class="cn-font" lang="zh-CN">……</span>最难的问题，无法解决的问题
 :::
 
 ## 时间复杂度

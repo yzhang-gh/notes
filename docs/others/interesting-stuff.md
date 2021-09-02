@@ -152,6 +152,10 @@
 
 </div>
 
+<figure>
+  <img src="./imgs/interesting/vision-flow.png" alt="vision flow" title="https://twitter.com/daniilbirsan/status/1432588574759821314" class="border no-zoom" width="300">
+</figure>
+
 ## Behind The Scenes
 
 <div class="cards">

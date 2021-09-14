@@ -337,3 +337,13 @@ tlmgr paper a4
 % Gets rid of navigation symbols
 \setbeamertemplate{navigation symbols}{}
 ```
+
+## VS Code, LaTeX Workshop, SumatraPDF, and SyncTeX
+
+见 [LaTeX Workshop Wiki](https://github.com/James-Yu/LaTeX-Workshop/wiki/View#using-synctex-with-an-external-viewer)
+
+此外，在 SumatraPDF > Settings > Options > Set inverse search command-line 中填入相应的
+
+```
+"C:\Users\<username>\AppData\Local\Programs\Microsoft VS Code\Code.exe" -g -r "%f:%l"
+```

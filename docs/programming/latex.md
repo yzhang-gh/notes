@@ -13,6 +13,7 @@ A lightweight, cross-platform, portable, and easy-to-maintain LaTeX distribution
 
 ```bash
 chktex
+cm-super
 latexindent
 texcount
 libertinust1math

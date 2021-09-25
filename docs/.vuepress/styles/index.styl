@@ -54,7 +54,7 @@ pre.tree
 #search-form
   line-height inherit
 
-// FIX @yzhang
+// Fixes default theme (@yzhang)
 
 img + svg.icon.outbound
   display none
@@ -96,6 +96,10 @@ img + svg.icon.outbound
     
     .nav-dropdown .dropdown-item a
       padding 0 1.25rem
+
+  div[class*="language-"]
+    background unset
+    border-radius 0
 
 @media (max-width: 719px)
   .theme-container
@@ -351,6 +355,9 @@ hr + .target
       padding-top 1.5rem
     & > div:first-child
       margin-top 1rem
+
+  div.custom-block
+    break-inside avoid
 
 @page
   margin 0.75in

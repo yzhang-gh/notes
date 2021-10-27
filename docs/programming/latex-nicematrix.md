@@ -54,6 +54,24 @@ Dupont    & Chantal    & 15 janvier 1998 \\
   <img src="./imgs/nicematrix-tabularnote.png" alt="tabularnote">
 </figure>
 
+可以修改 `notes/style` 选项使用数字编号（默认 `\textit{\alph{#1}}`）
+
+```latex
+\begin{NiceTabular}{llr}[notes/style=\arabic{#1}]
+...
+\end{NiceTabular}
+```
+
+或者在导入时进行全局设置
+
+```latex
+\NiceMatrixOptions{
+    notes={
+        style = \arabic{#1}
+    }
+}
+```
+
 ## 单元格背景色
 
 ```latex

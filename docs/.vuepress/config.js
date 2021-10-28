@@ -18,8 +18,8 @@ module.exports = {
             {
                 text: 'ML and Math',
                 items: [
-                    { text: 'Machine Learning', link: '/ml/'},
-                    { text: 'Math', link: '/math/'}
+                    { text: 'Machine Learning', link: '/ml/' },
+                    { text: 'Math', link: '/math/' }
                 ]
             },
             { text: 'Software and Tools', link: '/software/' },

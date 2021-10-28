@@ -8,7 +8,11 @@ sidebar: auto
 
 ## 前言
 
-从 2017 年底就开始调研神经网络可解释性方面的研究了，但是由于各种原因一直拖拖拖到最近才正式放到网上。尤其今年看到许多新的工作都逐渐填补了从我们的论文归纳中能明显发现的空白部分，感觉我们的思考还是有一些分享价值的，就当抛砖引玉了（也可以阅读 [arXiv 版本](https://arxiv.org/abs/2012.14261)或[知乎文章](https://zhuanlan.zhihu.com/p/341153242)）
+从 2017 年底就开始调研神经网络可解释性方面的研究了，但是由于各种原因一直拖拖拖到最近才正式放到网上。尤其今年看到许多新的工作都逐渐填补了从我们的论文归纳中能明显发现的空白部分，感觉我们的思考还是有一些分享价值的，就当抛砖引玉了。（此外还有其它版本）
+
+- [知乎专栏](https://zhuanlan.zhihu.com/p/341153242)
+- [arXiv 完整论文](https://arxiv.org/abs/2012.14261)版本（已发表于 [IEEE TETCI](https://ieeexplore.ieee.org/document/9521221)）
+- 更新：智源社区分享，[回放视频](https://hub.baai.ac.cn/view/6236)及 <a href="https://github.com/yzhang-gh/notes/blob/master/docs/ml/materials/20210202-interpretability-slides-yzhang.pdf" target="_blank" rel="noopener noreferrer" class="outbound">PPT</a>
 
 多说一点题外话，因为可解释性的研究比较杂乱，刚开始调研的时候只好使用暴力搜索来寻找相关的文章，直观地体会到了这一波深度学习热潮让多少会议的论文数量大增😂
 
@@ -127,7 +131,7 @@ sidebar: auto
 - **LIME**，**MAPLE**，在局部拟合一个线性函数 [L]
 - **Partial derivatives**，**DeconvNet**，**Guided backprop**，**Guided Grad-CAM**，某种意义上的「梯度」[L]
 - **DeepLIFT**，**LRP**，**Integrated gradients**，某种意义上的「离散梯度」[semi-L]
-- 各种 **Shapley values**，**Sensitivity analysis**，不依赖模型的方法 (model agnostic) [L]
+- 各种 **Shapley values**（即每个特征对输出的**边际**贡献），**Sensitivity analysis**，不依赖模型的方法 (model agnostic) [L]
 - **TCAV**，**ACE**，在更高层面的 concepts（不再是 input features）上做 attribution [G]
 - **SpRAy**，**MAME**，把局部解释「融合」成半局部或全局解释 [semi-L, G]
 

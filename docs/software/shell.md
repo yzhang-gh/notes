@@ -140,11 +140,26 @@ find . -maxdepth 3 -name '*bar'
 ## 使用变量
 
 ```shell
+## define a variable
+a="hello"  ## NOTE whitespace is not allowed before or after `=`
+
 ## in the `.bashrc` file
 export rds='username@bluebear.bham.ac.uk:/rds'
 
-## usage
+## use in a command
 scp $rds/path/to/foo .
+## `scp username@bluebear.bham.ac.uk:/rds/path/to/foo .`
+
+echo $a
+## → hello
+
+## use in a double-quoted string
+echo "$a world"
+## → hello world
+
+## single-quoted strings are interpreted literally
+echo '$a world'
+## → $a world
 ```
 
 <http://www.compciv.org/topics/bash/variables-and-substitution/>

@@ -21,6 +21,10 @@ sidebar: auto
 
 - [收益值与半衰期 - 采铜](reward-and-half-life.md)
 
+<!--  -->
+
+- [能花钱的，就不要花时间 - 陈天](https://zhuanlan.zhihu.com/p/19691022)<span class="cn-font" lang="zh-CN">——</span>「时间很宝贵，只要有能用合理价格买来的用来提高效率的产品和服务，就不要花时间找免费或廉价的替代品」「将自己的时间往高附加值的事情上转移的必经之路」本科读到，大为改观
+
 ## Misc.
 
 ### 当局者迷

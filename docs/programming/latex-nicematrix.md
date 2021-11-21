@@ -54,20 +54,27 @@ Dupont    & Chantal    & 15 janvier 1998 \\
   <img src="./imgs/nicematrix-tabularnote.png" alt="tabularnote">
 </figure>
 
-可以修改 `notes/style` 选项使用数字编号（默认 `\textit{\alph{#1}}`）
+可以修改 `notes/style` 选项使用数字编号（默认为 `\textit{\alph{#1}}`）
 
 ```latex
-\begin{NiceTabular}{llr}[notes/style=\arabic{#1}]
-...
-\end{NiceTabular}
+\begin{table}[!t]
+    \NiceMatrixOptions{notes/style=\arabic{#1}}
+    \begin{NiceTabular}{llr}
+        ...
+    \end{NiceTabular}
+\end{table}
 ```
 
-或者在导入时进行全局设置
+其中 `\NiceMatrixOptions` 的作用域是当前 TeX Group，即 `{...}` 和 `\begin...\end`。在 preamble 中则为全局设置。
+
+也可使用如下语法
 
 ```latex
 \NiceMatrixOptions{
     notes={
-        style = \arabic{#1}
+        style = \arabic{#1},
+        label-in-tabular = ...,
+        ...
     }
 }
 ```

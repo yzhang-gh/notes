@@ -348,3 +348,11 @@ tlmgr paper a4
 ```
 "C:\Users\<username>\AppData\Local\Programs\Microsoft VS Code\Code.exe" -g -r "%f:%l"
 ```
+
+---
+
+## 未整理
+
+~~subfig~~ → stackengine 假装 subfig caption
+
+caption 包，`\ContinuedFloat` 等

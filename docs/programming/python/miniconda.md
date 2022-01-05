@@ -19,10 +19,13 @@ scipy numpy pandas matplotlib scikit-learn notebook
 ## Managing environments
 
 ```
-conda create -n <env_name> [--clone <another_env>] # `-n` is shortcut for `--name`
+# Create an environment
+# Notation: <required argument> [optional argument]
+# `-n` is short for `--name`
+conda create -n <env_name> [python=3.6] [--clone <another_env>]
 conda env list
 conda activate <env_name>
 conda env remove -n <env_name>
 ```
 
-<https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html>
+See [Manage environments &mdash; conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)

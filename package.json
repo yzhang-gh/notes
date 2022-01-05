@@ -12,16 +12,16 @@
     "license": "CC-BY-NC-SA-4.0",
     "devDependencies": {
         "@neilsustc/markdown-it-katex": "^1.0.0",
-        "@vuepress/plugin-back-to-top": "^1.8.2",
-        "@vuepress/plugin-google-analytics": "^1.8.2",
-        "@vuepress/plugin-medium-zoom": "^1.8.2",
+        "@vuepress/plugin-back-to-top": "^1.9.5",
+        "@vuepress/plugin-google-analytics": "^1.9.5",
+        "@vuepress/plugin-medium-zoom": "^1.9.5",
         "katex": "^0.13.18",
         "markdown-it-attrs": "^4.0.0",
         "markdown-it-footnote": "^3.0.3",
         "markdown-it-mark": "^2.0.0",
-        "vuepress": "^1.8.2",
+        "vuepress": "^1.9.5",
         "vuepress-plugin-container": "^2.1.5",
-        "vuepress-plugin-shiki": "^0.2.7",
+        "vuepress-plugin-shiki": "^0.10.0",
         "vuepress-theme-book": "^0.0.6"
     }
 }

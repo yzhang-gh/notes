@@ -84,12 +84,12 @@ f"{a:>10}"            ## "······test"
 f"{a:^10}"            ## "···test···"
 f"{a:_<10}"           ## "test______"
 
-f"{a!s}"              ## equals to f"{str(a)}"
+f"{a!s}"              ## equals f"{str(a)}"
 f"{a!r:10}"           ## f"{repr(a):10}"
 
 ## Floats
 b = 0.5
-f"{b:5}"              ## "··0.5" !!!
+f"{b:5}"              ## "··0.5" (floats are right aligned by default)
 f"{b:<5}"             ## "0.5··"
 f"{b!s:5}"            ## "0.5··"
 
@@ -113,7 +113,7 @@ f"{b:.2%}"            ## "50.00%"
 "\\d" == r"\d"  # True
 ```
 
-### 字符串替换──`re.sub`
+### 字符串替换<span class="cn-font" lang="zh-CN">——</span>`re.sub`
 
 大部分时候我们仅仅只是想做个（正则）字符串替换
 `re.sub(pattern, repl, string, count=0, flags=0)`

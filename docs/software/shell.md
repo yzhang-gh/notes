@@ -10,10 +10,10 @@
 
 ```shell
 # cd ~/.ssh
-ssh-keygen                           ## 生成公、私钥
+ssh-keygen                           ## 生成公、私钥，默认分别为 id_rsa.pub 和 id_rsa
 ssh-copy-id -i id_rsa.pub user@host  ## 将公钥复制到服务器
 
-ssh -v user@root                     ## 输出调试信息 (verbose)
+ssh -v user@host                     ## 输出调试信息 (verbose)
 ```
 
 ### 配置文件

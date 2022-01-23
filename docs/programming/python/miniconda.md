@@ -10,6 +10,8 @@
 %USERPROFILE%\Miniconda3\Scripts
 ```
 
+[SUSTech Anaconda Mirror](https://mirrors.sustech.edu.cn/help/anaconda.html)
+
 ## 常用包
 
 ```

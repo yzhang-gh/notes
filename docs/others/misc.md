@@ -38,5 +38,5 @@
     <img src="./imgs/misc/2020-11-30.png" alt="" width="543" class="border">
 </figure>
 
-2021-11-20 注：如今实际能分解的最大质数<span class="cn-font" lang="zh-CN">——</span>15，并且还是 20 年前的成果。
+2021-11-20 注：如今已知能分解的最大质数为 143（即 11 乘以 13），20 年前是 15。
 Vandersypen, L., Steffen, M., Breyta, G. et al. “Experimental realization of Shor's quantum factoring algorithm using nuclear magnetic resonance”. *Nature* 414, 883–887 (2001).

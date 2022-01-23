@@ -123,6 +123,7 @@ module.exports = {
                         'vim',
                         'shell',
                         'powershell',
+                        'docker',
                     ]
                 },
             ],

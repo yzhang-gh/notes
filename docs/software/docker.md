@@ -21,7 +21,7 @@ docker attach container_name  ## attach your terminal's STDIN etc. to the runnin
 ## This can appear as if the attach command is hung. Just press any key to continue.
 
 ## create a new image from a container
-docker commit container_id               ## as shown by "docker ps"
+docker commit container_id \             ## as shown by "docker ps"
               yzhang/testimage:version1  ## [REPOSITORY[:TAG]]
 docker images                            ## list images
 

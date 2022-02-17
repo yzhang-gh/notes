@@ -76,32 +76,52 @@ def f3():
 "{} {}".format(1, 2)  ## "1·2"
 f"{1} {2}"            ## "1·2"
 
+## Each field can also specify an optional set of "format specifiers",
+## which goes after the colon ":"
+
+## The default syntax
+## [[fill]align][sign][#][0][minimum_width][.precision][type]
+##        │                                             └ e.g., b e f %
+##        └ e.g., < > ^
+
 ## Padding and alignment
 a = "test"
-f"{a:10}"             ## "test······"
+f"{a:10}"             ## "test······" (width 10)
 f"{a:<10}"            ## "test······"
 f"{a:>10}"            ## "······test"
 f"{a:^10}"            ## "···test···"
-f"{a:_<10}"           ## "test______"
-
-f"{a!s}"              ## equals f"{str(a)}"
-f"{a!r:10}"           ## f"{repr(a):10}"
+f"{a:_<10}"           ## "test______" (fill "_")
 
 ## Floats
 b = 0.5
 f"{b:5}"              ## "··0.5" (floats are right aligned by default)
 f"{b:<5}"             ## "0.5··"
-f"{b!s:5}"            ## "0.5··"
+f"{b:05}"             ## "000.5" (zero-padding)
 
-f"{b:05}"             ## "000.5"
 f"{b:.3f}"            ## "0.500"
 f"{b:.3e}"            ## "5.000e-01"
 f"{b:.2%}"            ## "50.00%"
+
+## The `datetime` class provides its own format specification
+c = datetime.now()
+f"{c:%Y-%m-%d}"       ## "2022-02-17" (just like in the `strftime()` function)
+
+## Explicit type conversion
+f"{a!s}"              ## equals f"{str(a)}"
+f"{a!r:10}"           ## equals f"{repr(a):10}"
+
+f"{b:5}"              ## "··0.5"
+f"{b!s:5}"            ## "0.5··"
+
+## Self-documenting expressions with `=` (New in Python 3.8)
+theta = 30
+f'{theta=}, {cos(radians(theta))=:.3f}'  ## "theta=30, cos(radians(theta))=0.866"
 ```
 
 [PyFormat (intuitive examples)](https://pyformat.info/)
 [Python strftime reference](https://strftime.org/)
 [PEP 3101 -- Standard Format Specifiers](https://www.python.org/dev/peps/pep-3101/#format-specifiers)
+[What's New in Python 3.8](https://docs.python.org/3/whatsnew/3.8.html#f-strings-support-for-self-documenting-expressions-and-debugging)
 
 ## 正则表达式
 

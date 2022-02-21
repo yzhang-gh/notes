@@ -164,6 +164,10 @@ m.groups()     # ('Isaac', 'Newton')  All subgroups in a tuple.
 
 `re.match` 要求 `pattern` 出现在字符串 `string` 的开头，`re.search` 则允许其出现在字符串的任意位置
 
-如果需要多次使用某个正则表达式，可以用 `re.compile()` 来生成一个 pattern 对象，其同样可以使用上面这些函数（甚至更精细的功能）
+如果需要多次使用某个正则表达式，可以用 `re.compile()` 来生成一个 pattern 对象，其同样可以使用上面这些函数 `sub/match/search`，甚至更精细的功能。
+
+### 其它：字符串分割
+
+`re.split(pattern, string, maxsplit=0, flags=0)`
 
 [Regular expression operations - Python documentation](https://docs.python.org/3/library/re.html)

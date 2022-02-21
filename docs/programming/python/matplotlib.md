@@ -19,8 +19,8 @@ Matplotlib 提供了两套 API：
 ```python
 import matplotlib.pyplot as plt
 
-## 默认一个 Axes
-fig, ax = plt.subplots()
+## 默认为一个 Axes/Subplot
+fig, ax = plt.subplots()  ## (nrows=1, ncols=1, ..., **fig_kw)
 ax.plot(x, y)
 fig.savefig("out.png")
 

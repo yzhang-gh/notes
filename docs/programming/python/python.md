@@ -1,5 +1,24 @@
 # Python
 
+## 相对路径问题
+
+TODO
+
+### 工作路径
+
+文件读写，subprocess
+
+`os.getcwd()`, `python -m`? `subprocess`? `open`?
+
+### `import`
+
+`sys.path`
+
+absolute and relative imports
+
+https://docs.python.org/3/tutorial/modules.html#the-module-search-path
+https://www.pythonforthelab.com/blog/complete-guide-to-imports-in-python-absolute-relative-and-more/
+
 ## 作用域 (scope)
 
 - Python 程序由==代码块==组成，包括**模块** (mudule)，**类** (class)，**函数** (def) 等
@@ -15,7 +34,6 @@ __name__, __file__        ## Builtin
 
 global_var = 1            ## Global
 
-
 def outer():
     enclosing_var = 2     ## Enclosing (relative to `inner`)
 
@@ -28,7 +46,6 @@ def outer():
         print(f"Builtin   {__name__:^8}")
 
     inner()
-
 
 if __name__ == "__main__":
     outer()
@@ -68,6 +85,10 @@ def f3():
 ```
 
 [Python 执行模型](https://docs.python.org/3/reference/executionmodel.html)
+
+## 手动断行
+
+https://docs.python.org/3/reference/lexical_analysis.html#explicit-line-joining
 
 ## 格式化字符串 (string format)
 

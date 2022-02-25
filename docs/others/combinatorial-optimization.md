@@ -13,29 +13,31 @@ title: 组合优化
 简单来说，==组合优化==是指从一个**有限集合**中寻找**最优组合**（或**排列**）的问题（属于离散优化问题），比如
 
 ::: definition 背包问题 (Knapsack problem)
-给定一组物品，每种物品都有其对应的重量和价格 <span class="nowrap">──（基础集，ground set）</span>
-在限定的总重量内　　　　　　　　　　　　　　 <span class="nowrap">──（约束条件）</span>
-如何选择一组物品使得总价值最高　　　　　　　 <span class="nowrap">──（优化目标）</span>
+给定一组物品，每种物品都有其对应的重量和价格<span class="nowrap"><span class="cn-font" lang="zh-CN">——</span>基础集，ground set</span>
+在限定的总重量内　　　　　　　　　　　　　　<span class="nowrap"><span class="cn-font" lang="zh-CN">——</span>约束条件</span>
+如何选择一组物品使得总价值最高　　　　　　　<span class="nowrap"><span class="cn-font" lang="zh-CN">——</span>优化目标</span>
 :::
 
 ::: definition 旅行商问题 (Traveling Salesman Problem, TSP)
-给定一系列城市以及两两之间的距离
+给定一系列城市（以及两两之间的距离）
 希望访问所有城市恰好一次并返回起点城市
-最短路径是哪条
+找到满足条件的最短回路
 :::
 
-::: definition 车辆路径问题 (Vehicle Routing Problem, VRP) ──送快递
+::: definition 车辆路径问题 (Vehicle Routing Problem, VRP) <span class="cn-font" lang="zh-CN">——</span>送快递
 给定一个仓库和一系列客户的位置
 从仓库出发经过所有客户的位置（期间可以返回仓库）
 车辆（车队）的最短路线是什么
 其中还需考虑约束条件：车辆的载重量有限
 :::
 
-组合优化问题的难点在于──随着问题规模增长，其可行解的数量呈指数增长，一般都是 **NP-hard**
+组合优化问题的难点在于<span class="cn-font" lang="zh-CN">——</span>随着问题规模增长，其可行解的数量呈指数增长，一般都是 **NP-hard**
 
 ## 精确求解
 
 既然是 **NP-hard** 问题，那就不存在多项式时间的解法，只能在暴力搜索 $O(n!)$ 的基础上尽量不那么暴力
+
+[Concorde TSP solver](https://www.math.uwaterloo.ca/tsp/concorde.html)
 
 ### 分支定界 (branch and bound)
 
@@ -44,6 +46,10 @@ title: 组合优化
 ### 动态规划 (dynamic programming)
 
 ## 近似求解
+
+LKH, local-search, Lin-Kernighan heuristic for k-opt moves
+
+evolutionary algorithm EAX
 
 ### 近似算法
 
@@ -59,4 +65,5 @@ title: 组合优化
 
 ### 深度强化学习
 
-特点：泛化性能
+监督学习：在固定的问题规模（城市数量）下效果好
+强化学习：能泛化使用到不同问题规模

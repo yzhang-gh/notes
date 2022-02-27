@@ -33,6 +33,7 @@ jobs:
         run: |
           npm ci
           npm run build
+          node tools/post-process.js
 
       - name: "Copy dist files"
         ## Need to specifiy a working-directory, otherwise it cannot find the path

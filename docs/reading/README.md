@@ -156,10 +156,14 @@ sidebar: auto
 > >
 > > <span class="cn-font" lang="zh-CN">——</span>[罗素这段留给后人的视频，究竟想表达什么？- 黑暗的庇护的回答 - 知乎](https://www.zhihu.com/question/340543368/answer/791761846)
 >
+> 价值判断 / 应然（对与错，正义与邪恶，民主与专制等等）有它的价值：类似于**启发式搜索**中的 [heuristic](https://zh.wikipedia.org/wiki/%E5%90%AF%E5%8F%91%E6%B3%95)（即从过往经验 / 实然中总结出的极简规则）。其好处在于<span class="cn-font" lang="zh-CN">——</span>简单，快速，往往能带来还不错的结果。但是一旦遇到稍复杂的现实博弈，其会变得非常脆弱，完全失去现实意义。应然源于实然，忽视问题的实然复杂性，片面强调应然，是舍本逐末。
+>
+> <hr>
+>
 > <details>
 >   <summary>争议观点预警，自行选择阅读</summary>
 >   <blockquote><p><a href="https://www.zhihu.com/question/518516257/answer/2363005824" target="_blank" rel="noopener noreferrer" class="outbound">对于乌克兰与俄罗斯的战争，我很反对俄罗斯的做法，是我的问题吗？- 鲁森林林的回答 - 知乎</a></p></blockquote>
->   <blockquote><p>罗素说过：多看事实，少活在想象中。<br>因此，我从不反战，因为这根本没有任何事实基础，是一种没有意义的想象。<br>实际上，自人类文明产生以来，就一直伴随着战争，而且每一次文明的升级，都伴随着战争规模的升级。最近几十年的世界主流和平，主要是因为原子弹带来的博弈代价大幅上升，从而达到的脆弱平衡。<br>要说和平的使者，那只能是原子弹。</p>
+>   <blockquote><p>罗素说过：多看事实，少活在想象中。<br>因此，我从不反战，因为这根本没有任何事实基础，是一种没有意义的想象。<br>实际上，自人类文明产生以来，就一直伴随着战争，而且每一次文明的升级，都伴随着战争规模的升级。最近几十年的世界主流和平，主要是因为原子弹带来的<strong>博弈代价</strong>大幅上升，从而达到的<strong>脆弱平衡</strong>。<br>要说和平的使者，那只能是原子弹。</p>
 >   <p><span class="cn-font" lang="zh-CN">——</span><a href="https://www.zhihu.com/pin/1481289646780481536" target="_blank" rel="noopener noreferrer" class="outbound">北冥乘海生的想法 - 知乎</a></p></blockquote>
 >   <blockquote><p><a href="https://www.zhihu.com/pin/1481001633832665088" target="_blank" rel="noopener noreferrer" class="outbound">林为珮的想法 - 知乎</a></p></blockquote>
 > </details>

@@ -38,6 +38,45 @@ messagebox.showinfo("Title", "Message")
 root.destroy()
 ```
 
+### 弹出 Toast 消息 (Windows)
+
+```python
+# pip install winrt
+
+import winrt.windows.data.xml.dom as dom
+from winrt.windows.ui.notifications import ToastNotification, ToastNotificationManager
+
+title = "Hello"
+msg = "world!"
+
+def toast(title, msg):
+    toast_xml = f"<toast>\
+        <visual><binding template='ToastText01'>\
+            <text id='1'>{msg}</text>\
+        </binding></visual>\
+    </toast>"
+
+    toast_xmldoc = dom.XmlDocument()
+    toast_xmldoc.load_xml(toast_xml)
+
+    notifier = ToastNotificationManager.create_toast_notifier(title)
+    notifier.show(ToastNotification(toast_xmldoc))
+
+toast(title, msg)
+```
+
+[Toast schema - Microsoft Docs](https://docs.microsoft.com/en-us/uwp/schemas/tiles/toastschema/schema-root)
+
+Toast XML example:
+
+```python
+from winrt.windows.ui.notifications import ToastTemplateType
+
+template = ToastTemplateType.TOAST_IMAGE_AND_TEXT01
+toast_xmldoc = ToastNotificationManager.get_template_content(template)
+print(toast_xmldoc.get_xml())
+```
+
 ### 打包成 exe
 
 ```

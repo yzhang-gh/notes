@@ -88,7 +88,22 @@ def f3():
 
 ## 手动断行
 
-https://docs.python.org/3/reference/lexical_analysis.html#explicit-line-joining
+句末的反斜杠 `\` 会把多个物理行拼接为一个逻辑行（在 `"""`/`'''` 多行字符串和注释中除外）
+
+```python
+is_valid_date = 1900 < year < 2100 and 1 <= month <= 12 \
+                and 1 <= day <= 31
+
+a_str = "this is a long\
+         string"
+## 'this is a long         string'
+
+b_str = "this is a long "\
+        "string"
+## 'this is a long string'
+```
+
+[Lexical analysis — Python documentation > Explicit line joining](https://docs.python.org/3/reference/lexical_analysis.html#explicit-line-joining)
 
 ## 格式化字符串 (string format)
 

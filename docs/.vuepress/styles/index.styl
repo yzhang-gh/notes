@@ -244,6 +244,9 @@ details.custom-block.details
     padding 0.5rem 1rem
     background #fbfbfc
 
+    blockquote
+      padding 1px 1rem  // if the padding-top is 0, the margin-top of the child p will be ignored (margin collapsing)
+
     pre
       background #fbfbfc !important
       border 1px solid #dfe2e5
@@ -255,7 +258,16 @@ details.custom-block.details
       color #999
   
     & > p
+    details
+    details p
       margin .5em 0
+
+    details blockquote:last-child
+      margin-bottom 0.5rem
+
+    & > hr
+      width 80%
+      margin 1em auto
 
     a
       color $accentColor075

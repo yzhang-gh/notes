@@ -104,7 +104,7 @@ sidebar: auto
 >
 > <span class="cn-font" lang="zh-CN">——</span>[张潇雨的想法 - 知乎](https://www.zhihu.com/pin/1097901916008333312)
 >
-> <hr style="width: 80%;margin: 1em auto;">
+> <hr>
 >
 > 同类的评论以及对于小点的讨论就不复读了，贴两个比较赞同的看法：
 >
@@ -127,3 +127,56 @@ sidebar: auto
 > > <span class="cn-font" lang="zh-CN">——</span>[「曹大佐」的评论](https://www.zhihu.com/pin/1441848412057047040)
 >
 > 有限理性
+
+### 实然与应然
+
+> BBC：罗素勋爵，假定这段录像，将被我们的后人看到，如同死海古卷一般，在一千年后被人看见。您觉得有什么该对他们那一代人说的呢？关于您的一生，以及一生的感悟。
+>
+> 罗素：我想要说两点，其一关乎智慧，其二关乎道德。
+>
+> 有关智慧，我想对他们说的是：不管你是在研究什么事物，还是在思考任何观点，<strong>只问你自己，事实是什么，以及这些事实所支持的真理是什么。永远不要让自己被<span class="cn-font" lang="zh-CN">——</span>自己所更愿意相信的，或者<em>你认为（被人们相信的）对社会更加有益的东西</em><span class="cn-font" lang="zh-CN">——</span>所影响。只是单单去审视，什么才是事实。</strong>这是我想说的，关于智慧的一点。
+>
+> 我想对他们说的有关道德的一点，十分简单。我要说：爱是明智的，恨是愚蠢的。在这个日益紧密相连的世界，我们必须学会容忍彼此，我们必须学会接受这样一个事实：总会有人说出我们不想听的话。只有这样，我们才有可能共同生存。而假如我们想要共存，而非共亡，我们就必须学会这种宽容与忍让，因为它们对于人类在这个星球上的存续，是至关重要的。
+>
+> <span class="cn-font" lang="zh-CN">——</span>罗素 (BBC interview, 1959, [YouTube](https://www.youtube.com/watch?v=ihaB8AFOhZo))
+>
+> <details>
+>   <summary>English transcript</summary>
+>   <p><strong>Interviewer</strong>:</p>
+>   <p>Suppose Lord Russell that this film were to be looked at by our descendants, like a dead sea scroll in a thousand years time. What would you think it’s worth telling that generation about the life you’ve lived and the lessons you’ve learned from it?</p>
+>   <p><strong>Russell</strong>:</p>
+>   <p>I should like to say two things, one intellectual and one moral.</p>
+>   <p>The intellectual thing I should want to say to them, is this: When you are studying any matter, or considering any philosophy, <strong>ask yourself only what are the facts and what is the truth that the facts bear out. Never let yourself be diverted, either by what you wish to believe, or by <em>what you think would have beneficent social effects if it were believed</em>. But look only, and solely, at what are the facts.</strong> That is the intellectual thing that I should wish to say.</p>
+>   <p>The moral thing I should wish to say to them is very simple: I should say, love is wise, hatred is foolish. In this world, which is getting more and more closely interconnected, we have to learn to tolerate each other, we have to learn to put up with the fact that some people say things that we don’t like. We can only live together in that way—and if we are to live together and not die together—we must learn a kind of charity and a kind of tolerance, which is absolutely vital to the continuation of human life on this planet.</p>
+> </details>
+>
+> <hr>
+>
+> > 不要受价值判断影响，要只做事实判断，无论这个价值是属于自己的，别人的，还是社会的，这个时代的。
+> >
+> > <span class="cn-font" lang="zh-CN">——</span>[罗素这段留给后人的视频，究竟想表达什么？- 黑暗的庇护的回答 - 知乎](https://www.zhihu.com/question/340543368/answer/791761846)
+>
+> <details>
+>   <summary>争议观点预警，自行选择阅读</summary>
+>   <blockquote><p><a href="https://www.zhihu.com/question/518516257/answer/2363005824" target="_blank" rel="noopener noreferrer" class="outbound">对于乌克兰与俄罗斯的战争，我很反对俄罗斯的做法，是我的问题吗？- 鲁森林林的回答 - 知乎</a></p></blockquote>
+>   <blockquote><p>罗素说过：多看事实，少活在想象中。<br>因此，我从不反战，因为这根本没有任何事实基础，是一种没有意义的想象。<br>实际上，自人类文明产生以来，就一直伴随着战争，而且每一次文明的升级，都伴随着战争规模的升级。最近几十年的世界主流和平，主要是因为原子弹带来的博弈代价大幅上升，从而达到的脆弱平衡。<br>要说和平的使者，那只能是原子弹。</p>
+>   <p><span class="cn-font" lang="zh-CN">——</span><a href="https://www.zhihu.com/pin/1481289646780481536" target="_blank" rel="noopener noreferrer" class="outbound">北冥乘海生的想法 - 知乎</a></p></blockquote>
+>   <blockquote><p><a href="https://www.zhihu.com/pin/1481001633832665088" target="_blank" rel="noopener noreferrer" class="outbound">林为珮的想法 - 知乎</a></p></blockquote>
+> </details>
+
+<script>
+export default {
+    mounted() {
+        const hash = document.location.hash;
+        if (hash.length > 1) {
+            const id = decodeURI(hash.substring(1));
+            const element = document.getElementById(id);
+            if (element) {
+                setTimeout(() => {
+                    element.scrollIntoView();
+                }, 500);
+            }
+        }
+    }
+}
+</script>

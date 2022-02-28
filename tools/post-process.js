@@ -1,3 +1,12 @@
+/**
+ * It turns out that this script doesn't work.
+ * (There is always a space (text-node) between <svg> and <span class="sr-only">
+ *  even there is no line space in the source code at all)
+ * 
+ * Use `display: inline-block` instead
+ * https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Whitespace
+ */
+
 const fs = require("fs");
 const glob = require("glob")
 
@@ -18,8 +27,7 @@ glob("docs/.vuepress/dist/**/*.html", (err, files) => {
             content = data.toString();
 
             if (pat.test(content)) {
-                // https://css-tricks.com/fighting-the-space-between-inline-block-elements/
-                const processed = content.replace(pat, '</svg><!--\n--><span class="sr-only">(opens new window)</span>');
+                const processed = content.replace(pat, '</svg>');
                 fs.writeFile(file, processed, (_err) => {});
             }
         });

@@ -163,6 +163,7 @@ sidebar: auto
 > <details>
 >   <summary>争议观点预警，自行选择阅读</summary>
 >   <blockquote><p><a href="https://www.zhihu.com/question/518516257/answer/2363005824" target="_blank" rel="noopener noreferrer" class="outbound">对于乌克兰与俄罗斯的战争，我很反对俄罗斯的做法，是我的问题吗？- 鲁森林林的回答 - 知乎</a></p></blockquote>
+>   <blockquote><p><a href="https://www.zhihu.com/question/518532038/answer/2366287027" target="_blank" rel="noopener noreferrer" class="outbound">如何评价《为战争叫好的都是傻逼》这篇文章？- ShallowDream97 的回答 - 知乎</a><br>退役士兵视角</p></blockquote>
 >   <blockquote><p>罗素说过：多看事实，少活在想象中。<br>因此，我从不反战，因为这根本没有任何事实基础，是一种没有意义的想象。<br>实际上，自人类文明产生以来，就一直伴随着战争，而且每一次文明的升级，都伴随着战争规模的升级。最近几十年的世界主流和平，主要是因为原子弹带来的<strong>博弈代价</strong>大幅上升，从而达到的<strong>脆弱平衡</strong>。<br>要说和平的使者，那只能是原子弹。</p>
 >   <p><span class="cn-font" lang="zh-CN">——</span><a href="https://www.zhihu.com/pin/1481289646780481536" target="_blank" rel="noopener noreferrer" class="outbound">北冥乘海生的想法 - 知乎</a></p></blockquote>
 >   <blockquote><p><a href="https://www.zhihu.com/pin/1481001633832665088" target="_blank" rel="noopener noreferrer" class="outbound">林为珮的想法 - 知乎</a></p></blockquote>

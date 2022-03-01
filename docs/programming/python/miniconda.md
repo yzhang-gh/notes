@@ -31,3 +31,12 @@ conda env remove -n <env_name>
 ```
 
 See [Manage environments &mdash; conda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+
+## Managing packages
+
+```
+conda search <pkg_name>      ## search for available packages
+conda install <pkg_name...>
+conda list [regex]           ## list packages in the current environment
+conda remove <pkg_name...>
+```

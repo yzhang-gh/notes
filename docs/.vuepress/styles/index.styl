@@ -169,12 +169,22 @@ kbd
     color $accentColor
 
   pre
-    background-color #f6f8fa !important // Override the hardcoded background color of shiki
-    border-radius 5px
+    background-color transparent !important // Override the hardcoded background color of shiki
     color $textColor
 
     code
       color $textColor
+
+  div[class*="language-"]
+    background-color #f6f8fa
+    border-radius 5px
+
+    .highlight-lines
+      padding-top 1.25rem
+
+      .highlighted
+        background-color #fff8c5
+        box-shadow inset 2px 0 0 rgba(212,167,44,0.4)
 
 // FIGURE
 

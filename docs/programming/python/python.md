@@ -69,15 +69,12 @@ if __name__ == "__main__":
 ```python
 global_var = 1
 
-
 def f1():
     print(global_var)     ## 1
-
 
 def f2():
     global_var = 2        ## We now have a local variable 'global_var'
     print(global_var)     ## 2
-
 
 def f3():
     print(global_var)     ## UnboundLocalError: local variable 'global_var'↵

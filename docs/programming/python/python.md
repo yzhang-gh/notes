@@ -16,6 +16,7 @@ TODO
 
 absolute and relative imports
 
+https://stackoverflow.com/a/43859946/8682688
 https://docs.python.org/3/tutorial/modules.html#the-module-search-path
 https://www.pythonforthelab.com/blog/complete-guide-to-imports-in-python-absolute-relative-and-more/
 

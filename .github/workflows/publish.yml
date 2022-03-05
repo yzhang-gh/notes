@@ -30,14 +30,17 @@ jobs:
 
       - name: "Clean install dependencies and build"
         working-directory: master
+        ## /home/runner/work/notes/notes/master
         run: |
           npm ci
+          node tools/pre-process.js
           npm run build
         # node tools/post-process.js
 
       - name: "Copy dist files"
         ## Need to specifiy a working-directory, otherwise it cannot find the path
         working-directory: gh-pages
+        ## /home/runner/work/notes/notes/gh-pages
         run: |
           git rm -r *
           mv ../master/docs/.vuepress/dist/* .

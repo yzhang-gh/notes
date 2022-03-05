@@ -74,7 +74,7 @@ plt.rc("font", **{"sans-serif": "Consolas"})
 
 一些默认值
 
-```
+```plaintextc
 figure.figsize : 6.4, 4.8  ## figure size in inches
 font.size      : 10        ## default 'medium' size (all relative values: xx-small, x-small,
                            ## small, medium, large, x-large, xx-large, larger, or smaller)

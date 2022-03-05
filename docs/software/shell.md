@@ -71,16 +71,16 @@ scp -r user@your.server.example.com:/path/to/foo /home/user/Desktop/
 
 ## `ls`
 
-```shell
+```shelldoc
 ## ls [OPTION...] [FILE or DIR...]
-ls -a  ## including entries starting with `.`
-ls -l  ## detailed information
+ls -a             ## include entries starting with `.`
+ls -l             ## detailed information
 ls | head [-<n>]  ## only show first n entries (default 10)
 ls | tail         ## ...
 
 ## `.bashrc` 中其实默认定义了一些 aliases
 alias ll='ls -alF'
-alias la='ls -A'   ## except for `.` and `..`
+alias la='ls -A'  ## except for `.` and `..`
 alias l='ls -CF'
 ```
 

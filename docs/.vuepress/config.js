@@ -1,5 +1,23 @@
 const { description } = require('../../package')
 
+const fs = require('fs')
+
+const shelldocGrammar = JSON.parse(fs.readFileSync('syntaxes/shelldoc.tmLanguage.json'))
+const shelldocLang = {
+    id: 'shelldoc',
+    scopeName: 'source.shelldoc',
+    grammar: shelldocGrammar,
+    aliases: ['shelldoc']
+}
+
+const plaintextcGrammar = JSON.parse(fs.readFileSync('syntaxes/plaintextc.tmLanguage.json'))
+const plaintextcLang = {
+    id: 'plaintextc',
+    scopeName: 'source.plaintextc',
+    grammar: plaintextcGrammar,
+    aliases: ['plaintextc']
+}
+
 module.exports = {
     title: 'Notes',
     description: description,
@@ -206,7 +224,7 @@ module.exports = {
             },
         ],
         [
-            'shiki', { theme: 'github-light' }
+            'shiki', { theme: 'github-light', additionalLangs: [shelldocLang, plaintextcLang] }
         ],
     ],
     markdown: {

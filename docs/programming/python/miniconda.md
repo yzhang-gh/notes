@@ -20,7 +20,7 @@ scipy numpy pandas matplotlib scikit-learn notebook
 
 ## Managing environments
 
-```
+```shelldoc
 # Create an environment
 # Notation: <required argument> [optional argument]
 # `-n` is short for `--name`
@@ -34,9 +34,9 @@ See [Manage environments &mdash; conda](https://docs.conda.io/projects/conda/en/
 
 ## Managing packages
 
-```
+```shelldoc
 conda search <pkg_name>      ## search for available packages
-conda install <pkg_name...>
+conda install <pkg_name ...>
 conda list [regex]           ## list packages in the current environment
-conda remove <pkg_name...>
+conda remove <pkg_name ...>
 ```

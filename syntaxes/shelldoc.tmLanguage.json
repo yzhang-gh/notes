@@ -112,6 +112,14 @@
         }
       ]
     },
+    "codetags": {
+      "match": "(?:\\b(NOTE|XXX|HACK|FIXME|BUG|TODO)\\b)",
+      "captures": {
+        "1": {
+          "name": "keyword.codetag.notation.python"
+        }
+      }
+    },
     "comment": {
       "begin": "(^\\s+)?(?<=^|\\W)(?<!-)(?=#)(?!#{)",
       "beginCaptures": {
@@ -139,7 +147,12 @@
             }
           },
           "end": "$",
-          "name": "comment.line.number-sign.shell"
+          "name": "comment.line.number-sign.shell",
+          "patterns": [
+            {
+              "include": "#codetags"
+            }
+          ]
         }
       ]
     },

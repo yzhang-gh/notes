@@ -201,16 +201,6 @@ Your text
 `tabular` 用来容纳表格真正的内容（必要成分）
 `table` 则额外创建了一个 float 环境（就像 figure），还可以包含 caption
 
-### 表格：为单元格单独指定对齐方式 / 样式
-
-> I suggest using `\multicolumn{1}{c}{header text}`. `\multicolumn` allows changing the formatting of single cells.
-
-<https://tex.stackexchange.com/a/2927>
-
-```latex
-\newcommand{\tablehead}[1]{\multicolumn{1}{c}{\bfseries#1}}
-```
-
 ### 删除线 (Strikethrough)
 
 ```latex
@@ -303,7 +293,7 @@ authblk
 - 自行安装字体时需要选择「为所有用户安装」
 - 使用 `fc-list :lang=zh` 查看有哪些中文字体
 
-（英文版 Windows 需要先安装中文语言包，`Settings`>`Time & Language`>`Region & Language`>`中文`>`Options`>`Basic typing`）
+（英文版 Windows 需要先安装中文语言包，Settings > Time & Language > Region & Language > 中文 > Options > Basic typing）
 
 ::: tip More
 - [在 LaTeX 中使用 OpenType 字体](https://stone-zeng.github.io/2018-08-08-use-opentype-fonts/)
@@ -311,7 +301,7 @@ authblk
 
 ## `a4paper`/`letterpaper` 不起作用
 
-Quite a lot of old classes (e.g. `article`) don't set the pdf sizes. An option like `a4paper` sets only things like the TeX `\paperwidth`, the linewidth and similar lengths.
+Quite a lot of old classes, e.g. `article`, don't set the pdf sizes. An option like `a4paper` sets only things like the TeX `\paperwidth`, the linewidth and similar lengths.
 
 You will have to insert the necessary command yourself. For pdflatex this is
 
@@ -348,8 +338,6 @@ tlmgr paper a4
 ```
 "C:\Users\<username>\AppData\Local\Programs\Microsoft VS Code\Code.exe" -g -r "%f:%l"
 ```
-
----
 
 ## 未整理
 

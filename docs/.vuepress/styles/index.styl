@@ -142,16 +142,16 @@ img + svg.icon.outbound
 
 kbd
   font-size 0.85em
-  padding 0.1rem 0.2rem
+  padding 0.1rem 0.2rem 0.15rem
   color #444d56
   background-color #fafbfc
   border 0.1rem solid #d1d5da
   border-bottom 0.1rem solid #d1d5da
   border-radius 0.25rem
   box-shadow inset 0 -0.1rem 0 #d1d5da
-  margin-bottom 0.1rem
+  margin 0 0.0625rem
 
-// CODE BLOCK
+// CODE and CODE BLOCKS
 .theme-default-content
   code
     color $textColor
@@ -161,9 +161,12 @@ kbd
   h2
   h3
   a
-    & > code
-      padding 0.25rem 0.3rem
+  li
+  td
+    code
+      padding 0.2rem 0.3rem 0.24rem
       white-space nowrap
+      vertical-align 0.05rem
 
   a > code
     color $accentColor

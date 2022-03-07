@@ -23,14 +23,17 @@ ssh -v user@host                     ## 输出调试信息 (verbose)
 
 比如设置首选公钥验证方式
 
-```ini
-Host *.ac.uk  ## one or more patterns separated by whitespace
+```ssh-config
+## Host <pattern ...>
+Host *.ac.uk
 #   HostName <the real hostname (or IP) to login to>
     PreferredAuthentications publickey,keyboard-interactive,password,hostbased
 #   IdentityFile ~/.ssh/another_id_rsa
 ```
 
-对于每个参数，其取值为最先匹配到的值，所以 `Host *` 这种规则应该放在最后，相当于 fallback
+其中 `pattern` 用来匹配 `ssh` 命令中的 `host` 名称，同时设置多个 `pattern` 时用空格隔开
+
+对于每个配置，其取值为最先匹配到的值，所以 `Host *` 这种规则应该放在最后，相当于 fallback
 
 More on <https://linux.die.net/man/5/ssh_config>
 
@@ -106,7 +109,7 @@ kill %i
 alias name='your command'
 
 type name
-## -> name is aliased to `your command'
+## → name is aliased to `your command'
 ```
 
 ## `tee`
@@ -139,7 +142,7 @@ find . -maxdepth 3 -name '*bar'
 
 ## 使用变量
 
-```shell
+```shelldoc
 ## define a variable
 a="hello"  ## NOTE whitespace is not allowed before or after `=`
 

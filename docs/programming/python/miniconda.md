@@ -35,8 +35,8 @@ See [Manage environments &mdash; conda](https://docs.conda.io/projects/conda/en/
 ## Managing packages
 
 ```shelldoc
-conda search <pkg_name>      ## search for available packages
+conda search <pkg_name>             ## search for available packages
 conda install <pkg_name ...>
-conda list [regex]           ## list packages in the current environment
+conda list [regex] [-n <env_name>]  ## list packages in, by default, the current environment
 conda remove <pkg_name ...>
 ```

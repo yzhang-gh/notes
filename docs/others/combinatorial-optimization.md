@@ -67,3 +67,5 @@ evolutionary algorithm EAX
 
 监督学习：在固定的问题规模（城市数量）下效果好
 强化学习：能泛化使用到不同问题规模
+
+[Information, Computation, Optimization: Connecting the Dots in the Traveling Salesman Problem](https://youtu.be/q8nQTNvCrjE)

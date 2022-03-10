@@ -39,25 +39,39 @@ More on <https://linux.die.net/man/5/ssh_config>
 
 ## 传文件 `scp`
 
-### From remote to local
+### Between remote and local
 
-```shell
-scp username@remote.edu:/some/remote/directory/\{a,b,c\} ./
+```shelldoc
+## scp [[<user>@]<host>:]<source_file ...> [[<user>@]<host>:]<target>
+
+## from local to remote
+scp foo.txt bar.txt user@host:~
+scp {foo,bar}.txt user@host:~
+scp *.txt user@host:~
+
+## from remote to local
+scp user@host:/remote/folder/\{foo,bar\}.txt local/folder/
 ```
 
-Glob patterns can be used (e.g. `*.{py,json}` for all Python and JSON files).
+Glob patterns can be used (e.g. `*.{py,json}` matches all Python and JSON files).
 
 ::: tip
-Using `\{a,b,c\}` will transfer the files in a single connection/batch (since they'll be expanded on the remote host), while using `{a,b,c}` will open multiple connections, and the overhead is quite noticeable when transferring many files.
+Using `\{foo,bar\}.txt` will transfer the files in a single connection/batch (since they'll be expanded on the remote host), while using `{foo,bar}.txt` will open multiple connections, and the overhead is quite noticeable when transferring many files.
 :::
 
-### From local to remote
+### Between remote hosts
 
 ```shell
-scp foo.txt bar.txt username@remotehost.edu:~
-scp {foo,bar}.txt username@remotehost.edu:~
-scp *.txt username@remotehost.edu:~
+## host1 → host2
+scp user1@host1:~/foo.txt user2@host2:~/somewhere
+
+## host1 → local → host2
+scp -3 user1@host1:~/foo.txt user2@host2:~/somewhere
 ```
+
+With `-3` the file is transferred through the local host, otherwise it would first `ssh` to `host1` and then run `scp` from `host1` to `host2`, which requires you to set up the authorization credentials for `host2` on `host1`.
+
+<https://superuser.com/a/686527/950027>
 
 ### Copy a folder (`-r`)
 
@@ -66,9 +80,6 @@ scp -r user@your.server.example.com:/path/to/foo /home/user/Desktop/
 ```
 
 **NOTE**: By not including the trailing `/` at the end of `foo`, you will move the directory itself (including contents), rather than only the contents of the directory.
-
-<https://stackoverflow.com/a/21691584/8682688>
-<https://stackoverflow.com/a/11304926/8682688>
 
 `user@your.server.example.com:/path/to/foo` 一般很长，可以考虑在 `.bashrc` 中[定义一个变量](#使用变量)
 
@@ -81,10 +92,13 @@ ls -l             ## detailed information
 ls | head [-<n>]  ## only show first n entries (default 10)
 ls | tail         ## ...
 
-## `.bashrc` 中其实默认定义了一些 aliases
+## 有些 `.bashrc` 中默认定义了一些 aliases
 alias ll='ls -alF'
 alias la='ls -A'  ## except for `.` and `..`
 alias l='ls -CF'
+
+## 统计文件数量 (wc, word count)
+ls | wc -l        ## --lines
 ```
 
 ## `wget`

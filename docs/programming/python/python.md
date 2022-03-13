@@ -1,28 +1,8 @@
 # Python
 
-## 相对路径问题
-
-TODO
-
-### 工作路径
-
-文件读写，subprocess
-
-`os.getcwd()`, `python -m`? `subprocess`? `open`?
-
-### `import`
-
-`sys.path`
-
-absolute and relative imports
-
-https://stackoverflow.com/a/43859946/8682688
-https://docs.python.org/3/tutorial/modules.html#the-module-search-path
-https://www.pythonforthelab.com/blog/complete-guide-to-imports-in-python-absolute-relative-and-more/
-
 ## 作用域 (scope)
 
-- Python 程序由==代码块==组成，包括**模块** (mudule)，**类** (class)，**函数** (def) 等
+- Python 程序由==代码块==组成，包括**模块** (module)，**类** (class)，**函数** (def) 等
   注意 **if**，**for** 等语句不构成代码块
 - 当变量在**代码块**中被定义时，作用域为该代码块
 
@@ -83,6 +63,83 @@ def f3():
 ```
 
 [Python 执行模型](https://docs.python.org/3/reference/executionmodel.html)
+
+## Python 中的路径
+
+### 工作目录
+
+每一个进程都有对应的工作目录 (working directory)，**当进程以相对路径访问文件时则是相对于此目录**。
+对于 Python 来说工作目录即执行 `python` 命令时的目录，可以使用 `os.getcwd()` 获取。
+
+测试目录
+
+```
+~/path-test/
+├── subfolder/
+│   └── submodule.py
+└── main.py
+```
+
+```python
+## both main.py and submodule.py
+import os
+
+print("working dir", os.getcwd())
+print("file path  ", __file__)
+```
+
+```shellsession
+~/path-test$ python main.py
+working dir: /home/yu/path-test
+file path:   main.py
+
+~/path-test$ python subfolder/submodule.py
+working dir: /home/yu/path-test
+file path:   subfolder/submodule.py
+```
+
+```shellsession
+~/path-test$ cd subfolder
+~/path-test/subfolder$ python submodule.py
+working dir: /home/yu/path-test/subfolder
+file path:   submodule.py
+```
+
+**子进程的工作目录继承自其父进程**
+
+修改 `submodule.py` 为
+
+```python
+import subprocess
+
+print(subprocess.check_output("tree", shell=True, encoding="utf-8"))
+```
+
+```shellsession
+~/path-test$ python subfolder/submodule.py
+.
+├── main.py
+└── subfolder
+    └── submodule.py
+
+~/path-test/subfolder$ python submodule.py
+.
+└── submodule.py
+```
+
+### `import`
+
+TODO
+
+`sys.path`
+
+absolute and relative imports
+
+https://stackoverflow.com/a/43859946/8682688
+https://docs.python.org/3/tutorial/modules.html#the-module-search-path
+https://www.pythonforthelab.com/blog/complete-guide-to-imports-in-python-absolute-relative-and-more/
+
+`python -m`?
 
 ## 手动断行
 

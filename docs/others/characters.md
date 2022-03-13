@@ -117,8 +117,11 @@
     </tbody>
 </table>
 
-For quick copy
+<pre style="line-height: 1.2rem"><code>root/
+├── subfolder/
+│   └── submodule.py
+└── main.py
 
-<pre style="line-height: 1rem"><code>┌─────┐
+┌─────┐
 │     │
 └─────┘</code></pre>

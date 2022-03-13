@@ -10,6 +10,14 @@ const shelldocLang = {
     aliases: ['shelldoc']
 }
 
+const shellsessionGrammar = JSON.parse(fs.readFileSync('syntaxes/shellsession.tmLanguage.json'))
+const shellsessionLang = {
+    id: 'shellsession',
+    scopeName: 'source.shellsession',
+    grammar: shellsessionGrammar,
+    aliases: ['shellsession']
+}
+
 const plaintextcGrammar = JSON.parse(fs.readFileSync('syntaxes/plaintextc.tmLanguage.json'))
 const plaintextcLang = {
     id: 'plaintextc',
@@ -224,7 +232,7 @@ module.exports = {
             },
         ],
         [
-            'shiki', { theme: 'github-light', additionalLangs: [shelldocLang, plaintextcLang] }
+            'shiki', { theme: 'github-light', additionalLangs: [shelldocLang, shellsessionLang, plaintextcLang] }
         ],
     ],
     markdown: {

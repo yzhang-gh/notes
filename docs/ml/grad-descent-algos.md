@@ -16,14 +16,19 @@ $$ \min_\theta \widehat{E}(\theta;D)\text{,}\quad\text{where } \widehat{E}(\thet
 
 $$ \theta^\prime = \theta - \eta\cdot g $$
 
-其中 $\eta$ 为==学习率== (learning rate)，$g = \nabla\widehat{E}(\theta)$ 为梯度（方便起见，下文将经验误差 $\widehat{E}$ 简记为 $f$）
+其中 $\eta$ 为==学习率== (learning rate)，$g = \nabla_\theta\widehat{E}(\theta)$ 为梯度（方便起见，下文将经验误差 $\widehat{E}$ 简记为 $f$）
 
-假设当前时刻权值为 $\theta_t$，更新后为 $\theta_{t+1}$，引入如下标记
+假设当前时刻的神经网络权值为 $\theta_t$，经过梯度下降更新后为 $\theta_{t+1}$，引入如下标记
 
-- $g_t = \nabla f(\theta_t)$，**原始梯度**
-- $v_t \coloneqq \theta_{t+1} - \theta_t$，**实际更新量** (velocity)
+- **原始梯度** $g_t = \nabla_\theta f(\theta_t)$
+- **权值更新量** $-u_t \coloneqq \theta_{t+1} - \theta_t$
 
-很显然，对于随机梯度下降 (SGD) 来说，$v_t = \eta\cdot g_t$。（TODO 一阶二阶动量）
+很显然，对于随机梯度下降 (SGD) 来说，$u_t = \eta\cdot g_t$，即 $\theta_{t+1} = \theta_t - \eta\cdot g_t$
+
+TODO
+
+- **一阶动量** $m_t$
+- **二阶动量** $v_t$
 
 ## 朴素
 
@@ -38,34 +43,72 @@ $$ \theta^\prime = \theta - \eta\cdot g $$
 
 $$
 \begin{alignedat}{2}
-    v_t &= \eta\cdot g_t \\
-    \theta_{t+1} &= \theta_t - v_t.
+    u_t &= \eta\cdot g_t \\
+    \theta_{t+1} &= \theta_t - u_t.
 \end{alignedat}
 $$
 
-### Momentum
+### SGD with momentum
+
+<span class="cn-font" lang="zh-CN">——</span>引入一阶动量
 
 $$
 \begin{alignedat}{2}
-    v_t &= \textcolor{#F26400}{\gamma\cdot v_{t-1}} + \eta\cdot g_t \\
-    \theta_{t+1} &= \theta_t - v_t.
+    \textcolor{#8b959e}{g_t} &\textcolor{#8b959e}{= \nabla_\theta f(\theta_t)} \\
+    \textcolor{#8b959e}{m_0} &\textcolor{#8b959e}{= g_0} \\
+    m_t &= \textcolor{#F26400}{\gamma\cdot m_{t-1}} + \eta\cdot g_t \\
+    u_t &= m_t \\
+    \theta_{t+1} &= \theta_t - u_t.
 \end{alignedat}
 $$
 
-### Nesterov accelerated gradient
+动量 $m_t$ 为历史梯度的指数移动平均 (exponential moving average)，其权重 $\gamma$ 常取 0.9
 
+::: tip NOTE
+PyTorch 中 SGD with Momentum 的[实现方式](https://pytorch.org/docs/master/generated/torch.optim.SGD.html#torch.optim.SGD)与上述公式略有不同，学习率 $\eta$ 是乘在 $u_t$ 上而不是梯度 $g$ 上，即
 $$
 \begin{alignedat}{2}
-    v_t &= \gamma\cdot v_{t-1} + \eta\cdot\nabla f(\theta_t \textcolor{#F26400}{- \gamma\cdot v_{t-1}}) \\
-    \theta_{t+1} &= \theta_t - v_t.
+             m_t &= \gamma\cdot m_{t-1} + g_t \\
+             u_t &= \eta\cdot m_t \\
+    \theta_{t+1} &= \theta_t - u_t.
 \end{alignedat}
 $$
+对于固定的学习率 $\eta$ 两者是等价的（对动量权重 $\gamma$ 进行缩放即可），而在网络实际训练过程中往往需要动态调节学习率 (lr schedule)，后者在改变学习率的时候不会影响动量 $m_t$ 的计算。
 
-::: tip
-PyTorch 中 SGD + Momentum 的[实现方式](https://pytorch.org/docs/master/generated/torch.optim.SGD.html#torch.optim.SGD)与上述公式略有不同，学习率 $\eta$ 是乘在 $v_t$ 上而不是梯度 $g$ 上
+下文统一采用与 PyTorch 一致的写法。
 :::
 
+### SGD with Nesterov accelerated gradient (NAG)
+
+$$
+\begin{alignedat}{2}
+    \textcolor{#8b959e}{g_t} &\textcolor{#8b959e}{= \nabla_\theta f(\theta_t)} \\
+    \textcolor{#8b959e}{m_0} &\textcolor{#8b959e}{= g_0} \\
+    m_t &= \gamma\cdot m_{t-1} + \nabla_\theta f(\theta_t \textcolor{#F26400}{- \gamma\cdot m_{t-1}}) \\
+    u_t &= \eta\cdot m_t \\
+    \theta_{t+1} &= \theta_t - u_t.
+\end{alignedat}
+$$
+
+<!-- PyTorch implementation
+
+$$
+\begin{alignedat}{2}
+\theta'_{t} &= \theta_{t} - \eta \cdot \mu \cdot v_{t} \\
+v_{t+1} &= \mu \cdot v_{t} + g(\theta_{t} - \eta \cdot \mu \cdot v_{t}) \\
+\theta_{t+1} &= \theta_{t} - \eta \cdot v_{t+1} \\
+\theta'_{t+1} &= \theta_{t+1} - \eta \cdot \mu \cdot v_{t+1}\\
+&= \theta_{t} - \eta \cdot v_{t+1} - \eta \cdot \mu \cdot v_{t+1}\\
+&= \theta'_{t} + \eta \cdot \mu \cdot v_{t} - \eta \cdot v_{t+1} - \eta \cdot \mu \cdot v_{t+1} \\
+&= \theta'_{t} - \eta \cdot (v_{t+1} - \mu \cdot v_{t} + \mu \cdot v_{t+1})\\
+&= \theta'_{t} - \eta \cdot (v_{t+1} - \mu \cdot v_{t} + \mu \cdot v_{t+1})\\
+&= \theta'_{t} - \eta \cdot (g(\theta'_{t}) + \mu \cdot v_{t+1})
+\end{alignedat}
+$$ -->
+
 ### Adagrad
+
+<span class="cn-font" lang="zh-CN">——</span>引入二阶动量。自适应学习率 优化算法的到来
 
 $$ g_{t,i} = \nabla f(\theta_{t,i}). $$
 
@@ -79,9 +122,11 @@ Adadelta
 
 RMSprop
 
-Adam
+### Adam
 
-(AdaMax, Nadam, AMSGrad)
+<span class="cn-font" lang="zh-CN">——</span>Adaptive Moment Estimation 同时使用一阶动量与二阶动量
+
+### (AdaMax, Nadam, AMSGrad)
 
 ---
 

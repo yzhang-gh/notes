@@ -6,10 +6,10 @@
 
 ## 随机事件的「信息量」
 
-<span class="cn-font" lang="zh-CN">——</span>某个随机事件的「信息量」为其概率的倒数
+<span class="cn-font" lang="zh-CN">——</span>某个随机事件 $x$ 的「信息量」为其概率的倒数 $\frac{1}{P(x)}$
 
 乍一看这个定义有点无中生有，不妨这样理解：对于一个随机事件 $x$
-- 其发生的概率 $P(x)$ 越高，那么当它发生的时候也是意料之中，没啥「新意」
+- 其发生的概率 $P(x)$ 越高，那么当它发生的时候也是意料之中，没什么「新意」
 - 而如果 $P(x)$ 越小，$x$ 发生的时候就会觉得不同寻常，有点信息
 
 ## 信息熵 (entropy)
@@ -27,7 +27,7 @@ $$
 实际编码长度
 
 $$
-\text{CrossEntropy}(P, Q) = \mathbb{E}_{x \sim P}\left[\log\frac{1}{Q(x)}\right]
+\text{CrossEntropy}(P\;\|\;Q) = \mathbb{E}_{x \sim P}\left[\log\frac{1}{Q(x)}\right]
 $$
 
 ## 相对熵 (relative entropy)

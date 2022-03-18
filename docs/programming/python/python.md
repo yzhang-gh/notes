@@ -171,8 +171,8 @@ f"{1} {2}"            ## "1·2"
 ## which goes after the colon ":"
 
 ## The default syntax
-## [[fill]align][sign][#][0][minimum_width][.precision][type]
-##        │                                             └ e.g., b e f %
+## [[fill]align][sign][#][0][min_width][.precision][type]
+##        │                                         └ e.g., b e f %
 ##        └ e.g., < > ^
 
 ## Padding and alignment
@@ -185,17 +185,15 @@ f"{a:_<10}"           ## "test______" (fill "_")
 
 ## Floats
 b = 0.5
-f"{b:5}"              ## "··0.5" (floats are right aligned by default)
+f"{b:5}"              ## "··0.5" (`float` and `int` are right aligned by default)
 f"{b:<5}"             ## "0.5··"
 f"{b:05}"             ## "000.5" (zero-padding)
 
 f"{b:.3f}"            ## "0.500"
+f"{0.6666:.3f}"       ## "0.667" (rounded)
 f"{b:.3e}"            ## "5.000e-01"
 f"{b:.2%}"            ## "50.00%"
-
-## The `datetime` class provides its own format specification
-c = datetime.now()
-f"{c:%Y-%m-%d}"       ## "2022-02-17" (just like in the `strftime()` function)
+f"{b:6.2f}"           ## "··0.50"
 
 ## Explicit type conversion
 f"{a!s}"              ## equals f"{str(a)}"
@@ -204,9 +202,28 @@ f"{a!r:10}"           ## equals f"{repr(a):10}"
 f"{b:5}"              ## "··0.5"
 f"{b!s:5}"            ## "0.5··"
 
+## The `datetime` class provides its own format specification
+c = datetime.now()
+f"{c:%Y-%m-%d}"       ## "2022-02-17" (just like in the `strftime()` function)
+
 ## Self-documenting expressions with `=` (New in Python 3.8)
 theta = 30
-f'{theta=}, {cos(radians(theta))=:.3f}'  ## "theta=30, cos(radians(theta))=0.866"
+f"{theta=}, {cos(radians(theta))=:.3f}"  ## "theta=30, cos(radians(theta))=0.866"
+```
+
+```python
+width     = 8
+precision = 2
+value     = 12.3456
+f"result: {value:{width}.{precision}f}"
+## "···12.35"
+```
+
+```python
+"{first} {last}".format(first="Hello", last="world!")  ## "Hello world!"
+
+data = {"first": "Hello", "last": "world!"}
+"{first} {last}".format(**data)                        ## "Hello world!"
 ```
 
 [PyFormat (intuitive examples)](https://pyformat.info/)

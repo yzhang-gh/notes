@@ -40,3 +40,11 @@ conda install <pkg_name ...>
 conda list [regex] [-n <env_name>]  ## list packages in, by default, the current environment
 conda remove <pkg_name ...>
 ```
+
+For comparison
+
+```shelldoc
+pip install <pkg_name ...>
+pip show <pkg_name ...>
+pip uninstall <pkg_name ...>
+```

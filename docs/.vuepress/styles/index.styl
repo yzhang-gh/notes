@@ -80,22 +80,36 @@ img + svg.icon.outbound
           .mobile-dropdown-title
             font-size 1em
 
-    &>.sidebar-links>li>a.sidebar-link
-      font-size 0.9rem
-      font-weight 500
-      line-height 1.5
+    &>.sidebar-links
+      a.sidebar-link:not(.active)
+        font-weight normal
+
+      &>li>a.sidebar-link
+        font-size 0.9rem
+        font-weight normal
+        line-height 1.5
 
     .sidebar-group
       .sidebar-heading
         padding-left 0
 
+  .nav-links a
+    font-weight normal
+
   .dropdown-wrapper
+    .dropdown-title
+    .mobile-dropdown-title
+      font-weight normal
+
     .dropdown-title .arrow
     .mobile-dropdown-title .arrow
       margin-left 0
-    
-    .nav-dropdown .dropdown-item a
-      padding 0 1.25rem
+
+    .nav-dropdown
+      padding-bottom calc(0.6rem + 0.4px)
+      
+      .dropdown-item a
+        padding 0 calc(1.25rem + 1px) 0 1.25rem
 
   div[class*="language-"]
     background unset

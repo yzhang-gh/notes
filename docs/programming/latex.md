@@ -73,15 +73,15 @@ rd /s /q "%APPDATA%\TinyTeX"
 ## Personal Template
 
 ::: details LaTeX code
-```latex
-\documentclass[11pt]{article}
+`packages.sty`
 
+```latex
 %% Improve typesetting.
 \usepackage{microtype}
 
 %% Use geometry package to set up margins.
 %% A4 paper is 8.27 × 11.69 inch.
-\usepackage[a4paper, width=6.27in, height=9.69in, includehead]{geometry}
+\usepackage[a4paper,width=6.27in,height=9.69in,includehead]{geometry}
 
 %% Set line spacing.
 \usepackage{setspace}
@@ -95,16 +95,16 @@ rd /s /q "%APPDATA%\TinyTeX"
 \usepackage{graphicx}
 
 \usepackage{booktabs}
-\usepackage{multirow}
 \usepackage{xcolor}
 
 %% ━━━━━ Math ━━━━━
 \usepackage{amsmath}
 %% For `\mathbb'
-\usepackage{amssymb}
+% \usepackage{amssymb}
 %% For `\coloneqq', `\underbrace'
 %% If enabled, no longer need to load `amsmath' manually
-% \usepackage{mathtools}
+\usepackage{mathtools}
+\usepackage{bm}
 
 % \DeclareMathOperator*{\argmin}{arg\,min}
 
@@ -112,33 +112,28 @@ rd /s /q "%APPDATA%\TinyTeX"
 \colorlet{urlcolor}{red}
 
 %% Setup the hyperref package for enabling links, bookmarks, and PDF properties.
-\usepackage[backref=page]{hyperref}
+\usepackage{hyperref}
 \hypersetup{
     colorlinks = true,
     citecolor  = blue
 }
 
-%% Capitalising all cross-reference names (e.g. Figure, Equation)
-%% Must come as late as possible, especially after hyperref.
-\usepackage[capitalise]{cleveref}
-
-%% ━━━━━ Change the default font to sans-serif ━━━━━
-%% <https://en.wikibooks.org/wiki/LaTeX/Fonts#Font_families>
-\renewcommand{\familydefault}{\sfdefault}
-%% Prevent warnings caused by sf font
-%% <https://tex.stackexchange.com/questions/155604/itemize-under-sf-produce-a-font-warning>
-\let\oldtextbullet\textbullet%
-\renewcommand{\textbullet}{\rmfamily\oldtextbullet}
-\usepackage{lmodern}
-
 %% ━━━━━ Others ━━━━━
-% \newcommand{\todo}[1]{\textcolor{blue}{[To-do: #1]}}
+\newcommand{\todo}[1]{\textcolor{blue}{[To-do: #1]}}
+```
+
+`main.tex`
+
+```latex
+\documentclass[12pt]{article}
+
+\usepackage{packages}
 
 \begin{document}
 
 \begin{center}
-	\LARGE\textbf{Title}\\[5pt]
-	\normalsize Author\\\today
+    \LARGE\textbf{Title}\\[5pt]
+    \normalsize Author\\\today
 \end{center}
 
 \section{Introduction}
@@ -208,6 +203,18 @@ Your text
 \sout{text to be striked out}
 ```
 
+### 设置全局非衬线字体
+
+```latex
+%% https://en.wikibooks.org/wiki/LaTeX/Fonts#Font_families
+\renewcommand{\familydefault}{\sfdefault}
+%% Prevent warnings caused by sf font
+%% https://tex.stackexchange.com/questions/155604/itemize-under-sf-produce-a-font-warning
+\let\oldtextbullet\textbullet%
+\renewcommand{\textbullet}{\rmfamily\oldtextbullet}
+\usepackage{lmodern}
+```
+
 ### 其它
 
 ```
@@ -242,7 +249,7 @@ authblk
 
 ```latex
 %% 最好放在 hyperref 之前
-\usepackage{biblatex}
+\usepackage[style=authoryear,bibstyle=numeric,natbib=true]{biblatex}
 \addbibresource{ref.bib}
 
 \begin{document}

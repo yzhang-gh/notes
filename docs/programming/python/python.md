@@ -13,7 +13,7 @@
 ```python
 __name__, __file__        ## Builtin
 
-global_var = 1            ## Global
+global_var = 1            ## Global (i.e. module-scoped)
 
 def outer():
     enclosing_var = 2     ## Enclosing (relative to `inner`)
@@ -30,37 +30,40 @@ def outer():
 
 if __name__ == "__main__":
     outer()
-
-## ═════ Output ═════
-## Local        3
-## Enclosing    2
-## Global       1
-## Builtin   __main__
 ```
 
-::: warning WARNING - UnboundLocalError
-因为 Python 中局部变量可以和全局变量同名，这种错误经常出现，见如下 `f3`。
-如果代码块中任何位置出现了**变量名绑定语句**（比如 `a = 2`），则该代码块中所有变量名 a 都指向该局部变量，包括出现在变量名绑定之前的语句。
+Output
 
-好消息是这种错误可以被静态检查工具发现（比如 Pyright）
+```
+Local        3
+Enclosing    2
+Global       1
+Builtin   __main__
+```
 
-注意 `global_dict['foo'] = 'bar'` 不是变量名绑定语句，不会导致这种错误（`global_dict = {'foo': 'bar'}` 才是）
-:::
+### UnboundLocalError
 
-```python
+```python {11,12}
 global_var = 1
 
 def f1():
     print(global_var)     ## 1
 
 def f2():
-    global_var = 2        ## We now have a local variable 'global_var'
+    global_var = 2        ## We now have a local variable 'global_var' within f2
     print(global_var)     ## 2
 
 def f3():
     print(global_var)     ## UnboundLocalError: local variable 'global_var'↵
     global_var = 2        ## referenced before assignment
 ```
+
+因为 Python 中局部变量可以和全局变量同名，所以上述错误时常出现。
+如果代码块中任何位置出现了**变量名绑定语句**（比如 `a = 2`），则该代码块中所有变量名 a 都指向该局部变量，**包括出现在变量名绑定之前的语句**。
+
+好消息是这种错误可以被静态检查工具发现（比如 Pyright）
+
+注意 `global_dict['foo'] = 'bar'` 不是变量名绑定语句，不会导致这种错误（`global_dict = {'foo': 'bar'}` 才是）
 
 [Python 执行模型](https://docs.python.org/3/reference/executionmodel.html)
 

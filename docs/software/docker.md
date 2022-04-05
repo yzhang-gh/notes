@@ -56,5 +56,5 @@ vim ~/.bashrc
 
 ```bash
 ## ssh to the container from another device
-ssh -p 2233 root@host
+ssh -p 2233 root@host  ## depending on your port mapping, e.g. `docker run -p 2233:22`
 ```

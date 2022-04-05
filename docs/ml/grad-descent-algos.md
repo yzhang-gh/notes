@@ -59,7 +59,7 @@ $$
     \textcolor{#8b959e}{g_t} &\textcolor{#8b959e}{= \nabla_\theta f(\theta_t)} \\
     \textcolor{#8b959e}{m_0} &\textcolor{#8b959e}{= g_0} \\
     \textcolor{#F26400}{m_t} &= \textcolor{#F26400}{\gamma\cdot m_{t-1}} + g_t \\
-                         u_t &= m_t \\
+                         u_t &= \textcolor{#F26400}{m_t} \\
                 \theta_{t+1} &= \theta_t - \eta\cdot u_t.
 \end{alignedat}
 $$
@@ -88,7 +88,8 @@ $$
 \begin{alignedat}{2}
     \textcolor{#8b959e}{g_t} &\textcolor{#8b959e}{= \nabla_\theta f(\theta_t)} \\
     \textcolor{#8b959e}{m_0} &\textcolor{#8b959e}{= g_0} \\
-    m_t &= \gamma\cdot m_{t-1} + \nabla_\theta f(\theta_t \textcolor{#F26400}{- \gamma\cdot m_{t-1}}) \\
+    \textcolor{#F26400}{\tilde{g}_t} &= \nabla_\theta f(\theta_t\textcolor{#F26400}{- \gamma\cdot m_{t-1}}) \\
+    m_t &= \gamma\cdot m_{t-1} + \textcolor{#F26400}{\tilde{g}_t} \\
     u_t &= m_t \\
     \theta_{t+1} &= \theta_t - \eta\cdot u_t.
 \end{alignedat}

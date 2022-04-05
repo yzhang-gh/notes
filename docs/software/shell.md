@@ -59,6 +59,10 @@ Glob patterns can be used (e.g. `*.{py,json}` matches all Python and JSON files)
 Using `\{foo,bar\}.txt` will transfer the files in a single connection/batch (since they'll be expanded on the remote host), while using `{foo,bar}.txt` will open multiple connections, and the overhead is quite noticeable when transferring many files.
 :::
 
+:::tip
+远程设备上的文件路径也可以使用 <kbd>Tab</kbd> 补全，只需配置好身份验证（比如公钥验证）
+:::
+
 ### Between remote hosts
 
 ```shell

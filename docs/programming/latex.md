@@ -250,13 +250,75 @@ authblk
 ```latex
 %% 最好放在 hyperref 之前
 \usepackage[style=authoryear,bibstyle=numeric,natbib=true]{biblatex}
-\addbibresource{ref.bib}
+\bibliography{ref}
+% or \addbibresource{ref.bib}
 
 \begin{document}
 ...
 \printbibliography
 \end{document}
 ```
+
+::: details 使 <code>authoryear</code> 整体作为可点击的链接
+```latex
+% hyperlinks the entire citation label (hyperlinks authoryear rather than year)
+% ref: https://tex.stackexchange.com/a/27107/208192
+\DeclareFieldFormat{citehyperref}{%
+  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
+  \bibhyperref{#1}}
+
+\DeclareFieldFormat{textcitehyperref}{%
+  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
+  \bibhyperref{%
+    #1%
+    \ifbool{cbx:parens}
+      {\bibcloseparen\global\boolfalse{cbx:parens}}
+      {}}}
+
+\savebibmacro{cite}
+\savebibmacro{textcite}
+
+\renewbibmacro*{cite}{%
+  \printtext[citehyperref]{%
+    \restorebibmacro{cite}%
+    \usebibmacro{cite}}}
+
+\renewbibmacro*{textcite}{%
+  \ifboolexpr{
+    ( not test {\iffieldundef{prenote}} and
+      test {\ifnumequal{\value{citecount}}{1}} )
+    or
+    ( not test {\iffieldundef{postnote}} and
+      test {\ifnumequal{\value{citecount}}{\value{citetotal}}} )
+  }
+    {\DeclareFieldAlias{textcitehyperref}{noformat}}
+    {}%
+  \printtext[textcitehyperref]{%
+    \restorebibmacro{textcite}%
+    \usebibmacro{textcite}}}
+```
+:::
+
+::: details 忽略 <code>bib</code> 文件中不需要的属性
+```latex
+% Ignore certain bibtex fields
+\AtEveryBibitem{% Clean up the bibtex rather than editing it
+  \clearfield{date}
+  \clearfield{eprint}
+  \clearfield{isbn}
+  \clearfield{issn}
+  \clearfield{month}
+  \clearfield{series}
+  \clearlist{address}
+  \clearlist{location}
+
+  \ifentrytype{book}{}{% Remove publisher and editor except for books
+    \clearlist{publisher}
+    \clearname{editor}
+  }
+}
+```
+:::
 
 ## 字体
 

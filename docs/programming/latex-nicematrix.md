@@ -16,7 +16,7 @@ title: nicematrix
 
 使用 `\Block` 创建单元格，可跨行、跨列、换行，还有可选参数比如 `l`，`c`，`r`（横向对齐），`fill`，`draw`（颜色）等等。
 
-```latex
+```latex {2}
 \begin{NiceTabular}{ccc}[hvlines]
                        & \Block{1-2}{Multi-column}        \\
 \Block{2-1}{Multi-row} & John  & Steph                    \\
@@ -35,9 +35,10 @@ title: nicematrix
 \usepackage{booktabs} % \toprule etc.
 ```
 
-```latex
-\begin{NiceTabular}{llr}[first-row,code-for-first-row=\bfseries]
+```latex {6}
+\begin{NiceTabular}{llr}
 \toprule
+\RowStyle[bold]{}
 Last name & First name & Birth day       \\
 \midrule
 Achard\tabularnote{A note.}
@@ -56,7 +57,7 @@ Dupont    & Chantal    & 15 janvier 1998 \\
 
 可以修改 `notes/style` 选项使用数字编号（默认为 `\textit{\alph{#1}}`）
 
-```latex
+```latex {2}
 \begin{table}[!t]
     \NiceMatrixOptions{notes/style=\arabic{#1}}
     \begin{NiceTabular}{llr}
@@ -79,9 +80,27 @@ Dupont    & Chantal    & 15 janvier 1998 \\
 }
 ```
 
+## 行样式
+
+使用 `\RowStyle[optional args]{args}` 改变当前行的样式
+
+可选参数包括 `nb-rows`，`rowcolor`，`color`，`bold` 等
+样式参数比如 `\rotate`，`\bfseries`，`\sffamily`
+
+```latex {3,5}
+\begin{NiceTabular}{cccc}
+\hline
+\RowStyle[cell-space-limits=3pt]{\rotate}
+first & second & third & fourth \\
+\RowStyle[nb-rows=2,rowcolor=blue!50,color=white]{\sffamily}
+1     & 2      & 3     & 4      \\
+I     & II     & III   & IV
+\end{NiceTabular}
+```
+
 ## 单元格背景色
 
-```latex
+```latex {2-4}
 \begin{NiceTabular}{ccc}[hvlines]
 \CodeBefore
 \cellcolor{yellow!25}{1-1,1-3}

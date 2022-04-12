@@ -81,7 +81,7 @@ rd /s /q "%APPDATA%\TinyTeX"
 
 %% Use geometry package to set up margins.
 %% A4 paper is 8.27 × 11.69 inch.
-\usepackage[a4paper,width=6.27in,height=9.69in,includehead]{geometry}
+\usepackage[a4paper,margin=1in]{geometry}
 
 %% Set line spacing.
 \usepackage{setspace}
@@ -345,6 +345,15 @@ authblk
 :::
 
 ## 中文支持
+
+如果只是需要输入中文字符，可以引入 `xeCJK` 宏包并设置字体
+
+```latex
+\usepackage{xeCJK}
+\setCJKmainfont{SimSun}
+```
+
+宏包 `xeCJK` 只提供字体和标点控制等基本语言支持。对于中文文档，可以使用更为高层的 `ctex` 宏包或文档类，它将自动调用 `xeCJK` 并设置好中文字体，同时提供了进一步的本地化支持（如表头，日期，首行缩进）。
 
 ```latex
 \usepackage{ctex}  %% https://ctan.org/pkg/ctex

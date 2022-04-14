@@ -250,8 +250,8 @@ authblk
 ```latex
 %% 最好放在 hyperref 之前
 \usepackage[style=authoryear,bibstyle=numeric,natbib=true]{biblatex}
-\bibliography{ref}
-% or \addbibresource{ref.bib}
+\bibliography{ref}          %% deprecated, but still supported for backwards (BibTeX) compatibility
+% \addbibresource{ref.bib}  %% preferable way of biblatex
 
 \begin{document}
 ...

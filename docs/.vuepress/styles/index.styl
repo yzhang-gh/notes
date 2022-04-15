@@ -199,6 +199,7 @@ kbd
 
     pre.shiki
       background-color transparent !important // Override the hardcoded background color of shiki
+      border-radius 5px
 
     .highlight-lines
       padding-top 1.25rem
@@ -224,8 +225,15 @@ figure
 
 // CUSTOM BLOCKS
 
-div.custom-block.tip a
-  word-break break-word
+div.custom-block.tip
+  div[class*="language-"]
+    background #f3f5f7
+
+    pre.shiki
+      border 1px solid #c3ccc8
+
+  a
+    word-break break-word
 
 div.custom-block.definition
   // background-color #f3f5f7

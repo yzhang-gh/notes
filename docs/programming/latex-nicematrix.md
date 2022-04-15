@@ -55,6 +55,8 @@ Dupont    & Chantal    & 15 janvier 1998 \\
   <img src="./imgs/nicematrix-tabularnote.png" alt="tabularnote">
 </figure>
 
+### 脚注编号
+
 可以修改 `notes/style` 选项使用数字编号（默认为 `\textit{\alph{#1}}`）
 
 ```latex {2}
@@ -66,9 +68,10 @@ Dupont    & Chantal    & 15 janvier 1998 \\
 \end{table}
 ```
 
-其中 `\NiceMatrixOptions` 的作用域是当前 TeX Group，即 `{...}` 和 `\begin...\end`。在 preamble 中则为全局设置。
+::: tip
+命令 `\NiceMatrixOptions` 的作用域是当前 TeX Group，即 `{...}` 和 `\begin...\end`。在 preamble 中则为全局设置。
 
-也可使用如下语法
+也可使用如下层级语法
 
 ```latex
 \NiceMatrixOptions{
@@ -79,6 +82,7 @@ Dupont    & Chantal    & 15 janvier 1998 \\
     }
 }
 ```
+:::
 
 ## 行样式
 
@@ -98,9 +102,24 @@ I     & II     & III   & IV
 \end{NiceTabular}
 ```
 
+## 列宽度
+
+可以使用 `array` 包中的 `w/W/p/b/m` 列样式
+
+```latex
+\begin{NiceTabular}{m[l]{2cm}m[c]{2cm}m[r]{2cm}}[hvlines]
+some very long text & center                        & some very very very very long text \\
+left                & some very very very long text & right
+\end{NiceTabular}
+```
+
+<figure>
+  <img src="./imgs/nicematrix-colwidth.png" alt="column width">
+</figure>
+
 ## 单元格背景色
 
-```latex {2-4}
+```latex {3,4}
 \begin{NiceTabular}{ccc}[hvlines]
 \CodeBefore
 \cellcolor{yellow!25}{1-1,1-3}

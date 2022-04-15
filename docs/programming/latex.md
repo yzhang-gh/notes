@@ -6,10 +6,10 @@ A lightweight, cross-platform, portable, and easy-to-maintain LaTeX distribution
 
 相当于 Miniconda 之于 Anaconda
 
-- 主页及介绍：<https://yihui.name/tinytex/>
+- 主页及介绍：<https://yihui.org/tinytex/>
 - GitHub 仓库：<https://github.com/yihui/tinytex>
 
-从仓库的 `tools` 目录中下载执行 [`install-windows.bat`](https://github.com/yihui/tinytex/raw/master/tools/install-windows.bat) 安装脚本（安装过程中可能会出现「找不到 luatex.dll」的错误，实际不影响使用），然后使用 `tlmgr install pkg1 pkg2 ...` 命令安装 [`pkgs-yihui.txt`](https://github.com/yihui/tinytex/raw/master/tools/pkgs-yihui.txt) 以及其它自己需要的包（善用 VS Code `Join Lines` 命令），比如：
+从仓库的 `tools` 目录中下载执行 [`install-windows.bat`](https://github.com/yihui/tinytex/raw/main/tools/install-windows.bat) 安装脚本（安装过程中可能会出现「找不到 luatex.dll」的错误，实际不影响使用），然后使用 `tlmgr install pkg1 pkg2 ...` 命令安装 [`pkgs-yihui.txt`](https://github.com/yihui/tinytex/raw/main/tools/pkgs-yihui.txt) 以及其它自己需要的包（善用 VS Code `Join Lines` 命令），比如：
 
 ```bash
 chktex
@@ -19,14 +19,14 @@ texcount
 libertinust1math
 nicematrix
 
-# BibLaTeX
+## BibLaTeX
 biblatex
 biber
 logreq
 
 IEEEtran
 
-# 中文
+## 中文
 ctex
 cjk
 cjkpunct
@@ -41,9 +41,22 @@ xecjk
 tlmgr search --global --file "keywords"
 ```
 
-```
+```shelldoc
 tlmgr install [option...] pkg...
 tlmgr update [option...] [pkg...]
+tlmgr option <key> [value]         ## change (or display) a global option
+```
+
+有些参数，比如 `--repository`，在所有 `tlmgr` 命令中都可使用
+
+```bash
+tlmgr update pkg1 --repository https://mirrors.sustech.edu.cn/CTAN/systems/texlive/tlnet
+```
+
+也可以使用 `tlmgr option` 修改全局设置
+
+```bash
+tlmgr option repository https://mirrors.sustech.edu.cn/CTAN/systems/texlive/tlnet
 ```
 
 [`tlmgr` manual](https://www.tug.org/texlive/doc/tlmgr.html)
@@ -250,8 +263,18 @@ authblk
 ```latex
 %% 最好放在 hyperref 之前
 \usepackage[style=authoryear,bibstyle=numeric,natbib=true]{biblatex}
-\bibliography{ref}          %% deprecated, but still supported for backwards (BibTeX) compatibility
-% \addbibresource{ref.bib}  %% preferable way of biblatex
+\bibliography{ref}          %% deprecated, but still supported for BibTeX compatibility
+% \addbibresource{ref.bib}  %% preferable way of BibLaTeX
+
+%% remove "In:"
+%% https://tex.stackexchange.com/a/10686/208192
+\renewbibmacro{in:}{%
+  \ifboolexpr{%
+     test {\ifentrytype{article}}%
+     or
+     test {\ifentrytype{inproceedings}}%
+  }{}{\printtext{\bibstring{in}\intitlepunct}}%
+}
 
 \begin{document}
 ...
@@ -311,6 +334,7 @@ authblk
   \clearfield{series}
   \clearlist{address}
   \clearlist{location}
+  \clearlist{organization}
 
   \ifentrytype{book}{}{% Remove publisher and editor except for books
     \clearlist{publisher}

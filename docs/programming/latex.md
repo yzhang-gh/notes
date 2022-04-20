@@ -375,6 +375,11 @@ authblk
 ```latex
 \usepackage{xeCJK}
 \setCJKmainfont{SimSun}
+
+%% 更完整的设置
+% \setCJKmainfont{SimSun}[BoldFont=SimHei,ItalicFont=KaiTi]
+% \setCJKsansfont{SimHei}
+% \setCJKmonofont{FangSong}
 ```
 
 宏包 `xeCJK` 只提供字体和标点控制等基本语言支持。对于中文文档，可以使用更为高层的 `ctex` 宏包或文档类，它将自动调用 `xeCJK` 并设置好中文字体，同时提供了进一步的本地化支持（如表头，日期，首行缩进）。
@@ -382,12 +387,11 @@ authblk
 ```latex
 \usepackage{ctex}  %% https://ctan.org/pkg/ctex
 
-%% 按需设置字体，\usepackage[fandol]{ctex} 预设也很不错
-% \setCJKmainfont{Source Han Serif SC}[
-%     ItalicFont = KaiTi
-% ]
+%% 按需设置字体
+% \setCJKmainfont{Source Han Serif SC}[ItalicFont=KaiTi]
 % \setCJKsansfont{Source Han Sans SC}
 % \setCJKmonofont{Sarasa Mono SC}
+%% \usepackage[fandol]{ctex} 预设也很不错
 ```
 
 使用 XeLaTeX 编译

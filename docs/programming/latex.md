@@ -260,13 +260,25 @@ authblk
 
 ## BibLaTeX
 
+基本使用
+
 ```latex
 %% 最好放在 hyperref 之前
-\usepackage[style=authoryear,bibstyle=numeric,natbib=true]{biblatex}
+\usepackage[style=authoryear,bibstyle=numeric,uniquename=false,natbib=true]{biblatex} % [^1]
 \bibliography{ref}          %% deprecated, but still supported for BibTeX compatibility
 % \addbibresource{ref.bib}  %% preferable way of BibLaTeX
 
-%% remove "In:"
+\begin{document}
+...
+\printbibliography
+\end{document}
+
+%% [^1]: authoryear 会设置 uniquename=full，当出现同姓的作者时会加入作者名以消除歧义
+%%       如 Zhang et al. → Y. Zhang et al.
+```
+
+::: details 去除文献样式中期刊会议名称之前的 "In:"
+```latex
 %% https://tex.stackexchange.com/a/10686/208192
 \renewbibmacro{in:}{%
   \ifboolexpr{%
@@ -275,12 +287,8 @@ authblk
      test {\ifentrytype{inproceedings}}%
   }{}{\printtext{\bibstring{in}\intitlepunct}}%
 }
-
-\begin{document}
-...
-\printbibliography
-\end{document}
 ```
+:::
 
 ::: details 使 <code>authoryear</code> 整体作为可点击的链接
 ```latex

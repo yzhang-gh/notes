@@ -18,19 +18,22 @@ latexindent
 texcount
 libertinust1math
 nicematrix
+IEEEtran
 
 ## BibLaTeX
 biblatex
 biber
 logreq
 
-IEEEtran
-
 ## 中文
-ctex
-cjk
-cjkpunct
-xecjk
+ctex, cjk, cjkpunct, xecjk
+
+import
+tocloft      ## table of contents, list of figure/table
+contour      ## colored contour around a given text
+stackengine
+glossaries, mfirstuc, xfor, datatool, tracklang
+algorithm2e, ifoddpage, relsize
 ```
 
 ### `tlmgr` Common Commands
@@ -278,6 +281,8 @@ authblk
 ```
 
 ::: details 去除文献样式中期刊会议名称之前的 "In:"
+而不影响 `incollection` 的样式
+
 ```latex
 %% https://tex.stackexchange.com/a/10686/208192
 \renewbibmacro{in:}{%

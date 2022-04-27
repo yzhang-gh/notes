@@ -33,23 +33,28 @@ title: 组合优化
 
 组合优化问题的难点在于<span class="cn-font" lang="zh-CN">——</span>随着问题规模增长，其可行解的数量呈指数增长，一般都是 **NP-hard**
 
+以 TSP 为例
+
 ## 精确求解
 
 既然是 **NP-hard** 问题，那就不存在多项式时间的解法，只能在暴力搜索 $O(n!)$ 的基础上尽量不那么暴力
 
-[Concorde TSP solver](https://www.math.uwaterloo.ca/tsp/concorde.html)
-
 ### 分支定界 (branch and bound)
 
-搜索树 + 剪枝（<a href="./minimax.html#alpha-beta-剪枝" target="_blank" rel="noopener noreferrer" class="outbound">alpha-beta 剪枝</a>就是分支定界法的一个特例）
+搜索树 + 剪枝（<a href="./minimax.html#alpha-beta-剪枝" target="_blank" rel="noopener noreferrer">alpha-beta 剪枝</a>就是分支定界法的一个特例）
+
+[Concorde TSP solver](https://www.math.uwaterloo.ca/tsp/concorde.html)
+cutting plane algorithm + branch and bound
 
 ### 动态规划 (dynamic programming)
 
+$O(2^n n^2)$
+
 ## 近似求解
 
-LKH, local-search, Lin-Kernighan heuristic for k-opt moves
+LKH, Lin-Kernighan heuristic for k-opt moves
 
-evolutionary algorithm EAX
+GA-EAX evolutionary algorithm
 
 ### 近似算法
 
@@ -63,9 +68,17 @@ evolutionary algorithm EAX
 
 可以在给定时间内找到较好的解
 
-### 深度强化学习
+### 深度学习
 
-监督学习：在固定的问题规模（城市数量）下效果好
+监督学习：在固定的问题规模（城市数量）下效果较好，但在大规模情况下训练不实际
 强化学习：能泛化使用到不同问题规模
+
+代表工作
+
+- Oriol Vinyals et al. “Pointer Networks”. *NeurIPS*. 2015.
+- Irwan Bello et al. “Neural Combinatorial Optimization with Reinforcement Learning”. *ICLR workshop*. 2017.
+- Wouter Kool et al. “Attention, Learn to Solve Routing Problems!” *ICLR*. 2019.
+
+其它
 
 [Information, Computation, Optimization: Connecting the Dots in the Traveling Salesman Problem](https://youtu.be/q8nQTNvCrjE)

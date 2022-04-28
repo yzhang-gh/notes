@@ -1,6 +1,6 @@
 {
   "information_for_contributors": [
-    "This file has been converted from shelldoc.tmLanguage.json"
+    "Dealing with ~/path$ syntax. This file has been converted from shelldoc.tmLanguage.json"
   ],
   "version": "0",
   "name": "shellsession",

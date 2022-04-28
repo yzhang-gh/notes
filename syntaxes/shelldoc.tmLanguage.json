@@ -1,6 +1,6 @@
 {
   "information_for_contributors": [
-    "This file has been converted from https://github.com/shikijs/shiki/blob/main/packages/shiki/languages/shellscript.tmLanguage.json"
+    "Dealing with <arg> [arg] syntaxes. This file has been converted from https://github.com/shikijs/shiki/blob/main/packages/shiki/languages/shellscript.tmLanguage.json"
   ],
   "version": "https://github.com/shikijs/shiki/commit/67d1e8e5d6535d8eb7e7b206962d049eebfc0a8f",
   "name": "shelldoc",

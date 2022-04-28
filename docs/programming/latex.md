@@ -11,26 +11,26 @@ A lightweight, cross-platform, portable, and easy-to-maintain LaTeX distribution
 
 从仓库的 `tools` 目录中下载执行 [`install-windows.bat`](https://github.com/yihui/tinytex/raw/main/tools/install-windows.bat) 安装脚本（安装过程中可能会出现「找不到 luatex.dll」的错误，实际不影响使用），然后使用 `tlmgr install pkg1 pkg2 ...` 命令安装 [`pkgs-yihui.txt`](https://github.com/yihui/tinytex/raw/main/tools/pkgs-yihui.txt) 以及其它自己需要的包（善用 VS Code `Join Lines` 命令），比如：
 
-```bash
+```plaintextc
 chktex
-cm-super
 latexindent
 texcount
+
+cm-super
 libertinust1math
+
 nicematrix
 IEEEtran
 
 ## BibLaTeX
-biblatex
-biber
-logreq
+biblatex, biber, logreq
 
 ## 中文
 ctex, cjk, cjkpunct, xecjk
 
 import
-tocloft      ## table of contents, list of figure/table
-contour      ## colored contour around a given text
+tocloft     ## table of contents, list of figure/table
+contour     ## colored contour around a given text
 stackengine
 glossaries, mfirstuc, xfor, datatool, tracklang
 algorithm2e, ifoddpage, relsize

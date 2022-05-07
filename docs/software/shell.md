@@ -105,6 +105,44 @@ alias l='ls -CF'
 ls | wc -l        ## --lines
 ```
 
+## `chmod`
+
+Permissions
+
+- `r` read
+- `w` write
+- `x` execute (if it is a file)
+
+```shellsession
+$ ls -l
+-rwxr-xr--  1 dgerman  staff  823 Dec 16 15:03 sample_file
+││  │  │      │        │      │                └ file/dir name
+││  │  │      │        │      └ file size in bytes
+││  │  │      │        └ group owner
+││  │  │      └ user owner
+││  │  └ other permissions (users who are neither the file owner nor in the group)
+││  └ group permissions
+│└ user permissions
+└ regular file (-) or folder (d) etc.
+```
+
+```shelldoc
+chmod [references][operator][modes] <file ...>
+##     │           │         └ r, w, x, etc.
+##     │           └ +, -, =
+##     └ u (user), g (group), o (other), a (all)
+
+chmod ug=rx sample_file
+```
+
+也可以使用数字直接设置 3 组权限，`r` 为 4，`w` 为 2，`x` 为 1
+
+```shellsession
+$ chmod 664 sample_file
+$ ls -l sample_file
+-rw-rw-r--  1 jsmith programmers 57 Jul  3 10:13  sample_file
+```
+
 ## `wget`
 
 ## `nohup`, `ps`, `kill`
@@ -124,10 +162,12 @@ kill %i
 
 ```shell
 ## append the following line to `~/.bashrc` (or `~/.bash_aliases`)
-alias name='your command'
+alias cmd='your command'
+```
 
-type name
-## → name is aliased to `your command'
+```shellsession
+$ type cmd
+cmd is aliased to `your command'
 ```
 
 ## `tee`
@@ -160,27 +200,24 @@ find . -maxdepth 3 -name '*bar'
 
 ## 使用变量
 
-```shelldoc
+```shellsession
 ## define a variable
-a="hello"  ## NOTE whitespace is not allowed before or after `=`
+$ a="world"        ## NOTE whitespace is not allowed before/after `=`
+$ echo hello $a    ## use directly
+hello world
+$ echo "hello $a"  ## inside a double-quoted string
+hello world
+$ echo 'hello $a'  ## single-quoted strings are interpreted literally
+hello $a
+```
 
+```shelldoc
 ## in the `.bashrc` file
 export rds='username@bluebear.bham.ac.uk:/rds'
 
 ## use in a command
 scp $rds/path/to/foo .
 ## `scp username@bluebear.bham.ac.uk:/rds/path/to/foo .`
-
-echo $a
-## → hello
-
-## use in a double-quoted string
-echo "$a world"
-## → hello world
-
-## single-quoted strings are interpreted literally
-echo '$a world'
-## → $a world
 ```
 
 <http://www.compciv.org/topics/bash/variables-and-substitution/>

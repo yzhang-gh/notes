@@ -1121,7 +1121,8 @@
           ]
         },
         {
-          "match": "(?<![<>])(&>|\\d*>&\\d*|\\d*(>>|(?<!<[a-zA-Z_(| ...)]+)>|<(?![a-zA-Z_]+(| ...)>))|\\d*<&|\\d*<>)(?![<>])",
+          "comment": "don't know why (?<!<\\w+(any pattern here)) doesn't work, which works well on regex101 and node REPL",
+          "match": "(?<![<>])(&>|\\d*>&\\d*|\\d*(>>|(?<!<\\w+)(?<![.]{3})>|<(?!\\w+(| ?[.]{3})>))|\\d*<&|\\d*<>)(?![<>])",
           "name": "keyword.operator.redirect.shell"
         }
       ]

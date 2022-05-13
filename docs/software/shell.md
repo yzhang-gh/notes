@@ -29,6 +29,7 @@ Host *.ac.uk
 #   HostName <the real hostname (or IP) to login to>
     PreferredAuthentications publickey,keyboard-interactive,password,hostbased
 #   IdentityFile ~/.ssh/another_id_rsa
+#   Port 2333
 ```
 
 其中 `pattern` 用来匹配 `ssh` 命令中的 `host` 名称，同时设置多个 `pattern` 时用空格隔开
@@ -65,7 +66,7 @@ Using `\{foo,bar\}.txt` will transfer the files in a single connection/batch (si
 
 ### Between remote hosts
 
-```shell
+```shell {5}
 ## host1 → host2
 scp user1@host1:~/foo.txt user2@host2:~/somewhere
 

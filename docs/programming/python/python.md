@@ -214,6 +214,8 @@ theta = 30
 f"{theta=}, {cos(radians(theta))=:.3f}"  ## "theta=30, cos(radians(theta))=0.866"
 ```
 
+Format specifiers may also contain evaluated expressions.
+
 ```python
 width     = 8
 precision = 2

@@ -106,7 +106,7 @@ alias l='ls -CF'
 ls | wc -l        ## --lines
 ```
 
-## `chmod`
+## 文件权限 `chmod`
 
 Permissions
 
@@ -189,6 +189,17 @@ find . -iname 'foo*'
 
 ## max depth
 find . -maxdepth 3 -name '*bar'
+```
+
+## 文件大小与磁盘占用 `du`, `df`
+
+```shelldoc
+du -ah -d [path]
+# -a, --all
+# -h, --human-readable
+# -d, --max-depth
+
+df -h
 ```
 
 ## Command history

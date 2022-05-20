@@ -61,7 +61,7 @@ Using `\{foo,bar\}.txt` will transfer the files in a single connection/batch (si
 :::
 
 :::tip
-远程设备上的文件路径也可以使用 <kbd>Tab</kbd> 补全，只需配置好身份验证（比如公钥验证）
+远程设备上的文件路径也可以使用 <kbd>Tab</kbd> 补全，只需配置好身份验证（比如公钥验证）。如前文提到，记得使用 `\` 转义花括号，否则路径补全可能无法正常工作。
 :::
 
 ### Between remote hosts

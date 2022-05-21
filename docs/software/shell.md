@@ -43,7 +43,7 @@ More on <https://linux.die.net/man/5/ssh_config>
 ### Between remote and local
 
 ```shelldoc
-## scp [[<user>@]<host>:]<source_file ...> [[<user>@]<host>:]<target>
+## scp [-P port] [[<user>@]<host>:]<source_file ...> [[<user>@]<host>:]<target>
 
 ## from local to remote
 scp foo.txt bar.txt user@host:~
@@ -58,10 +58,25 @@ Glob patterns can be used (e.g. `*.{py,json}` matches all Python and JSON files)
 
 ::: tip
 Using `\{foo,bar\}.txt` will transfer the files in a single connection/batch (since they'll be expanded on the remote host), while using `{foo,bar}.txt` will open multiple connections, and the overhead is quite noticeable when transferring many files.
+
+```plaintextc
+# check with `-o LogLevel=DEBUG`
+# \{foo,bar\}
+debug1: Sending command: scp -d -f /remote/folder/{foo,bar}.txt
+...
+
+# {foo,bar}
+debug1: Sending command: scp -d -f /remote/folder/foo.txt
+...
+debug1: Sending command: scp -d -f /remote/folder/bar.txt
+...
+```
+
+此外使用引号 `'/remote/folder/{foo,bar}.txt'` 也可以达到和 `\{foo,bar\}.txt` 同样的效果
 :::
 
 :::tip
-远程设备上的文件路径也可以使用 <kbd>Tab</kbd> 补全，只需配置好身份验证（比如公钥验证）。如前文提到，记得使用 `\` 转义花括号，否则路径补全可能无法正常工作。
+远程设备上的文件路径也可以使用 <kbd>Tab</kbd> 补全，只需配置好身份验证（比如公钥验证）。如前文所提示，记得使用 `\` 转义花括号，否则路径补全可能无法正常工作。
 :::
 
 ### Between remote hosts
@@ -191,10 +206,35 @@ find . -iname 'foo*'
 find . -maxdepth 3 -name '*bar'
 ```
 
+## 文件压缩 `zip`, `tar`
+
+```shelldoc
+zip -r output.zip <file ...> [-x <file ...>]
+## <file> can be file or dir
+# -r <zip_file_name> <file ...>  ## recursively
+# -u <zip_file_name> <file ...>  ## update the files in the zip archive
+# -d <zip_file_name> <file ...>  ## delete the files from the zip archive
+# -x <file ...>                  ## exclude these files
+
+unzip <zip_file_name>
+# -d <dir>  ## optional directory to which to extract files
+```
+
+```shelldoc
+tar -czvf archive.tar.gz <file ...> [--exclude=<file ...>]
+# -c  ## create an archive
+# -z  ## compress the archive with gzip
+# -v  ## verbose
+# -f  ## allow to specifiy the filename of the archive
+
+tar -xzvf archive.tar.gz
+# -x  ## extract an archive
+```
+
 ## 文件大小与磁盘占用 `du`, `df`
 
 ```shelldoc
-du -ah -d [path]
+du -ah -d 1 [path]
 # -a, --all
 # -h, --human-readable
 # -d, --max-depth

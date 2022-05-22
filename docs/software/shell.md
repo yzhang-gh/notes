@@ -211,12 +211,18 @@ find . -maxdepth 3 -name '*bar'
 ```shelldoc
 zip -r output.zip <file ...> [-x <file ...>]
 ## <file> can be file or dir
-# -r <zip_file_name> <file ...>  ## recursively
-# -u <zip_file_name> <file ...>  ## update the files in the zip archive
-# -d <zip_file_name> <file ...>  ## delete the files from the zip archive
-# -x <file ...>                  ## exclude these files
+# -r <zip_file> <file ...>  ## recursively
+# -u <zip_file> <file ...>  ## update the files in the zip archive
+# -d <zip_file> <file ...>  ## delete the files from the zip archive
+# -x <file ...>             ## exclude these files
 
-unzip <zip_file_name>
+zip -sf file.zip | grep -v '/.'
+# -sf <zip_file>            ## --show-files
+## show the files that would be operated on, without actually processing them
+## use `grep -v '/.'` to show only the first-level files
+## use `/.*/.` to also include the second level
+
+unzip <zip_file>
 # -d <dir>  ## optional directory to which to extract files
 ```
 
@@ -226,6 +232,10 @@ tar -czvf archive.tar.gz <file ...> [--exclude=<file ...>]
 # -z  ## compress the archive with gzip
 # -v  ## verbose
 # -f  ## allow to specifiy the filename of the archive
+
+tar -tvf file.tar
+tar -ztvf file.tar.gz
+# -t  ## list the contents of an archive
 
 tar -xzvf archive.tar.gz
 # -x  ## extract an archive

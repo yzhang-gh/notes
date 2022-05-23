@@ -249,6 +249,10 @@ du -ah -d 1 [path]
 # -h, --human-readable
 # -d, --max-depth
 
+du | sort -h
+# pipe the result of `du` to `sort`
+# -h, --human-numeric-sort
+
 df -h
 ```
 

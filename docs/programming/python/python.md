@@ -220,7 +220,7 @@ Format specifiers may also contain evaluated expressions.
 width     = 8
 precision = 2
 value     = 12.3456
-f"result: {value:{width}.{precision}f}"
+f"{value:{width}.{precision}f}"
 ## "···12.35"
 ```
 

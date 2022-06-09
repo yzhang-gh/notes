@@ -1,5 +1,7 @@
 # Docker
 
+`docker run` 相当于 `docker create` 加 `docker start`
+
 ```bash
 ## docker run [OPTIONS] IMAGE [COMMAND] [ARGS...]
 ## e.g.
@@ -8,12 +10,13 @@ docker run --name your_container_name \
            -p 80:80 \       ## --publish (map host's port 80 to container's port 80)
            -p 2233:22 \     ## also exposes the container's SSH port 22
            --gpus all \     ## access to GPUs
+           --mount src=~/shared,target=/shared,type=bind \  ## shared folder
            ubuntu           ## image name
            # /bin/bash      ## entrypoint of the container [^1]
 
 ## press CTRL-p, CTRL-q to detach from the container and leave it running
 
-docker ps -a  ## show all container (default shows just running)
+docker ps -a  ## show all containers (by default show only running containers)
 
 docker stop container_name
 docker start container_name

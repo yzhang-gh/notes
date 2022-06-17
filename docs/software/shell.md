@@ -163,16 +163,28 @@ $ ls -l sample_file
 
 ## `nohup`, `ps`, `kill`
 
-```shell
+```shelldoc
 nohup your_command_here > output_file 2>&1 </dev/null &
 
-jobs  ## doesn't work once logged out
+jobs     ## doesn't work once logged out
 ps x
 
-kill %i
+kill %i  ## i is the job id, not pid
+kill <pid ...>
 ```
 
 <https://tecadmin.net/run-command-in-background-on-linux/>
+
+```shelldoc
+ps
+# p <pid ...>  ## select by process id(s), identical to -p and --pid
+# a            ## list all processes with a terminal
+# x            ## list all processes owned by you
+# -f           ## format, this will show the full command
+
+ps -fp <pid> | cat
+## in case the output is truncated at the width of the terminal
+```
 
 ## 别名 `alias`, `type`
 

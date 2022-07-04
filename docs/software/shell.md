@@ -239,11 +239,12 @@ unzip <zip_file>
 ```
 
 ```shelldoc
-tar -czvf archive.tar.gz <file ...> [--exclude=<file ...>]
+tar -czvf archive.tar.gz <file ...> [--exclude=<pattern ...>]
 # -c  ## create an archive
 # -z  ## compress the archive with gzip
 # -v  ## verbose
 # -f  ## allow to specifiy the filename of the archive
+## --exclude can be used multiple times
 
 tar -tvf file.tar
 tar -ztvf file.tar.gz

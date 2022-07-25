@@ -268,8 +268,9 @@ du -ah -d 1 [path]
 # -h, --human-readable
 # -d, --max-depth
 
-du | sort -h
-# pipe the result of `du` to `sort`
+du -ah | sort -rh | head
+# pipe the result of `du` to `sort` and take the top-10 results
+# -r, reverse order
 # -h, --human-numeric-sort
 
 df -h

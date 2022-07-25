@@ -218,7 +218,9 @@ find . -iname 'foo*'
 find . -maxdepth 3 -name '*bar'
 ```
 
-## 文件压缩 `zip`, `tar`
+## 文件压缩、解压 `zip`, `tar`
+
+### zip
 
 ```shelldoc
 zip -r output.zip <file ...> [-x <file ...>]
@@ -238,13 +240,17 @@ unzip <zip_file>
 # -d <dir>  ## optional directory to which to extract files
 ```
 
+### tar
+
 ```shelldoc
-tar -czvf archive.tar.gz <file ...> [--exclude=<pattern ...>]
+tar -czvf archive.tar.gz <file ...> [--exclude=<pattern ...>] --one-top-level[=<dir>]
 # -c  ## create an archive
 # -z  ## compress the archive with gzip
 # -v  ## verbose
 # -f  ## allow to specifiy the filename of the archive
-## --exclude can be used multiple times
+# --exclude        ## can be used multiple times
+# --one-top-level  ## extract all files into <dir>,
+                   ## or by default a new folder with the name of the archive
 
 tar -tvf file.tar
 tar -ztvf file.tar.gz

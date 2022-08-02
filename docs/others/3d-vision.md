@@ -36,6 +36,22 @@ https://zhuanlan.zhihu.com/p/87802961
 > 
 > ― Parametrization and Range of Motion of The Ball-and-Socket Joint, 2001
 
+rotation vector
+
+http://motion.pratt.duke.edu/RoboticSystems/3DRotations.html
+
+旋转矩阵默认按列排列，即每列为新坐标系下的基向量
+
+**世界坐标系**（绝对旋转）与**自身坐标系**（相对旋转）。计算机械臂上的关节时，先计算末端（相对旋转），再计算父关节旋转，因为旋转父关节会改变子关节的自身坐标系 (TODO)
+
+旋转矩阵 / 向量默认是相对于世界坐标系 $A_2A_1 = A_3$ 表示 $A_3$ 为先 $A_1$ 后 $A_2$ 两个世界坐标系旋转的复合
+
+假如现在想保留 $A_1$ 为世界坐标系旋转（比如整个躯干的旋转），$A_2$ 则修改为相对旋转 $A_{21}$（比如手臂相对于躯干）
+
+$A_1A_{21} = A_3$
+
+相对旋转右乘（先执行），绝对旋转左乘（后执行），也即前面所说先末端后躯干
+
 ## Inverse Kinematics
 
 正向运动学 (forward kinematics) 是已知运动模型（如机械臂，人体骨架）$\bf{M}$ 和关节角度 $\bf{\Theta}$（如欧拉角、轴角，或称旋转 $\bf{R}$），求解各末端执行器或人体关节的位置 $\bf{P}$

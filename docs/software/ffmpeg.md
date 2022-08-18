@@ -30,7 +30,7 @@ ffmpeg -f concat -i mylist.txt -c copy output.mp4
 转换 `mkv`，`avi` 为 `mp4`
 
 ```shell
-ffmpeg -i input.mkv -c:v copy -c:a copy output.mp4
+ffmpeg -i input.mkv -c copy output.mp4
 ```
 
 转换 `wmv` 为 `mp4`
@@ -40,3 +40,11 @@ ffmpeg -i input.wmv -c:v libx264 -crf 17 output.mp4
 ```
 
 <https://trac.ffmpeg.org/wiki/Encode/H.264>
+
+## 去除音频
+
+`-an`
+
+```
+ffmpeg -i input.mp4 -c copy -an output.mp4
+```

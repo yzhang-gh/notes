@@ -11,3 +11,15 @@ amdgpu_bl0 nvidia_0
 每个文件夹内有 `brightness`，`max_brightness` 等文件，修改 `brightness` 文件中的数值即可改变屏幕亮度
 
 [Display brightness goes way up on suspend — Ask Ubuntu](https://askubuntu.com/a/1313453/1577456)
+
+## GNOME 图片和视频查看器
+
+**Eye of GNOME**
+
+https://snapcraft.io/eog `snap install eog`
+
+or https://flathub.org/apps/details/org.gnome.eog
+
+**GNOME Videos**
+
+https://wiki.gnome.org/Apps/Videos

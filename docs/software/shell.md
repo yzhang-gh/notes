@@ -243,21 +243,21 @@ unzip <zip_file>
 ### tar
 
 ```shelldoc
-tar -czvf archive.tar.gz <file ...> [--exclude=<pattern ...>] --one-top-level[=<dir>]
+tar -czvf archive.tar.gz <file ...> [--exclude=<pattern ...>]
 # -c  ## create an archive
 # -z  ## compress the archive with gzip
 # -v  ## verbose
 # -f  ## allow to specifiy the filename of the archive
 # --exclude        ## can be used multiple times
-# --one-top-level  ## extract all files into <dir>,
-                   ## or by default a new folder with the name of the archive
 
 tar -tvf file.tar
 tar -ztvf file.tar.gz
 # -t  ## list the contents of an archive
 
-tar -xzvf archive.tar.gz
+tar -xzvf archive.tar.gz --one-top-level[=<dir>]
 # -x  ## extract an archive
+# --one-top-level  ## extract all files into <dir>,
+                   ## or by default a new folder with the name of the archive
 ```
 
 ## 文件大小与磁盘占用 `du`, `df`

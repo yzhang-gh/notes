@@ -143,10 +143,11 @@ $ ls -l
 ```
 
 ```shelldoc
-chmod [references][operator][modes] <file ...>
-##     │           │         └ r, w, x, etc.
-##     │           └ +, -, =
-##     └ u (user), g (group), o (other), a (all)
+chmod [-R] [references][operator][modes] <file ...>
+##     │    │           │         └ r, w, x, etc.
+##     │    │           └ +, -, =
+##     │    └ u (user), g (group), o (other), a (all)
+##     └ --recursive
 
 chmod ug=rx sample_file
 ```

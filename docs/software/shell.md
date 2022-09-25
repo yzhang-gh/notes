@@ -254,6 +254,7 @@ tar -czvf archive.tar.gz <file ...> [--exclude=<pattern ...>]
 tar -tvf file.tar
 tar -ztvf file.tar.gz
 # -t  ## list the contents of an archive
+## use above `--exclude` option to show only first level (`*/*`) or second level (`*/*/*`)
 
 tar -xzvf archive.tar.gz --one-top-level[=<dir>]
 # -x  ## extract an archive

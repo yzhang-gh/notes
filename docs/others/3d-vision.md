@@ -52,6 +52,8 @@ $A_1A_{21} = A_3$
 
 相对旋转右乘（先执行），绝对旋转左乘（后执行），也即前面所说先末端后躯干
 
+其它：https://www.yuque.com/yunyoujun/blog/quaternion-and-spatial-rotation
+
 ## Inverse Kinematics
 
 正向运动学 (forward kinematics) 是已知运动模型（如机械臂，人体骨架）$\bf{M}$ 和关节角度 $\bf{\Theta}$（如欧拉角、轴角，或称旋转 $\bf{R}$），求解各末端执行器或人体关节的位置 $\bf{P}$

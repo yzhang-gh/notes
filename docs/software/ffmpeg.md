@@ -48,3 +48,9 @@ ffmpeg -i input.wmv -c:v libx264 -crf 17 output.mp4
 ```
 ffmpeg -i input.mp4 -c copy -an output.mp4
 ```
+
+## GPU
+
+https://trac.ffmpeg.org/wiki/HWAccelIntro#CUDANVENCNVDEC
+
+https://video.stackexchange.com/a/30625

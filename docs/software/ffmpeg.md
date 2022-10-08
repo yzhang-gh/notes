@@ -48,3 +48,17 @@ ffmpeg -i input.wmv -c:v libx264 -crf 17 output.mp4
 ```
 ffmpeg -i input.mp4 -c copy -an output.mp4
 ```
+
+## GPU
+
+https://trac.ffmpeg.org/wiki/HWAccelIntro#CUDANVENCNVDEC
+
+https://video.stackexchange.com/a/30625
+
+---
+
+## Extra
+
+```shelldoc
+youtube-dl [--proxy <proxy>] -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 <url>
+```

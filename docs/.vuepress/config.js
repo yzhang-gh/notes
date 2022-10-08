@@ -119,6 +119,7 @@ module.exports = {
                         'python/miniconda',
                         'python/matplotlib',
                         'python/python',
+                        'python/logging',
                         'python/multi-and-sub-process',
                         'python/user-snippets',
                         'python/cuda',

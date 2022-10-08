@@ -20,6 +20,17 @@ print(f"{progress:.2f}%", end="\r", flush=True)
 
 或者使用 `tqdm`
 
+```
+from tqdm import tqdm as std_tqdm
+
+tqdm = partial(std_tqdm, bar_format="{l_bar}{bar:30}{r_bar}{bar:-30b}", leave=False)
+
+bar = tqdm(items, desc="description", total=len(items))
+for item in bar:
+    ...
+    bar.write("...")
+```
+
 ## GUI 相关
 
 ### 弹出消息框

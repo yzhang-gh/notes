@@ -20,7 +20,9 @@ print(f"{progress:.2f}%", end="\r", flush=True)
 
 或者使用 `tqdm`
 
-```
+```python
+from functools import partial
+
 from tqdm import tqdm as std_tqdm
 
 tqdm = partial(std_tqdm, bar_format="{l_bar}{bar:30}{r_bar}{bar:-30b}", leave=False)

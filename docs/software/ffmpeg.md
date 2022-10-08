@@ -1,5 +1,15 @@
 # FFmpeg
 
+::: tip
+如果是在 conda 环境中最好提前手动安装
+
+```bash
+conda install ffmpeg x264
+```
+
+否则安装其它包如 PyTorch 时会自动安装不支持 libx264 的版本
+:::
+
 ## 拼接多个视频
 
 首先创建一个 `mylist.txt` 文件，格式如下

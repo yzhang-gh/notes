@@ -7,7 +7,7 @@ logging_level = logging.DEBUG
 logging_formatter = logging.Formatter("%(asctime)s [%(levelname)-5s] [%(name)s] %(message)s")
 
 logger = logging.getLogger("name")
-logger.setLevel(loglevel)
+logger.setLevel(logging_level)
 
 ## add default (console) handler otherwise you cannot change the logging level/formatter
 handler = logging.StreamHandler()

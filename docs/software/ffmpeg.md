@@ -51,6 +51,22 @@ ffmpeg -i input.wmv -c:v libx264 -crf 17 output.mp4
 
 <https://trac.ffmpeg.org/wiki/Encode/H.264>
 
+## 将图像序列合并为视频
+
+```shelldoc
+ffmpeg [-framerate 24] -i images/%4d.jpg [-frames:v <num_frames>] [-s 1920x1080] [-crf 18] output.mp4
+```
+
+也可以使用 glob 选择图片 `-pattern_type glob -i images/*.jpg`
+
+## 多个视频 side-by-side
+
+```shell
+ffmpeg -i left.mp4 -i right.mp4 -filter_complex hstack output.mp4
+```
+
+如果是三个视频则可以使用 `hstack=inputs=3`
+
 ## 去除音频
 
 `-an`

@@ -45,6 +45,27 @@ if __name__ == "__main__":
 [1, 4, 9, 16]
 ```
 
+### Gracefully interrupt Pool with `Ctrl-C`
+
+```python
+def pool_init():
+    # ignore the SIGINI in sub process
+    def sig_int(signal_num, frame):
+        pass
+
+    signal.signal(signal.SIGINT, sig_int)
+
+pool = Pool(n_processes, pool_init)
+...
+```
+
+```python
+try:
+    ...
+except KeyboardInterrupt:
+    ...
+```
+
 ## 子进程 `subprocess`
 
 `run`

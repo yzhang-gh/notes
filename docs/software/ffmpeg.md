@@ -51,6 +51,16 @@ ffmpeg -i input.wmv -c:v libx264 -crf 17 output.mp4
 
 <https://trac.ffmpeg.org/wiki/Encode/H.264>
 
+GIF
+
+```shell
+ffmpeg -ss 1 -to 4 -i input.mp4 \
+    -vf "fps=10,scale=320:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" \
+    output.gif
+```
+
+<https://superuser.com/a/556031>
+
 ## 将图像序列合并为视频
 
 ```shelldoc

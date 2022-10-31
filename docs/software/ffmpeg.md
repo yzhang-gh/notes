@@ -95,6 +95,20 @@ https://video.stackexchange.com/a/30625
 
 ## Extra
 
+list available formats
+
+```shelldoc
+youtube-dl -F <url>
+```
+
+download the selected format
+
+```shelldoc
+youtube-dl -f <format_code> <url>
+```
+
+others
+
 ```shelldoc
 youtube-dl [--proxy <proxy>] -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 <url>
 ```

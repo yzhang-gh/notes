@@ -77,6 +77,16 @@ ffmpeg -i left.mp4 -i right.mp4 -filter_complex hstack output.mp4
 
 如果是三个视频则可以使用 `hstack=inputs=3`
 
+## 依次应用多个 filter
+
+<https://trac.ffmpeg.org/wiki/FilteringGuide>
+
+```shell
+ffmpeg -i input -vf scale=200:200,pad=w=200:h=400:x=0:y=100 output
+```
+
+<https://ffmpeg.org/ffmpeg-filters.html>
+
 ## 去除音频
 
 `-an`

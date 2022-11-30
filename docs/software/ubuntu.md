@@ -16,9 +16,9 @@ amdgpu_bl0 nvidia_0
 
 ### Eye of GNOME
 
-https://snapcraft.io/eog `snap install eog`
+https://flathub.org/apps/details/org.gnome.eog
 
-or https://flathub.org/apps/details/org.gnome.eog
+or https://snapcraft.io/eog `snap install eog`
 
 `sudo apt install eog` 可能产生问题，如果看到
 
@@ -27,7 +27,9 @@ You are about to do something potentially harmful.
 To continue type in the phrase 'Yes, do as I say!'
 ```
 
-就不要继续了，换用 snap 安装
+就不要继续了，换用 flatpak/snap
+
+snap 安装的软件无法在 nfs/sshfs 挂载的路径下使用，如果没有其它来源就只能从源码安装了
 
 ### ~~GNOME Videos~~
 

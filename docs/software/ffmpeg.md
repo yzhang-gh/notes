@@ -67,7 +67,7 @@ ffmpeg -ss 1 -to 4 -i input.mp4 \
 ffmpeg [-framerate 24] -i images/%4d.jpg [-frames:v <num_frames>] [-s 1920x1080] [-crf 18] output.mp4
 ```
 
-也可以使用 glob 选择图片 `-pattern_type glob -i images/*.jpg`
+也可以使用 glob 选择图片 `-pattern_type glob -i 'images/*.jpg'`（因为 glob pattern 有星号等特殊符号所以注意要使用引号）
 
 ## 多个视频 side-by-side
 

@@ -87,6 +87,18 @@ ffmpeg -i input -vf scale=200:200,pad=w=200:h=400:x=0:y=100 output
 
 <https://ffmpeg.org/ffmpeg-filters.html>
 
+## 叠加视频
+
+将 `fg.mp4` 缩小、变透明，然后叠加在 `bg.mp4` 左下角
+
+```shell
+ffmpeg -i bg.mp4 -i fg.mp4 -filter_complex \
+'[0:v]null[bg]; \
+[1:v]scale=-1:480,format=rgba,colorchannelmixer=aa=0.8[fg]; \
+[bg][fg]overlay=0:(main_h-overlay_h)' \
+-crf 15 out.mp4
+```
+
 ## 去除音频
 
 `-an`

@@ -226,7 +226,7 @@ find . -maxdepth 3 -name '*bar'
 ```shelldoc
 zip -r output.zip <file ...> [-x <file ...>]
 ## <file> can be file or dir
-# -r <zip_file> <file ...>  ## recursively
+# -r <zip_file> <file ...>  ## --recurse-paths
 # -u <zip_file> <file ...>  ## update the files in the zip archive
 # -d <zip_file> <file ...>  ## delete the files from the zip archive
 # -x <file ...>             ## exclude these files
@@ -240,6 +240,14 @@ zip -sf file.zip | grep -v '/.'
 unzip <zip_file>
 # -d <dir>  ## optional directory to which to extract files
 ```
+
+示例
+
+```shelldoc
+zip -R output.zip '*.py' '*.json' -x 'results*/*' -x 'log/*'
+```
+
+其中 `-R` 为 `--recurse-patterns`
 
 ### tar
 

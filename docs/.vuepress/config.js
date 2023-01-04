@@ -152,6 +152,7 @@ module.exports = {
                         'shell',
                         'powershell',
                         'docker',
+                        'ffmpeg',
                     ]
                 },
             ],

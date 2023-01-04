@@ -70,6 +70,12 @@ print(matplotlib.matplotlib_fname())
 plt.rc("text", usetex=True)
 plt.rc("font", family="serif")
 plt.rc("font", **{"sans-serif": "Consolas"})
+
+plt.rcParams.update({
+    "text.usetex": True,
+    "text.latex.preamble": "\\usepackage{...}",
+    "font.family": "serif",
+})
 ```
 
 一些默认值
@@ -82,14 +88,15 @@ font.size      : 10        ## default 'medium' size (all relative values: xx-sma
 
 ## 刻度 (Ticks)
 
-总的来说，可以使用 [`matplotlib.axes.Axes.tick_params`](https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.tick_params.html) 方法来控制刻度的方向，颜色，大小等等
+可以选择合适的 [tick locator](https://matplotlib.org/stable/gallery/ticks/tick-locators.html) 决定刻度的位置，再使用 [tick formatter](https://matplotlib.org/stable/gallery/ticks/tick-formatters.html) 来决定对应的文本
 
 ### 让 x, y 轴等刻度
 
 ```python
 # plt.axis("equal")
 ## 一般来说上面的用法就够了，但是如果同时对 xlim, ylim 有要求的话，下方的用法更准确
-plt.gca().set_aspect("equal", adjustable="box")
+ax = plt.gca()
+ax.set_aspect("equal", adjustable="box")
 ```
 
 ### 主、副刻度 (Major and minor ticks)
@@ -97,11 +104,29 @@ plt.gca().set_aspect("equal", adjustable="box")
 ```python
 from matplotlib.ticker import MultipleLocator
 
-ax = plt.gca()
 ax.xaxis.set_major_locator(MultipleLocator(20))
 ax.xaxis.set_minor_locator(MultipleLocator(5))
-# 使用下面一行来显示副刻度的标签 (minor tick labels)
+## 使用下面一行来显示副刻度的标签 (minor tick labels)
 # ax.xaxis.set_minor_formatter(FormatStrFormatter('%d'))
+```
+
+如果只想画给定的若干刻度，可以使用
+
+```python
+from matplotlib.ticker import FixedFormatter, FixedLocator
+
+ax.yaxis.set_minor_locator(FixedLocator([5.69, 7.76]))
+ax.yaxis.set_minor_formatter(FixedFormatter(["5.69", "7.76"]))
+## major ticks 同理
+```
+
+### 刻度样式
+
+使用 [`ax.tick_params`](https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.tick_params.html) 来控制刻度的方向，颜色，大小等等（`ax` 为 `matplotlib.axes.Axes` 对象），比如
+
+```python
+## 缩小副刻度字体大小
+ax.tick_params(axis='y', which='minor', labelsize=6)
 ```
 
 ## Colormap

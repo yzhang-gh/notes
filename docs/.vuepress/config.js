@@ -249,6 +249,11 @@ module.exports = {
                     allowedAttributes: ['id', 'class']
                 })
         },
+        slugify: str => {
+            // GitHub slugify function
+            slug = str.replace(/[^\p{L}\p{M}\p{Nd}\p{Nl}\p{Pc}\- ]/gu, '').toLowerCase().replace(/ /g, '-')
+            return slug
+        }
     },
     chainWebpack: (config, isServer) => {
         const inlineLimit = 10000

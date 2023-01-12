@@ -25,7 +25,7 @@
   <div class="cover"><img src="./imgs/interesting/mc-canon.jpg"></div>
   <div>
     <p class="title">红石音乐<span class="cn-font" lang="zh-CN">——</span>《卡农》(2016-07-17)</p>
-    <p>一定要看到最后！（迅捷药水注入灵魂）</p>
+    <p>一定要看到最后<span class="punct-halt">！</span>（迅捷药水注入灵魂）</p>
     <p><sub>更多：<a href="https://www.bilibili.com/video/BV1h54y1j7pr" target="_blank" rel="noopener noreferrer" class="outbound smaller">2021 年的红石音乐，究竟可以做到什么地步！</a></sub></p>
   </div>
   <img src="/notes/imgs/bilibili-logo.png" alt="bilibili" class="logo no-zoom">
@@ -128,7 +128,7 @@
 <a href="https://www.bilibili.com/video/BV1Zp4y1S7i3" class="card" target="_blank">
   <div class="cover"><img src="./imgs/interesting/photography-challenge.jpg"></div>
   <div>
-    <p class="title">10 分钟拍照挑战！（系列）</p>
+    <p class="title">10 分钟拍照挑战<span class="punct-halt">！</span>（系列）</p>
     <p>同一时间，同一地点，同一模特<span class="cn-font" lang="zh-CN">——</span>4 位业余与专业的 UP 主分别会拍出怎样的照片</p>
     <p>人和人的脑洞不能一概而论</p>
   </div>

@@ -8,13 +8,13 @@ Make explanations ADEPT: Use an Analogy, Diagram, Example, Plain-English descrip
 
 - 括号，中英文混排：如果括号里全是英文，则用半角括号 (Parenthesis)，此外则使用（全角括号）
 
-- 中文标点（破折号，省略号）样式修正[^cn-punct1]
+- [x] 中文标点（破折号，省略号）样式修正[^cn-punct1]
 
   ```html
   <span class="cn-font" lang="zh-CN">——……</span>
   ```
 
-- [ ] 相邻全角标点挤压[^cn-punct2]
+- [x] 相邻全角标点挤压[^cn-punct2]
 
 ## Asset Handling
 

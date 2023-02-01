@@ -83,16 +83,22 @@
 <a href="https://www.bilibili.com/video/BV1fy4y1C7gU" class="card" target="_blank">
   <div class="cover"><img src="./imgs/interesting/genshin-ost-bts.jpg"></div>
   <div>
-    <p class="title">《疾如猛火》《⼭⻛拂萝⾐》</p>
-    <p>[原神] 璃月地区音乐录制实拍</p>
+    <p class="title">[原神]《疾如猛火<span class="punct-halt">》</span>《⼭⻛拂萝⾐》</p>
+    <p>璃月地区音乐录制实拍</p>
+  </div>
+  <img src="/notes/imgs/bilibili-logo.png" alt="bilibili" class="logo no-zoom">
+</a>
+
+<a href="https://www.bilibili.com/video/BV1KU4y1p7jF" class="card" target="_blank">
+  <div class="cover"><img src="./imgs/interesting/nier-automata-ost.jpg"></div>
+  <div>
+    <p class="title">[NieR:Automata] <span class="jp">遺サレタ場所</span> / 斜光</p>
+    <p>音乐解读</p>
   </div>
   <img src="/notes/imgs/bilibili-logo.png" alt="bilibili" class="logo no-zoom">
 </a>
 
 </div>
-
-- [[NieR:Automata] <span class="jp">遺サレタ場所</span> / 斜光 音乐解读](https://www.bilibili.com/video/BV1KU4y1p7jF)
-  <sup><span class="cn-font" lang="zh-CN">——</span>拿弓子的波塞东，洛杉矶歌剧院终身签约小提琴家</sup>
 
 ## 绘画，CG
 

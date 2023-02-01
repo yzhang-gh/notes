@@ -16,6 +16,10 @@ Make explanations ADEPT: Use an Analogy, Diagram, Example, Plain-English descrip
 
 - [x] 相邻全角标点挤压[^cn-punct2]
 
+  ```html
+  <span class="punct-halt">：</span>「
+  ```
+
 ## Asset Handling
 
 ### 图片

@@ -11,9 +11,9 @@ jobs:
 
     steps:
       - name: "Setup Node.js environment"
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
-          node-version: "12"
+          node-version: 18
 
       - name: "Checkout branch: ${{ github.ref }}"
         uses: actions/checkout@v2
@@ -32,6 +32,7 @@ jobs:
         working-directory: master
         ## /home/runner/work/notes/notes/master
         run: |
+          export NODE_OPTIONS=--openssl-legacy-provider
           npm ci
           npm run build
         # node tools/post-process.js

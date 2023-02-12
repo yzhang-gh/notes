@@ -234,7 +234,11 @@ module.exports = {
             },
         ],
         [
-            'shiki', { theme: 'github-light', additionalLangs: [shelldocLang, shellsessionLang, plaintextcLang] }
+            'shiki', {
+                theme: 'github-light',
+                langs: ['html', 'latex', 'python', 'bash', 'shell', 'powershell', 'ssh-config'],
+                additionalLangs: [shelldocLang, shellsessionLang, plaintextcLang]
+            }
         ],
     ],
     markdown: {

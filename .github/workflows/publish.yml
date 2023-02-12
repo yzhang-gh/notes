@@ -33,7 +33,6 @@ jobs:
         ## /home/runner/work/notes/notes/master
         run: |
           npm ci
-          node tools/pre-process.js
           npm run build
         # node tools/post-process.js
 

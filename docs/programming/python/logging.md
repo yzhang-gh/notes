@@ -30,6 +30,55 @@ logger.error("...")
 ...
 ```
 
+## 给不同日志等级设置不同的颜色
+
+```python {18,31}
+import re
+from platform import system
+
+def _add_ansi_color(msg, level):
+    if level >= 40:    ## ERROR   (red)
+        color = "31"
+    elif level >= 30:  ## WARNING (yellow)
+        color = "33"
+    elif level >= 20:  ## INFO    (normal)
+        color = "0"
+    else:              ## DEBUG   (dim)
+        color = "2"
+    return f"\x1b[{color}m{msg}\x1b[0m"
+
+def stream_handler_emit(self: logging.StreamHandler, record: logging.LogRecord):
+    try:
+        msg = self.format(record)
+        msg = _add_ansi_color(msg, record.levelno)
+        self.stream.write(msg + self.terminator)
+        self.flush()
+    except RecursionError:
+        raise
+    except Exception:
+        self.handleError(record)
+
+def file_handler_emit(self: logging.FileHandler, record: logging.LogRecord):
+    if self.stream is None:
+        self.stream = self._open()
+    try:
+        msg = self.format(record)
+        msg = re.sub(r"\x1b\[\d+m", "", msg)
+        self.stream.write(msg + self.terminator)
+        self.flush()
+    except RecursionError:
+        raise
+    except Exception:
+        self.handleError(record)
+
+if system() == "Windows":
+    # raise NotImplementedError("TODO: test compatibility on Windows")
+    pass
+else:
+    logging.StreamHandler.emit = stream_handler_emit
+    logging.FileHandler.emit = file_handler_emit
+```
+
 ## 避免第三方库的日志污染
 
 有时偷懒直接将全局 logging level 设为 DEBUG，然而发现导入的第三方库（比如 `asyncio`）也把日志打印出来了，解决方法如下

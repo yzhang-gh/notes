@@ -24,8 +24,9 @@
             <td>😂</td>
             <td>✓</td>
             <td>✗</td>
-            <td title="U+2192, Rightwards arrow">→</td>
-            <td title="U+1f816, Rightwards arrow with equilateral arrowhead">🠖</td>
+            <td title="U+00D7, multiplication sign">×</td>
+            <td title="U+2192, rightwards arrow">→</td>
+            <td title="U+1f816, rightwards arrow with equilateral arrowhead">🠖</td>
             <td title="middle dot">·</td>
             <td title="bullet">•</td>
         </tr>

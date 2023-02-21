@@ -181,10 +181,36 @@ ps
 # p <pid ...>  ## select by process id(s), identical to -p and --pid
 # a            ## list all processes with a terminal
 # x            ## list all processes owned by you
-# -f           ## format, this will show the full command
 
-ps -fp <pid> | cat
-## in case the output is truncated at the width of the terminal
+ps aux | grep <search_str> | grep <another_str>
+## pipe into grep or cat in case the output is truncated at the width of the terminal
+```
+
+```text {5,7,8,24}
+PROCESS STATE CODES
+       Here are the different values that the s, stat and state output specifiers
+       (header "STAT" or "S") will display to describe the state of a process:
+
+               D    uninterruptible sleep (usually IO)
+               I    Idle kernel thread
+               R    running or runnable (on run queue)
+               S    interruptible sleep (waiting for an event to complete)
+               T    stopped by job control signal
+               t    stopped by debugger during the tracing
+               W    paging (not valid since the 2.6.xx kernel)
+               X    dead (should never be seen)
+               Z    defunct ("zombie") process, terminated but not reaped by its
+                    parent
+
+       For BSD formats and when the stat keyword is used, additional characters may
+       be displayed:
+
+               <    high-priority (not nice to other users)
+               N    low-priority (nice to other users)
+               L    has pages locked into memory (for real-time and custom IO)
+               s    is a session leader
+               l    is multi-threaded (using CLONE_THREAD, like NPTL pthreads do)
+               +    is in the foreground process group
 ```
 
 ## 别名 `alias`, `type`
@@ -317,3 +343,20 @@ scp $rds/path/to/foo .
 ```
 
 <http://www.compciv.org/topics/bash/variables-and-substitution/>
+
+<script>
+export default {
+    mounted() {
+        const hash = document.location.hash;
+        if (hash.length > 1) {
+            const id = decodeURI(hash.substring(1));
+            const element = document.getElementById(id);
+            if (element) {
+                setTimeout(() => {
+                    element.scrollIntoView();
+                }, 500);
+            }
+        }
+    }
+}
+</script>

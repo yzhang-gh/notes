@@ -61,7 +61,7 @@
 <div class="cards">
 
 <a href="https://www.bilibili.com/video/BV1jx411M75e" class="card" target="_blank">
-  <div class="cover"><img src="./imgs/interesting/sing.jpg"></div>
+  <div class="cover"><img src="./imgs/interesting/singer.jpg"></div>
   <div>
     <p class="title">[青歌赛] 评委大佬飙歌 让你们见识什么是神仙唱歌</p>
     <p>「这种水平是国家队？？？这是国家教练队<span class="cn-font" lang="zh-CN">……</span>」</p>
@@ -113,6 +113,15 @@
     <p><sub><a href="https://www.artstation.com/artwork/aq6ek" target="_blank" rel="noopener noreferrer" class="outbound smaller">原图：源计划 薇恩 (ArtStation)</a></sub></p>
   </div>
   <img src="/notes/imgs/youtube-logo.png" alt="youtube" class="logo no-zoom">
+</a>
+
+<a href="https://www.bilibili.com/bangumi/media/md28228714/" class="card" target="_blank">
+  <div class="cover"><img src="./imgs/interesting/wswx.webp"></div>
+  <div>
+    <p class="title">《雾山五行》</p>
+    <p>这色彩，绝了</p>
+  </div>
+  <img src="/notes/imgs/bilibili-logo.png" alt="bilibili" class="logo no-zoom">
 </a>
 
 </div>

@@ -37,6 +37,8 @@ ffmpeg -f concat -i mylist.txt -c copy output.mp4
 
 ## 格式转换
 
+### MP4
+
 转换 `mkv`，`avi` 为 `mp4`
 
 ```shell
@@ -51,23 +53,37 @@ ffmpeg -i input.wmv -c:v libx264 -crf 17 output.mp4
 
 <https://trac.ffmpeg.org/wiki/Encode/H.264>
 
-GIF
+### 动图
+
+#### GIF
 
 ```shell
 ffmpeg -ss 1 -to 4 -i input.mp4 \
-    -vf "fps=10,scale=320:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" \
+    -vf "fps=10,scale=320:-1:flags=lanczos,split[a][b];[a]palettegen[p];[b][p]paletteuse" \
     output.gif
 ```
 
 <https://superuser.com/a/556031>
 
+#### WebP
+
+```shell
+ffmpeg -ss 1 -to 4 -i input.mp4 -vcodec libwebp -vf "fps=fps=15,scale=640:360" \
+    -lossless 1 -loop 0 -preset default -an -vsync 0 output.webp
+```
+
+<https://gist.github.com/witmin/1edf926c2886d5c8d9b264d70baf7379>
+
+需要裁剪的时候在 `-vf` 中加入 `crop=w:h:x:y` 即可
+
 ## 将图像序列合并为视频
 
 ```shelldoc
-ffmpeg [-framerate 24] -i images/%4d.jpg [-frames:v <num_frames>] [-s 1920x1080] [-crf 18] output.mp4
+ffmpeg [-framerate 24] -i images/%4d.jpg [-frames:v <num_frames>] [-s 1920x1080] [-crf 18] \
+    output.mp4
 ```
 
-也可以使用 glob 选择图片 `-pattern_type glob -i 'images/*.jpg'`（因为 glob pattern 有星号等特殊符号所以注意要使用引号）
+也可以使用 glob 选择图片 `-pattern_type glob -i 'images/*.jpg'`（因为 glob pattern 包含星号等特殊符号所以注意使用引号）
 
 ## 多个视频 side-by-side
 

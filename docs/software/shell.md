@@ -245,6 +245,15 @@ find . -iname 'foo*'
 find . -maxdepth 3 -name '*bar'
 ```
 
+> GNU **find** searches the directory tree rooted at each given file name by evaluating the given expression from left to right, according to the rules of precedence (see section OPERATORS), until the outcome is known (the left hand side is false for and operations, true for or), at which point **find** moves on to the next file name.
+
+排除多个目录，并使用多个筛选条件，最后压缩成 zip 文件
+
+```shell
+find . \( -path "./log" -or -path './video*' \) -prune -or \
+    -type f \( -name '*.py' -or -name '*.yaml' \) -exec zip out.zip {} +
+```
+
 ## 文件压缩、解压 `zip`, `tar`
 
 ### zip
@@ -273,7 +282,7 @@ unzip <zip_file>
 zip -R output.zip '*.py' '*.json' -x 'results*/*' -x 'log/*'
 ```
 
-其中 `-R` 为 `--recurse-patterns`
+其中 `-R` 为 `--recurse-patterns`。被 `-x` 排除的目录仍然会被搜索，可以使用 [`find`](#find) 配合 `-exec zip` 避免
 
 ### tar
 

@@ -250,9 +250,11 @@ find . -maxdepth 3 -name '*bar'
 排除多个目录，并使用多个筛选条件，最后压缩成 zip 文件
 
 ```shell
-find . \( -path "./log" -or -path './video*' \) -prune -or \
+find . \( -path './log' -or -path './video*' \) -prune -or \
     -type f \( -name '*.py' -or -name '*.yaml' \) -exec zip out.zip {} +
 ```
+
+**注意** 如果搜索的路径是 `.`，那么 `-path` 也需要使用 `.` 开头（如 `./log`），严格匹配
 
 ## 文件压缩、解压 `zip`, `tar`
 
@@ -282,7 +284,7 @@ unzip <zip_file>
 zip -R output.zip '*.py' '*.json' -x 'results*/*' -x 'log/*'
 ```
 
-其中 `-R` 为 `--recurse-patterns`。被 `-x` 排除的目录仍然会被搜索，可以使用 [`find`](#find) 配合 `-exec zip` 避免
+其中 `-R` 为 `--recurse-patterns`。被 `-x` 排除的目录仍然会被扫描，想避免则可以使用 [`find`](#find) 命令配合 `-prune`，`-exec zip` 等参数来实现筛选压缩的功能
 
 ### tar
 

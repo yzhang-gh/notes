@@ -130,19 +130,27 @@ print(subprocess.check_output("tree", shell=True, encoding="utf-8"))
 └── submodule.py
 ```
 
-### `import`
+### 模块查找目录 `sys.path`
+
+`sys.path` 是 Python 尝试导入模块时会去查找的路径列表，默认初始化为 Python 的安装路径下的若干位置，以及 `PYTHONPATH` 环境变量。在程序中也可以访问修改
+
+在运行 Python 时，还会在 `sys.path` 中额外添加特定路径，对于不同情况：
+
+1. `python /path/to/script.py`：添加 `script.py` 所在的目录，即 `/path/to/`，**而不是当前工作目录**
+2. `python -m module`：添加当前工作目录，即 `.`
+3. `python` (REPL) 和 `python -c code`：添加空字符串，也即当前工作目录
+
+在情况 1 下如果运行的是某个子目录下的 Python 脚本就很容易出现 `ModuleNotFoundError`，因为当前工作目录并不在 `sys.path` 里
+
+<https://docs.python.org/3/library/sys.html#sys.path>
 
 TODO
-
-`sys.path`
 
 absolute and relative imports
 
 https://stackoverflow.com/a/43859946/8682688
 https://docs.python.org/3/tutorial/modules.html#the-module-search-path
 https://www.pythonforthelab.com/blog/complete-guide-to-imports-in-python-absolute-relative-and-more/
-
-`python -m`?
 
 ## 手动断行
 

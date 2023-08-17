@@ -307,7 +307,7 @@ tar -xzvf archive.tar.gz --one-top-level[=<dir>]
                    ## or by default a new folder with the name of the archive
 ```
 
-## 文件大小与磁盘占用 `du`, `df`
+## 文件大小与硬盘占用 `du`, `df`
 
 ```shelldoc
 du -ah -d 1 [path]
@@ -321,6 +321,13 @@ du -ah | sort -rh | head
 # -h, --human-numeric-sort
 
 df -h
+```
+
+或者使用更交互式的工具 `ncdu`（可以使用 `apt` 安装）
+
+```shelldoc
+ncdu / --exclude home --exclude media
+## 查看根目录硬盘空间占用，home 和 media 除外
 ```
 
 ## Command history

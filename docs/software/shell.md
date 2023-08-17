@@ -310,20 +310,20 @@ tar -xzvf archive.tar.gz --one-top-level[=<dir>]
 ## 文件大小与硬盘占用 `du`, `df`
 
 ```shelldoc
-du -ah -d 1 [path]
+du -ah [-d <max_depth>] [--exclude <relative_path>] [path]
 # -a, --all
 # -h, --human-readable
 # -d, --max-depth
 
-du -ah | sort -rh | head
-# pipe the result of `du` to `sort` and take the top-10 results
+du -ah -d 1 | sort -rh | head
+## pipe the result of `du` to `sort` and take the top-10 results
 # -r, reverse order
 # -h, --human-numeric-sort
 
-df -h
+df -lh -x squashfs -x tmpfs -x devtmpfs  ## 忽略不关心的文件系统
 ```
 
-或者使用更交互式的工具 `ncdu`（可以使用 `apt` 安装）
+或者使用交互式的查看工具 `ncdu`（用 `apt` 安装）
 
 ```shelldoc
 ncdu / --exclude home --exclude media

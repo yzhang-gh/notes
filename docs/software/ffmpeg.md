@@ -125,9 +125,23 @@ ffmpeg -i input.mp4 -c copy -an output.mp4
 
 ## GPU
 
-https://trac.ffmpeg.org/wiki/HWAccelIntro#CUDANVENCNVDEC
+```shell
+ffmpeg -vsync 0 -hwaccel cuvid -c:v h264_cuvid -i input.mp4 -c:a copy -c:v h264_nvenc \
+    -b:v 0 -cq 27 output.mp4
+```
+
+> where
+>
+> ```
+> -b:v 0  over-rides the default 2mbps bitrate as noted by Gyan
+> -cq 1   target quality level (range of 0-51)
+>         0 means automatic (in my case around 15mbps)
+>         1 gives about 15mbps, 26 results in around 5mbps, 51 results in 0.5mbps
+> ```
 
 https://video.stackexchange.com/a/30625
+
+https://trac.ffmpeg.org/wiki/HWAccelIntro#CUDANVENCNVDEC
 
 ---
 

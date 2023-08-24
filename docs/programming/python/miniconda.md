@@ -2,7 +2,7 @@
 
 ## 环境变量
 
-有时在 Windows 上安装完之后环境变量并没有被设置好，需要手动在 `PATH` 中加入
+有时在 Windows 上安装完之后[环境变量](https://support.microsoft.com/zh-cn/topic/%E5%A6%82%E4%BD%95%E7%AE%A1%E7%90%86-windows-xp-%E4%B8%AD%E7%9A%84%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F-5bf6725b-655e-151c-0b55-9a8c9c7f747d)并没有被设置好，需要手动在 `PATH` 中加入
 
 ```
 %USERPROFILE%\miniconda3
@@ -10,9 +10,19 @@
 %USERPROFILE%\miniconda3\Scripts
 ```
 
+重新打开命令行，然后执行
+
 ```
 conda init
 ```
+
+对于 PowerShell，还需以管理员权限执行
+
+```powershell
+set-executionpolicy remotesigned
+```
+
+以允许在启动时运行 conda 初始化脚本
 
 [SUSTech Anaconda Mirror](https://mirrors.sustech.edu.cn/help/anaconda.html)
 

@@ -115,15 +115,25 @@ ffmpeg -i bg.mp4 -i fg.mp4 -filter_complex \
 -crf 15 out.mp4
 ```
 
-## 去除音频
+（如果运行有问题可以将 filter 参数写成一行再运行）
 
-`-an`
+## 仅保留视频或音频
+
+`-an` 去除音频
 
 ```
 ffmpeg -i input.mp4 -c copy -an output.mp4
 ```
 
+`-vn` 去除视频
+
+```
+ffmpeg -i input.mp4 -c copy -vn output.aac
+```
+
 ## GPU
+
+[Using FFmpeg with NVIDIA GPU Hardware Acceleration – NVIDIA Docs](https://docs.nvidia.com/video-technologies/video-codec-sdk/12.0/ffmpeg-with-nvidia-gpu/index.html#quality-testing)
 
 ```shell
 ffmpeg -vsync 0 -hwaccel cuvid -c:v h264_cuvid -i input.mp4 -c:a copy -c:v h264_nvenc \
@@ -133,20 +143,53 @@ ffmpeg -vsync 0 -hwaccel cuvid -c:v h264_cuvid -i input.mp4 -c:a copy -c:v h264_
 > where
 >
 > ```
-> -b:v 0  over-rides the default 2mbps bitrate as noted by Gyan
+> -b:v 0  overrides the default 2mbps bitrate as noted by Gyan
 > -cq 1   target quality level (range of 0-51)
 >         0 means automatic (in my case around 15mbps)
 >         1 gives about 15mbps, 26 results in around 5mbps, 51 results in 0.5mbps
 > ```
+>
+> [Configure CQP (CRF) for h264_nvenc – StackExchange](https://video.stackexchange.com/a/30625)
 
-https://video.stackexchange.com/a/30625
+HEVC 编码就用 `hevc_nvenc`
 
-https://trac.ffmpeg.org/wiki/HWAccelIntro#CUDANVENCNVDEC
+[HWAccelIntro > CUDA (NVENC/NVDEC) – FFmpeg](https://trac.ffmpeg.org/wiki/HWAccelIntro#CUDANVENCNVDEC)
+
+查看 encoder 帮助
+
+```shell
+ffmpeg -h encoder=h264_nvenc
+```
+
+其中有 supported pixel formats 信息以及 encoder 设置项
+
+### 编码质量
+
+GPU 最高质量使用 `-preset p7` 和 `-pix_fmt p010le` (10 bit depth)，`-rc-lookahead 20`
+
+<https://www.reddit.com/r/ffmpeg/comments/ystse6/hevc_nvenc_2pass_question/>
+
+[GPU 转码效果为什么不如纯 CPU？– 知乎](https://www.zhihu.com/question/22501094)
 
 ---
 
+此外，不论是否使用 GPU 编码，**关键帧间隔**可以使用 `-g` 参数 (Group of Picture size) 设置，可以理解为两个关键帧之间的帧数。如果希望每 3 秒一个关键帧则可以设置为 3 倍 fps 大小
+
 ## Extra
 
+视频下载工具 [lux](https://github.com/iawia002/lux)
+
+e.g. Bilibili
+
+```shelldoc
+## -c 提供 cookie
+## -i 查询提供的格式
+## -f 下载指定的格式
+lux -c "SESSDATA=<cookie_value>" -i "https://www.bilibili.com/video/BVxxxxxxxxxx/"
+lux -c "SESSDATA=<cookie_value>" -f 80-7 "https://www.bilibili.com/video/BVxxxxxxxxxx/"
+```
+
+::: details <code>youtube-dl</code>
 list available formats
 
 ```shelldoc
@@ -164,3 +207,4 @@ others
 ```shelldoc
 youtube-dl [--proxy <proxy>] -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 <url>
 ```
+:::

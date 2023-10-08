@@ -93,13 +93,22 @@ ffmpeg -i left.mp4 -i right.mp4 -filter_complex hstack output.mp4
 
 如果是三个视频则可以使用 `hstack=inputs=3`
 
-## 依次应用多个 filter
+## 裁剪、缩放、填衬视频
 
-<https://trac.ffmpeg.org/wiki/FilteringGuide>
+- **`crop=<w>:<h>:<x>:<y>`**
+- **`scale=<w>:<h>`**
+- **`pad=<w>:<h>:<x>:<y>[:<color>]`**
+
+`w` 和 `h` 可以只指定一个值，另一个用 `-1` 由原本的长宽比来确定，`-2` 则额外要求其是偶数
+
+使用逗号 `,` 连接，依次应用多个 filter ([FilteringGuide](https://trac.ffmpeg.org/wiki/FilteringGuide))
 
 ```shell
-ffmpeg -i input -vf scale=200:200,pad=w=200:h=400:x=0:y=100 output
+## 将视频缩放为 200x200，然后竖直方向居中填充至 200x400 大小
+ffmpeg -i input -vf 'scale=200:200,pad=200:400:0:(oh-ih)/2' output
 ```
+
+可以使用 `iw`，`ow`，`ih`，`oh` 等变量，以及 `/`，`*` 等来计算相应参数
 
 <https://ffmpeg.org/ffmpeg-filters.html>
 

@@ -140,6 +140,13 @@ ffmpeg -i input.mp4 -c copy -an output.mp4
 ffmpeg -i input.mp4 -c copy -vn output.aac
 ```
 
+## 添加文字
+
+```shell
+style_str="fontfile=noto-sans.ttf:fontsize=36:fontcolor=white:shadowx=2:shadowy=2:shadowcolor=black"
+ffmpeg -i input.mp4 -vf "drawtext=text='hello world':x=60:y=60:$style_str" -crf 16 output.mp4
+```
+
 ## GPU
 
 [Using FFmpeg with NVIDIA GPU Hardware Acceleration – NVIDIA Docs](https://docs.nvidia.com/video-technologies/video-codec-sdk/12.0/ffmpeg-with-nvidia-gpu/index.html#quality-testing)

@@ -247,6 +247,16 @@ find . -maxdepth 3 -name '*bar'
 
 > GNU **find** searches the directory tree rooted at each given file name by evaluating the given expression from left to right, according to the rules of precedence (see section OPERATORS), until the outcome is known (the left hand side is false for and operations, true for or), at which point **find** moves on to the next file name.
 
+### 示例：列出符合条件的文件名
+
+列出子目录下的文件，每行开头加上 `-i ` 然后合并为一行，可以用作 `ffmpeg` 的输入
+
+```shell
+input_str=$(find . -path './results/2023*/out.mp4' | sort -n | sed 's/^/-i /' | paste -sd ' ')
+```
+
+### 示例：压缩特定文件
+
 排除多个目录，并使用多个筛选条件，最后压缩成 zip 文件
 
 ```shell

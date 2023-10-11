@@ -93,6 +93,8 @@ ffmpeg -i left.mp4 -i right.mp4 -filter_complex hstack output.mp4
 
 如果是三个视频则可以使用 `hstack=inputs=3`
 
+除了 `hstack` 和 `vstack`，还可以使用 `xstack`，其支持参数比如 `grid=3x2`（3 列 2 行），比较旧的版本可能还不支持（可以从官网提供的这个[链接](https://johnvansickle.com/ffmpeg/)下载 Linux 下编译好的单文件二进制）
+
 ## 裁剪、缩放、填衬视频
 
 - **`crop=<w>:<h>:<x>:<y>`**
@@ -190,6 +192,13 @@ GPU 最高质量使用 `-preset p7` 和 `-pix_fmt p010le` (10 bit depth)，`-rc-
 ---
 
 此外，不论是否使用 GPU 编码，**关键帧间隔**可以使用 `-g` 参数 (Group of Picture size) 设置，可以理解为两个关键帧之间的帧数。如果希望每 3 秒一个关键帧则可以设置为 3 倍 fps 大小
+
+## 查看帮助
+
+```shell
+ffmpeg -h filter=xstack
+ffmpeg -h encoder=h264_nvenc
+```
 
 ## Extra
 

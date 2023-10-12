@@ -90,15 +90,6 @@ font.size      : 10        ## default 'medium' size (all relative values: xx-sma
 
 可以选择合适的 [tick locator](https://matplotlib.org/stable/gallery/ticks/tick-locators.html) 决定刻度的位置，再使用 [tick formatter](https://matplotlib.org/stable/gallery/ticks/tick-formatters.html) 来决定对应的文本
 
-### 让 x, y 轴等刻度
-
-```python
-# plt.axis("equal")
-## 一般来说上面的用法就够了，但是如果同时对 xlim, ylim 有要求的话，下方的用法更准确
-ax = plt.gca()
-ax.set_aspect("equal", adjustable="box")
-```
-
 ### 主、副刻度 (Major and minor ticks)
 
 ```python
@@ -125,8 +116,19 @@ ax.yaxis.set_minor_formatter(FixedFormatter(["5.69", "7.76"]))
 使用 [`ax.tick_params`](https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.tick_params.html) 来控制刻度的方向，颜色，大小等等（`ax` 为 `matplotlib.axes.Axes` 对象），比如
 
 ```python
-## 缩小副刻度字体大小
-ax.tick_params(axis='y', which='minor', labelsize=6)
+## 将刻度画在图内部
+ax.tick_params(direction="in")
+## 也可以只应用到某些部分，例如只缩小 y 轴、副刻度的字体大小
+ax.tick_params(axis="y", which="minor", labelsize=6)
+```
+
+### 让 x, y 轴等刻度
+
+```python
+# plt.axis("equal")
+## 一般来说上面的用法就够了，但是如果同时对 xlim, ylim 有要求的话，下方的用法更准确
+ax = plt.gca()
+ax.set_aspect("equal", adjustable="box")
 ```
 
 ## Colormap
@@ -187,11 +189,11 @@ plt.colorbar(im, fraction=0.046, pad=0.4)
 ```python
 import matplotlib.pyplot as plt
 
-fig, axes = plt.subplots(2, 2, sharex=True, sharey=True)
+fig, axes = plt.subplots(2, 2, sharex=True, sharey=True)  ## figsize=(6.4, 4.8)
 ## add a big axis, hide frame
 fig.add_subplot(111, frameon=False)
 ## hide tick and tick label of the big axis
-plt.tick_params(labelcolor='none', which='both', top=False, bottom=False, left=False, right=False)
+plt.tick_params(labelcolor="none", which="both", top=False, bottom=False, left=False, right=False)
 
 ## 保存为 pgf 格式时 labelcolor 不生效，需要额外添加下面两行
 # plt.xticks([0], [" "])
@@ -228,6 +230,27 @@ colors = prop_cycle.by_key()["color"]
 
 <span id="copy-msg">Click to copy</span>
 <button class="color-label" style="background: #1f77b4;" onclick="navigator.clipboard.writeText(this.innerHTML); document.getElementById('copy-msg').innerHTML = 'Copied!'; setTimeout(() => { document.getElementById('copy-msg').innerHTML = 'Click to copy' }, 1000)">#1f77b4</button> <button class="color-label" style="background: #ff7f0e;" onclick="navigator.clipboard.writeText(this.innerHTML); document.getElementById('copy-msg').innerHTML = 'Copied!'; setTimeout(() => { document.getElementById('copy-msg').innerHTML = 'Click to copy' }, 1000)">#ff7f0e</button> <button class="color-label" style="background: #2ca02c;" onclick="navigator.clipboard.writeText(this.innerHTML); document.getElementById('copy-msg').innerHTML = 'Copied!'; setTimeout(() => { document.getElementById('copy-msg').innerHTML = 'Click to copy' }, 1000)">#2ca02c</button> <button class="color-label" style="background: #d62728;" onclick="navigator.clipboard.writeText(this.innerHTML); document.getElementById('copy-msg').innerHTML = 'Copied!'; setTimeout(() => { document.getElementById('copy-msg').innerHTML = 'Click to copy' }, 1000)">#d62728</button> <button class="color-label" style="background: #9467bd;" onclick="navigator.clipboard.writeText(this.innerHTML); document.getElementById('copy-msg').innerHTML = 'Copied!'; setTimeout(() => { document.getElementById('copy-msg').innerHTML = 'Click to copy' }, 1000)">#9467bd</button>
+
+## 动画
+
+```python
+import matplotlib.animation as animation
+
+fig, ax = plt.plt.subplots()
+
+def ani_func(i):
+    line.set_xdata([i, i])
+    line.set(alpha=1)
+
+n_frames = 100
+fps = 25
+
+line = ax.axvline(x=0, ymin=-1, ymax=11)
+line_ani = animation.FuncAnimation(fig, ani_func, frames=n_frames)
+
+writer = animation.FFMpegWriter(fps=fps)
+line_ani.save("animation.mp4", writer=writer)
+```
 
 ## PGF 格式与 LaTeX
 

@@ -28,3 +28,22 @@ Set-ExecutionPolicy RemoteSigned
 
 <https://superuser.com/a/516704/950027>
 <https://stackoverflow.com/a/4038991>
+
+## 自动补全
+
+要想获得类似 `zsh-autosuggestions` 的使用体验，可以在上述 profile 文件中加入
+
+```powershell
+## 按 Ctrl + RightArrow 只采纳当前候选提示的一个单词
+Set-PSReadLineKeyHandler -Chord Ctrl+RightArrow -Function ForwardWord
+
+## 使用 Tab 键时列出可以补全的项
+Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
+
+## 上下键查找与当前输入匹配的历史命令
+Set-PSReadlineKeyHandler -Chord UpArrow -Function HistorySearchBackward
+Set-PSReadlineKeyHandler -Chord DownArrow -Function HistorySearchForward
+
+## 颜色
+Set-PSReadLineOption -Colors @{ InlinePrediction = "$([char]0x1b)[97;2m"}
+```

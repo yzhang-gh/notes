@@ -162,7 +162,9 @@ $ ls -l sample_file
 
 ## `wget`
 
-## `nohup`, `ps`, `kill`
+## 任务管理 `nohup`, `ps`, `kill`, `jobs`, `fg`, `bg`, `disown`
+
+### Start a command in background
 
 ```shelldoc
 nohup your_command_here > output_file 2>&1 </dev/null &
@@ -174,7 +176,18 @@ kill %i  ## i is the job id, not pid
 kill <pid ...>
 ```
 
-<https://tecadmin.net/run-command-in-background-on-linux/>
+### Move a foreground job to background
+
+```shelldoc
+## press `ctrl-z` to suspend the current running command
+jobs      ## check the job id
+bg        ## resume the current suspended job in the background
+# disown  ## execute this if zsh refuzes to exit when there are running jobs
+```
+
+[Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html#Job-Control)
+
+### Check task status
 
 ```shelldoc
 ps

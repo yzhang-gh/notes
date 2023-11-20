@@ -50,6 +50,39 @@ snap 安装的软件无法在 nfs/sshfs 挂载的路径下使用，如果没有�
 
 press <kbd>q</kbd> to quit
 
+## 安装字体
+
+> There are various locations in GNU/Linux in which fonts can be kept. These locations are defined in `/etc/fonts/fonts.conf`; standard ones include `/usr/share/fonts`, `/usr/local/share/fonts`, and `~/.fonts`.
+
+<https://wiki.ubuntu.com/Fonts#Manually>
+
+## 挂载硬盘分区
+
+可以使用 GUI 操作，详细信息可以查看 `/etc/fstab` 文件，重启
+
+## Unorganized
+
+<https://askubuntu.com/a/1336906/1577456> remove default folders from nautilus
+`gsettings set org.gnome.desktop.privacy remember-recent-files false` remove "Recent" tab
+
+Move window among monitors: shift+super+arrow key
+
+app.desktop (see zotero installation instructions)
+<https://www.zotero.org/support/installation#linux>
+
+<https://zhuanlan.zhihu.com/p/79059379> install cuda toolkit
+
+Use this
+```shell
+export CUDA_HOME=/usr/local/cuda
+export PATH=$PATH:$CUDA_HOME/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
+```
+
+<https://developer.nvidia.com/rdp/cudnn-download> cudnn-local 包
+<https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#installlinux-deb>
+包可以直接从这里找 <https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/>
+
 ## 屏幕亮度
 
 屏幕亮度以文件形式存储于 `/sys/default/backlight/` 目录下，多显卡时则会有多个子文件夹，比如

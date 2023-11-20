@@ -385,6 +385,17 @@ scp $rds/path/to/foo .
 
 <http://www.compciv.org/topics/bash/variables-and-substitution/>
 
+定义变量前加上 export 则会定义为环境变量
+
+更多操作见 <https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html>
+
+## `split`
+
+```shell
+split -b 1024m file prefix
+cat filea fileb filec > file
+```
+
 <script>
 export default {
     mounted() {

@@ -1,6 +1,27 @@
 # Ubuntu
 
+## Zsh and Oh My Zsh
+
+```shelldoc
+## Zsh
+sudo apt install zsh
+chsh -s $(which zsh)
+
+## Log out and log back in again
+
+## Oh My Zsh
+# https://github.com/ohmyzsh/ohmyzsh#basic-installation
+```
+
+## WeChat/QQ
+
+<https://github.com/zq1997/deepin-wine>
+
 ## RDP
+
+:::tip
+似乎不太好使
+:::
 
 ```shelldoc
 sudo apt install xrdp

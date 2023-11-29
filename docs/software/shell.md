@@ -2,6 +2,21 @@
 
 <!-- 按功能分类总结 -->
 
+## Zsh and Oh My Zsh
+
+```shelldoc
+## Zsh
+sudo apt install zsh
+chsh -s $(which zsh)
+
+## Log out and log back in again
+
+## Oh My Zsh
+# https://github.com/ohmyzsh/ohmyzsh#basic-installation
+```
+
+插件 [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+
 ## SSH
 
 ### 生成并配置密钥

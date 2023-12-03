@@ -62,7 +62,9 @@ press <kbd>q</kbd> to quit
 
 <https://zhuanlan.zhihu.com/p/79059379> install cuda toolkit
 
-Use this
+旧版本下载 CUDA Toolkit Archive <https://developer.nvidia.com/cuda-toolkit-archive>
+
+环境变量
 
 ```shell
 export CUDA_HOME=/usr/local/cuda
@@ -71,7 +73,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
 ```
 
 <https://developer.nvidia.com/rdp/cudnn-download> cudnn-local 包
-<https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#installlinux-deb>
+cuDNN <https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#installlinux-deb>
 包可以直接从这里找 <https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/>
 
 ## 安装字体

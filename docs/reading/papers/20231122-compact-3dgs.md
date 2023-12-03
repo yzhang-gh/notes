@@ -2,9 +2,9 @@
 keywords: gaussian splatting
 ---
 
-<link rel="stylesheet" href="/notes/katex.min.css">
-
 # Compact 3D Gaussian Representation for Radiance Field
+
+<link rel="stylesheet" href="/notes/katex.min.css">
 
 two key objectives:
 

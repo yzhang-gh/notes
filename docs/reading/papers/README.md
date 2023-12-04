@@ -4,19 +4,6 @@ sidebar: auto
 
 # Papers
 
-<style>
-    @font-face {
-        font-family: "cm";
-        src: url("/notes/fonts-cm/cmunrm.ttf") format("truetype")
-    }
-
-    #papers ul {
-        font-family: cm, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans CJK SC', 'Source Han Sans SC', 'Source Han Sans SC VF', 'Source Han Sans CN', 'Microsoft Yahei', Helvetica, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
-    }
-</style>
-
-<div id="papers">
-
 ## 3DGS Improvements
 
 ### Priors
@@ -62,5 +49,3 @@ sidebar: auto
 
 - **Relightable** 3D Gaussian: Real-time Point Cloud Relighting with BRDF Decomposition and Ray Tracing. [[Paper]](https://arxiv.org/abs/2311.16043)
 - **Animatable** Gaussians: Learning Pose-dependent Gaussian Maps for High-fidelity Human Avatar Modeling. [[Paper]](https://arxiv.org/abs/2311.16096)
-
-</div>

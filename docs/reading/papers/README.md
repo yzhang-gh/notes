@@ -23,6 +23,10 @@ sidebar: auto
 - HUGS: Human Gaussian Splats. [[Paper]](https://arxiv.org/abs/2311.17910)
 - Human Gaussian Splatting: Real-time Rendering of Animatable Avatars. [[Paper]](https://arxiv.org/abs/2311.17113)
 
+**?**
+
+- GPS-Gaussian: **Generalizable** Pixel-wise 3D Gaussian Splatting for Real-time Human Novel View Synthesis. [[Paper]](https://arxiv.org/abs/2312.02155)
+
 ### Compression
 
 - Compact 3D Gaussian Representation for Radiance Field. [[Paper]](https://arxiv.org/abs/2311.13681) [[Notes]](./20231122-compact-3dgs.md)
@@ -48,4 +52,14 @@ sidebar: auto
 ## Later
 
 - **Relightable** 3D Gaussian: Real-time Point Cloud Relighting with BRDF Decomposition and Ray Tracing. [[Paper]](https://arxiv.org/abs/2311.16043)
+
+### Avatar
+
 - **Animatable** Gaussians: Learning Pose-dependent Gaussian Maps for High-fidelity Human Avatar Modeling. [[Paper]](https://arxiv.org/abs/2311.16096)
+- GaussianAvatars: Photorealistic Head Avatars with Rigged 3D Gaussians. [[Paper]](https://arxiv.org/abs/2312.02069)
+- HeadGaS: Real-Time Animatable Head Avatars via 3D Gaussian Splatting. [[Paper]](https://arxiv.org/abs/2312.02902)
+- GauHuman: Articulated Gaussian Splatting from Monocular Human Videos. [[Paper]](https://arxiv.org/abs/2312.02973)
+
+## Others
+
+- SplaTAM: Splat, Track & Map 3D Gaussians for Dense RGB-D SLAM. [[Paper]](https://arxiv.org/abs/2312.02126)

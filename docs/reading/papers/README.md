@@ -15,7 +15,7 @@ sidebar: auto
 **Few-shot**
 
 - Depth-Regularized Optimization for 3D Gaussian Splatting in Few-Shot Images. [[Paper]](https://arxiv.org/abs/2311.13398) [[Notes]](./20231122-depth-reg-3dgs-few-shot.md)
-- FSGS: Real-Time Few-shot View Synthesis using Gaussian Splatting. [[Paper]](https://arxiv.org/abs/2312.00451)
+- FSGS: Real-Time Few-shot View Synthesis using Gaussian Splatting. [[Paper]](https://arxiv.org/abs/2312.00451) [[Notes]](./20231201-fsgs.md)
 - SparseGS: Real-Time 360° Sparse View Synthesis using Gaussian Splatting. [[Paper]](https://arxiv.org/abs/2312.00206)
 
 **Human**

@@ -35,4 +35,4 @@ two key objectives:
 2. **compressing colors and geometry**
    - ...
 
-[^1]: https://hassanaskary.medium.com/intuitive-explanation-of-straight-through-estimators-with-pytorch-implementation-71d99d25d9d0
+[^1]: <https://hassanaskary.medium.com/intuitive-explanation-of-straight-through-estimators-with-pytorch-implementation-71d99d25d9d0>

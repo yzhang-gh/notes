@@ -6,7 +6,7 @@ sidebar: auto
 
 ## 3DGS Improvements
 
-### Priors
+### Priors (/Constraints)
 
 **Mesh**
 
@@ -16,7 +16,7 @@ sidebar: auto
 
 - Depth-Regularized Optimization for 3D Gaussian Splatting in Few-Shot Images. [[Paper]](https://arxiv.org/abs/2311.13398) [[Notes]](./20231122-depth-reg-3dgs-few-shot.md)
 - FSGS: Real-Time Few-shot View Synthesis using Gaussian Splatting. [[Paper]](https://arxiv.org/abs/2312.00451) [[Notes]](./20231201-fsgs.md)
-- SparseGS: Real-Time 360° Sparse View Synthesis using Gaussian Splatting. [[Paper]](https://arxiv.org/abs/2312.00206)
+- SparseGS: Real-Time 360° Sparse View Synthesis using Gaussian Splatting. [[Paper]](https://arxiv.org/abs/2312.00206) [[Notes]](./20231130-sparsegs.md)
 
 **Human**
 
@@ -31,6 +31,7 @@ sidebar: auto
 
 - Compact 3D Gaussian Representation for Radiance Field. [[Paper]](https://arxiv.org/abs/2311.13681) [[Notes]](./20231122-compact-3dgs.md)
 - Compact3D: Compressing Gaussian Splat Radiance Field Models with Vector Quantization. [[Paper]](https://arxiv.org/abs/2311.18159)
+- EAGLES: Efficient Accelerated 3D Gaussians with Lightweight EncodingS. [[Paper]](https://arxiv.org/abs/2312.04564)
 
 ### Others
 
@@ -40,6 +41,11 @@ sidebar: auto
 
 ## 4DGS
 
+- Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis. [[Paper]](https://arxiv.org/abs/2308.09713)
+- Deformable 3D Gaussians for High-Fidelity Monocular Dynamic Scene Reconstruction. [[Paper]](https://arxiv.org/abs/2309.13101)
+
+**Newer**
+
 - An Efficient 3D Gaussian Representation for Monocular/Multi-view Dynamic Scenes. [[Paper]](https://arxiv.org/abs/2311.12897)
 - 4D Gaussian Splatting for Real-Time Dynamic Scene Rendering. [[Paper]](https://arxiv.org/abs/2310.08528)
 - Real-time Photorealistic Dynamic Scene Representation and Rendering with 4D Gaussian Splatting. [[Paper]](https://arxiv.org/abs/2310.10642)
@@ -48,18 +54,21 @@ sidebar: auto
 
 - MD-Splatting: Learning Metric Deformation from 4D Gaussians in Highly Deformable Scenes. [[Paper]](https://arxiv.org/abs/2312.00583)
 - DynMF: Neural Motion Factorization for Real-time Dynamic View Synthesis with 3D Gaussian Splatting. [[Paper]](https://arxiv.org/abs/2312.00112)
+- Gaussian-Flow: 4D Reconstruction with Dynamic 3D Gaussian Particle. [[Paper]](https://arxiv.org/abs/2312.03431)
+- HiFi4G: High-Fidelity Human Performance Rendering via Compact Gaussian Splatting. [[Paper]](https://arxiv.org/abs/2312.03461) [[Notes]](./20231206-hifi4g.md)
 
 ## Later
 
 - **Relightable** 3D Gaussian: Real-time Point Cloud Relighting with BRDF Decomposition and Ray Tracing. [[Paper]](https://arxiv.org/abs/2311.16043)
 
-### Avatar
+### Avatar (/Drivable)
 
 - **Animatable** Gaussians: Learning Pose-dependent Gaussian Maps for High-fidelity Human Avatar Modeling. [[Paper]](https://arxiv.org/abs/2311.16096)
 - GaussianAvatars: Photorealistic Head Avatars with Rigged 3D Gaussians. [[Paper]](https://arxiv.org/abs/2312.02069)
 - HeadGaS: Real-Time Animatable Head Avatars via 3D Gaussian Splatting. [[Paper]](https://arxiv.org/abs/2312.02902)
 - GauHuman: Articulated Gaussian Splatting from Monocular Human Videos. [[Paper]](https://arxiv.org/abs/2312.02973)
+- MonoGaussianAvatar: Monocular Gaussian Point-based Head Avatar. [[Paper]](https://arxiv.org/abs/2312.04558)
 
-## Others
+## Other Applications
 
 - SplaTAM: Splat, Track & Map 3D Gaussians for Dense RGB-D SLAM. [[Paper]](https://arxiv.org/abs/2312.02126)

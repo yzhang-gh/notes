@@ -4,9 +4,11 @@ sidebar: auto
 
 # Papers
 
+<link rel="stylesheet" href="/notes/katex.min.css">
+
 ## 3DGS Improvements
 
-### Priors (/Constraints)
+### Priors(/Constraints)
 
 **Mesh**
 
@@ -18,20 +20,21 @@ sidebar: auto
 - FSGS: Real-Time Few-shot View Synthesis using Gaussian Splatting. [[Paper]](https://arxiv.org/abs/2312.00451) [[Notes]](./20231201-fsgs.md)
 - SparseGS: Real-Time 360° Sparse View Synthesis using Gaussian Splatting. [[Paper]](https://arxiv.org/abs/2312.00206) [[Notes]](./20231130-sparsegs.md)
 
-**Human**
-
-- HUGS: Human Gaussian Splats. [[Paper]](https://arxiv.org/abs/2311.17910)
-- Human Gaussian Splatting: Real-time Rendering of Animatable Avatars. [[Paper]](https://arxiv.org/abs/2311.17113)
-
-**?**
+<!--  -->
 
 - GPS-Gaussian: **Generalizable** Pixel-wise 3D Gaussian Splatting for Real-time Human Novel View Synthesis. [[Paper]](https://arxiv.org/abs/2312.02155)
+  - generalizable -> predict Gaussian attributes with neural networks
+  - few-shot setting
+  - “不忍卒读”，使劲搅和
 
 ### Compression
 
 - Compact 3D Gaussian Representation for Radiance Field. [[Paper]](https://arxiv.org/abs/2311.13681) [[Notes]](./20231122-compact-3dgs.md)
 - Compact3D: Compressing Gaussian Splat Radiance Field Models with Vector Quantization. [[Paper]](https://arxiv.org/abs/2311.18159)
+  - $k$-means codebook (quantize color, SH, scale, and rotation parameters separately, resulting in 4 codebooks, do not quantize opacity)
+  - order of Gaussians doesn't matter, sort and do run-length encoding
 - EAGLES: Efficient Accelerated 3D Gaussians with Lightweight EncodingS. [[Paper]](https://arxiv.org/abs/2312.04564)
+  - quantize color, rotation and **opacity** (do not quantize SH, scaling, position)
 
 ### Others
 
@@ -61,9 +64,19 @@ sidebar: auto
 
 - **Relightable** 3D Gaussian: Real-time Point Cloud Relighting with BRDF Decomposition and Ray Tracing. [[Paper]](https://arxiv.org/abs/2311.16043)
 
-### Avatar (/Drivable)
+### Avatar
 
-- **Animatable** Gaussians: Learning Pose-dependent Gaussian Maps for High-fidelity Human Avatar Modeling. [[Paper]](https://arxiv.org/abs/2311.16096)
+- Animatable Gaussians: Learning Pose-dependent Gaussian Maps for High-fidelity Human Avatar Modeling. [[Paper]](https://arxiv.org/abs/2311.16096)
+- HUGS: Human Gaussian Splats. [[Paper]](https://arxiv.org/abs/2311.17910)
+  - represents both the human and the scene as 3D Gaussians
+  - human Gaussians are parameterized by
+    1. their mean locations in a canonical space
+    2. features from a triplane (and use MLPs to predict colors, opacities, shifts, LBS weights...)
+- Human Gaussian Splatting: Real-time Rendering of Animatable Avatars. [[Paper]](https://arxiv.org/abs/2311.17113)
+  - similar
+
+<!--  -->
+
 - GaussianAvatars: Photorealistic Head Avatars with Rigged 3D Gaussians. [[Paper]](https://arxiv.org/abs/2312.02069)
 - HeadGaS: Real-Time Animatable Head Avatars via 3D Gaussian Splatting. [[Paper]](https://arxiv.org/abs/2312.02902)
 - GauHuman: Articulated Gaussian Splatting from Monocular Human Videos. [[Paper]](https://arxiv.org/abs/2312.02973)

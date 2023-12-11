@@ -50,14 +50,29 @@ sidebar: auto
 **Newer**
 
 - An Efficient 3D Gaussian Representation for Monocular/Multi-view Dynamic Scenes. [[Paper]](https://arxiv.org/abs/2311.12897)
+  - reprensent Guassian positions and rotations as functions of time (Fourier approximation), two-stage optimization(?)
+  - flow loss (RAFT as GT)
+  - follow 3DGS on densification and pruning(?)
 - 4D Gaussian Splatting for Real-Time Dynamic Scene Rendering. [[Paper]](https://arxiv.org/abs/2310.08528)
+  - 82 FPS at an 800×800 resolution on RTX 3090, 30 FPS at a resolution of 1352×1014
+  - represent Gaussian motions and shape changes by an efficient Gaussian deformation field network ($k$-planes)
 - Real-time Photorealistic Dynamic Scene Representation and Rendering with 4D Gaussian Splatting. [[Paper]](https://arxiv.org/abs/2310.10642)
+  - 4D Gaussians(?) 
 
 <!--  -->
 
 - MD-Splatting: Learning Metric Deformation from 4D Gaussians in Highly Deformable Scenes. [[Paper]](https://arxiv.org/abs/2312.00583)
 - DynMF: Neural Motion Factorization for Real-time Dynamic View Synthesis with 3D Gaussian Splatting. [[Paper]](https://arxiv.org/abs/2312.00112)
 - Gaussian-Flow: 4D Reconstruction with Dynamic 3D Gaussian Particle. [[Paper]](https://arxiv.org/abs/2312.03431)
+  - formulate a 4D scene as a set of deformable 3D Gaussian points
+  - A novel Dual-Domain Deformation Model (DDDM) is proposed to explicitly model deformations of each Gaussian point's attributes
+    - The time-dependent deformation residual is modeled simultaneously in time and frequency domains (polynomials + Fourier series)
+    - models position, rotation and radiance; scaling and opacity remain constant
+  - Moreover, an adaptive timestamp scaling technique(?) is introduced to avoid overfitting the scene to only frames with violent motions
+  - For robust estimation, we also regularize the motion trajectory by
+    - the KNN-based rigid regularization
+    - the time smooth constraints
+  - two stage optimization (with and without Gaussian densification/pruning)
 - HiFi4G: High-Fidelity Human Performance Rendering via Compact Gaussian Splatting. [[Paper]](https://arxiv.org/abs/2312.03461) [[Notes]](./20231206-hifi4g.md)
 
 ## Later

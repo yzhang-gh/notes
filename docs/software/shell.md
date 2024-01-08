@@ -251,6 +251,9 @@ alias cmd='your command'
 ```shellsession
 $ type cmd
 cmd is aliased to `your command'
+$ unalias cmd
+$ type cmd
+type: cmd: not found
 ```
 
 ## `tee`
@@ -273,7 +276,7 @@ find . -iname 'foo*'
 find . -maxdepth 3 -name '*bar'
 ```
 
-> GNU **find** searches the directory tree rooted at each given file name by evaluating the given expression from left to right, according to the rules of precedence (see section OPERATORS), until the outcome is known (the left hand side is false for and operations, true for or), at which point **find** moves on to the next file name.
+> GNU **find** searches the directory tree rooted at each given file name by _evaluating the given expression from left to right_, according to the rules of precedence (see section OPERATORS), until the outcome is known (the left hand side is false for and operations, true for or), at which point **find** moves on to the next file name.
 
 ### 示例：列出符合条件的文件名
 
@@ -298,6 +301,8 @@ find . \( -path './log' -or -path './video*' \) -prune -or \
 
 ### zip
 
+压缩
+
 ```shelldoc
 zip -r output.zip <file ...> [-x <file ...>]
 ## <file> can be file or dir
@@ -305,15 +310,33 @@ zip -r output.zip <file ...> [-x <file ...>]
 # -u <zip_file> <file ...>  ## update the files in the zip archive
 # -d <zip_file> <file ...>  ## delete the files from the zip archive
 # -x <file ...>             ## exclude these files
+```
 
+更多压缩参数
+
+```shelldoc
+# -y  ## store symbolic links as is, instead of the referenced file
+
+# -0  ## store only (no compression)  ---  30s for 1.6G jpg files
+# -1  ## compress faster              ---  70s for 1.6G jpg files
+# -9  ## compress better
+```
+
+解压
+
+```shelldoc
+unzip <zip_file>
+# -d <dir>  ## optional directory to which to extract files
+```
+
+查看压缩包的内容
+
+```shelldoc
 zip -sf file.zip | grep -v '/.'
 # -sf <zip_file>            ## --show-files
 ## show the files that would be operated on, without actually processing them
 ## use `grep -v '/.'` to show only the first-level files
 ## use `/.*/.` to also include the second level
-
-unzip <zip_file>
-# -d <dir>  ## optional directory to which to extract files
 ```
 
 示例
@@ -326,6 +349,8 @@ zip -R output.zip '*.py' '*.json' -x 'results*/*' -x 'log/*'
 
 ### tar
 
+压缩
+
 ```shelldoc
 tar -czvf archive.tar.gz <file ...> [--exclude=<pattern ...>]
 # -c  ## create an archive
@@ -333,16 +358,24 @@ tar -czvf archive.tar.gz <file ...> [--exclude=<pattern ...>]
 # -v  ## verbose
 # -f  ## allow to specifiy the filename of the archive
 # --exclude        ## can be used multiple times
+```
 
-tar -tvf file.tar
-tar -ztvf file.tar.gz
-# -t  ## list the contents of an archive
-## use above `--exclude` option to show only first level (`*/*`) or second level (`*/*/*`)
+解压
 
+```shelldoc
 tar -xzvf archive.tar.gz --one-top-level[=<dir>]
 # -x  ## extract an archive
 # --one-top-level  ## extract all files into <dir>,
                    ## or by default a new folder with the name of the archive
+```
+
+查看压缩包内容
+
+```shelldoc
+tar -tvf file.tar
+tar -ztvf file.tar.gz
+# -t  ## list the contents of an archive
+## use above `--exclude` option to show only first level (`*/*`) or second level (`*/*/*`)
 ```
 
 ## 文件大小与硬盘占用 `du`, `df`

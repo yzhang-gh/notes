@@ -20,6 +20,16 @@ Make explanations ADEPT: Use an Analogy, Diagram, Example, Plain-English descrip
   <span class="punct-halt">：</span>「
   ```
 
+- 考虑到 Markdown 语法的局限性，支持使用 [`markdown-it-attrs`](https://github.com/arve0/markdown-it-attrs) 来附加样式，比如居中 GFM 表格
+
+  ```
+  | header1 | header2 |
+  | ------- | ------- |
+  | column1 | column2 |
+
+  {{.center}}
+  ```
+
 ## Asset Handling
 
 ### 图片

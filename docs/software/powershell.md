@@ -43,6 +43,7 @@ Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 ## 上下键查找与当前输入匹配的历史命令
 Set-PSReadlineKeyHandler -Chord UpArrow -Function HistorySearchBackward
 Set-PSReadlineKeyHandler -Chord DownArrow -Function HistorySearchForward
+Set-PSReadLineOption -HistorySearchCursorMovesToEnd
 
 ## 颜色
 Set-PSReadLineOption -Colors @{ InlinePrediction = "$([char]0x1b)[97;2m"}

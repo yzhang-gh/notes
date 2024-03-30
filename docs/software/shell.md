@@ -17,6 +17,8 @@ chsh -s $(which zsh)
 
 插件 [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
+超实用命令 [`push-line`](https://unix.stackexchange.com/a/74208/415169)
+
 ## SSH
 
 ### 生成并配置密钥

@@ -263,8 +263,10 @@ type: cmd: not found
 复制输出到指定文件（不影响终端的输出）
 
 ```shell
-python train.py | tee out.txt
+python train.py 2>&1 | tee out.txt
 ```
+
+实践经验：注意使用 `2>&1` 将 stderr 也保存下来
 
 ## `find`
 

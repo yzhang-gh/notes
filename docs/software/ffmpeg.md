@@ -202,7 +202,7 @@ ffmpeg -h encoder=h264_nvenc
 
 ## Extra
 
-视频下载工具 [lux](https://github.com/iawia002/lux)
+### 视频下载工具 [lux](https://github.com/iawia002/lux)
 
 e.g. Bilibili
 
@@ -233,3 +233,12 @@ others
 youtube-dl [--proxy <proxy>] -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 <url>
 ```
 :::
+
+### Fix for "Too short!" error on avidemux
+
+```shell
+# This will recreate timestamps on the stream allowing avidemux to export the file.
+# Note that the output has to be a Matroska container (.mkv).
+# <https://gist.github.com/dmcallejo/3aef05029222eb38604a61b1623784c8>
+ffmpeg -start_at_zero -copyts -i input_file.ts -map 0:v -c copy -map 0:a:0 output_file.mkv
+```

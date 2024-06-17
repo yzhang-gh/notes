@@ -116,9 +116,27 @@ With `-3` the file is transferred through the local host, otherwise it would fir
 scp -r user@your.server.example.com:/path/to/foo /home/user/Desktop/
 ```
 
-**NOTE**: By not including the trailing `/` at the end of `foo`, you will move the directory itself (including contents), rather than only the contents of the directory.
+**NOTE**: By **not** including the trailing `/` at the end of `foo`, you will move the directory itself (including contents), rather than only the contents of the directory.
 
 `user@your.server.example.com:/path/to/foo` 一般很长，可以考虑在 `.bashrc` 中[定义一个变量](#使用变量)
+
+## `rsync`
+
+[official docs](https://download.samba.org/pub/rsync/rsync.1)
+
+```shelldoc
+## rsync [OPTION...] SRC... [DEST]
+## rsync [OPTION...] SRC... [USER@]HOST:DEST
+rsync -a dir1/ dir2
+# -a    ## --archive, syncs recursively, preserves symbolic links, permissions etc.
+# -h    ## --human-readable
+# -z    ## --compress
+# -v    ## --verbose
+# -L    ## --copy-links
+# --info=progress2   ## progress1, per-file progress; progress2, total transfer progress
+# --exclude=PATTERN  ## e.g. "*.json"
+# --include=PATTERN
+```
 
 ## `ls`
 

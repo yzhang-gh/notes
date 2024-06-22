@@ -126,8 +126,7 @@ scp -r user@your.server.example.com:/path/to/foo /home/user/Desktop/
 
 ```shelldoc
 ## rsync [OPTION...] SRC... [DEST]
-## rsync [OPTION...] SRC... [USER@]HOST:DEST
-rsync -a dir1/ dir2
+rsync -ah dir1/ dir2
 # -a    ## --archive, syncs recursively, preserves symbolic links, permissions etc.
 # -h    ## --human-readable
 # -z    ## --compress
@@ -136,6 +135,9 @@ rsync -a dir1/ dir2
 # --info=progress2   ## progress1, per-file progress; progress2, total transfer progress
 # --exclude=PATTERN  ## e.g. "*.json"
 # --include=PATTERN
+
+rsync -ah --info=progress2 -e 'ssh -p 2333' user@host:/foo .
+## more example, `-e 'ssh -i mykey -p 2333'`
 ```
 
 ## `ls`

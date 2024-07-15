@@ -446,6 +446,16 @@ $ echo 'hello $a'  ## single-quoted strings are interpreted literally
 hello $a
 ```
 
+使用 for 循环
+
+```
+for i in {1..10}  ## press `Enter` here and continue typing
+echo $i
+## 更多处理
+echo $(printf %02d $i)           ## 01 02 03 ...
+echo $(printf %02d $(($i * 2)))  ## 02 04 06 ...
+```
+
 ```shelldoc
 ## in the `.bashrc` file
 export rds='username@bluebear.bham.ac.uk:/rds'

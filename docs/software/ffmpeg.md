@@ -76,7 +76,9 @@ ffmpeg -ss 1 -to 4 -i input.mp4 -vcodec libwebp -vf "fps=fps=15,scale=640:360" \
 
 需要裁剪的时候在 `-vf` 中加入 `crop=w:h:x:y` 即可
 
-## 将图像序列合并为视频
+## 图像和视频相互转换
+
+### 将图像序列合并为视频
 
 ```shelldoc
 ffmpeg [-framerate 24] -i images/%4d.jpg [-frames:v <num_frames>] [-s 1920x1080] [-crf 18] \
@@ -84,6 +86,14 @@ ffmpeg [-framerate 24] -i images/%4d.jpg [-frames:v <num_frames>] [-s 1920x1080]
 ```
 
 也可以使用 glob 选择图片 `-pattern_type glob -i 'images/*.jpg'`（因为 glob pattern 包含星号等特殊符号所以注意使用引号）
+
+### 将视频拆成图片
+
+```shelldoc
+ffmpeg -i input.mov [-vf fps=1] [-start_number 100] images/%6d.jpg
+```
+
+注：`fps=1` 即每秒取一张图，如果是 `fps=1/2` 则相当于每两秒取一张图
 
 ## 多个视频 side-by-side
 

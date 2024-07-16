@@ -330,7 +330,7 @@ find . \( -path './log' -or -path './video*' \) -prune -or \
 ```shelldoc
 zip -r output.zip <file ...> [-x <file ...>]
 ## <file> can be file or dir
-# -r <zip_file> <file ...>  ## --recurse-paths
+# -r <zip_file> <file ...>  ## --recurse-paths (-R --recurse-patterns)
 # -u <zip_file> <file ...>  ## update the files in the zip archive
 # -d <zip_file> <file ...>  ## delete the files from the zip archive
 # -x <file ...>             ## exclude these files
@@ -363,7 +363,7 @@ zip -sf file.zip | grep -v '/.'
 ## use `/.*/.` to also include the second level
 ```
 
-示例
+示例，通配符以及文件筛选
 
 ```shelldoc
 zip -R output.zip '*.py' '*.json' -x 'results*/*' -x 'log/*'

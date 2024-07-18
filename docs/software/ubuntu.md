@@ -4,35 +4,6 @@
 
 <https://github.com/zq1997/deepin-wine>
 
-## RDP
-
-:::tip
-似乎不太好使
-:::
-
-```shelldoc
-sudo apt install xrdp
-
-## should already be running
-# sudo systemctl status xrdp
-
-## change port (optional)
-sudo vi /etc/xrdp/xrdp.ini
-## locate the `port=49952` line and change it to XXX
-sudo systemctl restart xrdp
-
-## configure the firewall rules
-sudo ufw status
-sudo ufw enable
-sudo ufw allow <port>/tcp
-sudo ufw reload
-
-## troubleshooting
-# sudo vi /var/log/xrdp.log
-```
-
-[ref](https://phoenixnap.com/kb/ubuntu-remote-desktop-from-windows)
-
 ## GNOME 图片和视频查看器
 
 ### Eye of GNOME
@@ -88,10 +59,12 @@ cuDNN <https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#insta
 
 ## Unorganized
 
-<https://askubuntu.com/a/1336906/1577456> remove default folders from nautilus
-`gsettings set org.gnome.desktop.privacy remember-recent-files false` remove "Recent" tab
+**nautilus**
 
-Move window among monitors: shift+super+arrow key
+- remove default folders from nautilus: <https://askubuntu.com/a/1336906/1577456>
+- remove "Recent" tab: `gsettings set org.gnome.desktop.privacy remember-recent-files false`
+
+**Move window among monitors**: shift+super+arrow key
 
 app.desktop (see zotero installation instructions)
 <https://www.zotero.org/support/installation#linux>

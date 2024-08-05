@@ -448,7 +448,7 @@ hello $a
 
 使用 for 循环
 
-```
+```shelldoc
 for i in {1..10}  ## press `Enter` here and continue typing
 echo $i
 ## 更多处理

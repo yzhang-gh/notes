@@ -12,10 +12,26 @@ title: 标准日本语初级（上）1－3 单元
 
 <figure>
     <img src="./imgs/hiragana.png" alt="平假名" class="border">
-    <figcaption>幼児教材：<a href="https://happylilac.net/hiragana-g-01.pdf" target="_blank" rel="noopener noreferrer" class="outbound">平假名</a>，<a href="https://happylilac.net/katakana-g-01.pdf" target="_blank" rel="noopener noreferrer" class="outbound">片假名</a></figcaption>
+    <figcaption>幼児教材：<a href="https://happylilac.net/hiragana-g-01.pdf" target="_blank" rel="noopener noreferrer" class="outbound">平假名</a></figcaption>
 </figure>
 
-**声调**：[漫画解读](https://zhuanlan.zhihu.com/p/25810894)
+<figure>
+    <img src="./imgs/katakana.png" alt="平假名" class="border">
+    <figcaption><a href="https://happylilac.net/katakana-g-01.pdf" target="_blank" rel="noopener noreferrer" class="outbound">片假名</a></figcaption>
+</figure>
+
+**声调**：[漫画解读](https://zhuanlan.zhihu.com/p/25810894)（已经 404 了）
+
+<details>
+<summary>微软日语输入法</summary>
+
+- <kbd>Alt</kbd>+<kbd>~</kbd> 切换英文和日文输入法
+- 促音（っ）的两种输入方式
+  - 将后一个音的第一个字母输入两遍，如 学校 がっこう gak**k**ouu
+  - 先输入 `l` 再输入促音
+- <kbd>F6</kbd>/<kbd>F7</kbd> 转换为平假名/片假名
+
+</details>
 
 ## 名词
 

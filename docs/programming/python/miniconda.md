@@ -24,6 +24,19 @@ set-executionpolicy remotesigned
 
 以允许在启动时运行 conda 初始化脚本
 
+---
+
+有时 conda 已经事先在机器上（比如在 bash 下）装好了，后来切换到 zsh 可能就会 `conda not found`，其实很可能是从其它机器复制过来的 `.zshrc` 里的 conda 路径不匹配了
+
+图方便可以找到 conda 安装目录执行
+
+```shell
+# cd ~/miniconda3/bin
+./conda init zsh
+```
+
+### conda 镜像
+
 [SUSTech Anaconda Mirror](https://mirrors.sustech.edu.cn/help/anaconda.html)
 
 ## 常用包

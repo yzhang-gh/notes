@@ -19,6 +19,10 @@ chsh -s $(which zsh)
 
 超实用命令 [`push-line`](https://unix.stackexchange.com/a/74208/415169)
 
+### 迁移 (ohmy)zsh 配置
+
+将 home 下的 `.zshrc` 文件，`.oh-my-zsh` 目录（一般插件也安装在其子目录下）复制即可，其它还有我个人使用的主题文件 `.p10k.zsh`
+
 ## SSH
 
 ### 生成并配置密钥

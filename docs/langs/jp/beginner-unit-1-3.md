@@ -87,24 +87,24 @@ title: 标准日本语初级（上）1－3 单元
 
 - <span class="jp">わたし<b>は</b>料理<b class="accent">が</b>上手です／できます／わかります。</span>
 
-- <span class="jp">李さん<b>は</b>今教室<b class="accent">に</b>います。本<b>は</b>本棚<b class="accent">に</b>あります。</span><span class="annot">（表示存在的场所，～在～）</span>
-  <span class="jp">本棚<b class="accent">に</b>本<b>が</b>あります。　　　　</span><span class="annot">（表示存在的场所，～有～）</span>
+- <span class="jp">李さん<b>は</b>今教室<b class="accent">に</b>います。本<b>は</b>本棚<b class="accent">に</b>あります。</span><span class="fl-blue">（表示存在的场所，～在～）</span>
+  <span class="jp">本棚<b class="accent">に</b>本<b>が</b>あります。　　　　</span><span class="fl-blue">（表示存在的场所，～有～）</span>
   <span class="jp">王さん<b class="accent">に</b>電話します。</span>
-  <span class="jp">家<b class="accent">に</b>帰ります。家<b>へ</b>帰ります。</span><span class="annot">（表示移动行为的目的地）</span>
-  <span class="jp">携帯電話<b>を</b>取り<b class="accent">に</b>行きます。　</span><span class="annot">（表示移动行为的目的）</span>
+  <span class="jp">家<b class="accent">に</b>帰ります。家<b>へ</b>帰ります。</span><span class="fl-blue">（表示移动行为的目的地）</span>
+  <span class="jp">携帯電話<b>を</b>取り<b class="accent">に</b>行きます。　</span><span class="fl-blue">（表示移动行为的目的）</span>
   <span class="jp">課長<b class="accent">に</b>（から）スケジュール表<b>を</b>もらいました。</span>
-  <span class="jp">いつも７時<b class="accent">に</b>起きます。　　　</span><span class="annot">（表示时间）</span>
-  <span class="jp">友達<b class="accent">に</b>会います。　　　　　　</span><span class="annot">（表示动作的对象）</span>
+  <span class="jp">いつも７時<b class="accent">に</b>起きます。　　　</span><span class="fl-blue">（表示时间）</span>
+  <span class="jp">友達<b class="accent">に</b>会います。　　　　　　</span><span class="fl-blue">（表示动作的对象）</span>
 
-- <span class="jp">公園<b class="accent">で</b>歌<b>を</b>歌います。美術館<b class="accent">で</b>写真展<b>が</b>あります。</span><span class="annot">（在某处发生某事用<b class="accent">で</b>）</span>
+- <span class="jp">公園<b class="accent">で</b>歌<b>を</b>歌います。美術館<b class="accent">で</b>写真展<b>が</b>あります。</span><span class="fl-blue">（在某处发生某事用<b class="accent">で</b>）</span>
   <span class="jp">車<b class="accent">で</b>会社<b>へ</b>行きます。バス<b class="accent">で</b>行きます。</span>
   <span class="jp">新聞紙<b class="accent">で</b>紙飛行機<b>を</b>作ります。</span>
   <span class="jp">航空便<b class="accent">で</b>プレゼント<b>を</b>送ります。</span>
   <span class="jp">日本の季節の中<b class="accent">で</b>、どの季節<b>が</b>いちばん好きですか。一年<b class="accent">で</b>７月<b>が</b>いちばん暑いです。</span>
 
-- <span class="jp">わたし<b class="accent">も</b>行きます。　</span><span class="annot">（相当于「也」）</span>
-  <span class="jp">どこ<b>へ</b><b class="accent">も</b>行きません。</span><span class="annot">（表示全面否定）</span>
-  <span class="jp">どれ<b class="accent">も</b>好きです。　　</span><span class="annot">（🤔<span class="jp">でも？</span>）</span>
+- <span class="jp">わたし<b class="accent">も</b>行きます。　</span><span class="fl-blue">（相当于「也」）</span>
+  <span class="jp">どこ<b>へ</b><b class="accent">も</b>行きません。</span><span class="fl-blue">（表示全面否定）</span>
+  <span class="jp">どれ<b class="accent">も</b>好きです。　　</span><span class="fl-blue">（🤔<span class="jp">でも？</span>）</span>
 
 - <span class="jp">静か<b class="accent">な</b>町　にぎやか<b class="accent">な</b>上海　有名<b class="accent">な</b>人</span>
 
@@ -122,15 +122,15 @@ title: 标准日本语初级（上）1－3 单元
 
 ## 文型
 
-- <span class="jp">～は～<b>です</b>。　　</span><span class="annot">（第二个～可以是名词 / 形容词 / 形容动词）</span>
-- <span class="jp">～に～が<b>あります</b>／<b>います</b>。</span><span class="annot">（存在）</span>
+- <span class="jp">～は～<b>です</b>。　　</span><span class="fl-blue">（第二个～可以是名词 / 形容词 / 形容动词）</span>
+- <span class="jp">～に～が<b>あります</b>／<b>います</b>。</span><span class="fl-blue">（存在）</span>
   <span class="jp">～は～に<b>あります</b>／<b>います</b>。</span>
-- <span class="jp">～<b>から</b>～<b>まで</b>。　</span><span class="annot">（从～到～，可以是时间或者地点）</span>
+- <span class="jp">～<b>から</b>～<b>まで</b>。　</span><span class="fl-blue">（从～到～，可以是时间或者地点）</span>
 
 <!--  -->
 
-- <span class="jp">李さんは森さん<b>より</b>若いです。　　　</span><span class="annot">（～比～更 形容词 / 形容动词）</span>
-  <span class="jp">森さん<b>より</b>李さん<b>のほうが</b>若いです。</span><span class="annot">（与～相比～更）</span>
-- <span class="jp">東京の冬は北京の冬<b>ほど</b>寒<b>くないです</b>。　</span><span class="annot">（～不如～，形容词否定形式）</span>
-  <span class="jp">神戸は大阪<b>ほど</b>にぎやか<b>ではありません</b>。</span><span class="annot">（⸺，形容动词否定形式）</span>
-- <span class="jp">スポーツ <b>の 中で</b>サッカー <b>が いちばん</b>おもしろいです。</span><span class="annot">（～中～最 形容词 / 形容动词）</span>
+- <span class="jp">李さんは森さん<b>より</b>若いです。　　　</span><span class="fl-blue">（～比～更 形容词 / 形容动词）</span>
+  <span class="jp">森さん<b>より</b>李さん<b>のほうが</b>若いです。</span><span class="fl-blue">（与～相比～更）</span>
+- <span class="jp">東京の冬は北京の冬<b>ほど</b>寒<b>くないです</b>。　</span><span class="fl-blue">（～不如～，形容词否定形式）</span>
+  <span class="jp">神戸は大阪<b>ほど</b>にぎやか<b>ではありません</b>。</span><span class="fl-blue">（⸺，形容动词否定形式）</span>
+- <span class="jp">スポーツ <b>の 中で</b>サッカー <b>が いちばん</b>おもしろいです。</span><span class="fl-blue">（～中～最 形容词 / 形容动词）</span>

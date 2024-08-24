@@ -6,6 +6,8 @@
 body
   font-family $secondaryFont
 
+  text-spacing-trim space-all  // workaround for Chrome's new CJK punctuation kerning feature since Chrome 120
+
 h1, h2, h3, h4, h5, h6
   font-family $primaryFont !important
   font-weight 600

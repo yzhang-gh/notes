@@ -20,6 +20,11 @@ Make explanations ADEPT: Use an Analogy, Diagram, Example, Plain-English descrip
   <span class="punct-halt">：</span>「
   ```
 
+  - [2024-08-24 更新] Chrome 120 (2023-12-04) 已经通过 [`text-spacing-trim`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-spacing-trim) 属性默认支持标点挤压（要求该 OpenType 字体支持 `halt` 或 `chws` 特性）[^cn-punct3]
+    - 同时计划未来引入 `text-autospace` 属性在中文和英文之间自动增加间距，就不用手动加空格了
+  - [OpenType font features guide](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_fonts/OpenType_fonts_guide)
+    - Discovering availability of features in fonts ([Wakamai Fondue](https://wakamaifondue.com/beta/))
+
 - 考虑到 Markdown 语法的局限性，支持使用 [`markdown-it-attrs`](https://github.com/arve0/markdown-it-attrs) 来附加样式，比如居中 GFM 表格
 
   ```
@@ -60,3 +65,4 @@ Some styles are based on [Dev on Windows with WSL](https://dowww.spencerwoo.com/
 
 [^cn-punct1]: https://www.thetype.com/2019/03/14918/
 [^cn-punct2]: https://www.bilibili.com/video/BV1Lr4y127qp/
+[^cn-punct3]: https://developer.chrome.com/blog/css-i18n-features#cjk_punctuation_kerning_text-spacing-trim

@@ -90,10 +90,11 @@ ffmpeg [-framerate 24] -i images/%4d.jpg [-frames:v <num_frames>] [-s 1920x1080]
 ### 将视频拆成图片
 
 ```shelldoc
-ffmpeg -i input.mov [-vf fps=1] [-start_number 100] images/%6d.jpg
+ffmpeg -i input.mov [-qscale:v 2] [-vf fps=1] [-start_number 100] images/%6d.jpg
 ```
 
-注：`fps=1` 即每秒取一张图，如果是 `fps=1/2` 则相当于每两秒取一张图
+- `-qscale:v`（或者缩写 `-q:v`）来控制 JPEG 的质量，范围 2–31（[链接](https://stackoverflow.com/a/10234065/8682688)）
+- `fps=1` 即每秒取一张图，如果是 `fps=1/2` 则相当于每两秒取一张图
 
 ## 多个视频 side-by-side
 

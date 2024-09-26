@@ -30,8 +30,12 @@ file '/path/to/file3.mp4'
 进行拼接
 
 ```shell
-ffmpeg -f concat -i mylist.txt -c copy output.mp4
+ffmpeg -f concat -safe 0 -i mylist.txt -c copy output.mp4
 ```
+
+默认的 `-safe 1` 参数对输入文件路径的限制比较多
+
+> The paths listed within your text file are interpreted by ffmpeg as being relative to the location of your text file. (In particular, the paths listed are not relative to the current working directory.) [source](https://superuser.com/a/943258/950027)
 
 <https://trac.ffmpeg.org/wiki/Concatenate>
 

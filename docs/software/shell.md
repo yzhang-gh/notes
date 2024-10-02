@@ -337,7 +337,7 @@ zip -r output.zip <file ...> [-x <file ...>]
 # -r <zip_file> <file ...>  ## --recurse-paths (-R --recurse-patterns)
 # -u <zip_file> <file ...>  ## update the files in the zip archive
 # -d <zip_file> <file ...>  ## delete the files from the zip archive
-# -x <file ...>             ## exclude these files
+# -x <file ...>             ## exclude these files, e.g. -x '*.git*'
 ```
 
 更多压缩参数

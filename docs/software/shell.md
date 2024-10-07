@@ -15,9 +15,12 @@ chsh -s $(which zsh)
 # https://github.com/ohmyzsh/ohmyzsh#basic-installation
 ```
 
-插件 [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+插件 [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting), [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
-超实用命令 [`push-line`](https://unix.stackexchange.com/a/74208/415169)
+**超实用命令**
+
+- `d` 列出最近访问的路径，再次输入数字回车跳转到对应目录
+- [push-line](https://unix.stackexchange.com/a/74208/415169) (<kbd>Alt</kbd>+<kbd>q</kbd>)
 
 ### 迁移 (ohmy)zsh 配置
 

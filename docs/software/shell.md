@@ -453,9 +453,8 @@ $ echo 'hello $a'  ## single-quoted strings are interpreted literally
 hello $a
 ```
 
-使用 for 循环
-
 ```shelldoc
+## 使用 for 循环
 for i in {1..10}  ## press `Enter` here and continue typing
 echo $i
 
@@ -466,6 +465,12 @@ echo $(printf %02d $(($i * 2)))  ## 02 04 06 ...
 ## 遍历文件
 for f in *
 for f in *.txt
+```
+
+```shellsession
+## 截取字符串
+$ echo '0123456789' | cut -c1-4  ## 1-based index, both inclusive
+0123
 ```
 
 ```shelldoc

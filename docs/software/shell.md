@@ -138,11 +138,31 @@ rsync -ah dir1/ dir2
 # -h    ## --human-readable
 # -z    ## --compress
 # -v    ## --verbose
+# -n    ## --dry-run
 # -L    ## --copy-links
 # --info=progress2   ## progress1, per-file progress; progress2, total transfer progress
 # --exclude=PATTERN  ## e.g. "*.json"
 # --include=PATTERN
+```
 
+注意 `/`（`dir2` 会被自动创建，如果中间的路径都存在的话）
+
+```shelldoc
+rsync -ah dir1/ dir2
+## dir1/* → dir2/*
+rsync -ah dir1 dir2
+## dir1/* → dir2/dir1/*
+```
+
+文件量很多的时候，建议先使用 `-n` 选项检查会被传输的文件列表
+
+```shelldoc
+rsync -anv dir1/ dir2
+```
+
+通过 SSH 传输
+
+```shelldoc
 rsync -ah --info=progress2 -e 'ssh -p 2333' user@host:/foo .
 ## more example, `-e 'ssh -i mykey -p 2333'`
 ```

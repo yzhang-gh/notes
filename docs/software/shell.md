@@ -334,7 +334,7 @@ find . -maxdepth 3 -name '*bar'
 列出子目录下的文件，每行开头加上 `-i ` 然后合并为一行，可以用作 `ffmpeg` 的输入
 
 ```shell
-input_str=$(find . -path './results/2023*/out.mp4' | sort -n | sed 's/^/-i /' | paste -sd ' ')
+input_str=$(find . -path './result*/out.mp4' | sort -n | sed 's/^/-i /' | paste -sd ' ')
 ```
 
 ### 示例：压缩特定文件
@@ -373,6 +373,17 @@ zip -r output.zip <file ...> [-x <file ...>]
 # -9  ## compress better
 ```
 
+`-x` 默认相对于要压缩的根路径，如在下面的命令中 `-x 'tmp/*'` 和 `-x results/tmp/*` 是等价的
+
+```shelldoc
+zip -r data.zip results -x '*.pt' -x '**/__pycache__/*'
+## 压缩 results 目录，排除任意目录的 .pt 文件、任意 __pycache__ 子目录
+```
+
+`-r` 与 `-R`
+- `-r` 会递归压缩给定的目录，包括空文件夹
+- `-R` 是（递归地）匹配满足要求的文件再压缩
+
 解压
 
 ```shelldoc
@@ -390,13 +401,13 @@ zip -sf file.zip | grep -v '/.'
 ## use `/.*/.` to also include the second level
 ```
 
-示例，通配符以及文件筛选
+示例：通配符以及文件筛选
 
 ```shelldoc
 zip -R output.zip '*.py' '*.json' -x 'results*/*' -x 'log/*'
 ```
 
-其中 `-R` 为 `--recurse-patterns`。被 `-x` 排除的目录仍然会被扫描，想避免则可以使用 [`find`](#find) 命令配合 `-prune`，`-exec zip` 等参数来实现筛选压缩的功能
+被 `-x` 排除的目录仍然会被扫描，可能非常耗时，想避免则可以使用 [`find`](#find) 命令配合 `-prune`，`-exec zip` 等参数来实现筛选压缩的功能
 
 ### tar
 

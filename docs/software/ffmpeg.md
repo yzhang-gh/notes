@@ -159,10 +159,15 @@ ffmpeg -i input.mp4 -c copy -vn output.aac
 
 ## 添加文字
 
+[`drawtext`](https://ffmpeg.org/ffmpeg-filters.html#drawtext-1) filter
+
 ```shell
 style_str="fontfile=noto-sans.ttf:fontsize=36:fontcolor=white:shadowx=2:shadowy=2:shadowcolor=black"
 ffmpeg -i input.mp4 -vf "drawtext=text='hello world':x=60:y=60:$style_str" -crf 16 output.mp4
 ```
+
+- `text` 参数里还可以使用变量，比如 `text=%{n}` 表示帧号，起始为 0（由另一个参数 `start_number` 控制）
+- `box` 参数可以给文字加背景框，`box=1:boxcolor=white@0.5:boxborderw=5`
 
 ## GPU
 

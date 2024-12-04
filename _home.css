@@ -1,0 +1,139 @@
+main.home {
+    max-width: 800px;
+}
+
+main.home strong {
+    color: #888;
+    font-weight: bold;
+}
+
+#joshua-tree {
+    float: right;
+    width: 200px;
+    margin: 0.8em 0.2em 0.4em 1em;
+}
+
+@media (max-width: 719px) {
+    #joshua-tree {
+        float: none;
+        width: 100%;
+        margin: 0.5em 0 0;
+    }
+}
+
+hr {
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(to right, #dadcdf, transparent 60%);
+    margin: 1em 0;
+    border: none;
+}
+
+/* SLOT MACHINE */
+
+#outer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#outer>div:not(#slot-machine) {
+    line-height: 2;
+    margin-top: 32px;
+}
+
+#slot-machine {
+    position: relative;
+    height: 96px;
+    overflow: hidden;
+    text-align: center;
+    user-select: none;
+    padding: 0 1em;
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+}
+
+#slot-machine::before {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    height: 32px;
+    width: 100%;
+    content: "";
+    border: 1px solid #dfe1e5;
+    border-radius: 9px;
+    box-sizing: border-box;
+}
+
+#slot-machine::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    /* background: linear-gradient(to bottom, white, transparent, white); */
+    /* For Safari compatibility */
+    background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0), white);
+}
+
+/* @media (prefers-color-scheme: dark) {
+    #slot-machine::after {
+        background: linear-gradient(to bottom, #333333, transparent, #333333);
+    }
+
+    body {
+        background: #333333;
+    }
+} */
+
+:root {
+    color-scheme: light;
+}
+
+#tiles {
+    position: relative;
+}
+
+#btn-group {
+    margin: 0 auto;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+#btn-feelingLucky {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    margin: 11px 4px;
+    margin-right: 0;
+    padding: 0 16px;
+    line-height: 2;
+    font-size: 14px;
+    transition: border-color 0.5s ease-in;
+    transition: box-shadow 0.5s ease-in;
+}
+
+#btn-feelingLucky:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    border: 1px solid #dadce0;
+}
+
+#btn-feelingLucky:focus {
+    border: 1px solid #529cda;
+    outline: none;
+}
+
+#target {
+    transition: opacity 0.5s ease-in;
+    opacity: 0;
+    text-align: center;
+    font-size: 14px;
+    color: #a8a9aa;
+    user-select: none;
+    margin: 0 auto 1em;
+}
+
+#target>a {
+    color: #81B0D8;
+}

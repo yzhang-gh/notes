@@ -54,6 +54,35 @@ $A_1A_{21} = A_3$
 
 其它：https://www.yuque.com/yunyoujun/blog/quaternion-and-spatial-rotation
 
+## 不同坐标系下的旋转矩阵转换
+
+从 Blender, Unity 这些软件中导出相机参数时，往往和我们实际使用的坐标系或者相机默认位姿（比如 opencv）定义不同，需要进行转换
+
+比较好的方法是使用 c2w 矩阵作为不同坐标系间的桥梁
+
+对于一个 c2w 变换
+
+$$
+\bf{T}_{\text{c2w}} = \begin{bmatrix}
+\bf{R} & \bf{t} \\
+\bf{0} & 1
+\end{bmatrix} = \begin{bmatrix}
+  x_1 & y_1 & z_1 & t_1 \\
+  x_2 & y_2 & z_2 & t_2 \\
+  x_3 & y_3 & z_3 & t_3 \\
+  0 & 0 & 0 & 1
+\end{bmatrix}
+$$
+
+- $\bf{t}$ 是相机中心在世界坐标系下的位置
+- $(x_1, y_1, z_1)$ 是相机坐标系的 $x$ 轴单位向量 $(1, 0, 0)$ 在世界坐标系下的对应方向
+- $(x_2, y_2, z_2)$ 对应 $y$ 轴方向
+- $(x_3, y_3, z_3)$ 对应 $z$ 轴方向
+
+所以，如果能从 Blender 中获得相机在世界坐标系下的 位置 和你想使用的相机坐标系 3 个轴的方向，就可以直接构造出实际需要的 $\bf{T}_{\text{c2w}}$ 矩阵
+
+Unity 的左右手系问题另说
+
 ## Inverse Kinematics
 
 正向运动学 (forward kinematics) 是已知运动模型（如机械臂，人体骨架）$\bf{M}$ 和关节角度 $\bf{\Theta}$（如欧拉角、轴角，或称旋转 $\bf{R}$），求解各末端执行器或人体关节的位置 $\bf{P}$

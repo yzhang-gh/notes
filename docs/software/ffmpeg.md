@@ -108,7 +108,7 @@ ffmpeg -i left.mp4 -i right.mp4 -filter_complex hstack output.mp4
 
 如果是三个视频则可以使用 `hstack=inputs=3`
 
-除了 `hstack` 和 `vstack`，还可以使用 `xstack`，其支持参数比如 `grid=3x2`（3 列 2 行），比较旧的版本可能还不支持（可以从官网提供的这个[链接](https://johnvansickle.com/ffmpeg/)下载 Linux 下编译好的单文件二进制）
+除了 `hstack` 和 `vstack`，还可以使用 `xstack`，其支持参数比如 `grid=3x2`（3 列 2 行），比较旧的版本可能还不支持（可以从 [FFmpeg-Builds](https://github.com/BtbN/FFmpeg-Builds) 下载 Linux 下编译好的单文件二进制）
 
 ## 裁剪、缩放、填衬视频
 

@@ -59,7 +59,7 @@ cuDNN <https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#insta
 
 ## 快捷方式
 
-`vi ~/.local/share/applications/MyApp.desktop`
+可以在用户应用目录直接创建一个快捷方式 `vi ~/.local/share/applications/myapp.desktop`（系统应用则是 `/usr/share/applications/`，需要 sudo 权限）
 
 ```
 [Desktop Entry]
@@ -72,7 +72,11 @@ Terminal=false
 Categories=Utility;Application;
 ```
 
-注意路径中不能使用 `~` 来表示用户主目录（`~` 是 shell 中的快捷方式）。可以使用环境变量 `$HOME` 来表示
+注意路径中不能使用 `~` 来表示用户主目录（`~` 是 shell 中的快捷方式），实测也不能使用环境变量 `$HOME`，建议写绝对路径
+
+然后使用 `update-desktop-database ~/.local/share/applications/` 更新菜单缓存
+
+或者先在任意位置编辑好 `.desktop` 文件，然后使用 `desktop-file-install --dir=~/.local/share/applications/ myapp.desktop` 将其安装到用户目录。其好处是会帮助验证文件格式的正确性
 
 ## Unorganized
 

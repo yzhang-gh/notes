@@ -57,6 +57,23 @@ cuDNN <https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#insta
 
 可以使用 GUI 操作，详细信息可以查看 `/etc/fstab` 文件，重启
 
+## 快捷方式
+
+`vi ~/.local/share/applications/MyApp.desktop`
+
+```
+[Desktop Entry]
+Name=MyApp
+Type=Application
+Exec=/path/to/your/executable
+Comment=This is my application
+Icon=/path/to/your/icon.png
+Terminal=false
+Categories=Utility;Application;
+```
+
+注意路径中不能使用 `~` 来表示用户主目录（`~` 是 shell 中的快捷方式）。可以使用环境变量 `$HOME` 来表示
+
 ## Unorganized
 
 **nautilus**

@@ -87,9 +87,6 @@ Categories=Utility;Application;
 
 **Move window among monitors**: shift+super+arrow key
 
-app.desktop (see zotero installation instructions)
-<https://www.zotero.org/support/installation#linux>
-
 ## 屏幕亮度
 
 对于既有核显又有独显的电脑，在连接和断开外接显示器的时候屏幕亮度可能无法正确设置

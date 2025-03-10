@@ -4,6 +4,13 @@
 
 <https://github.com/zq1997/deepin-wine>
 
+## GNOME Extension
+
+https://github.com/mjakeman/extension-manager (`sudo apt install gnome-shell-extension-manager`) 安装打开，在最上方启用用户插件
+
+- https://github.com/home-sweet-gnome/dash-to-panel
+- https://github.com/prateekmedia/netspeedsimplified
+
 ## GNOME 图片和视频查看器
 
 ### Eye of GNOME

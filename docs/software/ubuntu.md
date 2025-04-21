@@ -4,6 +4,13 @@
 
 <https://github.com/zq1997/deepin-wine>
 
+## GNOME Extension
+
+https://github.com/mjakeman/extension-manager (`sudo apt install gnome-shell-extension-manager`) 安装打开，在最上方启用用户插件
+
+- https://github.com/home-sweet-gnome/dash-to-panel
+- https://github.com/prateekmedia/netspeedsimplified
+
 ## GNOME 图片和视频查看器
 
 ### Eye of GNOME
@@ -57,6 +64,27 @@ cuDNN <https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#insta
 
 可以使用 GUI 操作，详细信息可以查看 `/etc/fstab` 文件，重启
 
+## 快捷方式
+
+可以在用户应用目录直接创建一个快捷方式 `vi ~/.local/share/applications/myapp.desktop`（系统应用则是 `/usr/share/applications/`，需要 sudo 权限）
+
+```
+[Desktop Entry]
+Name=MyApp
+Type=Application
+Exec=/path/to/your/executable
+Comment=This is my application
+Icon=/path/to/your/icon.png
+Terminal=false
+Categories=Utility;Application;
+```
+
+注意路径中不能使用 `~` 来表示用户主目录（`~` 是 shell 中的快捷方式），实测也不能使用环境变量 `$HOME`，建议写绝对路径
+
+然后使用 `update-desktop-database ~/.local/share/applications/` 更新菜单缓存
+
+或者先在任意位置编辑好 `.desktop` 文件，然后使用 `desktop-file-install --dir=~/.local/share/applications/ myapp.desktop` 将其安装到用户目录。其好处是会帮助验证文件格式的正确性
+
 ## Unorganized
 
 **nautilus**
@@ -65,9 +93,6 @@ cuDNN <https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html#insta
 - remove "Recent" tab: `gsettings set org.gnome.desktop.privacy remember-recent-files false`
 
 **Move window among monitors**: shift+super+arrow key
-
-app.desktop (see zotero installation instructions)
-<https://www.zotero.org/support/installation#linux>
 
 ## 屏幕亮度
 

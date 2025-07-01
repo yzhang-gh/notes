@@ -16,46 +16,55 @@ torch.cuda.memory._dump_snapshot("my_snapshot.pickle")
 
 ---
 
-其它方法：
+## 其它方法
 
-一般来说肯定是程序里显存泄露了，可以先查找残留的无法释放的 tensor
+### 鸵鸟法
 
 ```python
 import gc
-import torch
 
 gc.collect()
+torch.cuda.empty_cache()
+```
+
+有可能就解决了
+
+### 详细检查
+
+一般来说是因为程序里有显存泄露，可以先查找残留的无法释放的 tensor
+
+```python
+import gc
+
+gc.collect()
+torch.cuda.empty_cache()
 
 # 获取所有残留的 Tensor
 leaked_tensors = [obj for obj in gc.get_objects() if isinstance(obj, torch.Tensor)]
 
 # 打印详细信息
 for tensor in leaked_tensors:
-    print(f"Shape: {tensor.shape} | Device: {tensor.device} | Size: {tensor.element_size() * tensor.nelement() / 1024**2:.2f} MB")
+    if "cuda" in str(tensor.device):
+        size = tensor.element_size() * tensor.nelement() / 1024**2
+        if size > 10:
+            print(f"Shape: {tensor.shape} | Device: {tensor.device} | Size: {size:.2f} MB")
+
+            # 获取所有直接引用该 Tensor 的对象
+            referrers = gc.get_referrers(tensor)
+            print(f"引用者数量: {len(referrers)}")
+            
+            # 打印引用者的类型和关键信息
+            for ref in referrers:
+                if isinstance(ref, (list, dict, tuple)):
+                    print(f"引用者类型: {type(ref)}, 内容片段: {str(ref)[:100]}...")
+                else:
+                    print(f"引用者类型: {type(ref)}")
+                    # 如果是自定义对象，尝试获取其属性名
+                    if hasattr(ref, "__dict__"):
+                        print(f"引用者包含属性: {vars(ref).keys()}")
 ```
 
-观察是否有比较大的 tensor。此外还可以查询其引用信息
-
-```python
-for tensor in leaked_tensors:
-    print(f"\nTensor 形状: {tensor.shape}, 设备: {tensor.device}")
-    
-    # 获取所有直接引用该 Tensor 的对象
-    referrers = gc.get_referrers(tensor)
-    print(f"引用者数量: {len(referrers)}")
-    
-    # 打印引用者的类型和关键信息
-    for ref in referrers:
-        if isinstance(ref, (list, dict, tuple)):
-            print(f"引用者类型: {type(ref)}, 内容片段: {str(ref)[:100]}...")
-        else:
-            print(f"引用者类型: {type(ref)}")
-            # 如果是自定义对象，尝试获取其属性名
-            if hasattr(ref, "__dict__"):
-                print(f"对象属性: {vars(ref)}")
-```
-
-到这一步之后如果还是不太容易看出残留的引用关系，可以使用 `objgraph` 库来可视化（非常好用），需要安装 [Graphviz](https://graphviz.org/)（命令行里能调用 `dot` 可执行文件），核心用法只有一行
+如果能发现某个 tensor 没有合理释放，但又不太容易看出哪里有残留的引用，可以使用 `objgraph` 库来可视化（非常好用），需要安装 [Graphviz](https://graphviz.org/)（安装好之后命令行里能调用 `dot` 可执行文件），核心用法只有一行
 
 ```python
 objgraph.show_backrefs(obj, filename="backrefs.png")

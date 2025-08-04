@@ -526,6 +526,15 @@ split -b 1024m file prefix
 cat filea fileb filec > file
 ```
 
+## 服务器管理常用命令
+
+```shelldoc
+sudo adduser <username>                  # adduser 比 useradd 方便一点
+sudo usermod -aG <groupname> <username>  # 把用户添加进 group
+sudo passwd <username> [--expire]        # 改密码以及让用户重设密码
+sudo chmod -R 2775 <dir>                 # 设置目录继承 group owner，权限显示为 rws
+```
+
 <script>
 export default {
     mounted() {

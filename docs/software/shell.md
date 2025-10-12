@@ -54,6 +54,10 @@ Host *.ac.uk
     PreferredAuthentications publickey,keyboard-interactive,password,hostbased
 #   IdentityFile ~/.ssh/another_id_rsa
 #   Port 2333
+
+Host *
+    ServerAliveInterval 60  # Send keep-alive every 60 seconds
+    ServerAliveCountMax 3   # Max number of unanswered probes before disconnecting
 ```
 
 其中 `pattern` 用来匹配 `ssh` 命令中的 `host` 名称，同时设置多个 `pattern` 时用空格隔开

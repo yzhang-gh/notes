@@ -1,0 +1,104 @@
+a.card {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    background: #f7f9fa;
+    border-radius: 0.5rem;
+    transition-duration: 0.2s;
+    position: relative; /* so that the logos can be placed absolutely */
+}
+
+a.card:last-of-type {
+    margin-bottom: 1.5rem;
+}
+
+a.card:hover {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 1px 1px 4px -1px rgb(0 0 0 / 6%);
+    z-index: 2;
+}
+
+a.card.has-bts {
+    border-bottom: 1px dashed #dadcdd;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+a.card.has-bts + a.card {
+    border-top: 1px dashed #dadcdd;
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+a.card > div.cover {
+    max-width: 300px;
+    margin-right: 1.5rem;
+    pointer-events: none;
+}
+
+a.card > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+a.card p {
+    margin: 0;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    color: #747a81;
+    z-index: 1;
+}
+
+a.card p.title {
+    margin-top: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #242a31;
+}
+
+a.card p a {
+    color: #529cda;
+}
+
+a.card img.logo {
+    margin: 0 1.5rem 1.5rem 0;
+    max-height: 16px;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+
+a.card img.logo[src$="bilibili-logo.png"] {
+    max-height: 20px;
+}
+
+a.card img.logo[src$="steam-logo.png"] {
+    max-height: 22px;
+}
+
+/* Reset links styles */
+
+.theme-default-content:not(.custom) a.card,
+.theme-default-content:not(.custom) a.card:hover {
+    text-decoration: inherit;
+    color: inherit;
+    font-weight: inherit;
+}
+
+/* Mobile devices */
+
+@media (max-width: 500px) {
+    a.card {
+        flex-direction: column;
+    }
+
+    a.card > div.cover {
+        max-width: 400px;
+        margin-right: 0rem;
+        margin-bottom: 1.5rem;
+    }    
+}
